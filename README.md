@@ -25,7 +25,7 @@
 ### Reference materials
 
 - GIT training materials
-  - ...
+  - https://help.github.com/articles/about-pull-request-reviews/
 
 - Python training materials
   - https://automatetheboringstuff.com/
