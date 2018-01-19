@@ -25,8 +25,17 @@
 ### Reference materials
 
 - GIT training materials
-  -
+  - ...
 
 - Python training materials
   - https://automatetheboringstuff.com/
-  - 
+
+- supplementary materials:
+  - http://askpython.com/
+  - https://snakify.org/
+  - https://www.datacamp.com/courses/intro-to-python-for-data-science
+  - http://book.pythontips.com/en/latest/index.html#
+  - https://python.swaroopch.com/
+  - http://anandology.com/python-practice-book/index.html
+  - http://anandology.com/blog/decorators-demystified/
+  - https://developers.google.com/edu/python/
