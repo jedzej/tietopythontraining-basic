@@ -18,9 +18,9 @@ course use Slack at [tieto-comp-dev](https://tieto-comp-dev.slack.com/messages/)
 1. We assume you want to learn. If you cheat, you cheat yourself,
 1. The schedule:
     1. The course starts on February 13th 2018,
-    1. Each week we will provide a final version one lesson and a set
-       of exercises. All future lessons are there, but are subject to
-       change,
+    1. Each week we will provide a final version of one lesson and
+       a set of exercises. All future lessons are there, but are
+       subject to change,
     1. You have two weeks since then to create a pull request with all
        the solutions,
     1. ...but it doesn't there, we expect most of the learning to
