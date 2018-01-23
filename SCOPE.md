@@ -42,11 +42,17 @@
 
 
 ---
-### Lesson 4 - Lists
+### Lesson 4 - Unit testing
+- [Introduction to unittest](http://www.voidspace.org.uk/python/articles/introduction-to-unittest.shtml) (sections: *Introduction, Testing, The unittest Module, The assert methods*, skip the rest)
+
+
+---
+### Lesson 5 - Lists
 #### introduction
 - [Automate the Boring Stuff with Python / Chapter 4](https://automatetheboringstuff.com/chapter4/)
 - [Snakify / Lesson 7](https://snakify.org/lessons/lists/)
 - [Snakify / Lesson 9](https://snakify.org/lessons/two_dimensional_lists_arrays/)
+- [Understanding List Comprehensions in Python 3](https://www.digitalocean.com/community/tutorials/understanding-list-comprehensions-in-python-3)
 #### practice projects
 1. [Automate the Boring Stuff with Python / Chapter 4 / Comma Code](https://automatetheboringstuff.com/chapter4/)
 2. [Automate the Boring Stuff with Python / Chapter 4 / Character Picture Grid](https://automatetheboringstuff.com/chapter4/)
@@ -55,7 +61,7 @@
 
 
 ---
-### Lesson 5 - Dictionaries, tuples and sets
+### Lesson 6 - Dictionaries, tuples and sets
 #### introduction
 - [Automate the Boring Stuff with Python / Chapter 5](https://automatetheboringstuff.com/chapter5/)
 - [Snakify / Lesson 10](https://snakify.org/lessons/sets/)
@@ -68,7 +74,7 @@
 
 
 ---
-### Lesson 6 - Manipulating strings
+### Lesson 7 - Manipulating strings
 #### introduction
 - [Automate the Boring Stuff with Python / Chapter 6](https://automatetheboringstuff.com/chapter6/)
 - [PyFormat](https://pyformat.info/)
@@ -79,7 +85,7 @@
 
 
 ---
-### Lesson 7 - Regular expressions
+### Lesson 8 - Regular expressions
 #### introduction
 - [Automate the Boring Stuff with Python / Chapter 7](https://automatetheboringstuff.com/chapter7/)
 #### practice projects
@@ -89,7 +95,7 @@
 
 
 ---
-### Lesson 8 - Reading and writing files
+### Lesson 9 - Reading and writing files
 #### introduction
 - [Automate the Boring Stuff with Python / Chapter 8](https://automatetheboringstuff.com/chapter8/)
 #### practice projects
@@ -99,7 +105,7 @@
 
 
 ---
-### Lesson 9 - Organizing Files
+### Lesson 10 - Organizing Files
 #### introduction
 - [Automate the Boring Stuff with Python / Chapter 9](https://automatetheboringstuff.com/chapter9/)
 #### practice projects
@@ -109,7 +115,7 @@
 
 
 ---
-### Lesson 10 - Debugging
+### Lesson 11 - Debugging
 #### introduction
 - [Automate the Boring Stuff with Python / Chapter 10](https://automatetheboringstuff.com/chapter10/)
 #### practice projects
@@ -117,7 +123,7 @@
 
 
 ---
-### Lesson 11 - Keeping Time, Scheduling Tasks, and Launching Programs
+### Lesson 12 - Keeping Time, Scheduling Tasks, and Launching Programs
 #### introduction
 - [Automate the Boring Stuff with Python / Chapter 15](https://automatetheboringstuff.com/chapter15/)
 #### practice projects
@@ -125,7 +131,7 @@
 
 
 ---
-### Lesson 12 - Objects and classes
+### Lesson 13 - Objects and classes
 #### introduction
 - [Think Python: How to Think Like a Computer Scientist / Chapter 15](http://greenteapress.com/thinkpython2/html/thinkpython2016.html)
 - [Python dir()
@@ -140,9 +146,7 @@ How To Construct Classes and Define Objects in Python 3](https://www.digitalocea
 
 # TODO: These topics are not covered in the lessons above
 1. List/dict/generator comprehensions
-4. PEP8
 5. Basic git
 8. *args, **kwargs
 9. argparse
-10. unit tests
 11. decorators
