@@ -124,14 +124,24 @@
 1. [Automate the Boring Stuff with Python / Chapter 15 / Pretiffied Stopwatch](https://automatetheboringstuff.com/chapter15/)
 
 
+---
+### Lesson 12 - Objects and classes
+#### introduction
+- [Think Python: How to Think Like a Computer Scientist / Chapter 15](http://greenteapress.com/thinkpython2/html/thinkpython2016.html)
+- [Python dir()
+ function](https://www.programiz.com/python-programming/methods/built-in/dir)
+- [Python id() function](https://www.programiz.com/python-programming/methods/built-in/id)
+ - [
+How To Construct Classes and Define Objects in Python 3](https://www.digitalocean.com/community/tutorials/how-to-construct-classes-and-define-objects-in-python-3) (supplementary materials)
+- [Understanding Class and Instance Variables in Python 3](https://www.digitalocean.com/community/tutorials/understanding-class-and-instance-variables-in-python-3) (supplementary materials)
+#### practice projects
+1. [Think Python: How to Think Like a Computer Scientist / Chapter 15 / Exercise 1 ](http://greenteapress.com/thinkpython2/html/thinkpython2016.html)
+
+
 # TODO: These topics are not covered in the lessons above
 1. List/dict/generator comprehensions
-2. String formating
-3. Objects and classes
 4. PEP8
 5. Basic git
-6. id()
-7. pass
 8. *args, **kwargs
 9. argparse
 10. unit tests
