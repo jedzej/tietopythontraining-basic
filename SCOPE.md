@@ -123,7 +123,17 @@
 
 
 ---
-### Lesson 12 - Debugging
+### Lesson 12 - argparse
+#### introduction
+- [What is argparse?](http://www.bogotobogo.com/python/python_argparse.php)
+- [argparse — Command-Line Option and Argument Parsing](https://pymotw.com/3/argparse/)
+#### practice projects
+1. Modify project 1 from lesson 11 to use argparse for parsing input
+2. Modify project 2 from lesson 11 to use argparse for parsing input
+3. Modify project 3 from lesson 11 to use argparse for parsing input
+
+---
+### Lesson 13 - Debugging
 #### introduction
 - [Automate the Boring Stuff with Python / Chapter 10](https://automatetheboringstuff.com/chapter10/)
 #### practice projects
@@ -131,7 +141,7 @@
 
 
 ---
-### Lesson 13 - Keeping Time, Scheduling Tasks, and Launching Programs
+### Lesson 14 - Keeping Time, Scheduling Tasks, and Launching Programs
 #### introduction
 - [Automate the Boring Stuff with Python / Chapter 15](https://automatetheboringstuff.com/chapter15/)
 #### practice projects
@@ -139,7 +149,7 @@
 
 
 ---
-### Lesson 14 - Objects and classes
+### Lesson 15 - Objects and classes
 #### introduction
 - [Think Python: How to Think Like a Computer Scientist / Chapter 15](http://greenteapress.com/thinkpython2/html/thinkpython2016.html)
 - [Python dir()
@@ -155,5 +165,4 @@ How To Construct Classes and Define Objects in Python 3](https://www.digitalocea
 # TODO: These topics are not covered in the lessons above
 1. List/dict/generator comprehensions
 5. Basic git
-9. argparse
 11. decorators
