@@ -29,6 +29,10 @@
 
 - Python training materials
   - https://automatetheboringstuff.com/
+  - http://greenteapress.com/thinkpython2/html/index.html
+
+- PEP8
+  - https://www.python.org/dev/peps/pep-0008/
 
 - supplementary materials:
   - http://askpython.com/
