@@ -74,7 +74,15 @@
 
 
 ---
-### Lesson 7 - Manipulating strings
+### Lesson 7 - \*args and \*\*kwargs
+- [Think Python: How to Think Like a Computer Scientist / 12.4  Variable-length argument tuples](http://greenteapress.com/thinkpython2/html/thinkpython2013.html#sec144)
+- [Think Python: How to Think Like a Computer Scientist / 19.9  Gathering keyword args](http://greenteapress.com/thinkpython2/html/thinkpython2020.html#sec231)
+### practice projects
+1. As an exercise, write a function called sumall that takes any number of arguments and returns their sum.
+
+
+---
+### Lesson 8 - Manipulating strings
 #### introduction
 - [Automate the Boring Stuff with Python / Chapter 6](https://automatetheboringstuff.com/chapter6/)
 - [PyFormat](https://pyformat.info/)
@@ -85,7 +93,7 @@
 
 
 ---
-### Lesson 8 - Regular expressions
+### Lesson 9 - Regular expressions
 #### introduction
 - [Automate the Boring Stuff with Python / Chapter 7](https://automatetheboringstuff.com/chapter7/)
 #### practice projects
@@ -95,7 +103,7 @@
 
 
 ---
-### Lesson 9 - Reading and writing files
+### Lesson 10 - Reading and writing files
 #### introduction
 - [Automate the Boring Stuff with Python / Chapter 8](https://automatetheboringstuff.com/chapter8/)
 #### practice projects
@@ -105,7 +113,7 @@
 
 
 ---
-### Lesson 10 - Organizing Files
+### Lesson 11 - Organizing Files
 #### introduction
 - [Automate the Boring Stuff with Python / Chapter 9](https://automatetheboringstuff.com/chapter9/)
 #### practice projects
@@ -115,7 +123,7 @@
 
 
 ---
-### Lesson 11 - Debugging
+### Lesson 12 - Debugging
 #### introduction
 - [Automate the Boring Stuff with Python / Chapter 10](https://automatetheboringstuff.com/chapter10/)
 #### practice projects
@@ -123,7 +131,7 @@
 
 
 ---
-### Lesson 12 - Keeping Time, Scheduling Tasks, and Launching Programs
+### Lesson 13 - Keeping Time, Scheduling Tasks, and Launching Programs
 #### introduction
 - [Automate the Boring Stuff with Python / Chapter 15](https://automatetheboringstuff.com/chapter15/)
 #### practice projects
@@ -131,7 +139,7 @@
 
 
 ---
-### Lesson 13 - Objects and classes
+### Lesson 14 - Objects and classes
 #### introduction
 - [Think Python: How to Think Like a Computer Scientist / Chapter 15](http://greenteapress.com/thinkpython2/html/thinkpython2016.html)
 - [Python dir()
@@ -147,6 +155,5 @@ How To Construct Classes and Define Objects in Python 3](https://www.digitalocea
 # TODO: These topics are not covered in the lessons above
 1. List/dict/generator comprehensions
 5. Basic git
-8. *args, **kwargs
 9. argparse
 11. decorators
