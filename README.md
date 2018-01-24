@@ -26,8 +26,8 @@ course use Slack at [tieto-comp-dev](https://tieto-comp-dev.slack.com/messages/)
     1. ...but it doesn't there, we expect most of the learning to
        happen during review process,
 1. We highly recommend solving the exercise just after the lesson,
-1. Don't hesitate to ask questions and don't take the reviews
-   personally.
+1. Don't hesitate to talk to us at Slack, ask questions, let us know,
+   if something is unclear and don't take the reviews personally ;)
 
 We hope you will have a lot of fun learning!
 
