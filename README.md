@@ -49,6 +49,12 @@ We hope you will have a lot of fun learning!
 1. Lesson 14 - Keeping Time, Scheduling Tasks, and Launching Programs
 1. Lesson 15 - Objects and classes
 
+#### Not in scope
+1. virtualenv
+1. network / web frameworks
+1. metaclasses
+
+
 # TODO: These topics are not covered in the lessons above
 1. List/dict/generator comprehensions
 11. decorators
