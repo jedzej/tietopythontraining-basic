@@ -23,7 +23,7 @@ course use Slack at [tieto-comp-dev](https://tieto-comp-dev.slack.com/messages/)
        subject to change,
     1. You have two weeks since then to create a pull request with all
        the solutions,
-    1. ...but it doesn't there, we expect most of the learning to
+    1. ...but it doesn't end there, we expect most of the learning to
        happen during review process,
 1. We highly recommend solving the exercise just after the lesson,
 1. Don't hesitate to talk to us at Slack, ask questions, let us know,
