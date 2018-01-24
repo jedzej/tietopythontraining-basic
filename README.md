@@ -69,10 +69,10 @@ We hope you will have a lot of fun learning!
   - https://automatetheboringstuff.com/
   - http://greenteapress.com/thinkpython2/html/index.html
 
-- PEP8
+- PEP8 (Style Guide for Python Code)
   - https://www.python.org/dev/peps/pep-0008/
 
-- supplementary materials:
+- Supplementary materials:
   - http://askpython.com/
   - https://snakify.org/
   - https://www.datacamp.com/courses/intro-to-python-for-data-science
