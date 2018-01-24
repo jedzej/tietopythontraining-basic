@@ -1,25 +1,63 @@
-## Tieto Python training
+## Tieto Basic Python Training
 
----
-### Prerequisites
+### Introduction
 
-#### git
-1. [git download](https://git-scm.com/downloads)
-2. Learn how to use it (see reference materials below)
+Welcome to the training repository! We will publish course materials
+and track all the progress here. We are only tutoring people from Tieto,
+but the materials are free to use.
 
-#### python interpreter
-1. [Python 3.6.4](https://www.python.org/downloads/release/python-364/) - recommended version
+We will introduce you to the process of using source control in [lesson zero](https://github.com/jedzej/tietopythontraining-basic/blob/master/SCOPE.md#lesson-0---the-setup).
+Please follow the instructions carefully, to make our work easier.
 
-#### other tools
-1. [PyCharm Community Edition IDE](https://www.jetbrains.com/pycharm/download/) - not obligatory, but strongly recommended
-2. [GitHub Desktop](https://desktop.github.com/) - just proposed
+For any questions or remarks, or any communication related to the
+course use Slack at [tieto-comp-dev](https://tieto-comp-dev.slack.com/messages/).
 
----
+### Rules of Engagement
 
-### Workflow
-1. Fork this repository
-2. Create your directory in  /students/(surname).(name)
-3. ...
+1. For enrollment contact Marina (using Slack, of course),
+1. We assume you want to learn. If you cheat, you cheat yourself,
+1. The schedule:
+    1. The course starts on February 13th 2018,
+    1. Each week we will provide a final version of one lesson and
+       a set of exercises. All future lessons are there, but are
+       subject to change,
+    1. You have two weeks since then to create a pull request with all
+       the solutions,
+    1. ...but it doesn't there, we expect most of the learning to
+       happen during review process,
+1. We highly recommend solving the exercise just after the lesson,
+1. Don't hesitate to ask questions and don't take the reviews
+   personally.
+
+We hope you will have a lot of fun learning!
+
+### The Scope
+0. [Lesson 0 - The Setup](./course/lesson_00_the_setup/) -- deadline 2018-02-27
+1. Lesson 1 - Python basics
+1. Lesson 2 - Flow control
+1. Lesson 3 - Functions
+1. Lesson 4 - Unit testing
+1. Lesson 5 - Lists
+1. Lesson 6 - Dictionaries, tuples and sets
+1. Lesson 7 - \*args and \*\*kwargs
+1. Lesson 8 - Manipulating strings
+1. Lesson 9 - Regular expressions
+1. Lesson 10 - Reading and writing files
+1. Lesson 11 - Organizing Files
+1. Lesson 12 - argparse
+1. Lesson 13 - Debugging
+1. Lesson 14 - Keeping Time, Scheduling Tasks, and Launching Programs
+1. Lesson 15 - Objects and classes
+
+#### Not in scope
+1. virtualenv
+1. network / web frameworks
+1. metaclasses
+
+
+# TODO: These topics are not covered in the lessons above
+1. List/dict/generator comprehensions
+11. decorators
 
 ---
 ### Reference materials
