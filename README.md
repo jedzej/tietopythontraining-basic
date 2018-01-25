@@ -23,8 +23,8 @@ course use Slack at [tieto-comp-dev](https://tieto-comp-dev.slack.com/messages/)
        subject to change,
     1. You have two weeks since then to create a pull request with all
        the solutions,
-    1. ...but it doesn't there, we expect most of the learning to
-       happen during review process,
+    1. ...but it doesn't end there, we expect most of the learning to
+       happen during review process.
 1. We highly recommend solving the exercise just after the lesson,
 1. Don't hesitate to ask questions and don't take the reviews
    personally.
@@ -32,32 +32,28 @@ course use Slack at [tieto-comp-dev](https://tieto-comp-dev.slack.com/messages/)
 We hope you will have a lot of fun learning!
 
 ### The Scope
-0. [Lesson 0 - The Setup](./course/lesson_00_the_setup/) -- deadline 2018-02-27
-1. Lesson 1 - Python basics
-1. Lesson 2 - Flow control
-1. Lesson 3 - Functions
-1. Lesson 4 - Unit testing
-1. Lesson 5 - Lists
-1. Lesson 6 - Dictionaries, tuples and sets
-1. Lesson 7 - \*args and \*\*kwargs
-1. Lesson 8 - Manipulating strings
-1. Lesson 9 - Regular expressions
-1. Lesson 10 - Reading and writing files
-1. Lesson 11 - Organizing Files
-1. Lesson 12 - argparse
-1. Lesson 13 - Debugging
-1. Lesson 14 - Keeping Time, Scheduling Tasks, and Launching Programs
-1. Lesson 15 - Objects and classes
+* [Lesson 0 - The Setup](./course/lesson_00_the_setup/) -- deadline 2018-02-27
+* Lesson 1 - Python basics -- deadline 2018-03-06 
+* Lesson 2 - Flow control
+* Lesson 3 - Functions + \*args and \*\*kwargs
+* Lesson 4 - Unit testing
+* Lesson 5 - Lists
+* Lesson 6 - Dictionaries, tuples and sets
+* Lesson 7 - Manipulating strings + list comprehensions
+* Lesson 8 - Regular expressions
+* Lesson 9 - Reading and writing files
+* Lesson 10 - Organizing Files
+* Lesson 11 - argparse  + math + requests
+* Lesson 12 - Debugging
+* Lesson 13 - Decorators + generators
+* Lesson 14 - Objects and classes -- deadline 2018-06-05
+
 
 #### Not in scope
 1. virtualenv
 1. network / web frameworks
 1. metaclasses
 
-
-# TODO: These topics are not covered in the lessons above
-1. List/dict/generator comprehensions
-11. decorators
 
 ---
 ### Reference materials

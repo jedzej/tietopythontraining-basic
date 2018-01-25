@@ -1,5 +1,8 @@
-### Lesson 7 - \*args and \*\*kwargs
-- [Think Python: How to Think Like a Computer Scientist / 12.4  Variable-length argument tuples](http://greenteapress.com/thinkpython2/html/thinkpython2013.html#sec144)
-- [Think Python: How to Think Like a Computer Scientist / 19.9  Gathering keyword args](http://greenteapress.com/thinkpython2/html/thinkpython2020.html#sec231)
-### practice projects
-1. As an exercise, write a function called sumall that takes any number of arguments and returns their sum.
+### Lesson 7 - Manipulating strings + list comprehensions
+#### introduction
+- [Automate the Boring Stuff with Python / Chapter 6](https://automatetheboringstuff.com/chapter6/)
+- [PyFormat](https://pyformat.info/)
+- [Snakify / Lesson 5](https://snakify.org/lessons/strings_str/)
+#### practice projects
+1. [Automate the Boring Stuff with Python / Chapter 6 / Table Printer](https://automatetheboringstuff.com/chapter6/)
+2. [Snakify / Lesson 5 / Problems](https://snakify.org/lessons/strings_str/problems/)

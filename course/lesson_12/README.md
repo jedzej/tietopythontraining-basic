@@ -1,8 +1,5 @@
-### Lesson 12 - argparse
+### Lesson 12 - Debugging
 #### introduction
-- [What is argparse?](http://www.bogotobogo.com/python/python_argparse.php)
-- [argparse — Command-Line Option and Argument Parsing](https://pymotw.com/3/argparse/)
+- [Automate the Boring Stuff with Python / Chapter 10](https://automatetheboringstuff.com/chapter10/)
 #### practice projects
-1. Modify project 1 from lesson 11 to use argparse for parsing input
-2. Modify project 2 from lesson 11 to use argparse for parsing input
-3. Modify project 3 from lesson 11 to use argparse for parsing input
+1. [Automate the Boring Stuff with Python / Chapter 10 / Debugging Coin Toss](https://automatetheboringstuff.com/chapter10/)

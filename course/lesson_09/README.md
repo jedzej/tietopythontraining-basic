@@ -1,6 +1,7 @@
-### Lesson 9 - Regular expressions
+### Lesson 9 - Reading and writing files
 #### introduction
-- [Automate the Boring Stuff with Python / Chapter 7](https://automatetheboringstuff.com/chapter7/)
+- [Automate the Boring Stuff with Python / Chapter 8](https://automatetheboringstuff.com/chapter8/)
 #### practice projects
-1. [Automate the Boring Stuff with Python / Chapter 7 / Strong Password Detection](https://automatetheboringstuff.com/chapter7/)
-2. [Automate the Boring Stuff with Python / Chapter 7 / Regex Version of strip](https://automatetheboringstuff.com/chapter7/)
+1. [Automate the Boring Stuff with Python / Chapter 8 / Extending the Multiclipboard](https://automatetheboringstuff.com/chapter8/)
+2. [Automate the Boring Stuff with Python / Chapter 8 / Mad Libs](https://automatetheboringstuff.com/chapter8/)
+2. [Automate the Boring Stuff with Python / Chapter 8 / Regex Search](https://automatetheboringstuff.com/chapter8/)
