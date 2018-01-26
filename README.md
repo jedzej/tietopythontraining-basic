@@ -23,11 +23,11 @@ course use Slack at [tieto-comp-dev](https://tieto-comp-dev.slack.com/messages/)
        subject to change,
     1. You have two weeks since then to create a pull request with all
        the solutions,
-    1. ...but it doesn't there, we expect most of the learning to
+    1. ...but it doesn't end there, we expect most of the learning to
        happen during review process,
 1. We highly recommend solving the exercise just after the lesson,
-1. Don't hesitate to ask questions and don't take the reviews
-   personally.
+1. Don't hesitate to talk to us at Slack, ask questions, let us know,
+   if something is unclear and don't take the reviews personally ;)
 
 We hope you will have a lot of fun learning!
 
@@ -49,15 +49,17 @@ We hope you will have a lot of fun learning!
 1. Lesson 14 - Keeping Time, Scheduling Tasks, and Launching Programs
 1. Lesson 15 - Objects and classes
 
+# TODO: Agreed upon, but not covered
+1. List/dict comprehensions
+1. decorators (usage)
+
 #### Not in scope
 1. virtualenv
 1. network / web frameworks
 1. metaclasses
+1. generators
+1. decorators (development)
 
-
-# TODO: These topics are not covered in the lessons above
-1. List/dict/generator comprehensions
-11. decorators
 
 ---
 ### Reference materials
