@@ -1,4 +1,4 @@
-### Lesson 3 - Functions  + \*args and \*\*kwargs
+### Lesson 3 - Functions
 ### functions
 - [Automate the Boring Stuff with Python / Chapter 3](https://automatetheboringstuff.com/chapter3/)
 - [Snakify / Lesson 8 / Problems](https://snakify.org/lessons/functions/) (skip list-related )

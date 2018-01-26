@@ -1,4 +1,4 @@
-### Lesson 7 - Manipulating strings + list comprehensions
+### Lesson 7 - Manipulating strings + datetime formatting 
 #### introduction
 - [Automate the Boring Stuff with Python / Chapter 6](https://automatetheboringstuff.com/chapter6/)
 - [PyFormat](https://pyformat.info/)

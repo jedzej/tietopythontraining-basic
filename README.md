@@ -35,17 +35,17 @@ We hope you will have a lot of fun learning!
 * [Lesson 0 - The Setup](./course/lesson_00_the_setup/) -- deadline 2018-02-27
 * Lesson 1 - Python basics -- deadline 2018-03-06 
 * Lesson 2 - Flow control
-* Lesson 3 - Functions + \*args and \*\*kwargs
+* Lesson 3 - Functions 
 * Lesson 4 - Unit testing
-* Lesson 5 - Lists
-* Lesson 6 - Dictionaries, tuples and sets
-* Lesson 7 - Manipulating strings + list comprehensions
+* Lesson 5 - Lists + list comprehensions
+* Lesson 6 - Dictionaries, tuples and sets + \*args and \*\*kwargs
+* Lesson 7 - Manipulating strings + datetime formatting 
 * Lesson 8 - Regular expressions
 * Lesson 9 - Reading and writing files
 * Lesson 10 - Organizing Files
 * Lesson 11 - argparse  + math + requests
 * Lesson 12 - Debugging
-* Lesson 13 - Decorators + generators
+* Lesson 13 - Decorators (basic) + ?generators?
 * Lesson 14 - Objects and classes -- deadline 2018-06-05
 
 

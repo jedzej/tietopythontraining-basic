@@ -1,4 +1,4 @@
-### Lesson 6 - Dictionaries, tuples and sets
+### Lesson 6 - Dictionaries, tuples and sets + \*args and \*\*kwargs
 #### introduction
 - [Automate the Boring Stuff with Python / Chapter 5](https://automatetheboringstuff.com/chapter5/)
 - [Snakify / Lesson 10](https://snakify.org/lessons/sets/)

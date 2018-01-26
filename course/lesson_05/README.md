@@ -1,4 +1,4 @@
-### Lesson 5 - Lists
+### Lesson 5 - Lists + list comprehensions
 #### introduction
 - [Automate the Boring Stuff with Python / Chapter 4](https://automatetheboringstuff.com/chapter4/)
 - [Snakify / Lesson 7](https://snakify.org/lessons/lists/)
