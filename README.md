@@ -45,8 +45,8 @@ We hope you will have a lot of fun learning!
 * Lesson 10 - Organizing Files
 * Lesson 11 - argparse  + math + requests
 * Lesson 12 - Debugging
-* Lesson 13 - Decorators (basic) + ?generators?
-* Lesson 14 - Objects and classes -- deadline 2018-06-05
+* Lesson 13 - Objects and classes
+* Lesson 14 - Decorators + more OOP -- deadline 2018-06-05
 
 
 #### Not in scope
