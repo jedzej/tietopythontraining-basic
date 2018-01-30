@@ -1,7 +1,7 @@
-### Lesson 10 - Reading and writing files
+### Lesson 10 - Organizing Files
 #### introduction
-- [Automate the Boring Stuff with Python / Chapter 8](https://automatetheboringstuff.com/chapter8/)
+- [Automate the Boring Stuff with Python / Chapter 9](https://automatetheboringstuff.com/chapter9/)
 #### practice projects
-1. [Automate the Boring Stuff with Python / Chapter 8 / Extending the Multiclipboard](https://automatetheboringstuff.com/chapter8/)
-2. [Automate the Boring Stuff with Python / Chapter 8 / Mad Libs](https://automatetheboringstuff.com/chapter8/)
-2. [Automate the Boring Stuff with Python / Chapter 8 / Regex Search](https://automatetheboringstuff.com/chapter8/)
+1. [Automate the Boring Stuff with Python / Chapter 9 / Selective Copy](https://automatetheboringstuff.com/chapter9/)
+2. [Automate the Boring Stuff with Python / Chapter 9 / Deleting Unneeded Files](https://automatetheboringstuff.com/chapter9/)
+2. [Automate the Boring Stuff with Python / Chapter 9 / Filling in the Gaps](https://automatetheboringstuff.com/chapter9/)
