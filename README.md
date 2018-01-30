@@ -27,7 +27,7 @@ course use Slack at [tieto-comp-dev](https://tieto-comp-dev.slack.com/messages/)
 1. We highly recommend solving the exercise just after reading the lesson.
 1. Don't hesitate to ask questions and don't take the reviews
    personally.
-1. We assume you want to learn. If you cheat, you cheat yourself.
+1. We assume you want to learn. The more you code yourself, the more you will understand.
 
 We hope you will have a lot of fun learning!
 
@@ -49,10 +49,10 @@ We hope you will have a lot of fun learning!
 * Lesson 14 - Decorators + more OOP -- deadline 2018-06-05
 
 
-#### Not in scope
-1. virtualenv
-1. network / web frameworks
-1. metaclasses
+#### Not in scope / proposals for next levels
+1. virtualenv,
+1. network / web frameworks,
+1. generators.
 
 
 ---
