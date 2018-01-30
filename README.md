@@ -52,7 +52,11 @@ We hope you will have a lot of fun learning!
 #### Not in scope / proposals for next levels
 1. virtualenv,
 1. network / web frameworks,
-1. generators.
+1. generators,
+1. requests,
+1. multithreading and multiprocessing,
+1. subprocesses
+1. itertools, map, filter, reduce
 
 
 ---
