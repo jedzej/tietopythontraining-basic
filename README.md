@@ -43,7 +43,7 @@ We hope you will have a lot of fun learning!
 * Lesson 8 - Regular expressions
 * Lesson 9 - Reading and writing files
 * Lesson 10 - Organizing Files
-* Lesson 11 - argparse  + math + requests
+* Lesson 11 - argparse  + math
 * Lesson 12 - Debugging
 * Lesson 13 - Objects and classes
 * Lesson 14 - Decorators + more OOP -- deadline 2018-06-05

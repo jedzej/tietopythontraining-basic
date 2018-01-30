@@ -1,4 +1,4 @@
-### Lesson 11 - argparse  + math + requests
+### Lesson 11 - argparse  + math
 #### introduction
 - [What is argparse?](http://www.bogotobogo.com/python/python_argparse.php)
 - [argparse — Command-Line Option and Argument Parsing](https://pymotw.com/3/argparse/)
