@@ -14,20 +14,19 @@ course use Slack at [tieto-comp-dev](https://tieto-comp-dev.slack.com/messages/)
 
 ### Rules of Engagement
 
-1. For enrollment contact Marina (using Slack, of course),
-1. We assume you want to learn. If you cheat, you cheat yourself,
+1. For enrollment contact Marina or Magda (using Slack, of course).
 1. The schedule:
-    1. The course starts on February 13th 2018,
+    1. The course starts on February 13th 2018.
     1. Each week we will provide a final version of one lesson and
-       a set of exercises. All future lessons are there, but are
-       subject to change,
+       a set of exercises. All future lessons are already available, but may change yet.
     1. You have two weeks since then to create a pull request with all
-       the solutions,
+       the solutions.
     1. ...but it doesn't end there, we expect most of the learning to
        happen during review process.
-1. We highly recommend solving the exercise just after the lesson,
+1. We highly recommend solving the exercise just after reading the lesson.
 1. Don't hesitate to ask questions and don't take the reviews
    personally.
+1. We assume you want to learn. If you cheat, you cheat yourself.
 
 We hope you will have a lot of fun learning!
 
