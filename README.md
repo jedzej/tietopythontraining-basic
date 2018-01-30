@@ -18,7 +18,8 @@ course use Slack at [tieto-comp-dev](https://tieto-comp-dev.slack.com/messages/)
 1. The schedule:
     1. The course starts on February 13th 2018.
     1. Each week we will provide a final version of one lesson and
-       a set of exercises. All future lessons are already available, but may change yet.
+       a set of exercises. 
+    1. All future lessons are already available, but may change yet.
     1. You have two weeks since then to create a pull request with all
        the solutions.
     1. ...but it doesn't end there, we expect most of the learning to
