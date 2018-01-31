@@ -12,7 +12,7 @@
 1. [Snakify / Lesson 8 / Problems](https://snakify.org/lessons/functions/problems/) ("Uppercase" and "Reverse the sequence" only)
 1. [Snakify / Lesson 10 / Problems](https://snakify.org/lessons/sets/problems/) (all 8)
 1. [Snakify / Lesson 11 / Problems](https://snakify.org/lessons/dictionaries_dicts/problems/) (all 8)
-1. Write a function called sum_all that takes any number of arguments and returns their sum.
-1. Write a function called inspect_args that prints passed args and kwargs in human-readable format.
-1. Write a function called logger_wrapper that wraps call to any function in order to log passed args.
+1. Args sum - write a function called sum_all that takes any number of arguments and returns their sum.
+1. Args inspector - write a function called inspect_args that prints passed args and kwargs in human-readable format.
+1. Logger wrapper - write a function called logger_wrapper that wraps call to any function in order to log passed args.
 The function must take *foo, \*args and \*\*kwargs*, prints \*args and \*\*kwargs in human readable format and finally call *foo* with args and kwargs
