@@ -3,9 +3,11 @@
 - Install [Python 3.6](https://www.python.org/downloads/release/python-364/),
 - Install [PyCharm Community Edition IDE](https://www.jetbrains.com/pycharm/download/) - strongly recommended,
 - `pip install ipython pytest ipdb`,
-<!--  How does pip work on Windows? -->
-- Install [git download](https://git-scm.com/downloads),
-- Introductory YouTube video for git,
+- Install [git vesion control](https://git-scm.com/downloads),
+- Get to know git:
+    - [What? Why do I need version control?](https://git-scm.com/videos) -- optional introductory motivation video
+    - [How do I use version control?](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
+    - [How do I make a pull request on GitHub?](https://www.youtube.com/watch?v=FQsBmnZvBdc)
 
 #### Practice
 1. Install Python and PyCharm.
@@ -25,3 +27,9 @@
 1. Push the branch to your fork `git push origin first_name.last_name/lesson_00_the_setup`
 1. Go to the original repository and create a pull request from your branch in the fork to the original.
 1. Remember to check out master branch before you proceed to the next lesson.
+
+##### Expected problems
+1. Problems with command line? Quick intro needed?
+1. Will git on Windows open vim for editing?
+1. Is there a usable shell on Windows?
+1. PyCharm is intimidating? Try VS Code.
