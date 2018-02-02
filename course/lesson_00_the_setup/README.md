@@ -29,6 +29,9 @@
 1. Remember to check out master branch before you proceed to the next lesson.
 
 ##### Expected problems
+If you encounter problems with some pre-requisites, we didn't talk
+about, don't hesitate to ask. We will try to direct you (at least give
+you some Google search keywords). Some example issues:
 1. Problems with command line? Quick intro needed?
 1. Will git on Windows open vim for editing?
 1. Is there a usable shell on Windows?
