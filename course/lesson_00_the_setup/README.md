@@ -1,11 +1,11 @@
 ### Lesson 0 - The Setup
 #### introduction
-- Install [Python 3.6](https://www.python.org/downloads/release/python-364/),
-- Install [PyCharm Community Edition IDE](https://www.jetbrains.com/pycharm/download/) - strongly recommended,
+- Install [Python 3.6](https://www.python.org/downloads/release/python-364/)
+- Install [PyCharm Community Edition IDE](https://www.jetbrains.com/pycharm/download/) - strongly recommended
 - `pip install ipython pytest ipdb`,
 <!--  How does pip work on Windows? -->
-- Install [git download](https://git-scm.com/downloads),
-- Introductory YouTube video for git,
+- Install [git download](https://git-scm.com/downloads)
+- Introductory YouTube video for git [1](https://www.youtube.com/watch?v=SWYqp7iY_Tc) [2](https://www.youtube.com/watch?v=FQsBmnZvBdc)
 
 #### Practice
 1. Install Python and PyCharm.
