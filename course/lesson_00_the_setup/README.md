@@ -8,7 +8,7 @@
 
 #### Practice
 1. Install Python and PyCharm.
-1. Fork the repository.
+1. Fork the repository (check out [Forking Projects](https://guides.github.com/activities/forking/)
 1. Git clone your fork (use the address from GitHub).
 1. Create your branch `git branch first_name.last_name/lesson_00_the_setup`.
 1. Check the branch out `git checkout first_name.last_name/lesson_00_the_setup`.
