@@ -2,10 +2,9 @@
 #### introduction
 - Install [Python 3.6](https://www.python.org/downloads/release/python-364/)
 - Install [PyCharm Community Edition IDE](https://www.jetbrains.com/pycharm/download/) - strongly recommended
-- `pip install ipython pytest ipdb`,
-<!--  How does pip work on Windows? -->
 - Install [git download](https://git-scm.com/downloads)
 - Introductory YouTube video for git [1](https://www.youtube.com/watch?v=SWYqp7iY_Tc) [2](https://www.youtube.com/watch?v=FQsBmnZvBdc)
+- Install some cool python packages: run command in cmd/terminal `pip install ipython pytest ipdb`
 
 #### Practice
 1. Install Python and PyCharm.
