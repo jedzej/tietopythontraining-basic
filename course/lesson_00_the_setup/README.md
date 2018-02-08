@@ -1,10 +1,15 @@
 ### Lesson 0 - The Setup
 #### introduction
-- Install [Python 3.6](https://www.python.org/downloads/release/python-364/)
-- Install [PyCharm Community Edition IDE](https://www.jetbrains.com/pycharm/download/) - strongly recommended
-- Install [git download](https://git-scm.com/downloads)
-- Introductory YouTube video for git [1](https://www.youtube.com/watch?v=SWYqp7iY_Tc) [2](https://www.youtube.com/watch?v=FQsBmnZvBdc)
+
+- Install [Python 3.6](https://www.python.org/downloads/release/python-364/),
+- Install [PyCharm Community Edition IDE](https://www.jetbrains.com/pycharm/download/) - strongly recommended,
+- Install [git vesion control](https://git-scm.com/downloads),
+- Get to know git:
+    - [What? Why do I need version control?](https://git-scm.com/videos) -- optional introductory motivation video
+    - [How do I use version control?](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
+    - [How do I make a pull request on GitHub?](https://www.youtube.com/watch?v=FQsBmnZvBdc)
 - Install some cool python packages: run command in cmd/terminal `pip install ipython pytest ipdb`
+
 
 #### Practice
 1. Install Python and PyCharm.
@@ -28,3 +33,12 @@
 
 To keep sync with master repo:
 https://gist.github.com/CristinaSolana/1885435
+
+##### Expected problems
+If you encounter problems with some pre-requisites, we didn't talk
+about, don't hesitate to ask. We will try to direct you (at least give
+you some Google search keywords). Some example issues:
+1. Problems with command line? Quick intro needed?
+1. Will git on Windows open vim for editing?
+1. Is there a usable shell on Windows?
+1. PyCharm is intimidating? Try VS Code.
