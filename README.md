@@ -6,7 +6,7 @@ Welcome to the training repository! We will publish course materials
 and track all the progress here. We are only tutoring people from Tieto,
 but the materials are free to use.
 
-We will introduce you to the process of using source control in [lesson zero](https://github.com/jedzej/tietopythontraining-basic/blob/master/SCOPE.md#lesson-0---the-setup).
+We will introduce you to the process of using source control in [lesson zero](https://github.com/jedzej/tietopythontraining-basic/tree/master/course/lesson_00_the_setup).
 Please follow the instructions carefully, to make our work easier.
 
 For any questions or remarks, or any communication related to the
