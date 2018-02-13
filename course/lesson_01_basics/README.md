@@ -6,4 +6,4 @@
 - [Snakify / Lesson 2](https://snakify.org/lessons/integer_float_numbers/)
 #### practice projects
 1. [Snakify / Lesson 1 / Problems](https://snakify.org/lessons/print_input_numbers/problems/) (all 6)
-1. [Snakify / Lesson 2 / Problems](https://snakify.org/lessons/integer_float_numbers/problems/) (all 10)
+1. [Snakify / Lesson 2 / Problems](https://snakify.org/lessons/integer_float_numbers/problems/) (first 9, skip "Clock face - 2")
