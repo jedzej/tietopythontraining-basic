@@ -29,10 +29,8 @@
 1. Push the branch to your fork `git push origin first_name.last_name/lesson_00_the_setup`
 1. Go to the original repository and create a pull request from your branch in the fork to master branch in base(original repo).
 1. Add proper reviewer or add @mention when PR is ready to review
-1. Remember to check out master branch before you proceed to the next lesson.
+1. Remember to check out master branch before you proceed to the next lesson. (check out [Git reference materials for details](https://github.com/jedzej/tietopythontraining-basic#reference-materials))
 
-To keep sync with master repo:
-https://gist.github.com/CristinaSolana/1885435
 
 ##### Expected problems
 If you encounter problems with some pre-requisites, we didn't talk
