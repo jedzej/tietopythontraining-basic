@@ -6,4 +6,5 @@
 ### practice projects
 1. [Automate the Boring Stuff with Python / Chapter 3 / The Collatz Sequence](https://automatetheboringstuff.com/chapter3/)
 1. [Automate the Boring Stuff with Python / Chapter 3 / Input Validation](https://automatetheboringstuff.com/chapter3/)
+1. [Snakify / Lesson 6 / Problems](https://snakify.org/lessons/while_loop/problems/) (last 5 problems to solve, try to organize your code using functions)
 1. [Snakify / Lesson 8 / Problems](https://snakify.org/lessons/functions/problems/) (4 problems to solve, skip "Uppercase" and "Reverse the sequence")
