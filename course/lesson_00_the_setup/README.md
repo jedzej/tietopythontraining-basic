@@ -13,13 +13,13 @@
 
 #### Practice
 1. Install Python and PyCharm.
-1. Fork the repository (check out [Forking Projects](https://guides.github.com/activities/forking/)
+1. Fork the repository (check out [Forking Projects](https://guides.github.com/activities/forking/))
 1. Git clone your fork (use the address from GitHub), cd into `tietopythontraining-basic`.
 1. Create your branch `git branch first_name.last_name/lesson_00_the_setup`.
 1. Check the branch out `git checkout first_name.last_name/lesson_00_the_setup`.
 1. (A shorter version for the above is `git checkout -b ...`.
-1. Create your directory in  /students/(surname)_(name),
-1. Copy `lesson_00_the_setup` to your directory,
+1. Create your directory in  `/students/(surname)_(name)`,
+1. Copy `course/lesson_00_the_setup` to your directory,
 1. Make example commits,
     1. Add the file to git staging area: `git add hello_world.py`.
     1. `git commit` and enter a reasonable commit message.
