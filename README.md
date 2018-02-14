@@ -67,6 +67,9 @@ We hope you will have a lot of fun learning!
 
 - GIT training materials
   - https://help.github.com/articles/about-pull-request-reviews/
+  - [How to setup upstream repository for your fork?](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
+  - [How to sync fork with upstream repository?](https://help.github.com/articles/syncing-a-fork/)
+  - [Syncing cheat sheet](https://gist.github.com/CristinaSolana/1885435)
 
 - Python training materials
   - https://automatetheboringstuff.com/
