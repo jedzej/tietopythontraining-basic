@@ -25,7 +25,7 @@ course use Slack at [tieto-comp-dev](https://tieto-comp-dev.slack.com/messages/)
     1. We expect most of the learning to happen during review process.
     1. The exercises were estimated to take about 4 hours per week (give us feedback).
     1. Aim for constant effort each week, solve all the exercises.
-    1. Don't worry, if you can't, give it a try and make a pull request.
+    1. If you can't solve all the exercises, don't give up and deliver partial solution.
     1. Don't hesitate to ask questions. Don't take the reviews personally.
     1. We assume you want to learn. The more you code unaided, the more you will understand.
 1. The baseline:
