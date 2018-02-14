@@ -20,14 +20,17 @@ course use Slack at [tieto-comp-dev](https://tieto-comp-dev.slack.com/messages/)
     1. Each week we will provide a final version of one lesson and
        a set of exercises. 
     1. All future lessons are already available, but may change yet.
-    1. You have two weeks since then to create a pull request with all
-       the solutions.
-    1. ...but it doesn't end there, we expect most of the learning to
-       happen during review process.
-1. We highly recommend solving the exercise just after reading the lesson.
-1. Don't hesitate to ask questions and don't take the reviews
-   personally.
-1. We assume you want to learn. The more you code yourself, the more you will understand.
+    1. You have two weeks since then to create a pull request with solutions.
+1. The expectations:
+    1. We expect most of the learning to happen during review process.
+    1. The exercises were estimated to take about 4 hours per week (give us feedback).
+    1. Aim for constant effort each week, solve all the exercises.
+    1. If you can't solve all the exercises, don't give up and deliver partial solution.
+    1. Don't hesitate to ask questions. Don't take the reviews personally.
+    1. We assume you want to learn. The more you code unaided, the more you will understand.
+1. The baseline:
+    1. We will track your progress.
+    1. We reserve the right to stop reviewing your code, if you don't deliver.   
 
 We hope you will have a lot of fun learning!
 
