@@ -26,7 +26,7 @@
     1. Copy content of `importable_module.py` to `hello_world.py`.
     1. Add `hello_world.py` to the staging area again.
     1. Commit with a pretty commit message.
-1. Push the branch to your fork `git push origin (last_name)_(first_name)/lesson_00_the_setup`
+1. Push the branch to your fork `git push origin (reviewer_login)/lesson_00_the_setup`
 1. Go to the original repository and create a pull request from your branch in the fork to master branch in base(original repo).
 1. Notify your reviewer using @mention when PR is ready to review ([check this out](https://github.com/blog/821-mention-somebody-they-re-notified))
 1. Remember to check out master branch before you proceed to the next lesson. (check out [Git reference materials for details](https://github.com/jedzej/tietopythontraining-basic#reference-materials))
