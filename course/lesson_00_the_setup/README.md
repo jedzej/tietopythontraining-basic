@@ -15,8 +15,8 @@
 1. Install Python and PyCharm.
 1. Fork the repository (check out [Forking Projects](https://guides.github.com/activities/forking/))
 1. Git clone your fork (use the address from GitHub), cd into `tietopythontraining-basic`.
-1. Create your branch `git branch (last_name)_(first_name)/lesson_00_the_setup`.
-1. Check the branch out `git checkout (last_name)_(first_name)/lesson_00_the_setup`.
+1. Create your branch `git branch (reviewer_login)/lesson_00_the_setup`.
+1. Check the branch out `git checkout (reviewer_login)/lesson_00_the_setup`.
 1. (A shorter version for the above is `git checkout -b ...`.
 1. Create your directory in  /students/(last_name)_(first_name),
 1. Copy `lesson_00_the_setup` to your directory,
