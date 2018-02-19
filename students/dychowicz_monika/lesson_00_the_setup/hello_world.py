@@ -7,6 +7,8 @@ As soon as you want to import and use your code from other modules, you want
 to make sure it runs only when asked to. To do that we check magic variable
 __name__, set by the interpreter. If the script has been called directly,
 the variable holds '__main__' string.
+
+Git test.
 """
 
 
