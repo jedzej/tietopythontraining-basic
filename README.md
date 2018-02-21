@@ -36,7 +36,7 @@ We hope you will have a lot of fun learning!
 
 ### The Scope
 * [Lesson 0 - The Setup](./course/lesson_00_the_setup/) -- deadline 2018-02-27
-* Lesson 1 - Python basics -- deadline 2018-03-06 
+* [Lesson 1 - Python basics](./course/lesson_01_basics/) -- deadline 2018-03-06 
 * Lesson 2 - Flow control
 * Lesson 3 - Functions 
 * Lesson 4 - Unit testing
