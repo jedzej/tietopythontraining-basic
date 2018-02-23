@@ -1,4 +1,3 @@
-a = float(input())
-b = str(a - int(a))
+number = float(input())
 
-print(b[2])
+print(int(number * 10) % 10)
