@@ -1,4 +1,3 @@
-b = int(input())
-h = int(input())
+base, height = float(input()), float(input())
 
-print(0.5 * b * h)
+print(0.5 * base * height)

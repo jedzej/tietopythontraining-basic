@@ -1,5 +1,3 @@
-a = int(input())
-b = int(input())
-c = int(input())
+number1, number2, number3 = int(input()), int(input()), int(input())
 
-print(a + b + c)
+print(number1 + number2 + number3)

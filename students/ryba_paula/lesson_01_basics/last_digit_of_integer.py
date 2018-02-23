@@ -1,4 +1,3 @@
-a = input()
+number = int(input())
 
-#print(a[-1])
-print(str(int(a) % 10))
+print(number % 10)

@@ -1,6 +1,5 @@
 from math import ceil
 
-n = int(input())
-m = int(input())
+km_per_day, route = int(input()), int(input())
 
-print(ceil(m / n))
+print(ceil(route / km_per_day))

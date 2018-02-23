@@ -1,3 +1,3 @@
-n = int(input())
+minutes_since_midnight = int(input())
 
-print(n // 60, n % 60)
+print(minutes_since_midnight // 60, minutes_since_midnight % 60)

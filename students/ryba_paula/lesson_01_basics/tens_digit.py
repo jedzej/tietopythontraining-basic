@@ -1,3 +1,3 @@
-a = int(input())
+number = int(input())
 
-print((a // 10) % 10)
+print((number // 10) % 10)

@@ -1,3 +1,3 @@
-a = float(input())
+number = float(input())
 
-print(a - int(a))
+print(number - int(number))
