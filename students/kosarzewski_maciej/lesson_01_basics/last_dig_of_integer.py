@@ -1,4 +1,4 @@
 # Read an integer:
 a = int(input())
 # Print a value:
-print(str(a)[-1])
+print(a % 10)
