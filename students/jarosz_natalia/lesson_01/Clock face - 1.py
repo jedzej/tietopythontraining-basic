@@ -1,6 +1,5 @@
-
-H = int(input())
-M = int(input())
-S = int(input())
-w = H * (360/12) + M * (360 / (60 *12)) + S * (360 / (3600 * 12))
+h = int(input())
+m = int(input())
+s = int(input())
+w = h * (360 / 12) + m * (360 / (60 * 12)) + s * (360 / (3600 * 12))
 print(w)

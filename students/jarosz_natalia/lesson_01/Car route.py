@@ -1,7 +1,6 @@
-
 import math
-N = int(input())
-M = int(input())
-w1 = M // N
-w2 = (M - N*w1)/M
+n = int(input())
+m = int(input())
+w1 = m // n
+w2 = (m - n * w1) / m
 print(w1 + math.ceil(w2))
