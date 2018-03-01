@@ -1,4 +1,4 @@
-floatNumber = float(input("Write a float: "))
-fractionalPart = str(floatNumber).split('.')[1]
-print("0." + fractionalPart)
+float_number = float(input("Write a float: "))
+fractional_part = str(float_number).split('.')[1]
+print("0." + fractional_part)
 

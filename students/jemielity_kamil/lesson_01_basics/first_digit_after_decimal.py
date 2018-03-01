@@ -1,6 +1,4 @@
-floatNumber = float(input("Write a float: "))
-firstDigit = str(floatNumber).split('.')[1][0]
-print(firstDigit)
-
-
+float_number = float(input("Write a float: "))
+first_digit = str(float_number).split('.')[1][0]
+print(first_digit)
 

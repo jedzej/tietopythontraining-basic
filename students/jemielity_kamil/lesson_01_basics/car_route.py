@@ -1,6 +1,6 @@
 import math
-N = int(input("How many kilometers per day: "))
-M = int(input("How many kilometres: "))
+n = int(input("How many kilometers per day: "))
+m = int(input("How many kilometres: "))
 
-days = M / N
+days = m / n
 print(math.ceil(days))

@@ -1,10 +1,10 @@
 
 
-firstNumber = int(input("Write first number: "))
-secondNumber = int(input("Write second number: "))
-thirdNumber = int(input("Write third number: "))
+first_number = int(input("Write first number: "))
+second_number = int(input("Write second number: "))
+third_number = int(input("Write third number: "))
 
-result = firstNumber + secondNumber + thirdNumber
+result = first_number + second_number + third_number
 
 print("Result: " + str(result))
 

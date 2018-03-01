@@ -2,10 +2,9 @@ hours = int(input('Hours: '))
 minutes = int(input('Minutes: '))
 seconds = int(input('Seconds: '))
 
-hourAngle = 360/12
-minuteAngle = (360/12)/60
-secondAngle = ((360/12)/60)/60
+hour_angle = 360/12
+minute_angle = (360/12)/60
+second_angle = ((360/12)/60)/60
 
-angle = hours * hourAngle + minutes * minuteAngle + seconds * secondAngle
+angle = hours * hour_angle + minutes * minute_angle + seconds * second_angle
 print(angle)
-

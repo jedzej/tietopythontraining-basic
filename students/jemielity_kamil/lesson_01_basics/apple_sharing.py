@@ -1,10 +1,10 @@
 import math
 
-N = int(input("Number of students: "))
-K = int(input("Amount of apples: "))
+n = int(input("Number of students: "))
+k = int(input("Amount of apples: "))
 
-amountOfApplesPerStudent = math.floor(K/N)
-otherApples = K - (amountOfApplesPerStudent * N)
+amount_of_apples_per_student = math.floor(k/n)
+other_apples = k - (amount_of_apples_per_student * n)
 
-print("Each student will get: " + str(amountOfApplesPerStudent) + " apples")
-print("Number of apples that remain in the basket: " + str(otherApples))
+print("Each student will get: " + str(amount_of_apples_per_student) + " apples")
+print("Number of apples that remain in the basket: " + str(other_apples))
