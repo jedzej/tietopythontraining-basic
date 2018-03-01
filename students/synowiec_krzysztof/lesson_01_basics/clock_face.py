@@ -1,5 +1,5 @@
 def main():
-    anglePerSecond = (3600 * 12)/360
+    anglePerSecond = (60 * 60 * 12)/360
     hours = int(input())
     minutes = int(input())
     seconds = int(input())

@@ -1,10 +1,10 @@
 
 def main():
-
     a = int(input())
     b = int(input())
-    c = int(input())
-    print(a + b + c)
+    area = a * b / 2
+    print(area)
 
 if __name__ == '__main__':
     main()
+
