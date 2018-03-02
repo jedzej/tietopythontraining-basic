@@ -1,5 +1,6 @@
 
 integer = int(input("Write an integer: "))
 
-print(str(integer)[-2])
+print((integer % 100) // 10)
+
 
