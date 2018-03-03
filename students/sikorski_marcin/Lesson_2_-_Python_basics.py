@@ -1,6 +1,4 @@
-#-------------------
 #Lesson_3
-#-------------------
 #Leap Year
 year = int(input("Enter a year to check: "))
 
@@ -69,10 +67,7 @@ if row == column:
 else:
     print("NO - we can't move bishop there!")
 
-#---------------------------
 #Lesson 4
-#---------------------------
-
 #Lost cards
 numberOfCards = int(input("Enter number of cards: "))
 sumOfNumberOfCards = (((1 + numberOfCards)/2) * (numberOfCards))
@@ -124,10 +119,8 @@ for i in range(1, factorial+1):
     starter *= i
 print(starter)
 
-#-------------------
 #Lesson 6
-#-------------------
-# #The number of elements equal to the maximum
+#The number of elements equal to the maximum
 
 maximum = 0
 howManyMaximumNumbers = 0
