@@ -1,4 +1,4 @@
 # Read an integer:
-a = float(input())
+a = float(input("enter a positive real number: "))
 # Print a value:
-print(a%1)
+print(a % 1)

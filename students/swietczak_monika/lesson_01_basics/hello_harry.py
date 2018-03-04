@@ -1,4 +1,4 @@
 # Read an integer:
-name = input()
+name = input("Enter a name: ")
 # Print a value:
-print("Hello, "+name+"!")
+print("Hello, " + name + "!")
