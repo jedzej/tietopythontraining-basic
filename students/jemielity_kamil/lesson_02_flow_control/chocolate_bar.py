@@ -1,3 +1,4 @@
+
 n = int(input("Length of chocolate: "))
 m = int(input("Width of chocolate "))
 k = int(input("Number of squares: "))
@@ -16,4 +17,3 @@ if chocolate_squares == k:
     print('YES\n')
 else:
     print('NO\n')
-

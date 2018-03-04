@@ -1,3 +1,4 @@
+
 maximum = 0
 second_maximum = 0
 
@@ -9,7 +10,7 @@ while True:
         second_maximum = maximum
         maximum = n
 
-    elif n < maximum and n > second_maximum:
+    elif second_maximum < n < maximum:
         second_maximum = n
 
 print(second_maximum)
