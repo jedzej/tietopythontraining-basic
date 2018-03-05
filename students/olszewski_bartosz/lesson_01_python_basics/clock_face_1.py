@@ -1,0 +1,5 @@
+h = int(input())
+m = int(input())
+s = int(input())
+kat = float(0.5*(60*h+m+s/60))
+print('kat wynosi',round(kat,3))

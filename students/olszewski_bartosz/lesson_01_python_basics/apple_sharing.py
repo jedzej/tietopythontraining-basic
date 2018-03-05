@@ -1,0 +1,6 @@
+print('Podaj liczbę uczniów')
+a = (input())
+print('Podaj liczbę jabłek')
+b = (input())
+print ('Każdy z uczniów otrzymał',int(b)//int(a))
+print ('W koszyku pozostało',int(b)%int(a))
