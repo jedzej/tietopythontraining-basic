@@ -46,12 +46,8 @@ def compute_desks(nr):
 
 
 a = 0
-i = 0
-while True:
+for _ in range(3):
     a += compute_desks(int(input()))
-    i += 1
-    if i == 3:
-        break
 print(str(a) + os.linesep)
 
 # Lesson 2 (Integer and float numbers)3
