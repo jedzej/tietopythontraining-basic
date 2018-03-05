@@ -6,6 +6,6 @@
 - [Snakify / Lesson 4](https://snakify.org/lessons/for_loop_range/)
 - [Snakify / Lesson 6](https://snakify.org/lessons/while_loop/)
 #### practice projects
-1. [Snakify / Lesson 3 / Problems](https://snakify.org/lessons/if_then_else_conditions/problems/) (all 12)
-1. [Snakify / Lesson 4 / Problems](https://snakify.org/lessons/for_loop_range/problems/) (all 10)
-1. [Snakify / Lesson 6 / Problems](https://snakify.org/lessons/while_loop/problems/) (all 16)
+1. [Snakify / Lesson 3 / Problems](https://snakify.org/lessons/if_then_else_conditions/problems/) (last 5 problems)
+1. [Snakify / Lesson 4 / Problems](https://snakify.org/lessons/for_loop_range/problems/) (last 5 problems)
+1. [Snakify / Lesson 6 / Problems](https://snakify.org/lessons/while_loop/problems/) (just "The second maximum", "The number of elements equal to the maximum")

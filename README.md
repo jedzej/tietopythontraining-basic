@@ -6,7 +6,7 @@ Welcome to the training repository! We will publish course materials
 and track all the progress here. We are only tutoring people from Tieto,
 but the materials are free to use.
 
-We will introduce you to the process of using source control in [lesson zero](https://github.com/jedzej/tietopythontraining-basic/blob/master/SCOPE.md#lesson-0---the-setup).
+We will introduce you to the process of using source control in [lesson zero](./course/lesson_00_the_setup/).
 Please follow the instructions carefully, to make our work easier.
 
 For any questions or remarks, or any communication related to the
@@ -20,21 +20,24 @@ course use Slack at [tieto-comp-dev](https://tieto-comp-dev.slack.com/messages/)
     1. Each week we will provide a final version of one lesson and
        a set of exercises. 
     1. All future lessons are already available, but may change yet.
-    1. You have two weeks since then to create a pull request with all
-       the solutions.
-    1. ...but it doesn't end there, we expect most of the learning to
-       happen during review process.
-1. We highly recommend solving the exercise just after reading the lesson.
-1. Don't hesitate to ask questions and don't take the reviews
-   personally.
-1. We assume you want to learn. The more you code yourself, the more you will understand.
+    1. You have two weeks since then to create a pull request with solutions.
+1. The expectations:
+    1. We expect most of the learning to happen during review process.
+    1. The exercises were estimated to take about 4 hours per week (give us feedback).
+    1. Aim for constant effort each week, solve all the exercises.
+    1. If you can't solve all the exercises, don't give up and deliver partial solution.
+    1. Don't hesitate to ask questions. Don't take the reviews personally.
+    1. We assume you want to learn. The more you code unaided, the more you will understand.
+1. The baseline:
+    1. We will track your progress.
+    1. We reserve the right to stop reviewing your code, if you don't deliver.   
 
 We hope you will have a lot of fun learning!
 
 ### The Scope
 * [Lesson 0 - The Setup](./course/lesson_00_the_setup/) -- deadline 2018-02-27
-* Lesson 1 - Python basics -- deadline 2018-03-06 
-* Lesson 2 - Flow control
+* [Lesson 1 - Python basics](./course/lesson_01_basics/) -- deadline 2018-03-06 
+* [Lesson 2 - Flow control](./course/lesson_02_flow_control) -- deadline 2018-03-13
 * Lesson 3 - Functions 
 * Lesson 4 - Unit testing
 * Lesson 5 - Lists + list comprehensions
@@ -64,6 +67,9 @@ We hope you will have a lot of fun learning!
 
 - GIT training materials
   - https://help.github.com/articles/about-pull-request-reviews/
+  - [How to setup upstream repository for your fork?](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
+  - [How to sync fork with upstream repository?](https://help.github.com/articles/syncing-a-fork/)
+  - [Syncing cheat sheet](https://gist.github.com/CristinaSolana/1885435)
 
 - Python training materials
   - https://automatetheboringstuff.com/
