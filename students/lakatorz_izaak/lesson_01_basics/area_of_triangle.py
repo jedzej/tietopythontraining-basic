@@ -4,4 +4,4 @@ a = float(input())
 print("Enter height:")
 h = float(input())
 
-print((a * h) / 2)
+print(a * h / 2)

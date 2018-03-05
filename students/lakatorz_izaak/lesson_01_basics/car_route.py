@@ -1,4 +1,4 @@
-from math import ceil
+import math
 
 print("Enter car cover distance (N)")
 n = int(input())
@@ -6,6 +6,6 @@ n = int(input())
 print("Enter length (M)")
 m = int(input())
 
-days = ceil(m / n)
+days = math.ceil(m / n)
 
 print("It will take " + str(days) + " days.")

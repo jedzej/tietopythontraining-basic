@@ -1,11 +1,11 @@
 print("Enter integer:")
 a = int(input())
 
-units = a % 10
-tens = int(((a % 100) - units) / 10)
-hundreds = int(((a % 1000) - tens - units) / 100)
+digit_sum = 0
 
-digit_sum = units + tens + hundreds
+while a > 0:
+    digit = a % 10
+    digit_sum = digit_sum + digit
+    a = int(a/10)
 
 print("Sum: " + str(digit_sum))
-

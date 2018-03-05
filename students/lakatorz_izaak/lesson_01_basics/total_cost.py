@@ -15,6 +15,3 @@ cents_price = cents_value % 100
 dollars_price = int(dollars_value + ((cents_value - cents_price) / 100))
 
 print("Total cost:" + str(dollars_price) + " " + str(cents_price))
-
-
-
