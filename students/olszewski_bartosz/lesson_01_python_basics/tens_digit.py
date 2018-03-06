@@ -1,5 +1,4 @@
-print('Podaj liczbę')
-a = int(input())
+a = int(input('give a number '))
 b = str(a)
-print ('Część dziesiętna od podanej liczby',a,'wynosi:',b[-2])
-#print ('Część dziesiętna od podanej liczby',a,'wynosi:', str(a)[-2])
+print('decimal part of', a, 'is:', b[-2])
+# print('decimal part of', a, 'is:', str(a)[-2])

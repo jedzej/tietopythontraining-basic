@@ -1,3 +1,2 @@
-print('Podaj imię')
-a = (input())
-print ('Hello, '+a+'!')
+a = (input('give a name\n'))
+print('Hello, '+a+'!')

@@ -1,4 +1,3 @@
-print('Podaj liczbę')
-a = int(input())
+a = int(input('give a number'))
 b = str(a)
-print('Ostatnia cyfra z liczby to',b[-1])
+print('last digit', b[-1])

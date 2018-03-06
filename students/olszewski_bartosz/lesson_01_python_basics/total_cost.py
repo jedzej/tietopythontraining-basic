@@ -1,6 +1,6 @@
-A = int(input())
-B = int(input())
-N = int(input())
-centy = A*100 + B
-koszt = N*centy
-print (koszt//100,'',koszt%100)
+a = int(input())
+b = int(input())
+n = int(input())
+cents = a * 100 + b
+cost = n * cents
+print('Cost {}.{}$'.format(cost // 100, cost % 100))

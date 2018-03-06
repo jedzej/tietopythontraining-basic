@@ -1,3 +1,3 @@
 a = int(input())
-print ('Licza niższa o 1 od podanej',a,'wynosi',a-1)
-print ('Licza większa o 1 od podanej',a,'wynosi',a+1)
+print('The next number for the number', a, 'is', a+1)
+print('The previous number for the number', a, 'is', a-1)

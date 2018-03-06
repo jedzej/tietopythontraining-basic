@@ -1,8 +1,7 @@
 from math import ceil
-print ('Podaj liczbę kilometrów do pokonania')
-a = int(input())
-print ('Podaj ile kilometrów samochód jest w stanie pokonać w ciągu dnia')
+a = int(input('set number of kilometers'))
+print('set car kilometers capacity per day')
 b = int(input())
-x = a / b
+x = b / a
 y = ceil(x)
-print('Samochód pokona zamierzony dystans w',y,'dni')
+print('distance covered by car in', y, 'days')

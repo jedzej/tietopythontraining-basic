@@ -1,6 +1,6 @@
-print ('Podaj liczbę minut')
-a = int(input())
-a = a%1440
-godziny = a//60
-minuty = a - godziny*60
-print('Godzina wskazana na zegarze to',godziny,':',minuty)
+a = int(input('give a number '))
+a = a % 1440
+hours = a // 60
+minutes = a - hours * 60
+print('hour on the digital clock', hours, ':', minutes)
+# print('hour on the digital clock {}:{}'.format(hours, minutes))
