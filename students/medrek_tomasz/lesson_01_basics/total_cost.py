@@ -1,19 +1,17 @@
 #!/usr/bin/env python3
 
-given_numbers = []
-
-for i in range(3):
+seq = ['dollars', 'cents', 'cupcakes']
+num = dict.fromkeys(seq)
+for key in seq:
     try:
-        given_numbers.append(int(input("Please enter a number:\n")))
+        num[key] = int(input('Please enter number of {0}:\n'.format(key)))
     except ValueError:
         print('That was not a valid number, please try again')
         exit()
 
-dollars = given_numbers[0]
-cents = given_numbers[1]
-cupcakes = given_numbers[2]
+cost = dict.fromkeys(['dollars', 'cents'])
+cost['cents'] = num['cupcakes'] * num['cents'] % 100
+cost['dollars'] = num['cupcakes'] * num['cents'] // 100 \
+                + num['cupcakes'] * num['dollars']
 
-cost_in_cents = cupcakes * cents % 100
-cost_in_dollars = cupcakes * cents // 100 + cupcakes * dollars
-
-print(str(cost_in_dollars) + " " + str(cost_in_cents))
+print('{dollars} {cents}'.format(**cost)) #format_map doesnt work in snakify

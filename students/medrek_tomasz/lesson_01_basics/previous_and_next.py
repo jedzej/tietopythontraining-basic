@@ -9,7 +9,7 @@ except ValueError:
 previous_number = given_number - 1
 next_number = given_number + 1
 
-print("The next number for the number " + str(given_number) + " is " +
-      str(next_number) + ".")
-print("The previous number for the number " + str(given_number) + " is " +
-      str(previous_number) + ".")
+print("The next number for the number {0} is {1}.".format(
+    given_number, next_number))
+print("The previous number for the number {0} is {1}.".format(
+    given_number, previous_number))

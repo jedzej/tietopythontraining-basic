@@ -1,20 +1,17 @@
 #!/usr/bin/env python3
 
-given_numbers = []
-
-for i in range(2):
+seq = ['km_per_day', 'route_km']
+num = dict.fromkeys(seq)
+for key in seq:
     try:
-        given_numbers.append(int(input("Please enter a number:\n")))
+        num[key] = int(input('Please enter number of {0}:\n'.format(key)))
     except ValueError:
         print('That was not a valid number, please try again')
         exit()
 
-kilometers_per_day = given_numbers[0]
-whole_route = given_numbers[1]
-
-if (whole_route % kilometers_per_day):
-    minimum_days_to_travel = whole_route // kilometers_per_day + 1
+if (num['route_km'] % num['km_per_day']):
+    minimum_days_to_travel = num['route_km'] // num['km_per_day'] + 1
 else:
-    minimum_days_to_travel = whole_route / kilometers_per_day
+    minimum_days_to_travel = num['route_km'] / num['km_per_day']
 
 print(minimum_days_to_travel)

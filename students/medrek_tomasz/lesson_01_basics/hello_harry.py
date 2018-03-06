@@ -2,7 +2,6 @@
 
 user_name = input('Enter your name:\n')
 if user_name:
-    hello_message = "Hello, " + user_name + "!"
-    print(hello_message)
+    print('Hello, {0}!'.format(user_name))
 else:
     print("You didn't type anything, please try again")
