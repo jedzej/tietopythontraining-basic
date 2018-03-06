@@ -12,7 +12,7 @@
 1. Numbers filter - using list comprehensions write a function that casts list of strings to integers and filters numbers within supplied range.
 1. Age calculator - for given list of people's ages calculate the average age of adults (age >= 18) and count the children (age < 18). Use list comprehensions.
 
-Example data for "Number filter":
-list_of_strings = ['1', '2', '0', '8', '3']
-to_filter_range = range(3)
+Example data for "Number filter":	
+list_of_strings = ['1', '2', '0', '8', '3']	
+to_filter_range = range(3)	
 expected_output = [8, 3]
