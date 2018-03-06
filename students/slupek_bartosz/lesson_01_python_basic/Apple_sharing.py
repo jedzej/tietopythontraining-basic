@@ -1,4 +1,4 @@
-n = int(input())
-k = int(input())
-print(k//n)
-print(k%n)
+students = int(input())
+apple = int(input())
+print(apple // students)
+print(apple % students)
