@@ -1,0 +1,5 @@
+A = int(input())
+B = int(input())
+N = int(input())
+cost = N * (100 * A + B)
+print(cost // 100, cost % 100)
