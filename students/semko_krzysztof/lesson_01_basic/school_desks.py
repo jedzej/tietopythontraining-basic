@@ -9,7 +9,7 @@
 # The second group has 21 students, so they can get by with no fewer than 11 desks.
 # 11 desks is also enough for the third group of 22 students. So we need 32 desks in total.
 
-from math import ceil
+import math
 
 print("please input size of first group:")
 first = int(input())
@@ -18,4 +18,4 @@ second = int(input())
 print("please input size of third group:")
 third = int(input())
 
-print('Number needed: ' + str(ceil(first / 2) + ceil(second / 2) + ceil(third / 2)))
+print('Number needed: ' + str(math.ceil(first / 2) + ceil(second / 2) + ceil(third / 2)))
