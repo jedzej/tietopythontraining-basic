@@ -1,0 +1,5 @@
+s_in_c1 = int(input('How meny students in class nr 1?\n'))
+s_in_c2 = int(input('How meny students in class nr 2?\n'))
+s_in_c3 = int(input('How meny students in class nr 3?\n'))
+desks = ((s_in_c1 - 1) // 2 + 1) + ((s_in_c2 - 1) // 2 + 1) + ((s_in_c3 - 1) // 2 +1)
+print('You need at least ' + str(desks) + ' desks.')
