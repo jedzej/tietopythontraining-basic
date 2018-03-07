@@ -9,11 +9,8 @@ total_count_of_cards = int(input())
 card_list = [False] * total_count_of_cards
 i = 0
 
-while True:
+for _ in range(total_count_of_cards):
     card_list[int(input()) - 1] = True
-    i += 1
-    if i == total_count_of_cards - 1:
-        break
 
 for i in range(0, total_count_of_cards):
     if not card_list[i]:
