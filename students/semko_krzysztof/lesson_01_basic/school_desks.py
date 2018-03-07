@@ -18,4 +18,4 @@ second = int(input())
 print("please input size of third group:")
 third = int(input())
 
-print('Number needed: ' + str(math.ceil(first / 2) + ceil(second / 2) + ceil(third / 2)))
+print('Number needed: ' + str(math.ceil(first / 2) + math.ceil(second / 2) + math.ceil(third / 2)))
