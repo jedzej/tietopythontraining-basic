@@ -6,13 +6,9 @@
 total_count = int(input())
 
 result = 0
-i = 0
 
-while True:
+for _ in range(total_count):
     if int(input()) == 0:
         result += 1
-    i += 1
-    if i == total_count:
-        break
 
 print(result)
