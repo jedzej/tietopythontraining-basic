@@ -6,9 +6,9 @@ print ("Sum of these three numbers ",(a+b+c))
 
 # Area of right-angled triangle
 print ("Enter length of the base of a right-angled triangle")
-a=float(input())
+a = float(input())
 print ("Enter height of the right-angled triangle")
-h=float(input())
+h = float(input())
 s=a*h/2
 print ("Surface of operacje_matematyczne.py ",s)
 
@@ -38,8 +38,7 @@ num = a//2+b//2+c//2 + a%2+b%2+c%2
 print (num)
 
 # Last digit of integer
-x=int(input())
-x=str(x)
+x=input()
 print (x[-1])
 
 # Tens digit
@@ -90,7 +89,7 @@ print (total_dolars, total_cents)
 h=float(input())
 m=float(input())
 s=float(input())
-angle = 360*(h*3600 + m*60 + s)/(12*3600)
+angle = 360*(h*60*60 + m*60 + s)/(12*3600)
 print (angle)
 
 # Clock face - 2
