@@ -8,7 +8,7 @@ year = int(input())
 
 result = 'COMMON'
 
-if (year % 4) == 0 and year % 100 != 0:
+if year % 4 == 0 and year % 100 != 0:
     result = 'LEAP'
 
 if year % 400 == 0:

@@ -6,17 +6,17 @@
 
 total_count_of_cards = int(input())
 
-myList = [0] * total_count_of_cards
+card_list = [False] * total_count_of_cards
 i = 0
 
 while True:
-    myList[int(input())-1] = 1
+    card_list[int(input()) - 1] = True
     i += 1
-    if i == (total_count_of_cards - 1):
+    if i == total_count_of_cards - 1:
         break
 
 for i in range(0, total_count_of_cards):
-    if myList[i] == 0:
+    if not card_list[i]:
         result = (i + 1)
 
 print(result)

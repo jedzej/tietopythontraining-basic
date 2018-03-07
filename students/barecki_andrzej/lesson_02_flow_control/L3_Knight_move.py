@@ -11,7 +11,7 @@ ay = int(input())
 bx = int(input())
 by = int(input())
 
-if (abs(ax - bx) == 1) and (abs(ay - by) == 2) or (abs(ax - bx) == 2) and (abs(ay - by) == 1):
+if abs(ax - bx) == 1 and abs(ay - by) == 2 or abs(ax - bx) == 2 and abs(ay - by) == 1:
     result = 'YES'
 else:
     result = 'NO'
