@@ -1,7 +1,7 @@
-# Read an integers; A dollars, B cents, N cakes:
+# Read A dollars, B cents, N cakes:
 A = int(input())
 B = int(input())
 N = int(input())
-dolars=(A+B/100)*N
+dollars_with_cents = (A + B/100) * N
 # Print how many dollars and cents should one pay for N cupcakes:
-print(str(int(dolars)) + ' ' + str(int(dolars*100)%100))
+print(str(int(dollars_with_cents)) + ' ' + str(int(dollars_with_cents*100)%100))

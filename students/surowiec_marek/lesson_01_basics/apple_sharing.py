@@ -1,5 +1,5 @@
-# Read the numbers n students, k apples:
-n = int(input())
-k = int(input())
-print(str(k//n) + ' apples will get each single student')
-print(str(k%n) + ' apples will remain in the basket')
+# Read the numbers students and apples counts:
+students_count = int(input())
+apples_count = int(input())
+print(str(apples_count//students_count) + ' apples will get each single student')
+print(str(apples_count%students_count) + ' apples will remain in the basket')
