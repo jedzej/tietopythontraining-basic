@@ -1,3 +1,3 @@
 num = float(input("Input the number: "))
 
-print(num % 1)
+print(list(str(num - int(num)))[2])
