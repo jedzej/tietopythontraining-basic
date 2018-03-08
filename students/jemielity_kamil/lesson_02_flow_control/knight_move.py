@@ -1,3 +1,4 @@
+
 starting_column = int(input('Start column: '))
 starting_row = int(input('Start row: '))
 
