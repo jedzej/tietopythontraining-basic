@@ -9,8 +9,11 @@ __author__ = "Daniel Urtnowski"
 __version__ = "0.1"
 
 
-from math import fabs
-from math import ceil
+import math
+
+
+SECONDS_PER_DAY = 60 * 60 * 12
+DEGREES_PER_DAY = 360
 
 
 def last_digit_of_integer():
@@ -39,9 +42,9 @@ def sum_of_digits():
     This function prints the sum of digits of a given three-digit number
     """
     print("Exercise 3: Sum of digits")
-    number = input("Enter a number: ")
+    stringified_number = str(input("Enter a number: "))
 
-    result = int(number[0]) + int(number[1]) + int(number[2])
+    result = int(stringified_number[0]) + int(stringified_number[1]) + int(stringified_number[2])
     print("The sum of the number digits is: ", result)
 
 
@@ -54,7 +57,7 @@ def fractional_part():
 
     result = number - int(number)
     delta = 0.0000000001
-    if fabs(result) < delta:
+    if abs(result) < delta:
         result = 0
     else:
         result = round(result, 10)
@@ -82,7 +85,7 @@ def car_route():
     efficiency = int(input("Enter a number of kilometers the car can cover per day: "))
     route_len = int(input("Enter a number of kilometers in the route: "))
 
-    result = ceil(route_len / efficiency)
+    result = math.ceil(route_len / efficiency)
     print("The result is: ", result, " day(s)")
 
 
@@ -125,9 +128,7 @@ def clock_face_1():
     seconds = int(input("Enter the seconds number: "))
 
     time_in_seconds = seconds + ((minutes + (hours * 60)) * 60)
-    seconds_per_day = 60 * 60 * 12
-    degrees_per_day = 360
-    angle = (time_in_seconds / seconds_per_day) * degrees_per_day
+    angle = (time_in_seconds / SECONDS_PER_DAY) * DEGREES_PER_DAY
 
     print("The angle is: {} degrees".format(angle))
 

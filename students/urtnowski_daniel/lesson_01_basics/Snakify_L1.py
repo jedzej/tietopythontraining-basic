@@ -70,7 +70,7 @@ def school_desks():
     required_desks_num = 0
     for class_name in ("a", "b", "c"):
         students_num = int(input("Enter number of students in class " + class_name + ": "))
-        required_desks_num += ((students_num // 2) + (students_num % 2))
+        required_desks_num += students_num//2 + students_num%2
 
     print("Required desks number: ", required_desks_num)
 
