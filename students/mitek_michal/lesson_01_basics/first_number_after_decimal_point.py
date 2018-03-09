@@ -3,9 +3,9 @@ def print_first_number_after_decimal_point():
 
     number = float(input("Provide a number "))
 
-    fractional_number = str(number - int(number))[1:]
+    fractional_number = int((number - int(number))*10)
 
-    print(fractional_number[1])
+    print(fractional_number)
 
 
 print_first_number_after_decimal_point()
