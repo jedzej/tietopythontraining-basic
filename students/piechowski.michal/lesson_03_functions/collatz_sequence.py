@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 def collatz(number):
     if number % 2 == 0:
         print(number // 2)
@@ -7,6 +8,7 @@ def collatz(number):
     else:
         print(3 * number + 1)
         return 3 * number + 1
+
 
 print("Give number for collatz function:")
 try:
