@@ -14,11 +14,11 @@ def sum_of_three_numbers():
     This function reads three numbers and prints their sum
     """
     print("Exercise 1: Sum of three numbers")
-    a = int(input("enter first number: "))
-    b = int(input("enter second number: "))
-    c = int(input("enter third number: "))
+    a = int(input("enter first number:"))
+    b = int(input("enter second number:"))
+    c = int(input("enter third number:"))
 
-    print("sum: ", (a + b + c))
+    print("sum:", (a + b + c))
 
 
 def area_of_right_angled_triangle():
@@ -28,7 +28,7 @@ def area_of_right_angled_triangle():
     print("Exercise 2: Area of right-angled triangle")
     base = int(input("enter base: "))
     height = int(input("enter height: "))
-    print("area: ", ((base * height) / 2))
+    print("area:", ((base * height) / 2))
 
 
 def hello_harry():
@@ -72,7 +72,7 @@ def school_desks():
         students_num = int(input("Enter number of students in class " + class_name + ": "))
         required_desks_num += students_num//2 + students_num%2
 
-    print("Required desks number: ", required_desks_num)
+    print("Required desks number:", required_desks_num)
 
 
 def main():

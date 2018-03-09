@@ -23,7 +23,7 @@ def last_digit_of_integer():
     print("Exercise 1: Last digit of integer")
     number = int(input("Enter a number: "))
 
-    print("Last digit of the number is: ", (number % 10))
+    print("Last digit of the number is:", (number % 10))
 
 
 def tens_digit():
@@ -34,7 +34,7 @@ def tens_digit():
     number = int(input("Enter a number: "))
 
     result = (number // 10) % 10
-    print("Tens digit is: ", result)
+    print("Tens digit is:", result)
 
 
 def sum_of_digits():
@@ -45,7 +45,7 @@ def sum_of_digits():
     stringified_number = str(input("Enter a number: "))
 
     result = int(stringified_number[0]) + int(stringified_number[1]) + int(stringified_number[2])
-    print("The sum of the number digits is: ", result)
+    print("The sum of the number digits is:", result)
 
 
 def fractional_part():
@@ -62,7 +62,7 @@ def fractional_part():
     else:
         result = round(result, 10)
 
-    print("Fractional part of the number is: ", result)
+    print("Fractional part of the number is:", result)
 
 
 def first_digit_after_decimal_point():
@@ -73,7 +73,7 @@ def first_digit_after_decimal_point():
     number = float(input("Enter a number: "))
 
     result = int(number * 10) % 10
-    print("The result is: ", result)
+    print("The result is:", result)
 
 
 def car_route():
@@ -86,7 +86,7 @@ def car_route():
     route_len = int(input("Enter a number of kilometers in the route: "))
 
     result = math.ceil(route_len / efficiency)
-    print("The result is: ", result, " day(s)")
+    print("The result is:", result, "day(s)")
 
 
 def digital_clock():
