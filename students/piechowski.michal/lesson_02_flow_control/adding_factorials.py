@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-number = int(input())
+number = int(input("Input number for calculating factorial sum: "))
 factorial = 1
 factorial_sum = 1
 
