@@ -1,3 +1,5 @@
+import math
+
 # 1.1 Sum of three numbers
 a = int(input())
 b = int(input())
@@ -69,7 +71,7 @@ a = float(input())
 print(str(a - int(a))[2])
 
 # 2.6 Car route
-import math
+
 
 # Read an integer:
 N = int(input())
