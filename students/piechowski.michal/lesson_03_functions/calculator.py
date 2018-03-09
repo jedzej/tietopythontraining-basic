@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
+""" Simple python calculator. """
+
 def print_help():
+    """ Explains options used in the script. """
     print("a - add")
     print("s - subtract")
     print("m - multiply")
@@ -10,15 +13,18 @@ def print_help():
     print("q - QUIT")
 
 def print_result(result):
+    """ Prints given result. """
     print("Result:")
     print(result)
 
 def get_option():
+    """ Returns option choosen by the user. """
     print("Enter option:")
     option = input()
     return option
 
 def get_two_operands():
+    """ Returns two operands used later for calculations. """
     print("Input 1st operand:")
     first_operand = float(input())
     print("Input 2nd operand:")
@@ -26,21 +32,25 @@ def get_two_operands():
     return first_operand, second_operand
 
 def add():
+    """ Adds two numbers. """
     print("ADDING")
     first_operand, second_operand = get_two_operands()
     print_result(first_operand + second_operand)
 
 def subtract():
+    """ Subtracts two numbers. """
     print("SUBTRACT")
     first_operand, second_operand = get_two_operands()
     print_result(first_operand - second_operand)
 
 def multiply():
+    """ Multiplies two numbers. """
     print("MULTIPLY")
     first_operand, second_operand = get_two_operands()
     print_result(first_operand * second_operand)
 
 def divide():
+    """ Divides two numbers. """
     print("DIVIDE")
     first_operand, second_operand = get_two_operands()
     if second_operand == 0:
@@ -49,6 +59,7 @@ def divide():
     print_result(first_operand / second_operand)
 
 def power():
+    """ Calculates first number to the power of second number. """
     print("POWER")
     first_operand, second_operand = get_two_operands()
     print_result(first_operand ** second_operand)
