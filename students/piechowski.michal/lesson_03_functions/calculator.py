@@ -74,26 +74,31 @@ def power():
     print_result(first_operand ** second_operand)
 
 
-print("Welcome to nicely organized calculator:")
-print_help()
+def main():
+    print("Welcome to nicely organized calculator:")
+    print_help()
 
-while True:
-    option = get_option()
+    while True:
+        option = get_option()
 
-    if option == "a":
-        add()
-    elif option == "s":
-        subtract()
-    elif option == "m":
-        multiply()
-    elif option == "d":
-        divide()
-    elif option == "p":
-        power()
-    elif option == "h" or option == "?":
-        print_help()
-    elif option == "q":
-        print("GOOD BYE")
-        break
-    else:
-        print("Invalid option!")
+        if option == "a":
+            add()
+        elif option == "s":
+            subtract()
+        elif option == "m":
+            multiply()
+        elif option == "d":
+            divide()
+        elif option == "p":
+            power()
+        elif option == "h" or option == "?":
+            print_help()
+        elif option == "q":
+            print("GOOD BYE")
+            break
+        else:
+            print("Invalid option!")
+
+
+if __name__== "__main__":
+    main()
