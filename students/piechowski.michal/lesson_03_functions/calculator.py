@@ -2,6 +2,7 @@
 
 """ Simple python calculator. """
 
+
 def print_help():
     """ Explains options used in the script. """
     print("a - add")
@@ -12,16 +13,19 @@ def print_help():
     print("h,? - help")
     print("q - QUIT")
 
+
 def print_result(result):
     """ Prints given result. """
     print("Result:")
     print(result)
+
 
 def get_option():
     """ Returns option choosen by the user. """
     print("Enter option:")
     option = input()
     return option
+
 
 def get_two_operands():
     """ Returns two operands used later for calculations. """
@@ -31,11 +35,13 @@ def get_two_operands():
     second_operand = float(input())
     return first_operand, second_operand
 
+
 def add():
     """ Adds two numbers. """
     print("ADDING")
     first_operand, second_operand = get_two_operands()
     print_result(first_operand + second_operand)
+
 
 def subtract():
     """ Subtracts two numbers. """
@@ -43,11 +49,13 @@ def subtract():
     first_operand, second_operand = get_two_operands()
     print_result(first_operand - second_operand)
 
+
 def multiply():
     """ Multiplies two numbers. """
     print("MULTIPLY")
     first_operand, second_operand = get_two_operands()
     print_result(first_operand * second_operand)
+
 
 def divide():
     """ Divides two numbers. """
@@ -58,11 +66,13 @@ def divide():
         return
     print_result(first_operand / second_operand)
 
+
 def power():
     """ Calculates first number to the power of second number. """
     print("POWER")
     first_operand, second_operand = get_two_operands()
     print_result(first_operand ** second_operand)
+
 
 print("Welcome to nicely organized calculator:")
 print_help()
