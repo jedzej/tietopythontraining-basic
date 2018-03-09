@@ -9,4 +9,3 @@ if ((number_of_squares % width == 0 or number_of_squares % height == 0)
     print('YES')
 else:
     print('NO')
-
