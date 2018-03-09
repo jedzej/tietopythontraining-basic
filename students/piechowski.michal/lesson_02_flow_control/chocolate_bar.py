@@ -4,9 +4,8 @@ width = int(input())
 height = int(input())
 number_of_squares = int(input())
 
-if width * height < number_of_squares:
-    print('NO')
-elif number_of_squares % width == 0 or number_of_squares % height == 0:
+if ((number_of_squares % width == 0 or number_of_squares % height == 0)
+        and width * height >= number_of_squares):
     print('YES')
 else:
     print('NO')
