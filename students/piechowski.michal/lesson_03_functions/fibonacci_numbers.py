@@ -7,6 +7,10 @@ def fib(number):
     return fib(number - 1) + fib(number - 2)
 
 
-number = int(input())
+def main():
+    number = int(input())
+    print(fib(number))
 
-print(fib(number))
+
+if __name__== "__main__":
+    main()
