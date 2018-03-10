@@ -1,3 +1,3 @@
 x = float(input())
 
-print(int(x % 1 // 0.1))
+print(int(x * 10 % 10))

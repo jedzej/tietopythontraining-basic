@@ -1,7 +1,7 @@
-number = input()
+number = int(input())
 
-sum = 0
-for ch in number:
-    sum += int(ch)
+sum = number % 10
+sum += number % 100 // 10
+sum += number // 100
 
 print(sum)
