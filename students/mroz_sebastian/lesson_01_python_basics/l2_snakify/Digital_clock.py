@@ -1,3 +1,5 @@
-a = int( input() ) 
+a = int(input())
 
-print( str( a // 60) + " " + str( a % 60 ) )
+hours = str(a // 60)
+minutes = str(a % 60)
+print(hours + " " + minutes)

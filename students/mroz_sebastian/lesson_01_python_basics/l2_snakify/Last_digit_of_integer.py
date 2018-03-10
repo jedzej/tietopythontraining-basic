@@ -1,2 +1,4 @@
 a = int(input())
-print(a%10)
+last_digit = a % 10
+
+print(last_digit)

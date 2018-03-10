@@ -1,4 +1,5 @@
 from math import floor
-a = float( input() )
+a = float(input())
 
-print( floor(a*10) % 10 )
+first_decimil_digit = floor(a*10) % 10
+print(first_decimil_digit)

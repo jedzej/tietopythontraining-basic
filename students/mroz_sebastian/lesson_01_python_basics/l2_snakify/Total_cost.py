@@ -1,8 +1,9 @@
-a = int( input() )
-b = int( input() ) 
-n = int( input() ) 
+a = int(input())
+b = int(input())
+n = int(input())
 
-d = a * n + ( b * n ) // 100
-c = ( b * n ) % 100
+total_cost = a * n + (b * n)
+dollars = str(total_cost // 100)
+cents = str(total_cost % 100)
 
-print( str(d) + " " + str(c) )
+print(dollars + " " + cents)

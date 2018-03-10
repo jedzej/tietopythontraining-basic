@@ -1,6 +1,8 @@
 from math import ceil
 
-n = int( input() ) 
-m = int( input() )
+range_per_day = int(input())
+distance = int(input())
 
-print( ceil( m/n ) )
+days = ceil(distance / range_per_day)
+
+print(days)

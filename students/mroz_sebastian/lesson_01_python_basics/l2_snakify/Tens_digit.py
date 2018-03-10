@@ -1,2 +1,4 @@
 a = int(input())
-print((a%100)//10)
+tens_digit = (a % 100) // 10
+
+print(tens_digit)
