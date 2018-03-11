@@ -1,6 +1,7 @@
 """
 A sequence consists of integer numbers and ends with the number 0.
-Determine how many elements of this sequence are equal to its largest element.
+Determine how many elements of this sequence are equal to
+its largest element.
 """
 
 print("Please input integers in a sequence. to finish, type '0'.")
@@ -22,4 +23,5 @@ while loop_number > 0:
         max_count = 1
     loop_number += 1
 
-print("Number of integers with max value (" + str(max_value) + ") = " + str(max_count))
+print("Number of integers with max value (" + str(max_value) + ") = "
+      + str(max_count))
