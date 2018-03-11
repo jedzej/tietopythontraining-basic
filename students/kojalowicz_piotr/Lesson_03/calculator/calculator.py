@@ -10,7 +10,7 @@ def help():
 def input_numbers():
     while True:
          try:
-             numbers = float(input())
+             numbers = float(raw_input())
              return numbers
          except NameError:
              print ("This is not the correct value of the variable, try again: ")
@@ -44,26 +44,62 @@ def divide(dividend, divider):
 def power(base, index):
     return base ** index
 
-def calculations(options):
+def calculations(options, new_result):
+    value = None
     if options == "a":
-        operands = input_operands("ADDING", ["first", "second"])
-        result(adding(operands[0], operands[1]))
+        if new_result is not None:
+            operands = input_operands("To current value ADDING", ["second"])
+            result(adding(new_result, operands[0]))
+            value = adding(new_result, operands[0])
+        else:
+            operands = input_operands("ADDING", ["first", "second"])
+            result(adding(operands[0], operands[1]))
+            value = adding(operands[0], operands[1])
+        return value
 
     elif options == "s":
-        operands = input_operands("SUBTRACT", ["minuend", "subtrahend"])
-        result(subtract(operands[0], operands[1]))
+        if new_result is not None:
+            operands = input_operands("To current value SUBTRACT", ["subtrahend"])
+            result(subtract(new_result, operands[0]))
+            value = subtract(new_result, operands[0])
+        else:
+            operands = input_operands("SUBTRACT", ["minuend", "subtrahend"])
+            result(subtract(operands[0], operands[1]))
+            value = subtract(operands[0], operands[1])
+        return value
 
     elif options == "m":
-        operands = input_operands("MULTIPLY", ["multiplicand", "multiplier"])
-        result(multiply(operands[0], operands[1]))
+        if new_result is not None:
+            operands = input_operands("To current value MULTIPLY", ["multiplier"])
+            result(multiply(new_result, operands[0]))
+            value = multiply(new_result, operands[0])
+        else:
+            operands = input_operands("MULTIPLY", ["multiplicand", "multiplier"])
+            result(multiply(operands[0], operands[1]))
+            value = multiply(operands[0], operands[1])
+        return value
 
     elif options == "d":
-        operands = input_operands("DIVIDE", ["dividend", "divider"])
-        result(divide(operands[0], operands[1]))
+        if new_result is not None:
+            operands = input_operands("To current value DIVIDE", ["divider"])
+            result(divide(new_result, operands[0]))
+            value = divide(new_result, operands[0])
+        else:
+            operands = input_operands("DIVIDE", ["dividend", "divider"])
+            result(divide(operands[0], operands[1]))
+            value = divide(operands[0], operands[1])
+        return value
 
     elif options == "p":
-        operands = input_operands("POWER", ["base", "index"])
-        result(power(operands[0], operands[1]))
+        if new_result is not None:
+            operands = input_operands("To current value POWER", ["index"])
+            result(power(new_result, operands[0]))
+            value = power(new_result, operands[0])
+        else:
+            operands = input_operands("POWER", ["base", "index"])
+            result(power(operands[0], operands[1]))
+            value = power(operands[0], operands[1])
+        return value
 
     elif options == "h" or options == "?":
         print("HELP")
@@ -79,13 +115,32 @@ def main():
     while True:
         print("Enter option:")
         option = raw_input()
-        print(option)
         if option == "q":
             print("GOOD BYE")
             break
         else:
-            calculations(option)
-
+            resale = calculations(option, None)
+            while True:
+                print("Do you want to use the current result for the next calculation?")
+                print("If YES, press the key - y / If No, press any other key")
+                option_two = raw_input()
+                if option_two == "y":
+                    print("What are you going to do with - " + str(resale))
+                    help()
+                    option = raw_input()
+                    resale = calculations(option, resale)
+                else:
+                    print("Do you really want to delete the current result")
+                    print("If YES, press the key - y / If No, press any other key")
+                    option_two = raw_input()
+                    if option_two == "y":
+                        print("Your current resale will be deleted, but the program will continue to work")
+                        break
+                    else:
+                        print("What are you going to do with - " + str(resale))
+                        option = raw_input()
+                        help()
+                        resale = calculations(option, resale)
 
 if __name__ == '__main__':
     main()
