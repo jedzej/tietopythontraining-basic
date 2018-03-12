@@ -5,13 +5,13 @@ d = int(input())
 
 if abs(a - c) == abs(b - d):
     print('YES')
-elif a == c and b > d: 
+elif a == c and b > d:
     print("YES")
-elif a == c and b < d: 
+elif a == c and b < d:
     print("YES")
-elif a > c and b == d: 
+elif a > c and b == d:
     print("YES")
-elif a < c and b == d: 
+elif a < c and b == d:
     print("YES")
-else: 
+else:
     print("NO")

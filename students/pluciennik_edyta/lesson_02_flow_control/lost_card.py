@@ -8,5 +8,5 @@ for i in range(1, n + 1):
 for j in range(1, n):
     k = int(input())
     sum_of_cards += k
-    
+
 print(sum - sum_of_cards)

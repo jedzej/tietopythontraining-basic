@@ -1,8 +1,7 @@
 a = int(input())
 
 largest = a
-numbers_of_max = 1 
-
+numbers_of_max = 1
 
 while a != 0:
     a = int(input())
