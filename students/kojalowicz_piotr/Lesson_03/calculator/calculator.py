@@ -7,6 +7,7 @@ def help():
     print("h,? - help")
     print("q - QUIT")
 
+
 def input_numbers():
     while True:
          try:
@@ -14,6 +15,7 @@ def input_numbers():
              return numbers
          except NameError:
              print ("This is not the correct value of the variable, try again: ")
+
 
 def input_operands(calculations_name, variables_name):
     print(calculations_name)
@@ -23,17 +25,22 @@ def input_operands(calculations_name, variables_name):
         variables.append(input_numbers())
     return variables
 
+
 def result(output):
     print("Result: " + str(output))
+
 
 def adding(first, second):
     return first + second
 
+
 def subtract(minuend, subtrahend):
     return minuend - subtrahend
 
+
 def multiply(multiplicand, multiplier):
     return multiplicand * multiplier
+
 
 def divide(dividend, divider):
     if divider != 0:
@@ -41,8 +48,10 @@ def divide(dividend, divider):
     else:
         print("Divider can not be equal zero!")
 
+
 def power(base, index):
     return base ** index
+
 
 def calculations(options):
     if options == "a":
@@ -73,12 +82,13 @@ def calculations(options):
         print("There is no such function, try again")
         help()
 
+
 def main():
     print("Welcome to badly organized calculator:")
     help()
     while True:
         print("Enter option:")
-        option = raw_input()
+        option = input()
         print(option)
         if option == "q":
             print("GOOD BYE")
