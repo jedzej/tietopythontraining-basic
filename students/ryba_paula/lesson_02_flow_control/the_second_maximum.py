@@ -11,4 +11,3 @@ while number != 0:
         second_largest = number
 
 print(second_largest)
-
