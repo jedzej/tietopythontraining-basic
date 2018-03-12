@@ -7,4 +7,3 @@ if steps <= 9:
         print()
 else: 
     print("Number of steps must be max 9")
-    
