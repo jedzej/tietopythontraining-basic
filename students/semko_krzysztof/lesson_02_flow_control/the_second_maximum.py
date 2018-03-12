@@ -9,12 +9,10 @@ print("Please input integers in a sequence. to finish, type '0'.")
 
 max_value = 0
 second_max = 0
-loop_number = 1
-while loop_number > 0:
+while True:
     value = int(input())
 
-    if loop_number > 2 and value == 0:
-        loop_number = 0
+    if max_value > 0 and second_max > 0 and value == 0:
         break
 
     if value > max_value:
@@ -22,7 +20,5 @@ while loop_number > 0:
         max_value = value
     elif value > second_max:
         second_max = value
-
-    loop_number += 1
 
 print("Second to max value = " + str(second_max))
