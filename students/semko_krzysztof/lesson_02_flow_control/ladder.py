@@ -7,7 +7,7 @@ To do that, you can use the sep and end arguments for the function print().
 
 print("Please input an integer smaller then 9:")
 number = int(input())
+line = ""
 for i in range(1, number + 1):
-    for j in range(1, i + 1):
-        print(str(j), sep='', end='')
-    print()
+        line += str(i)
+        print(line, sep='')
