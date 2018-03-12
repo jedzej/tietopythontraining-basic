@@ -1,6 +1,13 @@
-start_column, start_row, end_column, end_row = int(input()), int(input()), int(input()), int(input())
+start_col = int(input("Input start column number: "))
+start_row = int(input("Input start row number: "))
+end_col = int(input("Input end column number: "))
+end_row = int(input("Input end row number: "))
 
-if (abs(start_column - end_column) == 2 and abs(start_row - end_row) == 1) or (abs(start_column - end_column) == 1 and abs(start_row - end_row) == 2):
-    print ("YES")
+d_col = abs(start_col - end_col)
+d_row = abs(start_row - end_row)
+
+if d_col == 2 and d_row == 1 or d_col == 1 and d_row == 2:
+    print("YES")
 else:
-    print ("NO")
+    print("NO")
+    
