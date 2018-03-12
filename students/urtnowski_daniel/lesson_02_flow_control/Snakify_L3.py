@@ -2,7 +2,8 @@
 
 """
 Snakify_L3.py: Solutions for the last 5 problems defined in:
-Lesson 3.Conditions: if, then, else (https://snakify.org/lessons/if_then_else_conditions/problems/)
+Lesson 3.Conditions: if, then, else
+(https://snakify.org/lessons/if_then_else_conditions/problems/)
 """
 
 __author__ = "Daniel Urtnowski"
@@ -75,10 +76,12 @@ def knight_move():
 
 def chocolate_bar():
     """
-    Chocolate bar has the form of a rectangle divided into n×m portions. Chocolate bar can be split into two rectangular
-    parts by breaking it along a selected straight line on its pattern.
-    This function reads three integers: n, m, k and determines whether it is possible to split the chocolate bar
-    so that one of the parts will have exactly k squares.
+    Chocolate bar has the form of a rectangle divided into n×m portions.
+    Chocolate bar can be split into two rectangular parts by breaking it
+    along a selected straight line on its pattern.
+    This function reads three integers: n, m, k and determines whether
+    it is possible to split the chocolate bar so that one of the parts
+    will have exactly k squares.
     """
     print("Problem: Chocolate bar")
 
@@ -87,7 +90,7 @@ def chocolate_bar():
     k = int(input())
     result = "NO"
 
-    if k <= m*n and (0 == k%n or 0 == k%m):
+    if k <= m*n and (0 == k % n or 0 == k % m):
         result = "YES"
 
     print(result)
@@ -102,7 +105,7 @@ def leap_year():
     year = int(input())
     result = "COMMON"
 
-    if (0 == year%4 and 0 != year%100) or 0 == year%400:
+    if (0 == year % 4 and 0 != year % 100) or 0 == year % 400:
         result = "LEAP"
 
     print(result)
