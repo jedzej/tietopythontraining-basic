@@ -6,7 +6,7 @@ amount = int(input())
 
 zeros_amount = 0
 
-for i in range(0, amount):
+for i in range(amount):
     amount = int(input())
     if amount == 0:
         zeros_amount += 1
