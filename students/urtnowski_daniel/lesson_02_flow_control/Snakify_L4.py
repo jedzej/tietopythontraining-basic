@@ -2,7 +2,8 @@
 
 """
 Snakify_L4.py: Solutions for the last 5 problems defined in:
-Lesson 4.For loop with range (https://snakify.org/lessons/for_loop_range/problems/)
+Lesson 4.For loop with range
+(https://snakify.org/lessons/for_loop_range/problems/)
 """
 
 __author__ = "Daniel Urtnowski"
@@ -26,7 +27,8 @@ def factorial():
 
 def the_number_of_zeros():
     """
-    This function reads count of numbers followed by the numbers. Then prints the count of zeros among the read numbers
+    This function reads count of numbers followed by the numbers. Then prints
+    the count of zeros among the read numbers
     """
     print("Problem: The number of zeros")
 
@@ -58,8 +60,9 @@ def adding_factorials():
 
 def ladder():
     """
-    This function reads integer n ≤ 9 and prints a ladder of n steps. The k-th step consists of the integers
-    from 1 to k without spaces between them.
+    This function reads integer n ≤ 9 and prints a ladder of n steps.
+    The k-th step consists of the integers from 1 to k without spaces
+    between them.
     """
     print("Problem: Ladder")
 
@@ -73,9 +76,10 @@ def ladder():
 
 def lost_card():
     """
-    There was a set of cards with numbers from 1 to N. One of the card is now lost.
-    This function reads a number N, followed by N − 1 integers - representing the numbers on the remaining cards
-    and prints the number on the lost card.
+    There was a set of cards with numbers from 1 to N. One of the card is now
+    lost. This function reads a number N, followed by N − 1 integers
+    - representing the numbers on the remaining cards and prints the number
+    on the lost card.
     """
     print("Problem: Lost card")
 

@@ -11,9 +11,10 @@ __version__ = "0.1"
 
 def the_second_maximum():
     """
-    This function reads a sequence of distinct positive integer numbers ended with the number 0. Then it determines
-    the value of the second largest element in this sequence. It is guaranteed that the sequence has at least two
-    elements.
+    This function reads a sequence of distinct positive integer numbers ended
+    with the number 0. Then it determines the value of the second largest
+    element in this sequence. It is guaranteed that the sequence has at least
+    two elements.
     """
     print("Problem: The second maximum")
 
@@ -34,8 +35,9 @@ def the_second_maximum():
 
 def the_number_of_elements_equal_to_the_maximum():
     """
-    This function reads a sequence which consists of integer numbers and ends with the number 0. Then it determines
-    how many elements of this sequence are equal to its largest element.
+    This function reads a sequence which consists of integer numbers and ends
+    with the number 0. Then it determines how many elements of this sequence
+    are equal to its largest element.
     """
     print("Problem: The number of elements equal to the maximum")
 
