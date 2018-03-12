@@ -10,4 +10,3 @@ if d_col == 2 and d_row == 1 or d_col == 1 and d_row == 2:
     print("YES")
 else:
     print("NO")
-    

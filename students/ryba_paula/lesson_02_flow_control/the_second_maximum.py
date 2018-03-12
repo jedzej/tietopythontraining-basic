@@ -9,5 +9,6 @@ while number != 0:
         second_largest, largest = largest, number
     elif number > second_largest:
         second_largest = number
-    
+
 print(second_largest)
+
