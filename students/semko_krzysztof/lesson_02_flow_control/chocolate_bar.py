@@ -14,8 +14,8 @@ print("Please input x size of chocolate bar:")
 chocolate_y = int(input())
 print("Please input number of squares on the split part:")
 squares = int(input())
-if ((squares % chocolate_x == 0 or squares % chocolate_y == 0)
-        and chocolate_x * chocolate_y > squares):
+if (squares % chocolate_x == 0 or squares % chocolate_y == 0)
+        and chocolate_x * chocolate_y > squares:
     print("YES")
 else:
     print("NO")
