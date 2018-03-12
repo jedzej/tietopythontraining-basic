@@ -9,5 +9,5 @@ print("Please input an integer smaller then 9:")
 number = int(input())
 line = ""
 for i in range(1, number + 1):
-        line += str(i)
-        print(line, sep='')
+    line += str(i)
+    print(line, sep='')
