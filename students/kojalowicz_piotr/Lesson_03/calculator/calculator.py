@@ -7,13 +7,15 @@ def help():
     print("h,? - help")
     print("q - QUIT")
 
+
 def input_numbers():
     while True:
          try:
-             numbers = float(raw_input())
+             numbers = float(input())
              return numbers
          except NameError:
              print ("This is not the correct value of the variable, try again: ")
+
 
 def input_operands(calculations_name, variables_name):
     print(calculations_name)
@@ -23,17 +25,22 @@ def input_operands(calculations_name, variables_name):
         variables.append(input_numbers())
     return variables
 
+
 def result(output):
     print("Result: " + str(output))
+
 
 def adding(first, second):
     return first + second
 
+
 def subtract(minuend, subtrahend):
     return minuend - subtrahend
 
+
 def multiply(multiplicand, multiplier):
     return multiplicand * multiplier
+
 
 def divide(dividend, divider):
     if divider != 0:
@@ -41,8 +48,10 @@ def divide(dividend, divider):
     else:
         print("Divider can not be equal zero!")
 
+
 def power(base, index):
     return base ** index
+
 
 def calculations(options, new_result):
     value = None
@@ -109,38 +118,42 @@ def calculations(options, new_result):
         print("There is no such function, try again")
         help()
 
+
 def main():
     print("Welcome to badly organized calculator:")
     help()
     while True:
         print("Enter option:")
-        option = raw_input()
+        option = input()
         if option == "q":
             print("GOOD BYE")
             break
         else:
             resale = calculations(option, None)
             while True:
-                print("Do you want to use the current result for the next calculation?")
-                print("If YES, press the key - y / If No, press any other key")
-                option_two = raw_input()
-                if option_two == "y":
-                    print("What are you going to do with - " + str(resale))
-                    help()
-                    option = raw_input()
-                    resale = calculations(option, resale)
-                else:
-                    print("Do you really want to delete the current result")
+                if option == "a" or option == "s" or option == "m" or option == "d" or option == "p" or option == "h" or option == "?":
+                    print("Do you want to use the current result for the next calculation?")
                     print("If YES, press the key - y / If No, press any other key")
-                    option_two = raw_input()
+                    option_two = input()
                     if option_two == "y":
-                        print("Your current resale will be deleted, but the program will continue to work")
-                        break
-                    else:
                         print("What are you going to do with - " + str(resale))
-                        option = raw_input()
                         help()
+                        option = input()
                         resale = calculations(option, resale)
+                    else:
+                        print("Do you really want to delete the current result")
+                        print("If YES, press the key - y / If No, press any other key")
+                        option_two = input()
+                        if option_two == "y":
+                            print("Your current resale will be deleted, but the program will continue to work")
+                            break
+                        else:
+                            print("What are you going to do with - " + str(resale))
+                            option = input()
+                            help()
+                            resale = calculations(option, resale)
+                else:
+                    break
 
 if __name__ == '__main__':
     main()
