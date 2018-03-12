@@ -3,7 +3,7 @@
 # sequence. It is guaranteed that the sequence has at least two elements.
 
 first = int(input())
-second = int (input())
+second = int(input())
 
 
 if first < second:

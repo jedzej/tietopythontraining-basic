@@ -17,8 +17,8 @@ column_dest = int(input())
 print("Enter destination row")
 row_dest = int(input())
 
-if (fabs(column_start - column_dest) == 2 and fabs(row_start - row_dest) == 1) or \
-        (fabs(column_start - column_dest) == 1 and fabs(row_start - row_dest) == 2):
+if (abs(column_start - column_dest) == 2 and abs(row_start - row_dest) == 1) or \
+        (abs(column_start - column_dest) == 1 and 2 == abs(row_start - row_dest)):
     print('YES')
 else:
     print("NO")
