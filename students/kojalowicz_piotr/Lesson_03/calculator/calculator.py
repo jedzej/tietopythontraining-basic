@@ -18,7 +18,7 @@ def input_numbers():
 
 
 def input_operands(calculations_name, variables_name):
-    print(calculations_name)
+    print(calculations_name if len(variables_name) != 1 else 'To current value '+calculations_name)
     variables = []
     for i in variables_name:
         print("Input %s operand:" %i)
@@ -53,18 +53,24 @@ def power(base, index):
     return base ** index
 
 
-def calculations(options, new_result):
-    value = None
+def calculations(options, new_result=None):
     if options == "a":
-        if new_result is not None:
-            operands = input_operands("To current value ADDING", ["second"])
-            result(adding(new_result, operands[0]))
-            value = adding(new_result, operands[0])
-        else:
-            operands = input_operands("ADDING", ["first", "second"])
-            result(adding(operands[0], operands[1]))
-            value = adding(operands[0], operands[1])
+        operands = ([new_result] + input_operands("ADDING", ["second"])
+                    if new_result is not None else input_operands("ADDING", ["first", "second"]))
+        value = adding(operands[0], operands[1])
+        result(value)
         return value
+
+    # if options == "a":
+    #     if new_result is not None:
+    #         operands = input_operands("To current value ADDING", ["second"])
+    #         result(adding(new_result, operands[0]))
+    #         value = adding(new_result, operands[0])
+    #     else:
+    #         operands = input_operands("ADDING", ["first", "second"])
+    #         result(adding(operands[0], operands[1]))
+    #         value = adding(operands[0], operands[1])
+    #     return value
 
     elif options == "s":
         if new_result is not None:
@@ -129,7 +135,7 @@ def main():
             print("GOOD BYE")
             break
         else:
-            resale = calculations(option, None)
+            resale = calculations(option)
             while True:
                 if option == "a" or option == "s" or option == "m" or option == "d" or option == "p" or option == "h" or option == "?":
                     print("Do you want to use the current result for the next calculation?")
@@ -154,6 +160,7 @@ def main():
                             resale = calculations(option, resale)
                 else:
                     break
+
 
 if __name__ == '__main__':
     main()
