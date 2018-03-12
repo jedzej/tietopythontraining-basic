@@ -1,15 +1,12 @@
 #!/usr/bin/env python3
-import math
+h = int(input())
+m = int(input())
+s = int(input())
 
-print('Enter the hour hand angle')
-hour_angle = float(input())
-
-
-
-minute_angle = (hour_angle * 12) % 360
+angle = h * 30 + m * (30 / 60) + s * (30 / 3600)
+print(angle)
 
 
-print('minute angle will be {0:f} deg.'.format(minute_angle))
 
 
   

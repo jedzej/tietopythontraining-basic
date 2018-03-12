@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
+n = int(input())
+n = n % 100
+n = n / 10
+print('{0:d}'.format(int(n)))
 
-print('Enter the number')
-int = int(input())
-int = int % 10
-
-print('Last number in this integer is: {0:d}'.format(int))
