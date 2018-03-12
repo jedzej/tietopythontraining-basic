@@ -54,6 +54,7 @@ def power(base, index):
 
 
 def calculations(options):
+
     if options == "a":
         operands = input_operands("ADDING", ["first", "second"])
         result(adding(operands[0], operands[1]))
@@ -88,8 +89,7 @@ def main():
     help()
     while True:
         print("Enter option:")
-        option = input()
-        print(option)
+        option = input()`
         if option == "q":
             print("GOOD BYE")
             break
