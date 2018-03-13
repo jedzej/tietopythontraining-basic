@@ -4,6 +4,7 @@ def collatz(number):
     else:
         print(3 * number + 1)
 
+
 # something
 # something
 
