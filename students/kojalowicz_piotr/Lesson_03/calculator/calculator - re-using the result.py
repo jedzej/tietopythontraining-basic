@@ -65,18 +65,22 @@ def calculations(options, new_result=None):
 
     elif options == "s":
         if new_result is not None:
-            operands = ([new_result] + input_operands("SUBTRACT", ["subtrahend"])
-                        if new_result is not None
-                        else input_operands("SUBTRACT", ["minuend", "subtrahend"]))
+            operands = ([new_result] + \
+                        input_operands("SUBTRACT", ["subtrahend"]) \
+                        if new_result is not None \
+                        else input_operands("SUBTRACT", \
+                                            ["minuend", "subtrahend"]))
         value = subtract(operands[0], operands[1])
         result(value)
         return value
 
     elif options == "m":
         if new_result is not None:
-            operands = ([new_result] + input_operands("MULTIPLY", ["multiplier"])
-                        if new_result is not None
-                        else input_operands("MULTIPLY", ["multiplicand", "multiplier"]))
+            operands = ([new_result] + \
+                        input_operands("MULTIPLY", ["multiplier"]) \
+                        if new_result is not None \
+                        else input_operands("MULTIPLY", \
+                                            ["multiplicand", "multiplier"]))
         value = multiply(operands[0], operands[1])
         result(value)
         return value
