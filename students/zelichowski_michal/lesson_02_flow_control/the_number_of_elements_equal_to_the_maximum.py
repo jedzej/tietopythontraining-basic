@@ -1,5 +1,6 @@
-"""A sequence consists of integer numbers and ends with the number 0. Determine how many elements of this sequence are
-equal to its largest element. """
+"""A sequence consists of integer numbers and ends with the number 0.
+Determine how many elements of this sequence are equal to its largest
+element. """
 
 a = int(input())
 max = 0
