@@ -1,5 +1,5 @@
-#https://snakify.org/lessons/for_loop_range/problems/ladder/
-#piotrsta
+# https://snakify.org/lessons/for_loop_range/problems/ladder/
+# piotrsta
 
 num = int(input())
 

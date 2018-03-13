@@ -1,5 +1,5 @@
-#https://snakify.org/lessons/if_then_else_conditions/problems/queen_move/
-#piotrsta
+# https://snakify.org/lessons/if_then_else_conditions/problems/queen_move/
+# piotrsta
 
 col1 = int(input())
 row1 = int(input())

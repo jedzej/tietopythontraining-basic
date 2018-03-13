@@ -1,5 +1,5 @@
-#https://snakify.org/lessons/while_loop/problems/seq_second_max/
-#piotrsta
+# https://snakify.org/lessons/while_loop/problems/seq_second_max/
+# piotrsta
 
 max1 = 0
 max2 = 0
