@@ -5,11 +5,11 @@
 
 ### practice projects
 
-1. Modify (The Collatz Sequence) so that it's main function takes an argument and return list with all numbers.
-Write unittest.TestCase tests (2-3) for it.
-(Optional) Replace input() function for tests basing on https://gist.github.com/kuszcjan/fcb89621191e28dad6f8263f1960e5c8 
+1. Modify (The Collatz Sequence) so that its main function takes an argument and return list with all numbers.
+Write `unittest.TestCase` tests (2-3) for it.
+(Optional) Replace `input()` function for tests basing on https://gist.github.com/kuszcjan/fcb89621191e28dad6f8263f1960e5c8 
 
 2. Write test suite with 3 tests for distance function (The length of the segment) using py.test module
 
-3. Test your code from "Adding factorials"(snakify lesson 4) against function from math library.
+3. Test your code from "Adding factorials"(snakify lesson 4) against function from `math` library.
 (optional) try to find case, where your function fails
