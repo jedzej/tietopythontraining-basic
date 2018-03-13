@@ -19,7 +19,7 @@ def input_numbers():
 
 def input_operands(calculations_name, variables_name):
     print(calculations_name if len(variables_name) != 1
-          else 'To current value '+calculations_name)
+          else 'To current value ' + calculations_name)
     variables = []
     for i in variables_name:
         print("Input %s operand:" % i)
@@ -67,7 +67,7 @@ def calculations(options, new_result=None):
         if new_result is not None:
             operands = ([new_result] + input_operands("SUBTRACT", ["subtrahend"])
                         if new_result is not None
-                        else input_operands("ADDING", ["minuend", "subtrahend"]))
+                        else input_operands("SUBTRACT", ["minuend", "subtrahend"]))
         value = subtract(operands[0], operands[1])
         result(value)
         return value

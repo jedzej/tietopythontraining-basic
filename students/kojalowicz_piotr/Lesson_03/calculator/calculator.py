@@ -10,11 +10,11 @@ def help():
 
 def input_numbers():
     while True:
-         try:
-             numbers = float(input())
-             return numbers
-         except NameError:
-             print ("This is not the correct value of the variable, try again: ")
+        try:
+            numbers = float(input())
+            return numbers
+        except NameError:
+            print ("This is not the correct value of the variable, try again: ")
 
 
 def input_operands(calculations_name, variables_name):
