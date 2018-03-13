@@ -74,8 +74,8 @@ def calculations(options, new_result=None):
 
     elif options == "m":
         if new_result is not None:
-            operands = ([new_result] + input_operands("MULTIPLY", ["multiplier"])
-                        if new_result is not None
+            operands = ([new_result] + input_operands("MULTIPLY", ["multiplier"]) \
+                        if new_result is not None \
                         else input_operands("MULTIPLY", ["multiplicand", "multiplier"]))
         value = multiply(operands[0], operands[1])
         result(value)
