@@ -1,5 +1,5 @@
-#https://snakify.org/lessons/for_loop_range/problems/how_many_zeroes/
-#piotrsta
+# https://snakify.org/lessons/for_loop_range/problems/how_many_zeroes/
+# piotrsta
 
 number_of_numbers = int(input())
 zeros = 0

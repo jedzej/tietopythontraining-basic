@@ -1,5 +1,5 @@
-#https://snakify.org/lessons/for_loop_range/problems/factorial/
-#piotrsta
+# https://snakify.org/lessons/for_loop_range/problems/factorial/
+# piotrsta
 
 number = int(input())
 factorial = 1

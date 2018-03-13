@@ -1,5 +1,5 @@
-#https://snakify.org/lessons/if_then_else_conditions/problems/chocolate/
-#piotrsta
+# https://snakify.org/lessons/if_then_else_conditions/problems/chocolate/
+# piotrsta
 
 edgeN = int(input())
 edgeM = int(input())
