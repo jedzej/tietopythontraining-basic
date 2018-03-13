@@ -5,10 +5,10 @@
 
 ### practice projects
 
-1. Modify (The Collatz Sequence) so that its main function takes an argument and return list with all numbers.
-Write `unittest.TestCase` tests (2-3) for it.
-(Optional) Replace `input()` function for tests basing on https://gist.github.com/kuszcjan/fcb89621191e28dad6f8263f1960e5c8 
-
+1. Using `unittest.TestCase` write tests for **The Collatz Sequence** exercise from lesson 3:
+- Write 2-3 tests for isolated `collatz()` function to test whether calculations are performed correctly. Aim to pick representative testing sets to verify algorithm reliability in typical, corner and out-of-range conditions.
+- Write 2-3 full-scope tests of overall application data flow. Mock `input()` and `print()` functions to perform  end-to-end application testing basing on [this sample code](https://gist.github.com/jedzej/c9129558e87ec5d0b37405afd0ce6f46). Aim to pick representative testing sets to verify algorithm reliability in typical, corner and out-of-range conditions.
+ 
 2. Write test suite with 3 tests for distance function (The length of the segment) using py.test module
 
 3. Test your code from "Adding factorials"(snakify lesson 4) against function from `math` library.
