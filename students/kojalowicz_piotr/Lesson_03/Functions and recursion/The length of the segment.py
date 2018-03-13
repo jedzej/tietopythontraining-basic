@@ -19,3 +19,4 @@ y1 = inputNumber()
 x2 = inputNumber()
 y2 = inputNumber()
 print(distance(x1, y1, x2, y2))
+

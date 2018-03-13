@@ -5,3 +5,4 @@ def collatz(number):
         print(3 * number + 1)
 
 collatz(3)
+

@@ -12,3 +12,4 @@ while correctInPut is None:
         correctInPut = 1
     except ValueError:
         print('The first number must be real and the second integer')
+
