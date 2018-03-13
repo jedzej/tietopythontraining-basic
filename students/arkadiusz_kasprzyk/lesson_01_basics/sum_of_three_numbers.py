@@ -17,5 +17,5 @@ s = a+b+c
 
 print("{} + {} + {} = {}".format(a,b,c,s))
 
-print("Thank you :)")
+
 input("Press Enter to quit the program.")

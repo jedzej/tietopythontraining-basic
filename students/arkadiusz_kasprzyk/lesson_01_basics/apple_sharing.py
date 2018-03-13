@@ -28,5 +28,5 @@ r = K % N
 print("Each student obtain {} apples.".format(k))
 print("{} apples will be left.".format(r))
 
-print("Thank you :)")
+
 input("Press Enter to quit the program.")

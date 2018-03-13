@@ -15,5 +15,4 @@ s = i//100 + (i%100)//10 + i%10
 
 print("The tens digit is {}".format(s))
 
-print("Thank you :)")
 input("Press Enter to quit the program.")

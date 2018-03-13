@@ -1,5 +1,5 @@
 '''
-title: clock_face_1
+title: clock_face_1_deg_min_sec
 author: arkadiusz.kasprzyk@tieto.com
 date: 2018-03-05
 description:
@@ -18,8 +18,21 @@ M = int(input("minutes: "))
 S = int(input("seconds: "))
 
 deg_per_hour = 30  ## = 360/12
-degs = H * deg_per_hour + (60 * M + S)/120
+min_per_minute = 30 ## 1/2  deg_per_minute = 30/60
+sec_per_second = 30 ## 1/2  min per second = 30/60
 
-print("Angle (in deg) of the hour hand is {}".format(degs))
+degs = H * deg_per_hour
+mins = M * min_per_minute
+secs = S * sec_per_second
+
+
+mins = mins + secs // 60
+secs = secs % 60
+
+degs = degs + mins // 60
+mins = mins % 60
+
+
+print("Angle (in deg.min.sec) of the hour hand is {}° {}' {}''".format(degs, mins, secs))
 
 input("Press Enter to quit the program.")

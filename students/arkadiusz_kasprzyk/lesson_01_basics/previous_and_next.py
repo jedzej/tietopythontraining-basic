@@ -16,5 +16,5 @@ n = int(input("Give an integer: "))
 print("The next number to {} is {}".format(n,n+1))
 print("The previous number to {} is {}".format(n,n-1))
 
-print("Thank you :)")
+
 input("Press Enter to quit the program.")

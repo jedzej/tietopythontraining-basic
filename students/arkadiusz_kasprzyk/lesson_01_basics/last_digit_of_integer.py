@@ -12,5 +12,4 @@ i = int(input("Give an integer: "))
 
 print("The last digit is {}".format(i%10))
 
-print("Thank you :)")
 input("Press Enter to quit the program.")

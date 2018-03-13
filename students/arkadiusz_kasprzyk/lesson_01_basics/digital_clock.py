@@ -23,5 +23,5 @@ mm = m % 60
 
 print("It's {}:{}.".format(hh,mm))
 
-print("Thank you :)")
+
 input("Press Enter to quit the program.")

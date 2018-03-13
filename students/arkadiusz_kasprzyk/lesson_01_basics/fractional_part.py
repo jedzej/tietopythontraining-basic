@@ -17,5 +17,4 @@ r = x - f
 
 print("The fractional part is {}".format(r))
 
-print("Thank you :)")
 input("Press Enter to quit the program.")

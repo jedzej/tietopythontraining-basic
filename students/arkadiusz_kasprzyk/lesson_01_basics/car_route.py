@@ -9,7 +9,7 @@ description:
 '''
 
 import math as m
-tol = 1e9  ## tolerance
+tol = 1e-9  ## tolerance
 
 print('''
     A car can cover distance of N kilometers per day.
@@ -25,5 +25,4 @@ r = f + int(abs(M-f) > tol)
 
 print("It will take {} days to cover this route.".format(r))
 
-print("Thank you :)")
 input("Press Enter to quit the program.")

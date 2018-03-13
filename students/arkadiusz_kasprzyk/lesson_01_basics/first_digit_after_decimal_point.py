@@ -16,5 +16,4 @@ r = m.floor((x - f)*10)
 
 print("The first digit after decimal point is {}".format(r))
 
-print("Thank you :)")
 input("Press Enter to quit the program.")

@@ -17,6 +17,6 @@ a = b*h/2
 
 print("The area of the triangle is {}".format(a))
 
-print("Thank you :)")
+
 input("Press Enter to quit the program.")
 

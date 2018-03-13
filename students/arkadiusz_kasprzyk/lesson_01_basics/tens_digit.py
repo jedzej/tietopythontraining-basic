@@ -12,5 +12,5 @@ i = int(input("Give an integer: "))
 
 print("The tens digit is {}".format( (i%100)//10 ))
 
-print("Thank you :)")
+
 input("Press Enter to quit the program.")

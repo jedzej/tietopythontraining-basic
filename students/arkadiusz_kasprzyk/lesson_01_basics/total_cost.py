@@ -29,5 +29,4 @@ cc_sum = cc % 100
 
 print("{} cupcakes will cost {} dollars and {} cents".format(N, dd_sum, cc_sum))
 
-print("Thank you :)")
 input("Press Enter to quit the program.")
