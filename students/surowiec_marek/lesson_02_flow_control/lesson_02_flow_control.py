@@ -30,10 +30,6 @@ else:
     print('NO')
 
 
-if (k%n == 0 and k//n <= m) or (k%m == 0 and k//m <= n):
-if (k % n == 0 and k / n < m) or (k % m == 0 and k / m < n):
-
-
 #Chocolate bar
 n = int(input())
 m = int(input())
