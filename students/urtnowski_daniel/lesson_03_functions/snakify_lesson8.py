@@ -21,7 +21,7 @@ def distance(x1, y1, x2, y2):
     :param float y2: the y coordinate of second point
     :return float: the distance between the points (x1,y1) and (x2,y2)
     """
-    return math.sqrt(pow(x2-x1, 2) + pow(y2-y1, 2))
+    return math.sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2))
 
 
 def the_length_of_the_segment():
@@ -56,7 +56,7 @@ def power(a, n):
         n -= 1
 
     if exponent_is_negative is True:
-        result = 1/result
+        result = 1 / result
 
     return result
 
@@ -84,7 +84,7 @@ def power_v2(a, n):
     :return float: result of the computation
     """
     if n > 0:
-        return a * power_v2(a, n-1)
+        return a * power_v2(a, n - 1)
 
     return 1
 
@@ -110,7 +110,7 @@ def fib(n):
     :return int: the n-th Fibonacci number
     """
     if n > 1:
-        return fib(n-1) + fib(n-2)
+        return fib(n - 1) + fib(n - 2)
 
     return n
 

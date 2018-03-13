@@ -21,7 +21,7 @@ def collatz(number):
     if 0 == number % 2:
         ret_val = number // 2
     else:
-        ret_val = 3*number + 1
+        ret_val = 3 * number + 1
 
     print(ret_val)
     return ret_val
