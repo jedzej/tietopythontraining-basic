@@ -10,18 +10,18 @@ def help():
 
 def input_numbers():
     while True:
-         try:
-             numbers = float(input())
-             return numbers
-         except NameError:
-             print ("This is not the correct value, try again: ")
+        try:
+            numbers = float(input())
+            return numbers
+        except NameError:
+            print ("This is not the correct value, try again: ")
 
 
 def input_operands(calculations_name, variables_name):
     print(calculations_name)
     variables = []
     for i in variables_name:
-        print("Input %s operand:" %i)
+        print("Input %s operand:" % i)
         variables.append(input_numbers())
     return variables
 
@@ -89,7 +89,7 @@ def main():
     help()
     while True:
         print("Enter option:")
-        option = input()`
+        option = input()
         if option == "q":
             print("GOOD BYE")
             break

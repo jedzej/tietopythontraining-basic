@@ -18,10 +18,11 @@ def input_numbers():
 
 
 def input_operands(calculations_name, variables_name):
-    print(calculations_name if len(variables_name) != 1 else 'To current value '+calculations_name)
+    print(calculations_name if len(variables_name) != 1
+          else 'To current value ' + calculations_name)
     variables = []
     for i in variables_name:
-        print("Input %s operand:" %i)
+        print("Input %s operand:" % i)
         variables.append(input_numbers())
     return variables
 
@@ -56,7 +57,8 @@ def power(base, index):
 def calculations(options, new_result=None):
     if options == "a":
         operands = ([new_result] + input_operands("ADDING", ["second"])
-                    if new_result is not None else input_operands("ADDING", ["first", "second"]))
+                    if new_result is not None
+                    else input_operands("ADDING", ["first", "second"]))
         value = adding(operands[0], operands[1])
         result(value)
         return value
