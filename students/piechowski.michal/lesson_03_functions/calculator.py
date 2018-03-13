@@ -22,17 +22,14 @@ def print_result(result):
 
 def get_option():
     """ Returns option choosen by the user. """
-    print("Enter option:")
-    option = input()
+    option = input("Enter option: ")
     return option
 
 
 def get_two_operands():
     """ Returns two operands used later for calculations. """
-    print("Input 1st operand:")
-    first_operand = float(input())
-    print("Input 2nd operand:")
-    second_operand = float(input())
+    first_operand = float(input("Input 1st operand: "))
+    second_operand = float(input("Input 2nd operand: "))
     return first_operand, second_operand
 
 

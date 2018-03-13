@@ -11,9 +11,8 @@ def collatz(number):
 
 
 def main():
-    print("Give number for collatz function:")
     try:
-        number = int(input())
+        number = int(input("Give number for collatz function: "))
     except ValueError:
         print("You must input an integer!")
         quit()
