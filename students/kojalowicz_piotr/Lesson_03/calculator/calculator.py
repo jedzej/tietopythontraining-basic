@@ -61,59 +61,36 @@ def calculations(options, new_result=None):
         result(value)
         return value
 
-    # if options == "a":
-    #     if new_result is not None:
-    #         operands = input_operands("To current value ADDING", ["second"])
-    #         result(adding(new_result, operands[0]))
-    #         value = adding(new_result, operands[0])
-    #     else:
-    #         operands = input_operands("ADDING", ["first", "second"])
-    #         result(adding(operands[0], operands[1]))
-    #         value = adding(operands[0], operands[1])
-    #     return value
-
     elif options == "s":
         if new_result is not None:
-            operands = input_operands("To current value SUBTRACT", ["subtrahend"])
-            result(subtract(new_result, operands[0]))
-            value = subtract(new_result, operands[0])
-        else:
-            operands = input_operands("SUBTRACT", ["minuend", "subtrahend"])
-            result(subtract(operands[0], operands[1]))
-            value = subtract(operands[0], operands[1])
+            operands = ([new_result] + input_operands("SUBTRACT", ["subtrahend"])
+                        if new_result is not None else input_operands("ADDING", ["minuend", "subtrahend"]))
+        value = subtract(operands[0], operands[1])
+        result(value)
         return value
 
     elif options == "m":
         if new_result is not None:
-            operands = input_operands("To current value MULTIPLY", ["multiplier"])
-            result(multiply(new_result, operands[0]))
-            value = multiply(new_result, operands[0])
-        else:
-            operands = input_operands("MULTIPLY", ["multiplicand", "multiplier"])
-            result(multiply(operands[0], operands[1]))
-            value = multiply(operands[0], operands[1])
+            operands = ([new_result] + input_operands("MULTIPLY", ["multiplier"])
+                        if new_result is not None else input_operands("MULTIPLY", ["multiplicand", "multiplier"]))
+        value = multiply(operands[0], operands[1])
+        result(value)
         return value
 
     elif options == "d":
         if new_result is not None:
-            operands = input_operands("To current value DIVIDE", ["divider"])
-            result(divide(new_result, operands[0]))
-            value = divide(new_result, operands[0])
-        else:
-            operands = input_operands("DIVIDE", ["dividend", "divider"])
-            result(divide(operands[0], operands[1]))
-            value = divide(operands[0], operands[1])
+            operands = ([new_result] + input_operands("DIVIDE", ["divider"])
+                        if new_result is not None else input_operands("DIVIDE", ["dividend", "divider"]))
+        value = divide(operands[0], operands[1])
+        result(value)
         return value
 
     elif options == "p":
         if new_result is not None:
-            operands = input_operands("To current value POWER", ["index"])
-            result(power(new_result, operands[0]))
-            value = power(new_result, operands[0])
-        else:
-            operands = input_operands("POWER", ["base", "index"])
-            result(power(operands[0], operands[1]))
-            value = power(operands[0], operands[1])
+            operands = ([new_result] + input_operands("POWER", ["index"])
+                        if new_result is not None else input_operands("POWER", ["base", "index"]))
+        value = power(operands[0], operands[1])
+        result(value)
         return value
 
     elif options == "h" or options == "?":
