@@ -19,4 +19,3 @@ elif k % m == 0 and k / m < n:
     print('YES')
 else:
     print('NO')
-
