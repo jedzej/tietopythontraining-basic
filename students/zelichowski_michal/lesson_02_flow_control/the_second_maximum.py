@@ -16,4 +16,3 @@ while a != 0:
     a = int(input())
 
 print(secondMax)
-
