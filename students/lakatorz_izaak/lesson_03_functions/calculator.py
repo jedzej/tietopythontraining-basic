@@ -11,39 +11,39 @@ def get_input():
     return add_var_one, add_var_two
 
 
-def addiction():
+def summation():
     """Return the sum of two values."""
+    print("ADD")
     var_one, var_two = get_input()
-    print("Result:")
-    print(var_one + var_two)
+    print_result(var_one + var_two)
 
 
-def substraction():
+def subtraction():
     """Return the difference of two values."""
+    print("SUBTRACT")
     var_one, var_two = get_input()
-    print("Result:")
-    print(var_one - var_two)
+    print_result(var_one - var_two)
 
 
 def multiplication():
     """Return the product of two values."""
+    print("MULTIPLY")
     var_one, var_two = get_input()
-    print("Result:")
-    print(var_one * var_two)
+    print_result(var_one * var_two)
 
 
 def division():
     """Return the quotient of two values."""
+    print("DIVIDE")
     var_one, var_two = get_input()
-    print("Result:")
-    print(var_one / var_two)
+    print_result(var_one / var_two)
 
 
 def power():
     """Return first value raised to second value power."""
+    print("POWER")
     var_one, var_two = get_input()
-    print("Result:")
-    print(var_one ** var_two)
+    print_result(var_one ** var_two)
 
 
 def print_info():
@@ -58,6 +58,12 @@ def print_info():
     print("q - QUIT")
 
 
+def print_result(result):
+    """Prints the result specified in parameter."""
+    print("Result:")
+    print(result)
+
+
 print("Welcome to badly organized calculator:")
 print_info()
 
@@ -67,31 +73,28 @@ while True:
     option = input()
 
     if option == "a":
-        print("ADD")
-        addiction()
+        summation()
 
-    if option == "s":
-        print("SUBTRACT")
-        substraction()
+    elif option == "s":
+        subtraction()
 
-    if option == "m":
-        print("MULTIPLY")
+    elif option == "m":
         multiplication()
 
-    if option == "d":
-        print("DIVIDE")
+    elif option == "d":
         division()
 
-    if option == "p":
-        print("POWER")
+    elif option == "p":
         power()
 
-    if option == "h":
+    elif option == "h":
         print_info()
 
-    if option == "?":
+    elif option == "?":
         print_info()
 
-    if option == "q":
+    elif option == "q":
         print("GOOD BYE")
         break
+    else:
+        print("Wrong option letter. Try again.")

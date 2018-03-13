@@ -9,14 +9,13 @@ def collatz(number):
     else:
         result = 3 * number + 1
     print(str(result))
-
-    if result == 1:
-        return 0
-    else:
-        collatz(result)
+    return result
 
 
 print("Enter number: ")
-value = int(input())
-
-collatz(value)
+try:
+    value = int(input())
+    while value != 1:
+        value = collatz(value)
+except ValueError:
+    print('You must enter an integer.')
