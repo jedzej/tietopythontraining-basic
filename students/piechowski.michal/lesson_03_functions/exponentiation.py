@@ -13,5 +13,5 @@ def main():
     print(power(number, exponent))
 
 
-if __name__== "__main__":
+if __name__ == "__main__":
     main()
