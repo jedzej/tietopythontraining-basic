@@ -1,5 +1,6 @@
-n = int(input())
-for i in range(1, n + 1):
-    for j in range(1, i + 1):
-        print(j, sep='', end='')
-    print()
+height = int(input())
+for row in range(height):
+    word = ""
+    for number in range(row + 1):
+        print(number + 1, end='')
+    print("") 
