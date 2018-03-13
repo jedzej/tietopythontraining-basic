@@ -1,15 +1,12 @@
 #https://snakify.org/lessons/integer_float_numbers/problems/car_route/
 #piotrsta
-
-from math import ceil
+import math
 
 print('Podaj mozliwy kilometraz na dzien: ')
-kmPerDay = int(input())
+km_per_day = int(input())
 print('Podaj dlugosc trasy: ')
 route = int(input())
 
-days=ceil(route/kmPerDay)
+days = math.ceil(route / km_per_day)
 print('Liczba dni potrzebnych na przebycie tej trasy to: ')
 print(days)
-
-

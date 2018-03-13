@@ -2,11 +2,9 @@
 #piotrsta
 
 print('Podaj liczbe minut od polnocy: ')
-numOfMinutes = int(input())
+num_of_minutes = int(input())
 
-hours=numOfMinutes//60
-minutes=numOfMinutes%60
+hours = num_of_minutes // 60
+minutes = num_of_minutes % 60
 print('Godzina minut: ')
 print(hours, minutes)
-
-

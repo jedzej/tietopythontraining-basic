@@ -1,10 +1,7 @@
 #https://snakify.org/lessons/integer_float_numbers/problems/last_digit/
 #piotrsta
 
-print('Podaj liczbe calkowita: ')
-num = int(input())
+num = int(input('Podaj liczbe calkowita: '))
 
 print('Liczba jednosci wynosi: ')
-print(str(num)[-1])
-
-
+print(num % 10)
