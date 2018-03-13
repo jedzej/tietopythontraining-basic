@@ -1,4 +1,4 @@
-def Bishop_moves():
+def bishop_moves():
     print('Determine whether a bishop can go from the first to the second in one move.')
     RowNumberStart = int(input("Enter Row Number Start:"))
     ColumnNumberStart = int(input("Enter Column Number Start:"))
@@ -91,7 +91,7 @@ def Ladder():
     n = int(input("How many steps?"))
     for k in range(1, n + 1):
         for l in range(1, k + 1):
-            print(1, sep= '', end='')
+            print(1, sep='', end='')
         print("")
 
 
