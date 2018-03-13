@@ -1,7 +1,6 @@
 #https://snakify.org/lessons/print_input_numbers/problems/hello_harry/
 #piotrsta
 
-print('Podaj imie: ')
-name = input()
+name = input('Podaj imie: ')
 
-print('Hello, '+name+'!')
+print('Hello, ' + name + '!')

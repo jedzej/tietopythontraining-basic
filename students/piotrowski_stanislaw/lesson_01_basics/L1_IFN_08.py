@@ -1,16 +1,12 @@
 #https://snakify.org/lessons/integer_float_numbers/problems/total_cost/
 #piotrsta
 
-print('Cena babeczki - "czesc dolarowa": ')
-A = int(input())    #dollars
-print('Cena babeczki - "czesc centowa": ')
-B = int(input())    #cents
-print('Ile babeczek?: ')
-N = int(input())
+a = int(input('Cena babeczki - "czesc dolarowa": '))
+b = int(input('Cena babeczki - "czesc centowa": '))
+n = int(input('Ile babeczek?: '))
 
-totalCents = N*(A*100 + B)
-dollars = totalCents // 100
-cents = totalCents % 100
+total_cents = n * (a * 100 + b)
+dollars = total_cents // 100
+cents = total_cents % 100
 print('Calkowity koszt wynosi (dollary, centy): ')
 print(dollars, cents)
-
