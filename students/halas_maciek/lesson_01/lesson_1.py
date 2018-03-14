@@ -52,6 +52,89 @@ def desks():
         class2) + calculate_desks_for_clas(class3))
 
 
+def number():
+    while True:
+        try:
+            number = int(input('Please write intiger number:\n'))
+            print(number % 10)
+            break
+        except ValueError:
+            print('Write intiger number You ...:')
+
+
+# It does not support negative numbers. If I need to convert the number to a
+# string and display the last character.
+
+def tens_digit():
+    number = int(input('Please write intiger number:\n'))
+    print('The tens digit of Your number is:\n' + str((number % 100 // 10)))
+
+
+def three_digits():
+    number = input('Please write three-digit number:\n')
+    # suma = 0
+    # for cyfra in number:
+    #     suma += cyfra
+    suma = sum([int(cyfra) for cyfra in number])
+    print('Your suma is:\n {}'.format(suma))
+
+
+def fractional_part():
+    number = float(input('Write intiger number:\n'))
+    number1 = int(number)
+    print(number - number1)
+
+
+def first_digit_after_decimal_point():
+    number = float(input('Write Your positive real number:\n'))
+    number1 = int(number)
+    suma = (number - number1)
+    print('Your score:\n', (suma * 10))
+
+
+def car_route():
+    km_by_car = float(input('Write how many km Your car can ride:\n'))
+    route_all_km = float(input('Write how many km has entire route:\n'))
+    print('You need ', (route_all_km / km_by_car), 'days for this route')
+
+
+# def digital_clock():
+#     passed_minutes = int(input('Write hom many minutes it has passed\n'))
+#     minutes_after_midnight = passed_minutes / 60
+#     minutes100 = int(minutes_after_midnight * 100) / 100
+#     score = int(minutes100)
+#     score1 = (minutes100 - score) * 100
+#     score2 = int(score1)
+#     print(score,'',score2)
+
+def digital_clock_():
+    passed_minutes = int(input('Write how many minutes it has passed\n'))
+    hours = int((passed_minutes / 60) % 24)
+    minutes = passed_minutes % 60
+    print('Time: ', hours, '', minutes)
+
+
+def cupcake_cost():
+    price = float(input('Please write the prise for the cupcakes:\n'))
+    dolars = int(price)
+    cents = price - dolars
+    how_many_cupcakes = int(input(
+        'Please write how many cupcakes You want to buy:\n'))
+    final_dolars = dolars * how_many_cupcakes
+    final_cents = cents * how_many_cupcakes
+    final_cents_plus = (final_cents - int(final_cents))* 100
+    print('For', how_many_cupcakes, 'cupcakes You should pay',
+          (final_dolars + int(final_cents)), 'dolars and ',
+          int(final_cents_plus)), 'cents'
+
+
+def clock_face_1():
+    h = int(input('Please write hours:\n'))
+    m = int(input('Please write minutes:\n'))
+    s = int(input('Please write seconds:\n'))
+    second = (h * 3600 + m * 60 + s)
+    print((second * 360) / 43200)
+
 if __name__ == '__main__':
     # read_from_console()
     # area()
@@ -59,4 +142,13 @@ if __name__ == '__main__':
     # apple()
     # prev_and_next()
     # desks()
+    # number()
+    # tens_digit()
+    # three_digits()
+    # fractional_part()
+    # first_digit_after_decimal_point()
+    # car_route()
+    # digital_clock()
+    # cupcake_cost()
+    # clock_face_1()
     pass
