@@ -22,7 +22,10 @@ for ss in ["start", "stop"]:
         key = "{}_{}".format(ss, cr)
         data[key] = int(input("number of {} {} : ".format(ss, cr)))
 
-
+"""
+This could be done without dictionary and loop, just using four variables,
+but it was just more fun for me to do it this way. I hope it's not too far...
+"""
 
 if abs(data['start_column'] - data['stop_column']) ==  abs(data['start_row'] - data['stop_row']):
     print('YES')
