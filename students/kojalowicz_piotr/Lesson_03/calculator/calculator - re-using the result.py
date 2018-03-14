@@ -124,8 +124,8 @@ def main():
                         or option == "p" \
                         or option == "h" \
                         or option == "?":
-                    print("Do you want to use the current result for the next calculation?")
-                    print("If YES, press the key - y / If No, press any other key")
+                    print("Do you want to use the current result?")
+                    print("If YES, key - y / If No, any other key")
                     option_two = input()
                     if option_two == "y":
                         print("What are you going to do with - " + str(resale))
@@ -133,11 +133,11 @@ def main():
                         option = input()
                         resale = calculations(option, resale)
                     else:
-                        print("Do you really want to delete the current result")
-                        print("If YES, press the key - y / If No, press any other key")
+                        print("Do you really want to delete result")
+                        print("If YES, key - y / If No,any other key")
                         option_two = input()
                         if option_two == "y":
-                            print("Your current resale will be deleted, but the program will continue to work")
+                            print("Your current resale will be deleted.")
                             break
                         else:
                             print("What are you going to do with - " + str(resale))
