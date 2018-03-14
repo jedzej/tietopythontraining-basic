@@ -140,7 +140,8 @@ def main():
                             print("Your current resale will be deleted.")
                             break
                         else:
-                            print("What are you going to do with - " + str(resale))
+                            print("What are you going to do with - "
+                                  + str(resale))
                             option = input()
                             help()
                             resale = calculations(option, resale)
