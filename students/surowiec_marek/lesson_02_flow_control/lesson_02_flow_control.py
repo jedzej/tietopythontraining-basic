@@ -24,7 +24,8 @@ h1 = int(input())
 v1 = int(input())
 h2 = int(input())
 v2 = int(input())
-if (abs(h1-h2) == 1 and abs(v1-v2) == 2 or abs(h1-h2) == 2 and abs(v1-v2) == 1):
+if (abs(h1-h2) == 1 and abs(v1-v2) == 2 or
+    abs(h1-h2) == 2 and abs(v1-v2) == 1):
     print('YES')
 else:
     print('NO')
@@ -79,7 +80,7 @@ print(sum)
 n = int(input())
 for i in range(1, n+1):
     for j in range(1, i+1):
-        print(j, end="")
+        print(j, end='')
     print()
 
 
@@ -111,7 +112,7 @@ print(second_max)
 
 
 # The number of elements equal to the maximum
-max_a=0
+max_a = 0
 while 1:
     a = int(input())
     if a == 0:
@@ -122,4 +123,3 @@ while 1:
     if a == max_a:
         number_of_elements += 1
 print(number_of_elements)
-
