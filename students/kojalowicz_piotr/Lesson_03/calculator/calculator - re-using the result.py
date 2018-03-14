@@ -65,28 +65,32 @@ def calculations(options, new_result=None):
 
     elif options == "s":
         operands = ([new_result] + input_operands("SUBTRACT", ["subtrahend"])
-                        if new_result is not None else input_operands("ADDING", ["minuend", "subtrahend"]))
+                    if new_result is not None
+                    else input_operands("ADDING", ["minuend", "subtrahend"]))
         value = subtract(operands[0], operands[1])
         result(value)
         return value
 
     elif options == "m":
         operands = ([new_result] + input_operands("MULTIPLY", ["multiplier"])
-                        if new_result is not None else input_operands("MULTIPLY", ["multiplicand", "multiplier"]))
+                    if new_result is not None
+                    else input_operands("MULTIPLY", ["multiplicand", "multiplier"]))
         value = multiply(operands[0], operands[1])
         result(value)
         return value
 
     elif options == "d":
         operands = ([new_result] + input_operands("DIVIDE", ["divider"])
-                        if new_result is not None else input_operands("DIVIDE", ["dividend", "divider"]))
+                    if new_result is not None
+                    else input_operands("DIVIDE", ["dividend", "divider"]))
         value = divide(operands[0], operands[1])
         result(value)
         return value
 
     elif options == "p":
         operands = ([new_result] + input_operands("POWER", ["index"])
-                        if new_result is not None else input_operands("POWER", ["base", "index"]))
+                    if new_result is not None
+                    else input_operands("POWER", ["base", "index"]))
         value = power(operands[0], operands[1])
         result(value)
         return value
