@@ -12,11 +12,10 @@ def program():
     n = int(input())
     base_power = power(a, abs(n))
     if n < 0:
-        print(1/base_power)
+        print(1 / base_power)
     else:
         print(base_power)
 
 
 if __name__ == '__main__':
     program()
-

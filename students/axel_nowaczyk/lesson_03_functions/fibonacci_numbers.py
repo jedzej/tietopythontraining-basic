@@ -4,8 +4,7 @@ def fib(number):
     elif number == 1:
         return 1
     else:
-        return fib(number-1) + fib(number-2)
-    return math.sqrt(math.pow(x1-x2, 2) + math.pow(y1 - y2, 2))
+        return fib(number - 1) + fib(number - 2)
 
 
 def program():
