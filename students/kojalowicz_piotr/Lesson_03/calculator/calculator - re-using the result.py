@@ -117,7 +117,13 @@ def main():
         else:
             resale = calculations(option)
             while True:
-                if option == "a" or option == "s" or option == "m" or option == "d" or option == "p" or option == "h" or option == "?":
+                if option == "a" \
+                        or option == "s" \
+                        or option == "m" \
+                        or option == "d" \
+                        or option == "p" \
+                        or option == "h" \
+                        or option == "?":
                     print("Do you want to use the current result for the next calculation?")
                     print("If YES, press the key - y / If No, press any other key")
                     option_two = input()
