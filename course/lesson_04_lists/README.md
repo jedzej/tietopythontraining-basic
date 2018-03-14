@@ -15,6 +15,6 @@
 **Example data for "Number filter":**
 ```
 list_of_strings = ['1', '2', '0', '8', '3']
-to_filter_range = range(3)`
+to_filter_range = range(3)
 expected_output = [8, 3]
 ```
