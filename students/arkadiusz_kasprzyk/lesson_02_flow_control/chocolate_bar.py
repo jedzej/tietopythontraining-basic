@@ -1,7 +1,4 @@
 """
-title: chocolate_bar
-author: akasp@interia.pl, arkadiusz.kasprzyk@tieto.com
-date: 2018-03-13
 description:
     Chocolate bar has the form of a rectangle divided into n×m portions.
     Chocolate bar can be split into two rectangular parts
@@ -11,6 +8,11 @@ description:
     The program reads three integers: n, m, and k.
     It should print YES or NO.
 """
+
+print("""
+    For given m x n chockolate bar determines if it is possible 
+    to obtain k-square piece by one break (along the whole bar).  
+""")
 
 n = int(input("number of chockolate rows: "))
 m = int(input("number of chockolate columns: "))
@@ -24,5 +26,3 @@ if condition_0 and (m_div or n_div):
     print('YES')
 else:
     print('No')
-
-input("")

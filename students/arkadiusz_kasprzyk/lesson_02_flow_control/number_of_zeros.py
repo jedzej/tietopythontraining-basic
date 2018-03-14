@@ -1,7 +1,4 @@
 """
-title: number_of_zeros
-author: akasp@interia.pl, arkadiusz.kasprzyk@tieto.com
-date: 2018-03-13
 description:
     Given N numbers: the first number in the input is N, after that N integers are given.
     Count the number of zeros among the given integers and print it.
@@ -22,5 +19,3 @@ for k in range(N):
     zeros_counter += nr == 0
 
 print("There were {} zeros.".format(zeros_counter))
-
-print("")

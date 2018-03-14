@@ -1,7 +1,4 @@
 """
-title: bishop_moves
-author: akasp@interia.pl, arkadiusz.kasprzyk@tieto.com
-date: 2018-03-13
 description:
     In chess, the bishop moves diagonally, any number of squares.
     Given two different squares of the chessboard,
@@ -14,6 +11,11 @@ description:
     or NO otherwise.
 """
 
+print("""
+    For given two fields on the chessboard, start and stop,
+    determines if this is possible move for the bishop.
+    Columns and rows are given in numbers 1-8.
+""")
 
 data = {}  ## input data
 
@@ -32,4 +34,3 @@ if abs(data['start_column'] - data['stop_column']) ==  abs(data['start_row'] - d
 else:
     print('NO')
 
-input("")

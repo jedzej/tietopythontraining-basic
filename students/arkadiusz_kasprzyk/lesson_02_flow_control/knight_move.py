@@ -1,7 +1,4 @@
 """
-title: knight_move
-author: akasp@interia.pl, arkadiusz.kasprzyk@tieto.com
-date: 2018-03-13
 description:
     Chess knight moves like the letter L.
     It can move two cells horizontally and one cell vertically,
@@ -15,6 +12,12 @@ description:
     The program output YES if a knight can go from the first cell to the second in one move,
     or NO otherwise.
 """
+
+print("""
+    For given two fields on the chessboard, start and stop,
+    determines if this is possible move for the knight.
+    Columns and rows are given in numbers 1-8.
+""")
 
 data = {}  ## input data
 
@@ -30,5 +33,3 @@ if (col_diff == 1 and row_diff == 2) or (col_diff == 2 and row_diff == 1):
     print('YES')
 else:
     print('NO')
-
-input("")

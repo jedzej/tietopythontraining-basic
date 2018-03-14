@@ -1,7 +1,4 @@
 """
-title: queen_moves
-author: akasp@interia.pl, arkadiusz.kasprzyk@tieto.com
-date: 2018-03-13
 description:
     Chess queen moves horizontally, vertically or diagonally to any number of cells.
     Given two different cells of the chessboard, determine whether a queen
@@ -13,6 +10,12 @@ description:
     The program output YES if a queen can go from the first cell to the second in one move,
     or NO otherwise.
 """
+
+print("""
+    For given two fields on the chessboard, start and stop,
+    determines if this is possible move for the queen.
+    Columns and rows are given in numbers 1-8.
+""")
 
 data = {}  ## input data
 
@@ -28,5 +31,3 @@ if col_diff == row_diff or col_diff == 0 or row_diff == 0:
     print('YES')
 else:
     print('NO')
-
-input("")
