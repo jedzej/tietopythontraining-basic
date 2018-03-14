@@ -1,0 +1,5 @@
+linters:
+  flake8:
+    ignore: 'E999'
+    max-line-length: 79
+    fixer: false
