@@ -5,6 +5,6 @@ while size:
     number = int(input("Enter number " + str(id) + ": "))
     if number == 0:
         zeros += 1
-    size -=1
+    size -= 1
     id += 1
-print (zeros)
+print(zeros)

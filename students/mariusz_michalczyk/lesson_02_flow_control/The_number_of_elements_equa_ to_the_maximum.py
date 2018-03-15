@@ -11,4 +11,3 @@ while True:
     if n == 0:
         break
 print(equal_nrs)
-
