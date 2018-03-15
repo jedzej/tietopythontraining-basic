@@ -1,5 +1,5 @@
 def main():
-    number = getInitialNumber()
+    number = get_initial_number()
     while True:
         result = collatz(number)
         if result != 1:
@@ -8,10 +8,10 @@ def main():
             break
 
 
-def getInitialNumber():
+def get_initial_number():
     while True:
         try:
-            number = int(input())
+            number = int(input('Please provide number\n'))
             return number
         except ValueError:
             print("You must provide integer. Try again!")
@@ -22,7 +22,7 @@ def collatz(number):
         result = (number // 2)
     else:
         result = 3 * number + 1
-    print (result)
+    print(result)
     return result
 
 
