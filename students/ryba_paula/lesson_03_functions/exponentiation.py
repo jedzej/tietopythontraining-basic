@@ -5,9 +5,9 @@ def power(base, index):
         return base * power(base, index - 1)
 
 
-while True:
-    try:
-        base = float(input("Please give the base number: "))
+def input_validation():
+    while True:
+        base = float(input("Pppppplease give the base number: "))
         if base < 0:
             print("Base number must be positive. Try again")
             continue
@@ -16,6 +16,12 @@ while True:
             print("Power index must be non-negative. Try again")
             continue
         print("The result is:", power(base, index))
+        break
+
+
+while True:
+    try:
+        input_validation()
         break
     except ValueError:
         print("The first number must be real and the second int. Try again")
