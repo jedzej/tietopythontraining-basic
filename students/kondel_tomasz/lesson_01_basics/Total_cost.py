@@ -1,0 +1,5 @@
+A = int(input())
+B = int(input())
+N = int(input())
+c = (A * N) + ((B * N) / 100)
+print(str(int(c)) + ' ' + str(int((c * 100) - (int(c) * 100))))

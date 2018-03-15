@@ -1,0 +1,5 @@
+h = int(input())
+m = int(input())
+s = int(input())
+angle = float(0.5 * (60 * h + m + s / 60))
+print('angle = ', round(angle, 3))

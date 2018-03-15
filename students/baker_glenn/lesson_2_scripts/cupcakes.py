@@ -1,0 +1,7 @@
+print("enter a the amount of dollars")
+dollars = int(input())
+print("enter a the amount of cents")
+cents = int(input())
+print("enter a the amount of cupcakes")
+cupcakes = int(input())
+print("price for " + str(cupcakes) + " cupcakes is " + str((((dollars * 100) + cents) * cupcakes) // 100) + " " + str((((dollars * 100) + cents) * cupcakes) % 100))
