@@ -66,6 +66,7 @@ We hope you will have a lot of fun learning!
 ### Reference materials
 
 - GIT training materials
+  - [GitHub Standard Fork & Pull Request Workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
   - https://help.github.com/articles/about-pull-request-reviews/
   - [How to setup upstream repository for your fork?](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
   - [How to sync fork with upstream repository?](https://help.github.com/articles/syncing-a-fork/)
