@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+
 def bishop_moves():
 
     a = int(input())
