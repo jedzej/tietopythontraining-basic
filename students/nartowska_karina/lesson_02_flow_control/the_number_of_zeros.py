@@ -1,3 +1,4 @@
+zeros = 0
 amount = int(input())
 for i in range(0, amount):
     value = int(input())
