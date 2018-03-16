@@ -1,6 +1,7 @@
 # Exponentiation
 a = float(input())
 n = int(input())
+
 def power (a, n):
     if n == 0:
         return 1
