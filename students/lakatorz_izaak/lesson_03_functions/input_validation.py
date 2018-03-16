@@ -20,4 +20,3 @@ try:
     collatz(value)
 except ValueError:
     print('You must enter an integer.')
-
