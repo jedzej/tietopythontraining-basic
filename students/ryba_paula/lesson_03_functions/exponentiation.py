@@ -7,7 +7,7 @@ def power(base, index):
 
 def input_validation():
     while True:
-        base = float(input("Pppppplease give the base number: "))
+        base = float(input("Please give the base number: "))
         if base < 0:
             print("Base number must be positive. Try again")
             continue
