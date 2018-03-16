@@ -1,5 +1,5 @@
 linters:
   flake8:
     ignore: 'E999'
-    max-line-length: 120
+    max-line-length: 100
     fixer: false
