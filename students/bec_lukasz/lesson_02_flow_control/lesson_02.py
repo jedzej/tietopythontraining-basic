@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 
 
 def bishop_moves():
@@ -96,9 +95,10 @@ def ladder():
     n = int(input())
 
     for i in range(1, n + 1):
+        out = ''
         for j in range(1, i + 1):
-            print(j, sep='', end='')
-        print()
+            out += str(j)
+        print(out)
 
 
 def lost_card():
@@ -138,4 +138,4 @@ def the_second_maximum():
 # the_number_of_zeros()
 # ladder()
 # lost_card()
-the_second_maximum()
+# the_second_maximum()
