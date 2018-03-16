@@ -1,5 +1,5 @@
 def hello():
-    name = raw_input()
+    name = input()
     WELCOME = 'Hello'
     print(WELCOME + ', ' + name + '!')
 
