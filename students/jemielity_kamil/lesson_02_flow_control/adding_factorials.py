@@ -6,4 +6,5 @@ for x in range(1, number+1):
     total = total * x
     factorial_sum += total
 
+
 print(factorial_sum)
