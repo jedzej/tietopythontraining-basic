@@ -9,7 +9,8 @@ moveX = startX - endX
 moveY = startY - endY
 
 result = 'NO'
-if (math.fabs(moveX) == 2 and math.fabs(moveY) == 1) or (math.fabs(moveY) == 2 and math.fabs(moveX) == 1):
+if (math.fabs(moveX) == 2 and math.fabs(moveY) == 1) or \
+        (math.fabs(moveY) == 2 and math.fabs(moveX) == 1):
     result = 'YES'
 
 if startX == endX and startY == endY:
