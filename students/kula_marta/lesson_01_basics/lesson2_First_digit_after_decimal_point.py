@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 
-a = float(raw_input("set float number: "))
+a = float(input("set float number: "))
 u = a - int(a)
+c = int(a)
 
 if (u == 0):
     w = 0
 else:
-    s = str(u)
+    s = str(round(u,2))
     array_dig = []
 
     for digit in s:

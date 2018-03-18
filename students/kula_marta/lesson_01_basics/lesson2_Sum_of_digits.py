@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-a = input("enter three-digit number: ")
+a = int(input("enter three-digit number: "))
 s = str(a)
 array_dig = []
 

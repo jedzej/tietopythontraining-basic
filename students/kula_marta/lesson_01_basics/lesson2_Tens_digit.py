@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-a = input("set number: ")
+a = int(input("set number: "))
 s = str(a)
 s_dig_cnt = 0
 array_dig = []

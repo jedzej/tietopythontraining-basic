@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
-n = input("set max km/day: ")
-m = input("treap distanse: ")
+n = int(input("set max km/day: "))
+m = int(input("treap distanse: "))
 if (m % n == 0):
     x = m/n
 else:

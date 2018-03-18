@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-A = input("enter dollar: ")
-B = input("enter cent: ")
-c = input("the number of cupcakes: ")
+A = int(input("enter dollar: "))
+B = int(input("enter cent: "))
+c = int(input("the number of cupcakes: "))
 x = A * c
 y = B * c
 

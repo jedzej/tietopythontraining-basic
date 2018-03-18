@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-a = input("enter the number of students in A class: ")
-b = input("enter the number of students in B class: ")
-c = input("enter the number of students in C class: ")
+a = int(input("enter the number of students in A class: "))
+b = int(input("enter the number of students in B class: "))
+c = int(input("enter the number of students in C class: "))
 
 if      ((a % 2) == 0):
         w_a = a / 2
