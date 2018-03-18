@@ -1,43 +1,43 @@
 def bishop_moves():
     print('Determine whether a bishop can go from the first to the second in one move.')
-    RowNumberStart = int(input("Enter Row Number Start:"))
-    ColumnNumberStart = int(input("Enter Column Number Start:"))
-    RowNumberEnd = int(input("Enter Row Number End:"))
-    ColumnNumberEnd = int(input("Enter Column Number End: "))
-    if abs(RowNumberStart - RowNumberEnd) == abs(ColumnNumberStart - ColumnNumberEnd):
+    rownumberstart = int(input("Enter Row Number Start:"))
+    columnnumberstart = int(input("Enter Column Number Start:"))
+    rownumberend = int(input("Enter Row Number End:"))
+    columnnumberend = int(input("Enter Column Number End: "))
+    if abs(rownumberstart - rownumberend) == abs(columnnumberstart - columnnumberend):
         print('YES')
     else:
         print('NO')
 
 
-def Queen_move():
+def queen_move():
     print('Determine whether a queen can go from the first cell to the second in one move.')
-    RowNumberStart = int(input("Enter  row start number:"))
-    ColumnNumberStart = int(input("Enter column Number Start:"))
-    RowNumberEnd = int(input("Enter row Number End:"))
-    ColumnNumberEnd = int(input("Enter column Number End:"))
-    if abs(RowNumberStart - RowNumberEnd) == abs(
-            ColumnNumberStart - ColumnNumberEnd) or RowNumberStart == RowNumberEnd or Co == ColumnNumberEnd:
+    rownumberstart = int(input("Enter  row start number:"))
+    columnnumberstart = int(input("Enter column Number Start:"))
+    rownumberend = int(input("Enter row Number End:"))
+    columnnumberend = int(input("Enter column Number End:"))
+    if abs(rownumberstart - rownumberend) == abs(
+            columnnumberstart - columnnumberend) or rownumberstart == rownumberend or Co == columnnumberend:
         print('YES')
     else:
         print('NO')
 
 
-def Knight_move():
+def knight_move():
     print('Determine whether a knight can go from the first cell to the second in one move')
-    RowNumberStart = int(input("Enter  row start number:"))
-    ColumnNumberStart = int(input("Enter column Number Start:"))
-    RowNumberEnd = int(input("Enter row Number End:"))
-    ColumnNumberEnd = int(input("fourth number:"))
-    FirstCell = abs(RowNumberStart - RowNumberEnd)
-    SecondCell = abs(ColumnNumberStart - ColumnNumberEnd)
-    if FirstCell == 1 and SecondCell == 2 or FirstCell == 2 and SecondCell == 1:
+    rownumberstart = int(input("Enter  row start number:"))
+    columnnumberstart = int(input("Enter column Number Start:"))
+    rownumberend = int(input("Enter row Number End:"))
+    columnnumberend = int(input("fourth number:"))
+    firstcell = abs(rownumberstart - rownumberend)
+    secondcell = abs(columnnumberstart - columnnumberend)
+    if firstcell == 1 and secondcell == 2 or firstcell == 2 and secondcell == 1:
         print('YES')
     else:
         print('NO')
 
 
-def Chocolate_bar():
+def chocolate_bar():
     print('Determine whether it is possible to split Chocolate into specified squares')
     n = int(input("Enter chocolate bar width:"))
     m = int(input("Enter chocolate bar length:"))
@@ -48,7 +48,7 @@ def Chocolate_bar():
         print('NO')
 
 
-def Leap_year():
+def leap_year():
     print('Enter Year and check it is Leap Year or Not ')
     year = int(input())
     if (year % 4 == 0) and (year % 100 != 0) or (year % 400 == 0):
@@ -57,7 +57,7 @@ def Leap_year():
         print('This is COMMON Year')
 
 
-def Factorial():
+def factorial():
     print("Enter integer and calculate n! value")
     res = 1
     n = int(input())
@@ -66,7 +66,7 @@ def Factorial():
     print(res)
 
 
-def Adding_factorials():
+def adding_factorials():
     print("For given integer count sum ")
     a = int(input("Enter number: "))
     factorial = 1
@@ -77,7 +77,7 @@ def Adding_factorials():
     print(sum_of_factorials)
 
 
-def The_number_of_zeros():
+def the_number_of_zeros():
     n = int(input("How many numbers? "))
     sum_of_zeros = 0
     for i in range(n):
@@ -87,7 +87,7 @@ def The_number_of_zeros():
     print(sum_of_zeros)
 
 
-def Ladder():
+def ladder():
     n = int(input("How many steps?"))
     for k in range(1, n + 1):
         for l in range(1, k + 1):
@@ -95,7 +95,7 @@ def Ladder():
         print("")
 
 
-def Lost_card():
+def lost_card():
     n = int(input())
     sum_cards = 0
     for i in range(1, n + 1):
@@ -105,18 +105,49 @@ def Lost_card():
     print(sum_cards)
 
 
+def second_maximum():
+    print("Enter positive integer and integer and end with 0")
+
+
+first_max = int(input())
+second_max = int(input())
+if first_max < second_max:
+    first_max, second_max = second_max, first_max
+element = int(input())
+while element != 0:
+    if element > first_max:
+        second_max, first_max = first_max, element
+    elif element > second_max:
+        second_max = element
+    element = int(input())
+print(second_max)
+
+
+def the_number_of_elements_equal_to_the_maximum():
+    first_max = 0
+    max_num = 0
+    element = -1
+    while element != 0:
+        element = int(input())
+        if element > first_max:
+            first_max, max_num = element, 1
+        elif element == max:
+            max_num = 1
+    print(num_max)
+
+
 if __name__ == '__main__':
-    # Bishop_moves()
-    # Queen_move()
-    # Knight_move()
-    # Chocolate_bar()
-    # Leap_year()
-    # Factorial()
-    # Adding_factorials()
-    # The_number_of_zeros()
-    Ladder()
-# Lost_card()
-# The_second_maximum
-# The_number_of_elements_equal_to_the_maximum
+# bishop_moves()
+# queen_move()
+# knight_move(
+# chocolate_bar()
+# leap_year()
+# factorial()
+# adding_factorials()
+# the_number_of_zeros()
+# ladder()
+# lost_card()
+# second_maximum()
+# the_number_of_elements_equal_to_the_maximum()
 
 pass
