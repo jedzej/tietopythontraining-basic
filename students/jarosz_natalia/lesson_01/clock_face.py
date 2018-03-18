@@ -1,0 +1,5 @@
+h = int(input())
+m = int(input())
+s = int(input())
+w = h * (360 / 12) + m * (360 / (60 * 12)) + s * (360 / (3600 * 12))
+print(w)
