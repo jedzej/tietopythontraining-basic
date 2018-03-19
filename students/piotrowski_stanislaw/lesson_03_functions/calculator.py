@@ -1,105 +1,87 @@
-print("Welcome to NEW calculator:")
-print("a - add")
-print("s - subtract")
-print("m - multiply")
-print("d - divide")
-print("p - power")
-print("h,? - help")
-print("q - QUIT")
+# Calculator.py
+# piotrsta
+
+
+def help_calc():
+    print("a - add")
+    print("s - subtract")
+    print("m - multiply")
+    print("d - divide")
+    print("p - power")
+    print("h,? - help")
+    print("q - QUIT")
+
 
 def add(x, y):
-    return x + y
+    print("Result: " + str(x + y))
+
 
 def subtract(x, y):
-    return x - y
+    print("Result: " + str(x - y))
+
 
 def multiply(x, y):
-    return x * y
+    print("Result: " + str(x * y))
+
 
 def divide(x, y):
-    return x / y
+    print("Result: " + str(x / y))
+
 
 def power(x, y):
-    return x ** y
+    print("Result: " + str(x ** y))
 
-def input_operands():
-    x = int(input("Input 1st operand: "))
-    y = int(input("Input 2nd operand: "))
+
+def input_operand1():
+    operand1 = int(input("Input 1st operand: "))
+    return operand1
+
+
+def input_operand2():
+    operand2 = int(input("Input 2nd operand: "))
+    return operand2
+
+
+print("Welcome to NEW calculator:")
+help_calc()
 
 while True:
     print("Enter option:")
-
     option = input()
 
-
     if option == "a":
-        input_operands()
+        print("ADDING")
+        x = input_operand1()
+        y = input_operand2()
         add(x, y)
         
-##    if option == "a":
-##        print("ADDING")
-##        print("Input 1st operand:")
-##        add_var_1 = int(input())
-##        print("Input 2nd operand:")
-##        add_var_2 = int(input())
-##        print("Result:")
-##        print(add_var_1 + add_var_2)
-
     if option == "s":
         print("SUBTRACT")
-        print("Input 1st operand:")
-        add_var_1 = int(input())
-        print("Input 2nd operand:")
-        add_var_2 = int(input())
-        print("Result:")
-        print(add_var_1 - add_var_2)
+        x = input_operand1()
+        y = input_operand2()
+        subtract(x, y)
 
     if option == "m":
         print("MULTIPLY")
-        print("Input 1st operand:")
-        add_var_1 = int(input())
-        print("Input 2nd operand:")
-        add_var_2 = int(input())
-        print("Result:")
-        print(add_var_1 * add_var_2)
+        x = input_operand1()
+        y = input_operand2()
+        multiply(x, y)
 
     if option == "d":
         print("DIVIDE")
-        print("Input 1st operand:")
-        add_var_1 = int(input())
-        print("Input 2nd operand:")
-        add_var_2 = int(input())
-        print("Result:")
-        print(add_var_1 / add_var_2)
+        x = input_operand1()
+        y = input_operand2()
+        divide(x, y)
 
     if option == "p":
         print("POWER")
-        print("Input 1st operand:")
-        add_var_1 = int(input())
-        print("Input 2nd operand:")
-        add_var_2 = int(input())
-        print("Result:")
-        print(add_var_1 ** add_var_2)
+        x = input_operand1()
+        y = input_operand2()
+        power(x, y)
 
-    if option == "h":
+    if option == "h" or option == "?":
         print("HELP")
-        print("a - add")
-        print("s - subtract")
-        print("m - multiply")
-        print("d - divide")
-        print("p - power")
-        print("h,? - help")
-        print("q - QUIT")
-
-    if option == "?":
-        print("HELP")
-        print("a - add")
-        print("s - subtract")
-        print("m - multiply")
-        print("d - divide")
-        print("p - power")
-        print("h,? - help")
-        print("q - QUIT")
+        help_calc()
 
     if option == "q":
         print("GOOD BYE")
