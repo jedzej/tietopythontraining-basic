@@ -5,7 +5,7 @@ k = int(input("Number of squares: "))
 
 flag = 0
 
-if m*n % k == 0 and k != 1:
+if m * n % k == 0 and k != 1:
     flag = 1
 
 for row in range(n, 1, -1):
