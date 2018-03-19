@@ -11,7 +11,7 @@ if x_delta < 0:
 if y_delta < 0:
     y_delta = y_delta * (-1)
 
-if y_delta == 1 and  x_delta ==2 or y_delta == 2 and  x_delta ==1:
+if y_delta == 1 and x_delta == 2 or y_delta == 2 and x_delta == 1:
     print("YES")
 else:
     print("NO")

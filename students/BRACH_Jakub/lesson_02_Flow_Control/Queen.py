@@ -17,5 +17,5 @@ else:
     #this may be H/V move, which is OK for queen
     if(y_delta == 0 or x_delta == 0):
         print("YES")
-    else:    
+    else:
         print("NO")
