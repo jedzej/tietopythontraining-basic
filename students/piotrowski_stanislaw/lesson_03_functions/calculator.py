@@ -54,7 +54,7 @@ while True:
         x = input_operand1()
         y = input_operand2()
         add(x, y)
-        
+
     if option == "s":
         print("SUBTRACT")
         x = input_operand1()
