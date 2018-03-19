@@ -1,5 +1,5 @@
 ### Lesson 4 - Unit testing
-Unit testing is very wide area of engineering. There are plenty of tools and frameworks supporing developers and testers in tests implementation and execution. In this lesson we'll go through 2 poular testing frameworks: **unittest** and **pytest**.
+Unit testing is very wide area of engineering. There are plenty of tools and frameworks supporting developers and testers in tests implementation and execution. In this lesson we'll go through 2 poular testing frameworks: **unittest** and **pytest**.
 
 **Please read the introduction materials carefully - especially if you've never implemented your own unit tests. Your main goal in this lesson is to catch the idea of unit testing.**
 
