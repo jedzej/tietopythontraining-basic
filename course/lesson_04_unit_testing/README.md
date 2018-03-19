@@ -12,7 +12,7 @@ Unit testing is very wide area of engineering. There are plenty of tools and fra
 
 ### practice projects
 
-1. Using `unittest.TestCase` write 4 unit tests for `collatz()` function (not the whole script, just the function). Base on [25.3.1. Basic example](https://docs.python.org/2/library/unittest.html#basic-example). Don't focus too much on `class` keyword in test definition. Treat this as a code that must be there for tests to be ran. Implement following tests:
+1. Using `unittest.TestCase` write 4 unit tests for `collatz()` function (not the whole script, just the function). Base on [26.4.1. Basic example](https://docs.python.org/3.6/library/unittest.html#basic-example). Don't focus too much on `class` keyword in test definition. Treat this as a code that must be there for tests to be ran. Implement following tests:
     1. Test that the function raises TypeError, if called on `'aoeu'` 
        (use `self.assertRaises`),
     1. Test that it returns 4, if called on 8,
