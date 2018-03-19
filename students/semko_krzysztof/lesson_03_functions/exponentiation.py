@@ -9,7 +9,9 @@ Form the function power(a, n).
 
 
 def power(a, n):
-    if a == 0 or n == 0:
+    if n == 0:
+        return 1
+    elif a == 0:
         return 0
     else:
         if n == 1:
