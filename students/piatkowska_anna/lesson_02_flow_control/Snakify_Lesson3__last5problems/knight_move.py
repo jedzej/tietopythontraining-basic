@@ -24,8 +24,8 @@ def knight_can_move():
     print("Ending square row:")
     d = int(input())
     print("Can knight go from the first square to the second in one move?")
-    x = abs(a-c)
-    y = abs(b-d)
+    x = abs(a - c)
+    y = abs(b - d)
     if (x == 1 and y == 2) or (x == 2 and y == 1):
         print("YES")
     else:

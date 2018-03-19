@@ -11,13 +11,13 @@
 def lost_card():
     print("Enter number of cards (N):")
     a = int(input())
-    print("Enter "+str(a - 1)+" numbers between 1-" + str(a) + ":")
+    print("Enter " + str(a - 1) + " numbers between 1-" + str(a) + ":")
     sum_input = 0
     sum = 0
     for j in range(a + 1):
         sum += j
     for i in range(a - 1):
-        print("Card number " + str(i + 1)+":")
+        print("Card number " + str(i + 1) + ":")
         sum_input += int(input())
     print("The lost card is:")
     print(sum - sum_input)

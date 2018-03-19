@@ -22,7 +22,7 @@ def queen_can_move():
     print("Ending square row:")
     d = int(input())
     print("Can queen go from the first square to the second in one move?")
-    if(a == c or b == d or (abs(a-c) == abs(b-d))):
+    if(a == c or b == d or (abs(a - c) == abs(b - d))):
         print("YES")
     else:
         print("NO")

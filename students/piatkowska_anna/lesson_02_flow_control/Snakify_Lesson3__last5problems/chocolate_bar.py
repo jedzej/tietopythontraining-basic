@@ -17,7 +17,7 @@ def chocolate_bar():
     c = int(input())
     print("Is it possible to split chocolate so that one of "
           "the parts will have exactly " + str(c) + " squares?")
-    if ((c % b == 0 or c % a == 0) and c < a*b):
+    if ((c % b == 0 or c % a == 0) and c < a * b):
         print("YES")
     else:
         print("NO")
