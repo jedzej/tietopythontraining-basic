@@ -87,7 +87,7 @@ def main():
 
         else:
             print("No such option. Try again.")
-            continue
 
 
-main()
+if __name__ == '__main__':
+    main()
