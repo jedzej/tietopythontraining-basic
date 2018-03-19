@@ -1,18 +1,18 @@
 
-starting_column = int(input('Start column: '))
-starting_row = int(input('Start row: '))
+start_column = int(input('Start column: '))
+start_row = int(input('Start row: '))
 
-ending_column = int(input('Ending column: '))
-ending_row = int(input('Ending row: '))
+end_column = int(input('Ending column: '))
+end_row = int(input('Ending row: '))
 
-if abs(starting_column - ending_column) == 2:
+if abs(start_column - end_column) == 2:
 
-    if ending_row == starting_row + 1 or ending_row == starting_row - 1:
+    if end_row == start_row + 1 or end_row == start_row - 1:
         print('YES')
     else:
         print('NO')
-elif abs(starting_row - ending_row) == 2:
-    if ending_column == starting_column + 1 or ending_column == starting_column - 1:
+elif abs(start_row - end_row) == 2:
+    if end_column == start_column + 1 or end_column == start_column - 1:
         print('YES')
     else:
         print('NO')

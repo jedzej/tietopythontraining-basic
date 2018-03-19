@@ -1,16 +1,16 @@
 
-starting_column = int(input('Start column: '))
-starting_row = int(input('Start row: '))
+start_column = int(input('Start column: '))
+start_row = int(input('Start row: '))
 
-ending_column = int(input('Ending column: '))
+end_column = int(input('Ending column: '))
 ending_row = int(input('Ending row: '))
 
-if starting_column > ending_column:
-    difference = starting_column - ending_column
+if start_column > end_column:
+    diff = start_column - end_column
 else:
-    difference = ending_column - starting_column
+    diff = end_column - start_column
 
-if starting_row - difference == ending_row or starting_row + difference == ending_row:
+if start_row - diff == ending_row or start_row + diff == ending_row:
     print('YES')
 else:
     print('NO')
