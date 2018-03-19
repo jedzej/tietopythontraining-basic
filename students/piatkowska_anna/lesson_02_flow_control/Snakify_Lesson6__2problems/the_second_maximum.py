@@ -1,10 +1,11 @@
-#Statement
-#The sequence consists of distinct positive integer numbers 
-#and ends with the number 0. 
-#Determine the value of the second largest element in this sequence. 
-#It is guaranteed that the sequence has at least two elements.
+# Statement
+# The sequence consists of distinct positive integer numbers
+# and ends with the number 0.
+# Determine the value of the second largest element in this sequence.
+# It is guaranteed that the sequence has at least two elements.
 
-def TheSecondMaximum():
+
+def second_maximum():
     second = 0
     print("Enter positive integer number:")
     first = int(input())
@@ -19,5 +20,6 @@ def TheSecondMaximum():
     print("The second maximum value is:")
     print(second)
 
+
 if __name__ == '__main__':
-    TheSecondMaximum()
+    second_maximum()
