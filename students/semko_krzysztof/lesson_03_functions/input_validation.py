@@ -8,7 +8,7 @@ to the user saying they must enter an integer.
 
 
 def collatz(number):
-    if number < 0:
+    if number <= 0:
         print("This is not a positive integer.")
         return -1
     elif number % 2 == 0:
@@ -29,12 +29,11 @@ while value != 1:
     try:
         if value == -1:
             print("Please input a number:")
-            value = float(input()) // 1
+            value = float(input())
         else:
             value = collatz(value)
     except ValueError:
         print("This is not a number. Please try again.")
-        continue
 
-# If input is 1, it is important to print ifo about finishing sequence.
+# If input is 1, it is important to print info about finishing sequence.
 print("End of collatz sequence")
