@@ -24,8 +24,8 @@ h1 = int(input())
 v1 = int(input())
 h2 = int(input())
 v2 = int(input())
-if (abs(h1-h2) == 1 and abs(v1-v2) == 2 or
-    abs(h1-h2) == 2 and abs(v1-v2) == 1):
+if (    abs(h1-h2) == 1 and abs(v1-v2) == 2 or
+        abs(h1-h2) == 2 and abs(v1-v2) == 1):
     print('YES')
 else:
     print('NO')
@@ -68,12 +68,12 @@ print(zero_count)
 
 # Adding factorials
 factorial = 1
-sum = 0
+sum_of_factorials = 0
 n = int(input())
 for i in range(1, n+1):
     factorial *= i
-    sum += factorial
-print(sum)
+    sum_of_factorials += factorial
+print(sum_of_factorials)
 
 
 # Ladder
@@ -85,41 +85,41 @@ for i in range(1, n+1):
 
 
 # Lost card
-sum = 0
+sum_of_cards = 0
 sum_all = 0
 N = int(input())
 for i in range(1, N):
     n = int(input())
     sum_all += i
-    sum += n
-print(sum_all + N - sum)
+    sum_of_cards += n
+print(sum_all + N - sum_of_cards)
 
 
 # The second maximum
-max_a = 0
-second_max = 0
-while 1:
+maximum = 0
+second_maximum = 0
+while True:
     a = int(input())
     if a == 0:
         break
-    if a > max_a:
-        second_max = max_a
-        max_a = a
+    if a > maximum:
+        second_maximum = maximum
+        maximum = a
     else:
-        if a > second_max:
-            second_max = a
-print(second_max)
+        if a > second_maximum:
+            second_maximum = a
+print(second_maximum)
 
 
 # The number of elements equal to the maximum
-max_a = 0
-while 1:
+maximum = 0
+while True:
     a = int(input())
     if a == 0:
         break
-    if a > max_a:
-        max_a = a
+    if a > maximum:
+        maximum = a
         number_of_elements = 0
-    if a == max_a:
+    if a == maximum:
         number_of_elements += 1
 print(number_of_elements)
