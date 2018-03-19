@@ -13,11 +13,10 @@ def power(a, n):
         return 1
     elif a == 0:
         return 0
+    elif n == 1:
+        return a
     else:
-        if n == 1:
-            return a
-        else:
-            return a * power(a, n - 1)
+        return a * power(a, n - 1)
 
 
 print("Please give numbers a ^ n:")
