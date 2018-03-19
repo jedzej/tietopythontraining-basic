@@ -7,7 +7,7 @@ def exponentation(a, n):
     if n == 0:
         return 1
     else:
-        return a*exponentation(a, n-1)
+        return a*exponentation(a, n - 1)
 
 
 print("Enter base (a):")
