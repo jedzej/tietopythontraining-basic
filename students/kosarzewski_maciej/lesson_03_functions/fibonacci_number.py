@@ -8,4 +8,3 @@ def fib(n):
 print ("Enter number for Fibonacci sequence: ")
 number = int(input())
 print(fib(number))
-

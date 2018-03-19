@@ -8,4 +8,3 @@ a = float(input())
 print ("Give exponent: ")
 n = int(input())
 print(power(a, n))
-

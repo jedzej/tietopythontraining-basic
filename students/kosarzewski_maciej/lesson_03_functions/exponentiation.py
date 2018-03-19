@@ -15,4 +15,3 @@ base = float(input())
 print ("Give exponent: ")
 exponent = float(input())
 print(power(base, exponent))
-
