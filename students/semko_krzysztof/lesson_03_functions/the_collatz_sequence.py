@@ -22,10 +22,7 @@ and it’s odd if number % 2 == 1.
 
 
 def collatz(number):
-    if number <= 0:
-        print("This is not a positive integer.")
-        return -1
-    elif number % 2 == 0:
+    if number % 2 == 0:
         result = number // 2
         print(str(result))
         return result
@@ -34,17 +31,22 @@ def collatz(number):
         print(str(result))
         return result
     else:
-        print("This is not a positive integer.!!!")
+        print("This is not a positive integer.")
         return -1
 
 
 value = -1
-while value != 1:
-    if value == -1:
-        print("Please input a number:")
-        value = float(input())
-    else:
-        value = collatz(value)
+while True:
+    print("Plese input a positive integer:")
+    value = float(input())
+    if value > 0 and value % 1 == 0:
+        break
+
+while True:
+    value = collatz(value)
+    if value == 1:
+        break
+
 
 # If input is 1, it is important to print info about finishing sequence.
 print("End of collatz sequence")
