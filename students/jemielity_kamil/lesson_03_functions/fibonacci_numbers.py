@@ -5,6 +5,7 @@ def power(a, n):
         return a * power(a, n - 1)
 
 
-first_number = float(input('a: '))
-second_number = int(input('n: '))
-print(power(first_number, second_number))
+if __name__ == "__main__":
+    first_number = float(input('a: '))
+    second_number = int(input('n: '))
+    print(power(first_number, second_number))
