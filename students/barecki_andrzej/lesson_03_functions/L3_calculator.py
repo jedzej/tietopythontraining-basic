@@ -56,28 +56,28 @@ def main():
             """add operation"""
             p1 = input_validation()
             p2 = input_validation()
-            print("Result of addition of two arguments is equal: {0}".format(add(p1, p2)))
+            print("Result is equal: {0}".format(add(p1, p2)))
         elif option == "s":
             """subtract operation"""
             p1 = input_validation()
             p2 = input_validation()
-            print("Result of subtraction of two arguments is equal: {0}".format(sub(p1, p2)))
+            print("Result is equal: {0}".format(sub(p1, p2)))
         elif option == "m":
             """MULTIPLY"""
             p1 = input_validation()
             p2 = input_validation()
-            print("Result of multiplication of two arguments is equal: {0}".format(mul(p1, p2)))
+            print("Result is equal: {0}".format(mul(p1, p2)))
             mul(p1, p2)
         elif option == "d":
             """DIVIDE"""
             p1 = input_validation()
             p2 = input_validation()
-            print("Result of division of two arguments is equal: {0}".format(div(p1, p2)))
+            print("Result is equal: {0}".format(div(p1, p2)))
         elif option == "p":
             """POWER"""
             p1 = input_validation()
             p2 = input_validation()
-            print("Result of power of two arguments is equal: {0}".format(power(p1, p2)))
+            print("Result is equal: {0}".format(power(p1, p2)))
         elif option == "h" or option == "?":
             """HELP"""
             help_menu()
