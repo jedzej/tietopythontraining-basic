@@ -18,7 +18,7 @@ class TestClass(object):
 
     def test_negative_coordinates(self):
         total_distance = distance(-2, -3, -5, -6)
-        total_distance = math.floor(total_distance * 1000)/1000
+        total_distance = math.floor(total_distance * 1000) / 1000
         assert total_distance == 4.242
 
     def test_vertical_distance(self):
