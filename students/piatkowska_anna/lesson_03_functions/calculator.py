@@ -22,8 +22,8 @@ def substract():
 
 def multiply():
     print("MULTIPLY")
-    print("Result: " + str(int(input("Input 1st operand:"))
-                           * int(input("Input 2nd operand:"))))
+    print("Result: " + str(int(input("Input 1st operand:")) *
+                           int(input("Input 2nd operand:"))))
 
 
 def divide():
@@ -34,8 +34,8 @@ def divide():
 
 def power():
     print("POWER")
-    print("Result: " + str(int(input("Input 1st operand:"))
-                           ** int(input("Input 2nd operand:"))))
+    print("Result: " + str(int(input("Input 1st operand:")) **
+                           int(input("Input 2nd operand:"))))
 
 
 if __name__ == "__main__":
