@@ -4,7 +4,7 @@ def fib(n):
     elif n == 0:
         return 0
     else:
-        return fib(n-1) + fib(n-2)
+        return fib(n - 1) + fib(n - 2)
 
 
 while True:
