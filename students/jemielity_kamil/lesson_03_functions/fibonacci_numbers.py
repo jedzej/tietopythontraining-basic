@@ -1,11 +1,19 @@
-def power(a, n):
-    if n == 0:
+def fib(n):
+    if n == 1:
         return 1
+    elif n == 0:
+        return 0
     else:
-        return a * power(a, n - 1)
+        return fib(n-1) + fib(n-2)
 
 
-if __name__ == "__main__":
-    first_number = float(input('a: '))
-    second_number = int(input('n: '))
-    print(power(first_number, second_number))
+while True:
+    number = int(input("Positive integer: "))
+    try:
+        if number < 0:
+            raise ValueError
+        else:
+            print(fib(number))
+            break
+    except ValueError:
+        print('Wrong value!\n')
