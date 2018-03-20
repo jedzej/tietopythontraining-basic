@@ -12,11 +12,13 @@ def get_input():
         except:
             print("please enter 2 integers")
 
+
 def addition():
 
     add_var_1, add_var_2 = get_input()
     print("Result:")
     print(add_var_1 + add_var_2)
+
 
 def subtract():
 
@@ -24,11 +26,13 @@ def subtract():
     print("Result:")
     print(sub_var_1 - sub_var_2)
 
+
 def multiply():
 
     multi_var_1, multi_var_2 = get_input()
     print("Result:")
     print(multi_var_1 * multi_var_2)
+
 
 def divide():
 
@@ -36,11 +40,13 @@ def divide():
     print("Result:")
     print(div_var_1 / div_var_2)
 
+
 def power():
 
     power_var_1, power_var_2 = get_input()
     print("Result:")
     print(power_var_1 ** power_var_2)
+
 
 def print_options():
 
@@ -51,6 +57,7 @@ def print_options():
     print("p - power")
     print("h,? - help")
     print("q - QUIT")
+
 
 print("Welcome to badly organized calculator:")
 print_options()

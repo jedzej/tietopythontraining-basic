@@ -6,6 +6,7 @@ def exponentiation_recursion(num, exp, calculated_number):
     else:
         print(str(calculated_number).rstrip('0').rstrip('.'))
 
+
 while True:
     try:
         print("Please enter a real number")

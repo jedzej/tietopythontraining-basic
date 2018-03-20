@@ -7,6 +7,7 @@ def fib(number, last_num, next_num):
     else:
         print(next_num)
 
+
 while True:
     try:
         print("Please enter a number")

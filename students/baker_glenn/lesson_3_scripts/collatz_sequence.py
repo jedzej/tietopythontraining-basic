@@ -10,6 +10,7 @@ def collatz(number):
     print(new_number)
     collatz(new_number)
 
+
 print("enter an integer")
 while True:
     try:
