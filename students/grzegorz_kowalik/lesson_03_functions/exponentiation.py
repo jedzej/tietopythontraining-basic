@@ -1,6 +1,6 @@
 def power(a, n):
-    if n == 1:
-        return a
+    if n == 0:
+        return 1
     else:
         return a * power(a, n - 1)
 
