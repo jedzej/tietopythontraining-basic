@@ -28,4 +28,3 @@ class TestClass(object):
     def test_float_values(self):
         with pytest.raises(RecursionError):
             power(2.7, 3.5)
-
