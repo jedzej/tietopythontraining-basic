@@ -6,4 +6,6 @@ def exponentiation(a, n):
         return a * exponentiation(a, n - 1)
         result *= a
     print(result)
+
+
 print(exponentiation(float(input()), int(input())))
