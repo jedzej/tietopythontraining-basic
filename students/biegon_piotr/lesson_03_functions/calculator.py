@@ -17,38 +17,64 @@ def data():
     return var_1, var_2
 
 
-while True:
-    print("\nAvailable options:")
+def add():
+    print("\nADDING")
+    var_1, var_2 = data()
+    print("Addition result: {:f}".format(var_1 + var_2))
+
+
+def subtract():
+    print("\nSUBTRACT")
+    var_1, var_2 = data()
+    print("Subtraction result: {:f}".format(var_1 - var_2))
+
+
+def multiply():
+    print("\nMULTIPLY")
+    var_1, var_2 = data()
+    print("Multiplication result: {:f}".format(var_1 * var_2))
+
+
+def divide():
+    print("\nDIVIDE")
+    var_1, var_2 = data()
+    print("Division result: {:f}".format(var_1 / var_2))
+
+
+def power():
+    print("\nPOWER")
+    var_1, var_2 = data()
+    print("The result of exponentiation: {:f}".format(var_1 ** var_2))
+
+
+def help():
+    print("\nHELP")
     options()
+
+
+print("\nAvailable options:")
+options()
+
+while True:
     option = input("\nChoose one option: ")
 
     if option == "a":
-        print("\nADDING")
-        var_1, var_2 = data()
-        print("Addition result: {:f}".format(var_1 + var_2))
+        add()
 
     if option == "s":
-        print("\nSUBTRACT")
-        var_1, var_2 = data()
-        print("Subtraction result: {:f}".format(var_1 - var_2))
+        subtract()
 
     if option == "m":
-        print("\nMULTIPLY")
-        var_1, var_2 = data()
-        print("Multiplication result: {:f}".format(var_1 * var_2))
+        multiply()
 
     if option == "d":
-        print("\nDIVIDE")
-        var_1, var_2 = data()
-        print("Division result: {:f}".format(var_1 / var_2))
+        divide()
 
     if option == "p":
-        print("\nPOWER")
-        var_1, var_2 = data()
-        print("The result of exponentiation: {:f}".format(var_1 ** var_2))
+        power()
 
     if option == "h" or option == "?":
-        print("\nHELP")
+        help()
 
     if option == "q":
         break
