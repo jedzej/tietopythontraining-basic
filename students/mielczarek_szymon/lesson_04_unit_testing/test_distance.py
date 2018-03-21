@@ -1,15 +1,17 @@
 import sys
 import unittest
-from lesson_03_functions.the_length_of_the_segment import distance
 sys.path.append('..')
+from lesson_03_functions.the_length_of_the_segment import distance
 
 
 class TestDistance(unittest.TestCase):
     def test_on_none(self):
-        self.assertRaises(TypeError, distance, None, 1, 2, 3)
+        with self.assertRaises(TypeError):
+            distance(None, 1, 2, 3)
 
     def test_non_integer(self):
-        self.assertRaises(TypeError, distance, 'aoeu', 1, 2, 3)
+        with self.assertRaises(TypeError):
+            distance('aoeu', 1, 2, 3)
 
     def test_zero_length(self):
         self.assertEqual(distance(2, 2, 2, 2), 0)

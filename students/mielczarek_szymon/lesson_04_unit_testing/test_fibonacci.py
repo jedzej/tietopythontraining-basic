@@ -1,7 +1,7 @@
 import sys
 import pytest
-from lesson_03_functions.fibonacci_numbers import fib
 sys.path.append('..')
+from lesson_03_functions.fibonacci_numbers import fib
 
 
 class TestFibonacci:
