@@ -40,7 +40,7 @@ We hope you will have a lot of fun learning!
 * [Lesson 2 - Flow control](./course/lesson_02_flow_control) -- deadline 2018-03-13
 * [Lesson 3 - Functions](./course/lesson_03_functions) -- deadline 2018-03-20
 * [Lesson 4 - Unit testing](./course/lesson_04_unit_testing) -- deadline 2018-03-27
-* Lesson 5 - Lists + list comprehensions
+* [Lesson 5 - Lists + list comprehensions](./course/lesson_05_lists) -- deadline 2018-04-10
 * Lesson 6 - Dictionaries, tuples and sets + \*args and \*\*kwargs
 * Lesson 7 - Manipulating strings + datetime formatting 
 * Lesson 8 - Regular expressions
