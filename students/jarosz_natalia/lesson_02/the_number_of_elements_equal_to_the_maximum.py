@@ -8,5 +8,5 @@ while el != 0:
         max, num_max = el, 1
     elif el == max:
         num_max += 1 
-       
+
 print(num_max)
