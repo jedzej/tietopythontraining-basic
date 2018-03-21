@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 """
-calculator.py: refactored calculator.py from:
+Calculator.py: refactored Calculator.py from:
 https://github.com/jedzej/tietopythontraining-basic/blob/master/course/\
-lesson_03_functions/calculator.py
+lesson_03_functions/Calculator.py
 """
 
 __author__ = "Daniel Urtnowski"
