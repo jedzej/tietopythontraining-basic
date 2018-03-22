@@ -2,10 +2,10 @@
 
 import os
 import sys
+import unittest
 parent_dir_name = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
 sys.path.append(parent_dir_name + "/lesson_03_functions")
 
-import unittest
 from collatz_sequence import collatz
 
 
@@ -22,5 +22,5 @@ class CollatzTest(unittest.TestCase):
         self.assertRaises(ValueError, collatz, -1)
 
 
-if __name__== "__main__":
+if __name__ == "__main__":
     unittest.main()
