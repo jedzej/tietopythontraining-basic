@@ -2,17 +2,22 @@
 def adding(add_var_1, add_var_2):
     return(add_var_1 + add_var_2)
 
+
 def subtract(add_var_1, add_var_2):
     return (add_var_1 - add_var_2)
+
 
 def multiply(add_var_1, add_var_2):
     return (add_var_1 * add_var_2)
 
+
 def divide(add_var_1, add_var_2):
     return (add_var_1 / add_var_2)
 
+
 def power(add_var_1, add_var_2):
     return (add_var_1 ** add_var_2)
+
 
 def help():
     print("HELP")
@@ -24,6 +29,7 @@ def help():
     print("h,? - help")
     print("q - QUIT")
 
+
 def get_operands():
     global add_var_1
     global add_var_2
@@ -32,9 +38,11 @@ def get_operands():
     print("Input 2nd operand:")
     add_var_2 = int(input())
 
+
 def print_result(result):
     print("Result:")
     print(result)
+
 
 help()
 while True:
@@ -55,7 +63,7 @@ while True:
     if option == "m":
         print("MULTIPLY")
         get_operands()
-        print_result(multiply(add_var_1,add_var_2))
+        print_result(multiply(add_var_1, add_var_2))
 
     if option == "d":
         print("DIVIDE")
