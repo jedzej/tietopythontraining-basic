@@ -61,7 +61,7 @@ def main():
     help()
     while True:
         print("Enter option: ")
-        option = raw_input()
+        option = input()
         if option == "a":
             add()
         elif option == "s":
@@ -82,4 +82,5 @@ def main():
             continue
 
 
-main()
+if __name__ == "__main__":
+    main()

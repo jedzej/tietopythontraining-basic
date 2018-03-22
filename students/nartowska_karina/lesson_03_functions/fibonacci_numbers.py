@@ -15,4 +15,5 @@ def main():
     print(fib(n))
 
 
-main()
+if __name__ == "__main__":
+    main()

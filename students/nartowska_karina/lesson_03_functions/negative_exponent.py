@@ -1,5 +1,5 @@
 def power(a, n):
-    print a ** n
+    print(a ** n)
 
 
 def main():
@@ -12,4 +12,5 @@ def main():
     power(a, n)
 
 
-main()
+if __name__ == "__main__":
+    main()

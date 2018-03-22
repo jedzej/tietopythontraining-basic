@@ -20,4 +20,5 @@ def main():
         print("Value must be an integer")
 
 
-main()
+if __name__ == "__main__":
+    main()
