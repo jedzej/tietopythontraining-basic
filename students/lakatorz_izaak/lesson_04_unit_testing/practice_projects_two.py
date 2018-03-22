@@ -37,5 +37,5 @@ def test_corner_cases():
 
     # Order of points
     assert length_of_segment.distance(3, 1, 4, 2) == \
-           length_of_segment.distance(4, 2, 3,
-                                      1), 'Not equal after switching order.'
+        length_of_segment.distance(4, 2, 3,
+                                   1), 'Not equal after switching order.'

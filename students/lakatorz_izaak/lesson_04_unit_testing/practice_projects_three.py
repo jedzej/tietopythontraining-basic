@@ -16,6 +16,6 @@ def test_if_raises_recursion_error_for_negative():
 
 
 def test_if_returns_correct_value():
-        assert fibonacci_numbers.fib(7) == 13
-        assert fibonacci_numbers.fib(17) == 1597
-        assert fibonacci_numbers.fib(30) == 832040
+    assert fibonacci_numbers.fib(7) == 13
+    assert fibonacci_numbers.fib(17) == 1597
+    assert fibonacci_numbers.fib(30) == 832040
