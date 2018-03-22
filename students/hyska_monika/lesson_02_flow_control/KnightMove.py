@@ -1,4 +1,5 @@
-# The program print that Knight can change position from one field to second field in one move
+# The program print that Knight can change position
+# from one field to second field in one move
 import math
 
 v1 = int(input("Put vertical position for 1st field (from 1 to 8): "))
@@ -14,4 +15,4 @@ if ((vector_1 == 2) & (vector_2 == 1)) or ((vector_1 == 1) & (vector_2 == 2)):
 else:
     value = "NO"
 
-print("\nOr Knight can move from one field to second field in one move?:", value)
+print("\nOr Knight can move from one field to second in 1 move?:", value)

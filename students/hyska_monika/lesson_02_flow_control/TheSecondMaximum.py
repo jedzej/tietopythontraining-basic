@@ -27,3 +27,4 @@ while i < len(N):
 if a > sm:
     sm = a
 
+print("Second maximum is:", sm)

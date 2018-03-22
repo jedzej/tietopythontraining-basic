@@ -1,4 +1,5 @@
-# The program print that Queen can change position from one field to second field
+# The program print that Queen can change position
+# from one field to second field
 import math
 
 v1 = int(input("Put vertical position for 1st field (from 1 to 8): "))
@@ -14,4 +15,4 @@ if ((vector_1 - vector_2) == 0) & (vector_1 == 0 or vector_2 == 0):
 else:
     value = "NO"
 
-print("\nOr Queen can move from one field to second field in one move?:", value)
+print("\nOr Queen can move from one field to second in 1 move?:", value)
