@@ -2,6 +2,9 @@
 
 
 def collatz(number):
+    if number < 1:
+        raise ValueError("Number has to be >= 1")
+
     if number % 2 == 0:
         print(number // 2)
         return number // 2
@@ -15,10 +18,6 @@ def main():
         number = int(input("Give number for collatz function: "))
     except ValueError:
         print("You must input an integer!")
-        quit()
-
-    if number < 1:
-        print("Wrong number, it needs to be >= 1")
         quit()
 
     while True:
