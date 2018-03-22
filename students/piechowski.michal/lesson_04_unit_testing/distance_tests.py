@@ -31,8 +31,8 @@ def test_that_order_of_points_does_not_matter():
 
 
 def test_distance_raises_type_error_with_invalid_input():
-    with pytest.raises(TypeError) as exception_info:
+    with pytest.raises(TypeError):
             distance('aoeu', 0, 0, 0)
 
-    with pytest.raises(TypeError) as exception_info:
+    with pytest.raises(TypeError):
             distance(None, 0, 0, 0)
