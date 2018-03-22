@@ -1,4 +1,4 @@
-#The program print the angle (in degrees) of the hour hand on the clock
+# The program print the angle (in degrees) of the hour hand on the clock
 
 H = int(input("Put hours: "))
 M = int(input("Put minutes: "))
