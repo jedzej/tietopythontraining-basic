@@ -4,19 +4,19 @@
 # that must be there for tests to be ran. Implement following tests:
 
 import unittest
-from the_collatz_sequence import collatz
+import the_collatz_sequence
 
 
 class TestStringMethods(unittest.TestCase):
 
     def test_if_raises_typeError(self):
-        self.assertRaises(TypeError, collatz, 'aoeu')
+        self.assertRaises(TypeError, the_collatz_sequence.collatz, 'aoeu')
 
     def test_if_returns_four(self):
-        self.assertEqual(collatz(8), 4)
+        self.assertEqual(the_collatz_sequence.collatz(8), 4)
 
     def test_if_returns_sixteen(self):
-        self.assertEqual(collatz(5), 16)
+        self.assertEqual(the_collatz_sequence.collatz(5), 16)
 
 
 if __name__ == '__main__':
