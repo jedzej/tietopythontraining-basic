@@ -11,5 +11,5 @@ for row in range(0, rows):
 
 for row in range(0, rows):
     for column in range(0, columns):
-        print(table[row][column], end = ' ')
+        print(table[row][column], end=' ')
     print("")

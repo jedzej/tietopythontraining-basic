@@ -10,5 +10,4 @@ for role in range(0, number_of_balls):
         pins[i] = '.'
 
 for i in range(0, number_of_pins):
-    print(pins[i], end = '')
-
+    print(pins[i], end='')

@@ -18,4 +18,4 @@ list[index_of_maximum] = minimum
 list[index_of_minimum] = maximum
 
 for i in range(0, list_length):
-    print(list[i], end = ' ')
+    print(list[i], end=' ')
