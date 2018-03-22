@@ -17,5 +17,5 @@ for row in range(0, rows):
             maximum_column_number = column
             maximum = table[maximum_row_number][maximum_column_number]
 
-print(maximum_row_number, end = ' ')
+print(maximum_row_number, end=' ')
 print(maximum_column_number)
