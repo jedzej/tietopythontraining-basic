@@ -1,4 +1,5 @@
-# The program print two numbers: the number of hours and the number of minutes when read minutes
+# The program print two numbers:
+# the number of hours and the number of minutes when read minutes
 
 N = int(input("Put minutes: "))
 

@@ -1,4 +1,4 @@
-# This program returns numbers of days to cover road by car
+#This program returns numbers of days to cover road by car
 
 import math
 
