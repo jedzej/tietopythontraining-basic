@@ -4,4 +4,4 @@ a = int(input("Please put integer number: "))
 b = a // 10
 c = b % 10
 
-print("The then digit for", a, "is", c, ".")
+print("Then digit for", a, "is", c, ".")
