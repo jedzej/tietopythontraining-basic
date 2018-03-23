@@ -8,6 +8,7 @@ def collatz(number):
         print(result)
         return result
 
+
 def main():
     num = int(input('Give the number: '))
     while num != 1:
