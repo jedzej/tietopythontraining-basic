@@ -1,4 +1,5 @@
-## functions
+# functions
+
 
 def help():
     """help
@@ -48,7 +49,7 @@ def power():
     print(var_1 ** var_2)
 
 
-## program
+# program
 
 print("Welcome to well organized calculator:")
 

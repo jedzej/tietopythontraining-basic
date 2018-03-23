@@ -1,7 +1,7 @@
 def power(a, n):
 
     if n < 0:
-        a = 1/a
+        a = 1 / a
         n = -n
 
     result = 1
@@ -10,6 +10,7 @@ def power(a, n):
         result *= a
 
     return result
+
 
 print("Calculates a^n (a to the power of n).")
 

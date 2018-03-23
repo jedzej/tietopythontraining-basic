@@ -1,11 +1,11 @@
 def power(a, n):
 
     if n < 0:
-        a = 1/a
+        a = 1 / a
         n = -n
         return power(a, n)
     elif n > 0:
-        return a * power(a, n-1)
+        return a * power(a, n - 1)
     else:
         return 1
 
