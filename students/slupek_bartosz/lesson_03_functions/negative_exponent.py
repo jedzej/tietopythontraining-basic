@@ -9,4 +9,5 @@ def power(a, n):
             result *= a
     return result
 
+
 print(power(float(input()), int(input())))
