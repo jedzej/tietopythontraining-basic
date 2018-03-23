@@ -1,4 +1,6 @@
 def collatz(number):
+    if number < 0:
+        raise ValueError('The number cannot be negative')
     if number % 2 == 0:
         ret = number // 2
     else:
