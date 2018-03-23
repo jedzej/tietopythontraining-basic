@@ -11,6 +11,8 @@ However, you should think about why the recursive
 
 def fib(n):
     n = int(n)
+    if (n <= 0):
+        raise ValueError("Value should be > 0")
     if (n == 1):
         return 1
     elif n == 2:
