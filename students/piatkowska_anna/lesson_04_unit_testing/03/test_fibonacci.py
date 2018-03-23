@@ -21,7 +21,7 @@ class FibonacciTest(unittest.TestCase):
 
     def test_returns_1_when_called_on_2(self):
         self.assertEqual(fib(2), 1)
-        
+
     def test_value_error_raised_when_called_on_0(self):
         with self.assertRaises(ValueError):
             fib(0)
@@ -29,6 +29,7 @@ class FibonacciTest(unittest.TestCase):
     def test_value_error_raised_when_called_on_negative_value(self):
         with self.assertRaises(ValueError):
             fib(-1)
+
 
 if __name__ == "__main__":
     unittest.main()
