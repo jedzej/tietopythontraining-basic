@@ -1,4 +1,4 @@
 #!/usr/bin/env python
 
-x = input("Enter your name: ")
-print("Hello ," + x + "!")
+x = str(input("Enter your name: "))
+print("\nHello ," + x + "!")

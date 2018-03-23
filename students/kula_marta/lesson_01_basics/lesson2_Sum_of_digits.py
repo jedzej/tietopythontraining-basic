@@ -8,4 +8,4 @@ for digit in s:
     array_dig.append(digit)
 
 w = int(array_dig[0]) + int(array_dig[1]) + int(array_dig[2])
-print(w)
+print("sum of this three digits are w = %d" % w)

@@ -11,4 +11,4 @@ if (y > 100):
     y = y - 100 * y_cnt
     x = x + y_cnt
 
-print("%d.%d" % (x, y))
+print("the total cost of purchased cupcakes %d.%d" % (x, y))
