@@ -1,11 +1,13 @@
-def print_menu():
-    print("a - add")
-    print("s - subtract")
-    print("m - multiply")
-    print("d - divide")
-    print("p - power")
-    print("h,? - help")
-    print("q - QUIT")
+def menu():
+    return """
+    a - add
+    s - subtract
+    m - multiply
+    d - divide
+    p - power
+    h,? - help
+    q - QUIT
+    """
 
 
 def get_values():
@@ -19,7 +21,7 @@ def get_values():
 
 print("Welcome to badly organized calculator:")
 option = ''
-print_menu()
+print(menu())
 
 while option != 'q':
 
@@ -53,6 +55,6 @@ while option != 'q':
 
     if option == "h" or option == "?":
         print("HELP")
-        print_menu()
+        print(menu())
 
 print("GOOD BYE")
