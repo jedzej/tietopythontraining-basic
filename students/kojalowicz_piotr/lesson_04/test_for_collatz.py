@@ -15,10 +15,8 @@ class MyTest(unittest.TestCase):
     def test_type_error(self):
         self.assertRaises(TypeError, collatz, 'aoeu')
 
-
     def test_returns_4_from_8(self):
         self.assertEqual(collatz(8), 4)
-
 
     def test_returns_16_from_5(self):
         self.assertEqual(collatz(5), 16)
