@@ -1,4 +1,4 @@
-n = int(input())
+n = int(input("Adding factorials. Type n: "))
 temp = 1
 sumVar = 0
 for i in range(1, n + 1):
