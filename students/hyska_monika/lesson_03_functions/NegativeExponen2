@@ -1,10 +1,11 @@
 # Program return a**n program using recursion, return value when n is negative
-import math
+#import math
 
 def power(a, n):
   if n != 0:
     if n < 0:
-      n = int(math.fabs(n))
+      #n = int(math.fabs(n))
+      n = -1 * n
       a = a * power(a, n - 1)
       p = 1 / a
     else:
