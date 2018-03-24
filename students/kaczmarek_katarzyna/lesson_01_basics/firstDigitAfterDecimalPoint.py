@@ -1,3 +1,2 @@
-number = float(input())
-temp = int(number * 10)
-print(temp - temp // 10 * 10)
+number = float(input("Number: "))
+print(int(number * 10) % 10)

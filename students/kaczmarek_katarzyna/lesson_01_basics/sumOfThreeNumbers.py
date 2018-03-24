@@ -1,4 +1,4 @@
-a = int(input())
-b = int(input())
-c = int(input())
-print(a + b + c)
+firstNumber = int(input("First number: "))
+secondNumber = int(input("Second number: "))
+thirdNumber = int(input("Third number: "))
+print(firstNumber + secondNumber + thirdNumber)

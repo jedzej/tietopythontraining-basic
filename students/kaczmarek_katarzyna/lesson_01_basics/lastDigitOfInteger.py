@@ -1,3 +1,2 @@
-a = int(input())
-temp = a // 10
-print(a - temp * 10)
+number = int(input("Number: "))
+print(number % 10)

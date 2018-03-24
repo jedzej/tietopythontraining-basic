@@ -1,5 +1,5 @@
-h = int(input())
-m = int(input())
-s = int(input())
+hours = int(input("Hours: "))
+minutes = int(input("Minutes: "))
+seconds = int(input("Seconds: "))
 
-print(h * 30 + m * 30 / 60 + s * 30 / 3600)
+print(hours * 30 + minutes * 30 / 60 + seconds * 30 / 3600)

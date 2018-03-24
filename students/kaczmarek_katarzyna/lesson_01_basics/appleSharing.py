@@ -1,5 +1,5 @@
-n = int(input())
-k = int(input())
+students = int(input("Number of students: "))
+apples = int(input("Number of apples: "))
 
-print(k // n)
-print(k % n)
+print(apples // students)
+print(apples % students)
