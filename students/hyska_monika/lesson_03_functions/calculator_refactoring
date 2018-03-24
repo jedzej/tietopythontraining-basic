@@ -1,0 +1,71 @@
+v1 = 0
+v2 = 0
+
+def help():
+  print("Welcome to badly organized calculator:")
+  print("a - add")
+  print("s - subtract")
+  print("m - multiply")
+  print("d - divide")
+  print("p - power")
+  print("h,? - help")
+  print("q - QUIT")
+
+def inputdata():
+  global v1, v2, err
+  try:
+    err = 0
+    v1 = int((input("Input 1st operand:")))
+    v2 = int((input("Input 2nd operand:")))
+    return (v1, v2)
+  except ValueError:
+    print("It isn't integer!")
+    err = 1
+
+def add():
+  print("ADDING")
+  inputdata()
+  return(v1 + v2)
+def subtr():
+  print("SUBTRACT")
+  inputdata()
+  return(v1 - v2)
+def mltp():
+  print("MULTIPLY")
+  inputdata()
+  return(v1 * v2)
+def div():
+  print("DIVIDE")
+  inputdata()
+  return(v1 / v2)
+def power():
+  print("POWER")
+  inputdata()
+  return(v1 ** v2)
+
+def operation_check(option):
+  if option == "a":
+    result = add()
+  elif option == "s":
+    result = subtr()
+  elif option == "m":
+    result = mltp()
+  elif option == "d":
+    result = div()
+  elif option == "p":
+    result = power()
+  elif option == "h" or option == "?":
+    result = None
+    help()
+  elif option == "q":
+    result = None
+    print("GOOD BYE")
+  if (result != None) or (err == 1):
+    print("Result:", result)
+
+help()
+while True:
+  option = input("\nEnter option:")
+  operation_check(option)
+  if option == "q":
+    break
