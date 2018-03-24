@@ -1,5 +1,9 @@
-n = int(input())
-for i in range(1, n + 1):
-    for j in range(1, i + 1):
-        print(j, sep='', end='')
-    print()
+steps = int(input("Number of steps (1-9): "))
+row = ""
+
+if 0 < steps <= 9:
+    for i in range(1, steps + 1):
+        row += str(i)
+        print(row, sep="")
+else:
+    print("Wrong number of steps. Valid range: 1-9")

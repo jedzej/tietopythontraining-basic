@@ -1,12 +1,14 @@
-max1 = int(input())
-max2 = int(input())
-if max1 < max2:
-    max1, max2 = max2, max1
-element = int(input())
-while element != 0:
-    if element > max1:
-        max2, max1 = max1, element
-    elif element > max2:
-        max2 = element
-    element = int(input())
-print(max2)
+largest = 0
+second_largest = 0
+
+while True:
+    number = int(input("Type a positive integer number. "
+                       "0 ends the program. Number: "))
+    if number == 0:
+        break
+    if number > largest:
+        second_largest, largest = largest, number
+    elif second_largest < number < largest:
+        second_largest = number
+
+print(second_largest)
