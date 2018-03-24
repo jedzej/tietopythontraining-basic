@@ -1,6 +1,6 @@
 import math
 
-n = int(input())
-m = int(input())
+dayKm = int(input("Kilometers per day: "))
+length = int(input("Route (km): "))
 
-print(math.ceil(m / n))
+print(math.ceil(length / dayKm))

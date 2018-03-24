@@ -1,6 +1,5 @@
-import math
-number = int(input())
-a = number - number // 10 * 10
-b = math.floor(number / 10) - math.floor(number / 10) // 10 * 10
-c = math.floor(number / 100)
+number = int(input("Number: "))
+a = number // 100
+b = number // 10 % 10
+c = number % 10
 print(a + b + c)

@@ -1,2 +1,2 @@
-number = float(input())
+number = float(input("Number: "))
 print(number - int(number))

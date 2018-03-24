@@ -1,5 +1,6 @@
-a = int(input())
-b = int(input())
-c = int(input())
+import math
+classA = int(input("Number of students in class A: "))
+classB = int(input("Number of students in class B: "))
+classC = int(input("Number of students in class C: "))
 
-print((a // 2 + a % 2) + (b // 2 + b % 2) + (c // 2 + c % 2))
+print(math.ceil(classA / 2) + math.ceil(classB / 2) + math.ceil(classC / 2))

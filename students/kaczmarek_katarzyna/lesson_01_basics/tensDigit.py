@@ -1,4 +1,2 @@
-import math
-a = int(input())
-temp = math.floor(a / 10)
-print(temp - (temp // 10) * 10)
+number = int(input("Number: "))
+print(number // 10 % 10)
