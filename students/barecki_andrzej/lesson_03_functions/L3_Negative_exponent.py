@@ -7,25 +7,28 @@ import os
 import sys
 
 
-def input_validation(param_type):
-    global val
-    if param_type == 'a':
+def input_validation_positive_real():
+    while True:
         print('Set a positive real number:')
         try:
             val = float(input())
             if val <= 0:
                 print('Error: Value is less/equal zero.')
-                input_validation('a')
+            else:
+                break
         except ValueError:
             print('ValueError: Incorrect set of positive real number')
-            input_validation('a')
-    elif param_type == 'n':
+    return val
+
+
+def input_validation_integer():
+    while True:
         try:
             print('Set integer number:')
             val = int(input())
+            break
         except ValueError:
             print('ValueError: Incorrect set of integer number!')
-            input_validation('n')
     return val
 
 
@@ -44,8 +47,8 @@ def power(a, n):
     return result
 
 
-p1 = input_validation('a')
-p2 = input_validation('n')
+base_value = input_validation_positive_real()
+exponent_value = input_validation_integer()
 
-res = power(p1, p2)
+res = power(base_value, exponent_value)
 print("Result of expression power(a, n) is equal: {0}".format(res) + os.linesep)
