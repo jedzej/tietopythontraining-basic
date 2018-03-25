@@ -29,4 +29,4 @@ param_x2 = input_validation()
 param_y2 = input_validation()
 
 dist = distance(param_x1, param_y1, param_x2, param_y2)
-print("Distance between (x1,y1) and (x2,y2) is equal {0:.3f}".format(dist) + os.linesep)
+print("Distance is equal {0:.3f}".format(dist) + os.linesep)

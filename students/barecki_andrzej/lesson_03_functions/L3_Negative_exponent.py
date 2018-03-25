@@ -51,4 +51,4 @@ base_value = input_validation_positive_real()
 exponent_value = input_validation_integer()
 
 res = power(base_value, exponent_value)
-print("Result of expression power(a, n) is equal: {0}".format(res) + os.linesep)
+print("Result is equal: {0}".format(res) + os.linesep)

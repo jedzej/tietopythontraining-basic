@@ -17,7 +17,7 @@ def input_validation():
             else:
                 break
         except ValueError:
-                print('ValueError: Incorrect set of non-negative integer number!')
+                print('ValueError: Incorrect set of integer number!')
     return val
 
 

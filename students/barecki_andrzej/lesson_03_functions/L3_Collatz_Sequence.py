@@ -28,6 +28,6 @@ collatz_value = input_validation_integer()
 
 while True:
     collatz_value = collatz_calculation(collatz_value)
-    print(str(collatz_value) + ', ', end='')
+    print(str(collatz_value))
     if collatz_value == 1:
         break
