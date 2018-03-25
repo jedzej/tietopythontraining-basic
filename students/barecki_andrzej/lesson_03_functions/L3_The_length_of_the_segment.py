@@ -8,12 +8,12 @@ import math
 
 
 def input_validation():
-    global value
-    try:
-        value = float(input())
-    except ValueError:
-        print('Please enter an real number!')
-        input_validation()
+    while True:
+        try:
+            value = float(input())
+            break
+        except ValueError:
+            print('Please enter an real number!')
     return value
 
 
@@ -23,10 +23,10 @@ def distance(x1, y1, x2, y2):
 
 print('Set real value for points: (x1,y1) and (x2,y2)')
 
-p1 = input_validation()
-p2 = input_validation()
-p3 = input_validation()
-p4 = input_validation()
+param_x1 = input_validation()
+param_y1 = input_validation()
+param_x2 = input_validation()
+param_y2 = input_validation()
 
-dist = distance(p1, p2, p3, p4)
+dist = distance(param_x1, param_y1, param_x2, param_y2)
 print("Distance between (x1,y1) and (x2,y2) is equal {0:.3f}".format(dist) + os.linesep)
