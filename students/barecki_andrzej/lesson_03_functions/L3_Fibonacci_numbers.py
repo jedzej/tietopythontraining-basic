@@ -8,16 +8,16 @@ import os
 
 
 def input_validation():
-    global val
     while True:
         try:
             print('Set non-negative integer number(n):')
             val = int(input())
             if val < 0:
                 print('Error: Value is less then zero')
+            else:
+                break
         except ValueError:
                 print('ValueError: Incorrect set of non-negative integer number!')
-        break
     return val
 
 
