@@ -36,6 +36,10 @@ def power(add_var_1, add_var_2):
     return add_var_1 ** add_var_2
 
 
+def print_result(result):
+    print("Result is equal: {0}".format(result))
+
+
 def help_menu():
     print("Welcome to good organized calculator:")
     print("a - add")
@@ -56,28 +60,28 @@ def main():
             """add operation"""
             p1 = input_validation()
             p2 = input_validation()
-            print("Result is equal: {0}".format(add(p1, p2)))
+            print_result(add(p1, p2))
         elif option == "s":
             """subtract operation"""
             p1 = input_validation()
             p2 = input_validation()
-            print("Result is equal: {0}".format(sub(p1, p2)))
+            print_result(sub(p1, p2))
         elif option == "m":
             """MULTIPLY"""
             p1 = input_validation()
             p2 = input_validation()
-            print("Result is equal: {0}".format(mul(p1, p2)))
+            print_result(mul(p1, p2))
             mul(p1, p2)
         elif option == "d":
             """DIVIDE"""
             p1 = input_validation()
             p2 = input_validation()
-            print("Result is equal: {0}".format(div(p1, p2)))
+            print_result(div(p1, p2))
         elif option == "p":
             """POWER"""
             p1 = input_validation()
             p2 = input_validation()
-            print("Result is equal: {0}".format(power(p1, p2)))
+            print_result(power(p1, p2))
         elif option == "h" or option == "?":
             """HELP"""
             help_menu()
