@@ -1,4 +1,4 @@
-# Program return distance between point A and B
+# Program return distance between point A and B.
 import math
     
 def distance(x1, y1, x2, y2):

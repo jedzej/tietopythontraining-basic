@@ -1,4 +1,4 @@
-# Program return a**n program using recursion, return value when n is negative
+# Program return a**n program using recursion, return value when n is negative.
 
 def fib(n):
   if n == 0:

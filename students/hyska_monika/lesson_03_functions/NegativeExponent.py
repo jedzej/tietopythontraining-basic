@@ -1,5 +1,4 @@
-a to power n
-#czy moge uzycz fabs?? co lepiej 2xfor czy if?
+# Program return a**n program using recursion, return value when n is negative. - using loop
 import math
 
 def power(a, n):

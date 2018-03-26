@@ -1,4 +1,4 @@
-# Program return a**n program using recursion
+# Program return a**n program using recursion.
 
 def power(a, n):
     if n == 0:
