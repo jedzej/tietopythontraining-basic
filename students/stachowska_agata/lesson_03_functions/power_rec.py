@@ -3,9 +3,8 @@ def power(a, n):
     while True:
         if n == 0:
             break
-        else:
-            result *= a
-            n -= 1
+        result *= a
+        n -= 1
     return result
 
 

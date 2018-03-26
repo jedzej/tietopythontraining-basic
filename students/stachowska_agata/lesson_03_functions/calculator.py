@@ -49,34 +49,39 @@ while True:
         print("Result:")
         print(add(var_1, var_2))
 
-    if option == "s":
+    elif option == "s":
         print("SUBTRACT")
         var_1, var_2 = input_operand()
         print("Result:")
         print(subtrack(var_1, var_2))
 
-    if option == "m":
+    elif option == "m":
         print("MULTIPLY")
         var_1, var_2 = input_operand()
         print("Result:")
         print(multiply(var_1, var_2))
 
-    if option == "d":
+    elif option == "d":
         print("DIVIDE")
         var_1, var_2 = input_operand()
         print("Result:")
         print(divide(var_1, var_2))
 
-    if option == "p":
+    elif option == "p":
         print("POWER")
         var_1, var_2 = input_operand()
         print("Result:")
         print(power(var_1, var_2))
 
-    if option == "h" or option == "?":
+    elif option == "h" or option == "?":
         print("HELP")
         help()
 
-    if option == "q":
+    elif option == "q":
         print("GOOD BYE")
         break
+
+    else:
+        print("Enter correct option: ")
+        help()
+

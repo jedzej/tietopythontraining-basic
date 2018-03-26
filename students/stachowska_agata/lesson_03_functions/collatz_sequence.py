@@ -16,3 +16,4 @@ while True:
 
     except ValueError:
         print('You must enter an integer!')
+        continue
