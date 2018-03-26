@@ -7,6 +7,7 @@ def usage():
     print("h,? - help")
     print("q - QUIT")
 
+
 def data():
     print("Input 1st operand:")
     var_1 = int(input())
@@ -14,6 +15,7 @@ def data():
     var_2 = int(input())
     print("Result:")
     return (var_1, var_2)
+
 
 print("Welcome to badly organized calculator:")
 
