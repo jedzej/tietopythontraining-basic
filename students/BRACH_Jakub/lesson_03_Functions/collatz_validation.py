@@ -14,4 +14,3 @@ try:
         in_data = Collatz(in_data)
 except ValueError:
     print("Error:Input must be integer!")
-
