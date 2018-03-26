@@ -7,10 +7,8 @@ def fib(n):
             return 1
         elif n == 0:
             return 0
-
         else:
             return fib(n - 1) + fib(n - 2)
-
     except ValueError:
         print('Wrong Value')
         exit()
