@@ -4,6 +4,7 @@ def collatz(number):
     else:
         return 3 * number + 1
 
+
 print('Enter number')
 number = 0
 

@@ -1,4 +1,4 @@
-def power(a,n):
+def power(a, n):
     if n == 0:
         return 1
     if n >= 1:
@@ -8,4 +8,4 @@ def power(a,n):
 a = float(input())
 n = int(input())
 
-print(power(a,n))
+print(power(a, n))
