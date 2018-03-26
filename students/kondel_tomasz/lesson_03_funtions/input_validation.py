@@ -1,4 +1,4 @@
-from the_collatz_sequence import *
+from the_collatz_sequence import collatz
 
 
 def main():
