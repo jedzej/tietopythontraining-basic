@@ -1,6 +1,7 @@
 import unittest
 from the_collatz_seq import collatz
 
+
 class MyTests(unittest.TestCase):
 
     def test_1(self):

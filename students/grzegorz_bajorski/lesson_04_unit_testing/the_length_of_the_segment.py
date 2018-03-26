@@ -2,7 +2,7 @@ import math
 
 
 def distance(x1, x2, y1, y2):
-    return math.sqrt(math.pow(x2-x1, 2) + math.pow(y2-y1, 2))
+    return math.sqrt(math.pow(x2 - x1, 2) + math.pow(y2 - y1, 2))
 
 
 def main():
