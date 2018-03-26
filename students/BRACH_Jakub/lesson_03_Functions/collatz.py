@@ -3,7 +3,7 @@ def Collatz(number):
     if number % 2 == 0:
         retval = number // 2
     else:
-        retval =  3 * number +1
+        retval = 3 * number + 1
     print(retval)
     return retval
 

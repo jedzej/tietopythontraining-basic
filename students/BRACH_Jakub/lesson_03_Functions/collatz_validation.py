@@ -7,6 +7,7 @@ def Collatz(number):
     print(retval)
     return retval
 
+
 try:
     in_data = int(input())
     while in_data != 1:
