@@ -1,4 +1,5 @@
 import math
+import pytest
 import unittest
 
 from the_length_of_the_segment import calculate_distance
@@ -10,7 +11,7 @@ class TestDistance(unittest.TestCase):
             calculate_distance(1, 5, 1, None)
 
     def testStringCoordinate(self):
-        with self.assertRaises(TypeError):
+        with pytest.raises(TypeError):
             calculate_distance(1, 5, 1, "aeou")
 
     def testZeroCoordinate(self):
@@ -34,8 +35,8 @@ class TestDistance(unittest.TestCase):
             math.isclose(distance, 14.560219778561036, rel_tol=1e-09))
 
     def testReversedCoordinates(self):
-        self.assertEquals(calculate_distance(1, 4, 7, 2),
-                          calculate_distance(4, 1, 2, 7))
+        self.assertEqual(calculate_distance(1, 4, 7, 2),
+                         calculate_distance(4, 1, 2, 7))
 
 
 if __name__ == '__main__':
