@@ -27,6 +27,7 @@ def divide(var_1, var_2):
     print("DIVIDE")
     return (var_1 / var_2)
 
+
 def power(var_1, var_2):
     print("POWER")
     return (var_1 ** var_2)
