@@ -13,7 +13,7 @@ def RunAdd():
     print(add_var_1 + add_var_2)
 
 
-def RubSub():
+def RunSub():
     print("SUBTRACT")
     print("Input 1st operand:")
     add_var_1 = int(input())

@@ -1,4 +1,4 @@
-#Collatz Sequemce
+# Collatz Sequemce
 def Collatz(number):
     if number % 2 == 0:
         retval = number // 2
