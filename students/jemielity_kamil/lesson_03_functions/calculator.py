@@ -24,6 +24,8 @@ def calculate(first_number, second_number, type_of_operation):
 
     elif type_of_operation == 'p':
         return first_number ** second_number
+    else:
+        print('Wrong type of operation')
 
 
 while True:
@@ -37,4 +39,5 @@ while True:
         first = float(input('First number: '))
         second = float(input('Second number: '))
         result = calculate(first, second, operation)
-        print(result)
+        if result is not None:
+            print(result)

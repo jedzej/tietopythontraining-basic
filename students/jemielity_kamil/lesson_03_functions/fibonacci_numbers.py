@@ -3,18 +3,12 @@ def fib(n):
         return 1
     elif n == 0:
         return 0
+    elif n < 0:
+        raise ValueError('Wrong value')
     else:
         return fib(n - 1) + fib(n - 2)
 
 
 if __name__ == "__main__":
-    while True:
-        number = int(input("Positive integer: "))
-        try:
-            if number < 0:
-                raise ValueError
-            else:
-                print(fib(number))
-                break
-        except ValueError:
-            print('Wrong value!\n')
+    number = int(input("Positive integer: "))
+    print(fib(number))
