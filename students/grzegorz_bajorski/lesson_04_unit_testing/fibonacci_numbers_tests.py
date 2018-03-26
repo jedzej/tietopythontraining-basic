@@ -5,7 +5,7 @@ from fibonacci_numbers import fib
 class TestFib(unittest.TestCase):
 
     def test_0(self):
-        self.assertRaises(TypeError, collatz, 'aoeu')
+        self.assertRaises(TypeError, fib, 'aoeu')
 
     def test_1(self):
         self.assertRaises(fib(8), 4)
