@@ -13,16 +13,24 @@ class TestDistance(unittest.TestCase):
             calculate_distance(1, 5, 1, "aeou")
 
     def testZeroCoordinate(self):
-        self.assertTrue(calculate_distance(0, 1, 10, 0) > 0)
+        distance = calculate_distance(0, 1, 10, 0)
+        self.assertTrue(
+                math.isclose(distance, 10.04987562112089, rel_tol=1e-09))
 
     def testNegativeCoordinate(self):
-        self.assertTrue(calculate_distance(1, -3.54, -4, -22) > 0)
+        distance = calculate_distance(1, -3.54, -4, -22)
+        self.assertTrue(
+                math.isclose(distance, 18.563717300153005, rel_tol=1e-09))
 
     def testVerticalDisatance(self):
-        self.assertTrue(calculate_distance(0, 0, 0, 10) > 0)
+        distance = calculate_distance(0, 0, 0, 10)
+        self.assertTrue(
+                math.isclose(distance, 10, rel_tol=1e-09))
 
     def testHorizontalDistance(self):
-        self.assertTrue(calculate_distance(0, -4, 10, -4) > 0)
+        distance = calculate_distance(0, -4, 10, -4)
+        self.assertTrue(
+                math.isclose(distance, 14.560219778561036, rel_tol=1e-09))
 
     def testReversedCoordinates(self):
         self.assertEquals(calculate_distance(1, 4, 7, 2),
