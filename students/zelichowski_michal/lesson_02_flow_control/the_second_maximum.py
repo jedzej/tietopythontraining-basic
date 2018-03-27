@@ -4,15 +4,15 @@ element in this sequence. It is guaranteed that the sequence has at least
 two elements. """
 
 a = int(input())
-max = 0
-secondMax = 0
+maxi = 0
+second_max = 0
 while a != 0:
-    if a > max:
-        secondMax = max
-        max = a
-    elif a <= max:
-        if a > secondMax:
-            secondMax = a
+    if a > maxi:
+        second_max = maxi
+        maxi = a
+    elif a <= maxi:
+        if a > second_max:
+            second_max = a
     a = int(input())
 
-print(secondMax)
+print(second_max)

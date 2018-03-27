@@ -8,14 +8,14 @@ numbers of the ending square. The program should output YES if a Bishop
 can go from the first square to the second in one move, or NO otherwise."""
 
 # Read an integer:
-a1 = int(input())
-a2 = int(input())
+move_start_x = int(input())
+move_start_y = int(input())
 
-b1 = int(input())
-b2 = int(input())
+move_end_x = int(input())
+move_end_y = int(input())
 
 # Print a value:
-if a2 - a1 == b2 - b1 or a1 + a2 == b1 + b2:
+if move_start_y - move_start_x == move_end_y - move_end_x or move_start_x + move_start_y == move_end_x + move_end_y:
     print('YES')
 else:
     print('NO')

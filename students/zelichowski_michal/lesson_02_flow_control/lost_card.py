@@ -8,8 +8,8 @@ Find and print the number on the lost card. """
 
 sum = 0
 N = int(input())
-for x in range(1, N + 1):
+for x in range(1, N+1):
     sum += x
-for i in range(N - 1):
+for i in range(N-1):
     sum -= int(input())
 print(sum)
