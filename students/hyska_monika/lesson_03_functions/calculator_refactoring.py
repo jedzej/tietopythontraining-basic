@@ -57,7 +57,7 @@ def power():
 
 
 def operation_check(option):
-    if (option in dic.keys()) == False:
+    if (option in dic.keys()) is False:
         print("Missing operation.")
         option = "h"
     print(dic[option])
@@ -76,7 +76,7 @@ def operation_check(option):
         myhelp()
     else:
         result = None
-    if (result != None) & (err == 0):
+    if (result is not None) & (err == 0):
         print("Result:", result)
 
 
