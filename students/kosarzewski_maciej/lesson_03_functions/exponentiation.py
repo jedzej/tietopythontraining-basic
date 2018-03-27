@@ -9,9 +9,7 @@ def power(a, n):
         return a * power(a, n - 1)
 
 
-print ("Compute a^n")
-print ("Give base: ")
-base = float(input())
-print ("Give exponent: ")
-exponent = float(input())
+print("Compute a^n")
+base = float(input("Give base: "))
+exponent = float(input("Give exponent: "))
 print(power(base, exponent))

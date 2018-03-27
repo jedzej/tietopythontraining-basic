@@ -42,43 +42,46 @@ welcome()
 
 while True:
     print("Enter option:")
-    option = raw_input()
+    option = input()
     if option == "a":
         print("ADDING")
         var_1, var_2 = numbers_input()
         print("Result:")
         print(adding(var_1, var_2))
 
-    if option == "s":
+    elif option == "s":
         print("SUBTRACT")
         var_1, var_2 = numbers_input()
         print("Result:")
         print(adding(var_1, var_2))
 
-    if option == "m":
+    elif option == "m":
         print("MULTIPLY")
         var_1, var_2 = numbers_input()
         print("Result:")
         print(multiply(var_1, var_2))
 
-    if option == "d":
+    elif option == "d":
         print("DIVIDE")
         var_1, var_2 = numbers_input()
         print("Result:")
         print(divide(var_1, var_2))
 
-    if option == "p":
+    elif option == "p":
         print("POWER")
         var_1, var_2 = numbers_input()
         print("Result:")
         print(power(var_1, var_2))
 
-    if option == "h":
+    elif option == "h":
         help_me()
 
-    if option == "?":
+    elif option == "?":
         help_me()
 
-    if option == "q":
+    elif option == "q":
         print("GOOD BYE")
         break
+
+    else:
+        print("Unrecognized option...")
