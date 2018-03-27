@@ -42,47 +42,52 @@ def input_operand2():
     return operand2
 
 
-print("Welcome to NEW calculator:")
-help_calc()
+if __name__ == '__main__':
+    print("Welcome to NEW calculator:")
+    help_calc()
 
-while True:
-    print("Enter option:")
-    option = input()
+    while True:
+        print("Enter option:")
+        option = input()
 
-    if option == "a":
-        print("ADDING")
-        x = input_operand1()
-        y = input_operand2()
-        add(x, y)
+        if option == "a":
+            print("ADDING")
+            x = input_operand1()
+            y = input_operand2()
+            add(x, y)
 
-    if option == "s":
-        print("SUBTRACT")
-        x = input_operand1()
-        y = input_operand2()
-        subtract(x, y)
+        elif option == "s":
+            print("SUBTRACT")
+            x = input_operand1()
+            y = input_operand2()
+            subtract(x, y)
 
-    if option == "m":
-        print("MULTIPLY")
-        x = input_operand1()
-        y = input_operand2()
-        multiply(x, y)
+        elif option == "m":
+            print("MULTIPLY")
+            x = input_operand1()
+            y = input_operand2()
+            multiply(x, y)
 
-    if option == "d":
-        print("DIVIDE")
-        x = input_operand1()
-        y = input_operand2()
-        divide(x, y)
+        elif option == "d":
+            print("DIVIDE")
+            x = input_operand1()
+            y = input_operand2()
+            divide(x, y)
 
-    if option == "p":
-        print("POWER")
-        x = input_operand1()
-        y = input_operand2()
-        power(x, y)
+        elif option == "p":
+            print("POWER")
+            x = input_operand1()
+            y = input_operand2()
+            power(x, y)
 
-    if option == "h" or option == "?":
-        print("HELP")
-        help_calc()
+        elif option == "h" or option == "?":
+            print("HELP")
+            help_calc()
 
-    if option == "q":
-        print("GOOD BYE")
-        break
+        elif option == "q":
+            print("GOOD BYE")
+            break
+
+        else:
+            print('Wrong option. Try again: ')
+            help_calc()

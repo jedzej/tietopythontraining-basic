@@ -3,16 +3,15 @@
 # piotrsta
 
 
-def collatz(number):
-    if int(number) % 2 == 0:
-        value = int(number) // 2
-        print(value)
+def collatz(argument):
+    if int(argument) % 2 == 0:
+        value = int(argument) // 2
     else:
-        value = 3 * int(number) + 1
-        print(value)
+        value = 3 * int(argument) + 1
     return value
 
 
 number = input()
 while number != 1:
     number = collatz(number)
+    print(number)
