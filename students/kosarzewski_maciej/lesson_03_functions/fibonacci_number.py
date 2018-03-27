@@ -5,6 +5,5 @@ def fib(n):
         return fib(n - 1) + fib(n - 2)
 
 
-print ("Enter number for Fibonacci sequence: ")
-number = int(input())
+number = int(input("Enter number for Fibonacci sequence: "))
 print(fib(number))
