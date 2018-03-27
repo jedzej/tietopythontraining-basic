@@ -3,11 +3,30 @@
 
 
 def power(a, n):
-    result = a ** n
+    result = float(a) ** int(n)
     return result
 
 
-a = float(input())
-n = float(input())
+def is_int(value):
+    try:
+        int(value)
+        return True
+    except ValueError:
+        return False
 
-print(power(a, n))
+
+def is_float(value):
+    try:
+        float(value)
+        return True
+    except ValueError:
+        return False
+
+
+a = input('Enter float value: ')
+n = input('Enter integer value: ')
+
+if is_float(a) and is_int(n):
+    print(power(a, n))
+else:
+    print('Wrong input values.')

@@ -3,22 +3,26 @@
 # piotrsta
 
 
-def collatz(number):
-    try:
-        if int(number) <= 0:
-            raise ValueError
-        if int(number) % 2 == 0:
-            value = int(number) // 2
-            print(value)
-        else:
-            value = 3 * int(number) + 1
-            print(value)
-    except ValueError:
-        print('Wrong value. You must enter a positive integer.')
-        value = 1
+def collatz(argument):
+    if int(argument) % 2 == 0:
+        value = int(argument) // 2
+    else:
+        value = 3 * int(argument) + 1
     return value
 
 
+def is_positive_int(value):
+    try:
+        if int(value) > 0:
+            return True
+    except ValueError:
+        return False
+
+
 number = input()
-while number != 1:
-    number = collatz(number)
+if is_positive_int(number):
+    while number != 1:
+        number = collatz(number)
+        print(number)
+else:
+    print('Wrong value. You must enter a positive integer.')
