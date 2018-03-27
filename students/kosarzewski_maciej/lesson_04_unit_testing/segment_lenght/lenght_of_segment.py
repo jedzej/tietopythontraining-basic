@@ -7,12 +7,8 @@ def distance(x_value1, y_value1, x_value2, y_value2):
 
 
 if __name__ == "__main__":
-    print("Enter X1 position: ")
-    x1 = float(input())
-    print("Enter Y1 position: ")
-    y1 = float(input())
-    print("Enter X2 position: ")
-    x2 = float(input())
-    print("Enter Y2 position: ")
-    y2 = float(input())
+    x1 = float(input("Enter X1 position: "))
+    y1 = float(input("Enter Y1 position: "))
+    x2 = float(input("Enter X2 position: "))
+    y2 = float(input("Enter Y2 position: "))
     print(distance(x1, y1, x2, y2))

@@ -12,7 +12,6 @@ def collatz(number):
 
 
 if __name__ == "__main__":
-    print("Please enter a number, positive, integer: ")
-    value = int(input())
+    value = int(input("Please enter a number, positive, integer: "))
     while value != 1:
         value = collatz(value)

@@ -6,6 +6,5 @@ def fib(n):
 
 
 if __name__ == "__main__":
-    print("Enter number for Fibonacci sequence: ")
-    number = int(input())
+    number = int(input("Enter number for Fibonacci sequence: "))
     print(fib(number))
