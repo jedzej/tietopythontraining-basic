@@ -38,9 +38,9 @@ We hope you will have a lot of fun learning!
 * [Lesson 0 - The Setup](./course/lesson_00_the_setup/) -- deadline 2018-02-27
 * [Lesson 1 - Python basics](./course/lesson_01_basics/) -- deadline 2018-03-06 
 * [Lesson 2 - Flow control](./course/lesson_02_flow_control) -- deadline 2018-03-13
-* Lesson 3 - Functions 
-* Lesson 4 - Unit testing
-* Lesson 5 - Lists + list comprehensions
+* [Lesson 3 - Functions](./course/lesson_03_functions) -- deadline 2018-03-20
+* [Lesson 4 - Unit testing](./course/lesson_04_unit_testing) -- deadline 2018-03-27
+* [Lesson 5 - Lists + list comprehensions](./course/lesson_05_lists) -- deadline 2018-04-10
 * Lesson 6 - Dictionaries, tuples and sets + \*args and \*\*kwargs
 * Lesson 7 - Manipulating strings + datetime formatting 
 * Lesson 8 - Regular expressions
@@ -66,6 +66,7 @@ We hope you will have a lot of fun learning!
 ### Reference materials
 
 - GIT training materials
+  - [GitHub Standard Fork & Pull Request Workflow](https://gist.github.com/Chaser324/ce0505fbed06b947d962)
   - https://help.github.com/articles/about-pull-request-reviews/
   - [How to setup upstream repository for your fork?](https://help.github.com/articles/configuring-a-remote-for-a-fork/)
   - [How to sync fork with upstream repository?](https://help.github.com/articles/syncing-a-fork/)
