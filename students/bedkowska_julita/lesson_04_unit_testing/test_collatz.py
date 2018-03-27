@@ -1,5 +1,6 @@
 import unittest
-from students.bedkowska_julita.lesson_03_functions.the_collatz_sequence import collatz
+from students.bedkowska_julita.lesson_03_functions.the_collatz_sequence \
+    import collatz
 
 
 class TestCollatz(unittest.TestCase):
