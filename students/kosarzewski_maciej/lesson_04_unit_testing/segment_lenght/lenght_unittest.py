@@ -16,7 +16,8 @@ class LenghtTest(unittest.TestCase):
         self.assertEquals(lenght_of_segment.distance(3, 3, 3, 3), 0)
 
     def test_negative_coordinates(self):
-        self.assertEquals(lenght_of_segment.distance(-1, -1, -3, -5), 4.47213595499958)
+        self.assertEquals(lenght_of_segment.distance(-1, -1, -3, -5),
+                          4.47213595499958)
 
     def test_only_vertical(self):
         self.assertEquals(lenght_of_segment.distance(0, 5, 0, 7), 2)
