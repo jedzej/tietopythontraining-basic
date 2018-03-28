@@ -14,8 +14,11 @@ move_start_y = int(input())
 move_end_x = int(input())
 move_end_y = int(input())
 
+diff_equality = move_start_y - move_start_x == move_end_y - move_end_x
+sum_equality = move_start_x + move_start_y == move_end_x + move_end_y
+
 # Print a value:
-if move_start_y - move_start_x == move_end_y - move_end_x or move_start_x + move_start_y == move_end_x + move_end_y:
+if diff_equality or sum_equality:
     print('YES')
 else:
     print('NO')
