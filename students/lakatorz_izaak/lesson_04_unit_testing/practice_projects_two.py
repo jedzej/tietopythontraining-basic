@@ -16,30 +16,23 @@ def test_if_raises_value_error_for_string():
 
 
 def test_corner_cases():
-    # Zero length
-    assert length_of_segment.distance(3, 5, 3,
-                                      5) == 0, 'Non-zero value, should be ' \
-                                               'zero. '
 
-    # Negative coordinates
-    assert length_of_segment.distance(-5, -1, -1,
-                                      -4) == 5, 'Expected negative ' \
-                                                'coordinates. '
+    zero_length_dist = length_of_segment.distance(3, 5, 3, 5)
 
-    # Only vertical distance
-    assert 6 == length_of_segment.distance(3, 7, 3,
-                                           1), 'Vertical distance should ' \
-                                               'be equal to 6. '
+    assert zero_length_dist == 0, 'Non-zero value, should be zero.'
 
-    # Only horizontal distance
-    assert length_of_segment.distance(7, 3, 1,
-                                      3) == 6, 'Horizontal distance should ' \
-                                               'be equal 6. '
+    negative_coordinates_dist = length_of_segment.distance(-5, -1, -1, -4)
+    assert negative_coordinates_dist == 5, 'Expected negative coordinates.'
 
-    # Typical conditions
-    assert length_of_segment.distance(5, 3, 7, 2)
+    only_vertical_dist = length_of_segment.distance(3, 7, 3, 1)
+    assert only_vertical_dist == 6, 'Distance should be equal to 6.'
 
-    # Order of points
-    assert length_of_segment.distance(3, 1, 4, 2) == \
-           length_of_segment.distance(4, 2, 3, 1), 'Not equal after ' \
-                                                   'switching order. '
+    only_horizontal_dist = length_of_segment.distance(7, 3, 1, 3)
+    assert only_horizontal_dist == 6, 'Distance should be equal 6.'
+
+    typical_conditions_dist = length_of_segment.distance(5, 3, 7, 2)
+    assert typical_conditions_dist
+
+    first_order = length_of_segment.distance(3, 1, 4, 2)
+    second_order = length_of_segment.distance(4, 2, 3, 1)
+    assert first_order == second_order, 'Not equal after switching order. '

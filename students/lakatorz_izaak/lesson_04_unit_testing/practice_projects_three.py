@@ -11,7 +11,7 @@ def test_if_raises_type_error_for_none():
 
 
 def test_if_raises_recursion_error_for_negative():
-    with pytest.raises(RecursionError):
+    with pytest.raises(ValueError):
         fibonacci_numbers.fib(-1)
 
 

@@ -4,6 +4,8 @@
 
 
 def fib(n):
+    if n < 0:
+        raise ValueError('Value must be greater or equal to 0.')
     if n == 0:
         return 0
     if n == 1 or n == 2:
