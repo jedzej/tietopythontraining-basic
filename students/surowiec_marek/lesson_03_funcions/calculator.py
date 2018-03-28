@@ -3,20 +3,20 @@ def adding(add_var_1, add_var_2):
     return(add_var_1 + add_var_2)
 
 
-def subtract(add_var_1, add_var_2):
-    return (add_var_1 - add_var_2)
+def subtract(sub_var_1, sub_var_2):
+    return (sub_var_1 - sub_var_2)
 
 
-def multiply(add_var_1, add_var_2):
-    return (add_var_1 * add_var_2)
+def multiply(mlt_var_1, mlt_var_2):
+    return (mlt_var_1 * mlt_var_2)
 
 
-def divide(add_var_1, add_var_2):
-    return (add_var_1 / add_var_2)
+def divide(div_var_1, div_var_2):
+    return (div_var_1 / div_var_2)
 
 
-def power(add_var_1, add_var_2):
-    return (add_var_1 ** add_var_2)
+def power(pow_var_1, pow_var_2):
+    return (pow_var_1 ** pow_var_2)
 
 
 def help():
@@ -31,12 +31,11 @@ def help():
 
 
 def get_operands():
-    global add_var_1
-    global add_var_2
     print("Input 1st operand:")
-    add_var_1 = int(input())
+    x = int(input())
     print("Input 2nd operand:")
-    add_var_2 = int(input())
+    y = int(input())
+    return (x, y)
 
 
 def print_result(result):
@@ -52,28 +51,28 @@ while True:
 
     if option == "a":
         print("ADDING")
-        get_operands()
+        add_var_1, add_var_2 = get_operands()
         print_result(adding(add_var_1, add_var_2))
 
     if option == "s":
         print("SUBTRACT")
-        get_operands()
-        print_result(subtract(add_var_1, add_var_2))
+        sub_var_1, sub_var_2 = get_operands()
+        print_result(subtract(sub_var_1, sub_var_2))
 
     if option == "m":
         print("MULTIPLY")
-        get_operands()
-        print_result(multiply(add_var_1, add_var_2))
+        mlt_var_1, mlt_var_2 = get_operands()
+        print_result(multiply(mlt_var_1, mlt_var_2))
 
     if option == "d":
         print("DIVIDE")
-        get_operands()
-        print_result(divide(add_var_1, add_var_2))
+        div_var_1, div_var_2 = get_operands()
+        print_result(divide(div_var_1, div_var_2))
 
     if option == "p":
         print("POWER")
-        get_operands()
-        print_result(power(add_var_1, add_var_2))
+        pow_var_1, pow_var_2 = get_operands()
+        print_result(power(pow_var_1, pow_var_2))
 
     if option == "h":
         help()
