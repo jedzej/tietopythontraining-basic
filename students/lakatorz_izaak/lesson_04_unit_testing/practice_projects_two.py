@@ -16,6 +16,10 @@ def test_if_raises_value_error_for_string():
 
 
 def test_corner_cases():
+    # Zero length
+    assert length_of_segment.distance(3, 5, 3,
+                                      5) == 0, 'Non-zero value, should be ' \
+                                               'zero. '
 
     zero_length_dist = length_of_segment.distance(3, 5, 3, 5)
 
