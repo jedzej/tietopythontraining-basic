@@ -1,5 +1,6 @@
 import unittest
-from Collatz_Sequence import collatz
+from collatz_sequence import collatz
+
 
 class CollatzTest(unittest.TestCase):
 
@@ -11,6 +12,7 @@ class CollatzTest(unittest.TestCase):
 
     def test_3_value_5(self):
         self.assertEqual(collatz(5), 16)
+
 
 if __name__ == '__main__':
     unittest.main()

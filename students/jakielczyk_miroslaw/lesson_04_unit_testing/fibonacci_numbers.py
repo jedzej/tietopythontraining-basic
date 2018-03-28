@@ -1,5 +1,5 @@
 # Fibonacci numbers
-def fibonaczi (x):
+def fibonaczi(x):
     if x == 0:
         return 0
     elif x == 1:
@@ -7,9 +7,11 @@ def fibonaczi (x):
     else:
         return fibonaczi(x-2) + fibonaczi(x-1)
 
-def main ():
+
+def main():
     x = int(input())
-    print (fibonaczi(x))
+    print(fibonaczi(x))
+
 
 if __name__ == "__main__":
     main()
