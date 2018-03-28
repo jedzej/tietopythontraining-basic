@@ -5,7 +5,7 @@ def fibonaczi(x):
     elif x == 1:
         return 1
     else:
-        return fibonaczi(x-2) + fibonaczi(x-1)
+        return fibonaczi(x - 2) + fibonaczi(x - 1)
 
 
 def main():
