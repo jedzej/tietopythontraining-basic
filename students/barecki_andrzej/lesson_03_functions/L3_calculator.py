@@ -1,13 +1,11 @@
 def input_validation():
-    global val
     while True:
         try:
             print('Set real number:')
             val = float(input())
+            break
         except ValueError:
             print('ValueError: Incorrect real number!')
-            input_validation()
-        break
     return val
 
 
@@ -42,6 +40,7 @@ def print_result(result):
 
 def help_menu():
     print("Welcome to good organized calculator:")
+    print("Press selected option:")
     print("a - add")
     print("s - subtract")
     print("m - multiply")
@@ -88,6 +87,9 @@ def main():
         elif option == "q":
             """GOOD BYE"""
             break
+        else:
+            print('Incorrect selected option!')
+            help_menu()
 
 
 if __name__ == "__main__":
