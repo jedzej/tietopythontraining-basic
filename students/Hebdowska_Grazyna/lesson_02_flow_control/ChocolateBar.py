@@ -1,4 +1,3 @@
-import math
 n = int(input('n: '))
 m = int(input('m: '))
 k = int(input('k: '))
@@ -8,9 +7,9 @@ if (n * m > k):
         if k % n == 0:
             print('yes')
         elif k % m == 0:
-	        print('yes')
+            print('yes')
         else:
-	        print('no')
+            print('no')
 
 else:
     print('no')
