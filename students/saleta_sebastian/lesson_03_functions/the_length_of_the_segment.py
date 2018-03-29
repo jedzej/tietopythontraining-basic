@@ -1,13 +1,14 @@
 import math
 
 
-def distance(x1, y1, x2, y2):
+def print_distance(x1, y1, x2, y2):
     distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
     print(distance)
 
 
-x1 = float(input())
-y1 = float(input())
-x2 = float(input())
-y2 = float(input())
-distance(x1, y1, x2, y2)
+if __name__ == '__main__':
+    point1x = float(input())
+    point1y = float(input())
+    point2x = float(input())
+    point2y = float(input())
+    print_distance(point1x, point1y, point2x, point2y)
