@@ -1,0 +1,1 @@
+print('ala ma kota')
