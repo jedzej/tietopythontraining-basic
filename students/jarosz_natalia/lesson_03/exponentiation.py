@@ -4,5 +4,5 @@ def power(a, n):
     else:
         return a * power(a, n - 1)
 
-		
+
 print(power(float(input()), int(input())))

@@ -55,7 +55,6 @@ while True:
     elif option == "h" or option == "?":
         help_function()
 
-
     else:
         print("Input 1st operand:")
         add_var_1 = int(input())
