@@ -8,7 +8,6 @@ print("h,? - help")
 print("q - QUIT")
 
 
-
 def adding(add_var_1, add_var_2):
     res = add_var_1 + add_var_2
     return res
@@ -55,7 +54,6 @@ while True:
         break
     elif option == "h" or option == "?":
         help_function()
-
 
 
     else:
