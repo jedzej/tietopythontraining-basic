@@ -27,6 +27,7 @@ def test_non_value():
     with pytest.raises(TypeError):
         fib('None')
 
+
 def negative_value():
     with pytest.raises(RecursionError):
         fib(-1)
