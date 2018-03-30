@@ -1,5 +1,6 @@
 import pytest
 
+
 def fib(x):
     if x == 0:
         return 0
@@ -25,7 +26,3 @@ def test_raises_type_error():
 def test_non_value():
     with pytest.raises(TypeError):
         fib('None')
-
-def test_negative_value():
-    with pytest.raises(RecursionError):
-        fib(-1)
