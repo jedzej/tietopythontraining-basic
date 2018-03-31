@@ -9,7 +9,13 @@ def power(a, n):
         return a
 
 
-aa = float(input())
-nn = int(input())
+def main():
+    aa = float(input())
+    nn = int(input())
 
-print(power(aa, nn))
+    print(power(aa, nn))
+
+
+if __name__ == '__main__':
+    # `python hello_world.py` will run main(), `import hello_world` will not
+    main()

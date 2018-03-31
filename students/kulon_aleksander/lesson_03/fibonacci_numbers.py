@@ -7,5 +7,11 @@ def fib(n):
         return fib(n - 1) + fib(n - 2)
 
 
-n = int(input())
-print(fib(n))
+def main():
+    n = int(input())
+    print(fib(n))
+
+
+if __name__ == '__main__':
+    # `python hello_world.py` will run main(), `import hello_world` will not
+    main()

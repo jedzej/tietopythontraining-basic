@@ -2,15 +2,19 @@ def collatz(number):
     tmp = number % 2
     if tmp:
         tmp = 3 * number + 1
-        print(tmp)
-        return tmp
     else:
         tmp = number // 2
-        print(tmp)
-        return tmp
+    print(tmp)
+    return tmp
 
 
-print("Provide input")
-number = int(input())
-while number != 1:
-    number = collatz(number)
+def main():
+    print("Provide input")
+    number = int(input())
+    while number != 1:
+        number = collatz(number)
+
+
+if __name__ == '__main__':
+    # `python hello_world.py` will run main(), `import hello_world` will not
+    main()
