@@ -41,17 +41,17 @@ def test_fib_3():
     assert fib(3) == 2
 
 
-def test_fib_3():
+def test_fib_4():
     assert fib(4) == 3
 
 
-def test_fib_3():
+def test_fib_5():
     assert fib(5) == 5
 
 
 def test_recursion_error_for_fib():
     try:
         fib(-100)
-    except RecursionError as exception:
+    except RuntimeError as exception:
         assert str(exception) == 'maximum recursion depth exceeded' \
                                  ' in comparison'
