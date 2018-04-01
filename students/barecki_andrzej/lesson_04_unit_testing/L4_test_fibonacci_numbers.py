@@ -1,1 +1,0 @@
-print('ala ma kota')
