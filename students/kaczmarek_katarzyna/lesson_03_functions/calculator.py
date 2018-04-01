@@ -47,7 +47,7 @@ def print_help():
     print("q - QUIT")
 
 
-def start():
+def main():
     print("Welcome to the calculator.")
     print_help()
 
@@ -80,4 +80,6 @@ def start():
             print("Wrong option. Try again.")
 
 
-start()
+if __name__ == '__main__':
+    # `python calculator.py` will run main(), `import calculator` will not
+    main()
