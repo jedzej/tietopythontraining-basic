@@ -19,11 +19,16 @@ def validate_input():
         break
 
 
-while True:
-    try:
-        validate_input()
-        break
-    except ValueError:
-        print("The first parameter 'a' must be a positive real number. "
-              "The second parameter 'n' must be an integer. " 
-              "Try again.")
+def main():
+    while True:
+        try:
+            validate_input()
+            break
+        except ValueError:
+            print("The first parameter 'a' must be a positive real number. "
+                  "The second parameter 'n' must be an integer. " 
+                  "Try again.")
+
+
+if __name__ == '__main__':
+    main()

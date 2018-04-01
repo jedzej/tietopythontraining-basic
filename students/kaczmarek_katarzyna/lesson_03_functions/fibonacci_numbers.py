@@ -9,16 +9,21 @@ def fib(n):
 def validate_input():
     while True:
         n = int(input("Type a non-negative integer n: "))
-        if n < 0:
-            print("The number must be non-negative.")
+        if n <= 0:
+            print("The number must be non-negative and greater than zero.")
             continue
         print("The nth Fibonacci number is:", fib(n))
         break
 
 
-while True:
-    try:
-        validate_input()
-        break
-    except ValueError:
-        print("The number must be a non-negative integer.")
+def main():
+    while True:
+        try:
+            validate_input()
+            break
+        except ValueError:
+            print("The number must be a non-negative integer.")
+
+
+if __name__ == '__main__':
+    main()

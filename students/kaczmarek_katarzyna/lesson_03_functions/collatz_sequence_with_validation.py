@@ -14,10 +14,15 @@ def validate_input():
         print(number)
 
 
-while True:
-    try:
-        validate_input()
-        break
-    except ValueError:
-        print("Wrong input parameter. Try again.")
-        continue
+def main():
+    while True:
+        try:
+            validate_input()
+            break
+        except ValueError:
+            print("Wrong input parameter. Try again.")
+            continue
+
+
+if __name__ == '__main__':
+    main()
