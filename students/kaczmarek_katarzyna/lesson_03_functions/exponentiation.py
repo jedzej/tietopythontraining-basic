@@ -26,7 +26,7 @@ def main():
             break
         except ValueError:
             print("The first parameter 'a' must be a positive real number. "
-                  "The second parameter 'n' must be a non-negative integer. " 
+                  "The second parameter 'n' must be a non-negative integer. "
                   "Try again.")
 
 
