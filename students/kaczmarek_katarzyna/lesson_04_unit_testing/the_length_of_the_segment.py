@@ -1,0 +1,30 @@
+from math import sqrt
+
+
+def distance(x1, y1, x2, y2):
+    if isinstance(x1, str) \
+            or isinstance(y1, str) \
+            or isinstance(x2, str) \
+            or isinstance(y2, str):
+        raise ValueError("Wrong value")
+
+    return sqrt((x1 - x2) ** 2 + (y1 - y2) ** 2)
+
+
+def main():
+    while True:
+        try:
+            x1coordinate = float(input("Type x1 coordinate: "))
+            y1coordinate = float(input("Type y1 coordinate: "))
+            x2coordinate = float(input("Type x2 coordinate: "))
+            y2coordinate = float(input("Type y2 coordinate: "))
+            print("The distance is:", distance(x1coordinate, y1coordinate,
+                                               x2coordinate, y2coordinate))
+            break
+        except ValueError:
+            print("All numbers must be real.")
+            continue
+
+
+if __name__ == '__main__':
+    main()
