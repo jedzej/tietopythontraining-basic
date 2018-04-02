@@ -1,6 +1,8 @@
 def exponentiation(a, n):
     result = 1
-    if n == 0:
+    if n < 0:
+        print("Error n cannot be less than 0")
+    elif n == 0:
         return 1
     else:
         return a * exponentiation(a, n - 1)
