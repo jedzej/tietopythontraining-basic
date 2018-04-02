@@ -4,10 +4,11 @@ def input_operands:
     print("Result: ")
     return operand1, operand2
 
+
 def multiply():
     print("MULTIPLY")
     var1, var2 = input_operands()
-    print(var1 *var2)
+    print(var1 * var2)
 
 
 def add():
