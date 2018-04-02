@@ -1,51 +1,37 @@
+def input_operands:
+    operand1 = int(input("Input 1st operand: "))
+	operand2 = int(input("Input 2nd operand: "))
+	print("Result: ")
+	return operand1, operand2
+
 def multiply():
     print("MULTIPLY")
-    print("Input 1st operand:")
-    add_var_1 = int(input())
-    print("Input 2nd operand:")
-    add_var_2 = int(input())
-    print("Result:")
-    print(add_var_1 * add_var_2)
+    var1 , var2 = input_operands()
+    print(var1 *var2)
 
 
 def add():
     print("ADDING")
-    print("Input 1st operand:")
-    add_var_1 = int(input())
-    print("Input 2nd operand:")
-    add_var_2 = int(input())
-    print("Result:")
-    print(add_var_1 + add_var_2)
+    var1 , var2 = input_operands()
+    print(var1 + var2)
 
 
 def subtract():
     print("SUBTRACT")
-    print("Input 1st operand:")
-    add_var_1 = int(input())
-    print("Input 2nd operand:")
-    add_var_2 = int(input())
-    print("Result:")
-    print(add_var_1 - add_var_2)
+    var1 , var2 = input_operands()
+    print(var1 - var2)
 
 
 def divide():
     print("DIVIDE")
-    print("Input 1st operand:")
-    add_var_1 = int(input())
-    print("Input 2nd operand:")
-    add_var_2 = int(input())
-    print("Result:")
-    print(add_var_1 / add_var_2)
+    var1 , var2 = input_operands()
+    print(var1 / var2)
 
 
 def power():
     print("POWER")
-    print("Input 1st operand:")
-    add_var_1 = int(input())
-    print("Input 2nd operand:")
-    add_var_2 = int(input())
-    print("Result:")
-    print(add_var_1 ** add_var_2)
+    var1 , var2 = input_operands()
+    print(var1 ** var2)
 
 
 def help():
