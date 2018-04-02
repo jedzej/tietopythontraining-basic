@@ -10,6 +10,6 @@ def collatz(number):
 try:
     a = int(input('Enter number: '))
     while a > 1:
-       collatz(int(a))
+        collatz(int(a))
 except ValueError:
     print('Wrong argument, please give a number')
