@@ -1,4 +1,4 @@
-#some integer:
+# some integer:
 print('enter some integer')
 n = float(input())
 

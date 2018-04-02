@@ -1,5 +1,5 @@
-#N - kilometer/day
-#M - distance in kilometer
+# N - kilometer/day
+# M - distance in kilometer
 print('Enter a distance of N kilometers per day = ')
 N = int(input())
 
@@ -8,8 +8,8 @@ M = int(input())
 
 r = M % N
 
-print (r)
+print(r)
 
-Days = -(-M//N)
+Days = - (- M // N)
 
 print('The number of days we need to cover the distance ' + str(M) + ' km is = ' + str(int(Days)))

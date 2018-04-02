@@ -1,10 +1,10 @@
-#n students
+# n students
 n = int(input())
 
-#k apples
+# k apples
 k = int(input())
 
-#The results
+# The results
 print(k / n)
 print(k // n)
 print(k % n)

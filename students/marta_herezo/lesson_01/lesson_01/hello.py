@@ -1,5 +1,3 @@
 a = input()
 
-# a = 'JA'
-#print ('a')
-print ('Hello, ' + a + '!')
+print('Hello, ' + a + '!')

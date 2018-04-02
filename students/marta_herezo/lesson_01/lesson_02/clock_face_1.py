@@ -7,7 +7,7 @@ M = int(input())
 print('Give seconds 0 ≤ S < 60:')
 S = int(input())
 
-sum = H + M/60 + S/3600
-degrees = 90*sum/3
+sum = H + M / 60 + S / 3600
+deg = 90 * sum / 3
 
-print(str(H) + ':' + str(M) + ':' + str(S) + ' = ' + str(degrees) + '[degrees]')
+print(str(H) + ':' + str(M) + ':' + str(S) + ' = ' + str(deg) + '[degrees]')

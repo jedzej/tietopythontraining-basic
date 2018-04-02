@@ -5,7 +5,6 @@ a2 = a // 10
 a3 = a2 % 10
 a4 = a // 100
 
-#print(a)
 print(a1)
 print(a3)
 print(a4)
