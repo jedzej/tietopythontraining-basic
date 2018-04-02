@@ -64,13 +64,7 @@ def quit():
 
 
 print("Welcome to badly organized calculator:")
-print("a - add", end=' ')
-print("s - subtract ", end=' ')
-print("m - multiply ", end=' ')
-print("d - divide ", end=' ')
-print("p - power ", end=' ')
-print("h,? - help ", end=' ')
-print("q - QUIT \n")
+help()
 
 while True:
     option = input('Enter option: ')
