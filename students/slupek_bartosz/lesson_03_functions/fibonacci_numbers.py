@@ -1,6 +1,6 @@
 def fib(n):
     if n < 0:
-        print("Error")
+        print("Error n cannot be less than 0")
     elif n == 0:
         return 0
     elif n == 1 or n == 2:
