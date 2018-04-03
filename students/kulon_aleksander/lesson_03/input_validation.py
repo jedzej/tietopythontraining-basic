@@ -19,5 +19,4 @@ def main():
 
 
 if __name__ == '__main__':
-    # `python hello_world.py` will run main(), `import hello_world` will not
     main()

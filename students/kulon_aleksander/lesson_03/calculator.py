@@ -33,37 +33,42 @@ def power(var_1, var_2):
     return (var_1 ** var_2)
 
 
-print("Welcome to badly organized calculator:")
-options()
+def main():
+    print("Welcome to badly organized calculator:")
+    options()
 
-while True:
-    print("Enter option:")
+    while True:
+        print("Enter option:")
 
-    option = input()
+        option = input()
 
-    if option == "q":
-        print("GOOD BYE")
-        break
+        if option == "q":
+            print("GOOD BYE")
+            break
 
-    elif option == "?" or option == 'h':
-        print("HELP")
-        options()
+        elif option == "?" or option == 'h':
+            print("HELP")
+            options()
 
-    else:
-        print("Input 1st operand:")
-        var_1 = int(input())
-        print("Input 2nd operand:")
-        var_2 = int(input())
+        else:
+            print("Input 1st operand:")
+            var_1 = int(input())
+            print("Input 2nd operand:")
+            var_2 = int(input())
 
-        if option == "a":
-            result = adding(var_1, var_2)
-        elif option == "s":
-            result = substract(var_1, var_2)
-        elif option == "m":
-            result = multiply(var_1, var_2)
-        elif option == "d":
-            result = divide(var_1, var_2)
-        elif option == "p":
-            result = power(var_1, var_2)
+            if option == "a":
+                result = adding(var_1, var_2)
+            elif option == "s":
+                result = substract(var_1, var_2)
+            elif option == "m":
+                result = multiply(var_1, var_2)
+            elif option == "d":
+                result = divide(var_1, var_2)
+            elif option == "p":
+                result = power(var_1, var_2)
 
-        print("Result:", result)
+            print("Result:", result)
+
+
+if __name__ == '__main__':
+    main()
