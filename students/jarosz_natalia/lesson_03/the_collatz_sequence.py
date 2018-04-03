@@ -6,11 +6,13 @@ def collatz(arg):
         print(3 * arg + 1)
         return (3 * arg) + 1
 
+
 def main():
     print("provide number")
     number = int(input())
     while number != 1:
         number = collatz(number)
+
 
 if __name__ == "__main__":
     main()
