@@ -5,7 +5,11 @@ def power(a, n):
         return a * power(a, n - 1)
 
 
-if __name__ == '__main__':
+def main():
     var1 = float(input())
     var2 = int(input())
     print (power(var1, var2))
+
+
+if __name__ == '__main__':
+    main()

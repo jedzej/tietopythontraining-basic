@@ -8,7 +8,11 @@ def power(a, n):
     print(result)
 
 
-if __name__ == '__main__':
+def main():
     var1 = float(input())
     var2 = float(input())
     power(var1, var2)
+
+
+if __name__ == '__main__':
+    main()

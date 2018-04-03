@@ -59,13 +59,13 @@ def power():
     print(add_var_1 ** add_var_2)
 
 
-def help():
+def calculator_help():
     """A function prints Help string and call print_options() method"""
     print("HELP")
     print_options()
 
 
-def quit():
+def quit_calculator():
     """A function print Good bye string and call sys.exit()
     application will be closed.
     """
@@ -90,8 +90,8 @@ CALCULATOR_DICT = {
     'm': multiply,
     'd': divide,
     'p': power,
-    'h': help,
-    '?': help,
+    'h': calculator_help,
+    '?': calculator_help,
 }
 
 
@@ -107,7 +107,7 @@ def calculator():
             print('Wrong operation try again: ')
         print_options()
         option = input()
-    quit()
+    quit_calculator()
 
 
 def welcome_text():
