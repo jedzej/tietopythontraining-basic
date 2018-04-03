@@ -4,5 +4,10 @@ def fib(n):
     else:
         return fib(n - 1) + fib(n - 2)
 
-		
-print(fib(int(input())))
+
+def main():
+    print(fib(int(input())))
+
+
+if __name__ == '__main__':
+    main()

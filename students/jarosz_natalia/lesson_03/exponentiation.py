@@ -5,4 +5,9 @@ def power(a, n):
         return a * power(a, n - 1)
 
 
-print(power(float(input()), int(input())))
+def main():
+    print(power(float(input()), int(input())))
+
+
+if __name__ == '__main__':
+    main()

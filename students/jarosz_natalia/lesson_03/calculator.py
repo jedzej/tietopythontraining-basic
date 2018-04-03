@@ -44,42 +44,46 @@ def help_function():
     print("q - QUIT")
 
 
-while True:
-    print("Enter option:")
+def main():
+    while True:
+        print("Enter option:")
+        option = input()
 
-    option = input()
+        if option == "q":
+            print("GOOD BYE")
+            break
+        elif option == "h" or option == "?":
+            help_function()
 
-    if option == "q":
-        print("GOOD BYE")
-        break
-    elif option == "h" or option == "?":
-        help_function()
+        else:
+            print("Input 1st operand:")
+            add_var_1 = int(input())
+            print("Input 2nd operand:")
+            add_var_2 = int(input())
+            result = 0
 
-    else:
-        print("Input 1st operand:")
-        add_var_1 = int(input())
-        print("Input 2nd operand:")
-        add_var_2 = int(input())
-        result = 0
+            if option == "a":
+                print("ADDING")
+                result = adding(add_var_1, add_var_2)
 
-        if option == "a":
-            print("ADDING")
-            result = adding(add_var_1, add_var_2)
+            elif option == "s":
+                print("SUBTRACT")
+                result = substraction(add_var_1, add_var_2)
 
-        elif option == "s":
-            print("SUBTRACT")
-            result = substraction(add_var_1, add_var_2)
+            elif option == "m":
+                print("MULTIPLY")
+                result = multiply(add_var_1, add_var_2)
 
-        elif option == "m":
-            print("MULTIPLY")
-            result = multiply(add_var_1, add_var_2)
+            elif option == "d":
+                print("DIVIDE")
+                result = divide(add_var_1, add_var_2)
 
-        elif option == "d":
-            print("DIVIDE")
-            result = divide(add_var_1, add_var_2)
+            elif option == "p":
+                print("POWER")
+                result = power(add_var_1, add_var_2)
 
-        elif option == "p":
-            print("POWER")
-            result = power(add_var_1, add_var_2)
+            print("Result:", result)
 
-        print("Result:", result)
+
+if __name__ == '__main__':
+    main()
