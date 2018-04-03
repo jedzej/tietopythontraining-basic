@@ -7,7 +7,6 @@ def power(a, n):
         return a * power(a, n - 1)
 
 
-a_input, n_input = float(input("Provide a ")), int(input("Provide n "))
-
 if __name__ == '__main__':
+    a_input, n_input = float(input("Provide a ")), int(input("Provide n "))
     print(power(a_input, n_input))

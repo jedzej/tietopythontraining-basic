@@ -7,7 +7,6 @@ def fib(n):
         return fib(n - 1) + fib(n - 2)
 
 
-n_input = int(input("Provide a number "))
-
 if __name__ == '__main__':
+    n_input = int(input("Provide a number "))
     print(fib(n_input))
