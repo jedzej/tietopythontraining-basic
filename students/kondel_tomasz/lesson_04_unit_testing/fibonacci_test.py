@@ -1,7 +1,7 @@
 import unittest
 import sys
 sys.path.insert(0, '../lesson_03_funtions/')
-from fibonacci_numbers import fib
+from fibonacci_numbers import fib  # noqa: E402
 
 
 class MyUnitTest(unittest.TestCase):

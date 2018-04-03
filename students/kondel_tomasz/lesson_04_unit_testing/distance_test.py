@@ -1,7 +1,7 @@
 import pytest
 import sys
 sys.path.insert(0, '../lesson_03_funtions/')
-from the_length_of_the_segment import distance
+from the_length_of_the_segment import distance  # noqa: E402
 
 
 def test_crash_with_TypeError():

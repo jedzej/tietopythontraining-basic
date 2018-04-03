@@ -1,7 +1,7 @@
 import unittest
 import sys
 sys.path.insert(0, '../lesson_03_funtions/')
-from the_collatz_sequence import collatz
+from the_collatz_sequence import collatz  # noqa: E402
 
 
 class MyFirstUnitTest(unittest.TestCase):
