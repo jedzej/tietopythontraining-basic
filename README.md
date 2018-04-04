@@ -41,7 +41,7 @@ We hope you will have a lot of fun learning!
 * [Lesson 3 - Functions](./course/lesson_03_functions) -- deadline 2018-03-20
 * [Lesson 4 - Unit testing](./course/lesson_04_unit_testing) -- deadline 2018-03-27
 * [Lesson 5 - Lists + list comprehensions](./course/lesson_05_lists) -- deadline 2018-04-10
-* Lesson 6 - Dictionaries, tuples and sets + \*args and \*\*kwargs
+* [Lesson 6 - Dictionaries, tuples and sets + \*args and \*\*kwargs](./course/lesson_06_dicts_tuples_sets_args_kwargs) -- deadline 2018-04-17
 * Lesson 7 - Manipulating strings + datetime formatting 
 * Lesson 8 - Regular expressions
 * Lesson 9 - Reading and writing files
