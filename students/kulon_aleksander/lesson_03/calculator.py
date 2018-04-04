@@ -64,7 +64,7 @@ def main():
                 result = adding(var_1, var_2)
             elif option == "s":
                 var_1, var_2 = get_input()
-                result = substract(var_1, var_2)
+                result = subtract(var_1, var_2)
             elif option == "m":
                 var_1, var_2 = get_input()
                 result = multiply(var_1, var_2)
