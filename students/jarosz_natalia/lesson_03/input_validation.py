@@ -8,7 +8,7 @@ def collatz(arg):
 
 
 def main():
-    print(provide number)
+    print("provide number")
     try:
         number = int(input())
         while number != 1:

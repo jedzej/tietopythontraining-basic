@@ -1,19 +1,9 @@
-print("Welcome to badly organized calculator:")
-print("a - add")
-print("s - subtract")
-print("m - multiply")
-print("d - divide")
-print("p - power")
-print("h,? - help")
-print("q - QUIT")
-
-
 def adding(add_var_1, add_var_2):
     res = add_var_1 + add_var_2
     return res
 
 
-def substraction(add_var_1, add_var_2):
+def subtract(add_var_1, add_var_2):
     res = add_var_1 - add_var_2
     return res
 
@@ -45,6 +35,8 @@ def help_function():
 
 
 def main():
+    print("Welcome to badly organized calculator:")
+    help_function()
     while True:
         print("Enter option:")
         option = input()
@@ -56,6 +48,10 @@ def main():
             help_function()
 
         else:
+            if option != 'a' and option != 's' and option != 'm' and option != 'd' and option != 'p':
+                print("Wrong choice, choose another option.")
+                continue
+
             print("Input 1st operand:")
             add_var_1 = int(input())
             print("Input 2nd operand:")
@@ -68,7 +64,7 @@ def main():
 
             elif option == "s":
                 print("SUBTRACT")
-                result = substraction(add_var_1, add_var_2)
+                result = subtract(add_var_1, add_var_2)
 
             elif option == "m":
                 print("MULTIPLY")
