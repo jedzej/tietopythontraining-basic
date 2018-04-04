@@ -48,7 +48,8 @@ def main():
             help_function()
 
         else:
-            if option != 'a' and option != 's' and option != 'm' and option != 'd' and option != 'p':
+            if option != 'a' and option != 's' and option != 'm' and option\
+                    != 'd' and option != 'p':
                 print("Wrong choice, choose another option.")
                 continue
 
