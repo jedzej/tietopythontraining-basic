@@ -1,13 +1,3 @@
-print("Welcome to badly organized calculator:")
-print("a - add")
-print("s - subtract")
-print("m - multiply")
-print("d - divide")
-print("p - power")
-print("h,? - help")
-print("q - QUIT")
-
-
 def add():
     """Add function docstring"""
     print("ADDING")
@@ -63,7 +53,7 @@ def power():
     print(add_var_1 ** add_var_2)
 
 
-def help():
+def help_func():
     """Help function docstring"""
     print("HELP")
     print("a - add")
@@ -75,38 +65,56 @@ def help():
     print("q - QUIT")
 
 
-def quit():
+def exit_func():
     """Quit function docstring"""
     print("GOOD BYE")
 
 
-while True:
-    print("Enter option:")
+def main():
+    while True:
 
-    option = input()
+        print("Enter option:")
 
-    if option == "a":
-        add()
+        option = input()
 
-    if option == "s":
-        subtract()
+        if option == "a":
+            add()
 
-    if option == "m":
-        multiply()
+        if option == "s":
+            subtract()
 
-    if option == "d":
-        divide()
+        if option == "m":
+            multiply()
 
-    if option == "p":
-        power()
+        if option == "d":
+            divide()
 
-    if option == "h":
-        help()
+        if option == "p":
+            power()
 
-    if option == "?":
-        help()
+        if option == "h":
+            help_func()
 
-    if option == "q":
-        quit()
+        if option == "?":
+            help_func()
 
-        break
+        if option == "q":
+            exit_func()
+
+            break
+
+        else:
+            print("Wrong name")
+
+
+if __name__ == '__main__':
+    print("Welcome to badly organized calculator:")
+    print("a - add")
+    print("s - subtract")
+    print("m - multiply")
+    print("d - divide")
+    print("p - power")
+    print("h,? - help")
+    print("q - QUIT")
+
+    main()
