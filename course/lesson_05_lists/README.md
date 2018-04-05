@@ -11,7 +11,7 @@
 4. [Snakify / Lesson 9 / Problems](https://snakify.org/lessons/two_dimensional_lists_arrays/problems/) ("Maximum", "Chess board", "Swap the columns" (optional), "The diagonal parallel to the main")
 5. Numbers filter - using list comprehensions write a function that casts list of strings to list of integers and filters numbers within supplied range. Example data:	
 ```
-list_of_strings = ['1', '2', '0', '8', '3']	
+list_of_strings = ['2', '0', '8', '3']	
 to_filter_range = range(3)	
 expected_output = [8, 3]
 ```
