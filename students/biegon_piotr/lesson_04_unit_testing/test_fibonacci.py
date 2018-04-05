@@ -13,13 +13,13 @@ class TestFibonacciFunction(unittest.TestCase):
         with pytest.raises(TypeError):
             fib('asdf')
 
-    def test_RecursionError_when_input_is_zero(self):
-        with pytest.raises(RecursionError):
-            fib(0)
+#    def test_RecursionError_when_input_is_zero(self):
+#        with pytest.raises(RecursionError):
+#            fib(0)
 
-    def test_RecursionError_when_input_is_negative(self):
-        with pytest.raises(RecursionError):
-            fib(-5)
+#    def test_RecursionError_when_input_is_negative(self):
+#        with pytest.raises(RecursionError):
+#            fib(-5)
 
     def test_input_1_return_1(self):
         self.assertEqual(1, fib(1))
