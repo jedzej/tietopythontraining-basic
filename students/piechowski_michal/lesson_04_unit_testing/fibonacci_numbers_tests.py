@@ -1,15 +1,10 @@
 #!/usr/bin/env python3
 
-import os
-import sys
 import unittest
-parent_dir_name = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-sys.path.append(parent_dir_name + "/lesson_03_functions")
-
-from fibonacci_numbers import fib
+from students.piechowski_michal.lesson_03_functions.fibonacci_numbers import fib
 
 
-class CollatzTest(unittest.TestCase):
+class FibonacciTest(unittest.TestCase):
 
     def test_fib_works_with_minimal_input(self):
         self.assertEqual(fib(0), 0)
@@ -25,6 +20,13 @@ class CollatzTest(unittest.TestCase):
         self.assertEqual(fib(7), 13)
         self.assertEqual(fib(25), 75025)
         self.assertEqual(fib(30), 832040)
+
+    def test_fib_returns_error_on_invalid_type(self):
+        self.assertRaises(TypeError, fib, 'X')
+
+    def test_fib_will_not_jump_into_infinite_recursion(self):
+        self.assertEqual(fib(-1), -1)
+        self.assertEqual(fib(-7), -7)
 
 
 if __name__ == "__main__":

@@ -4,12 +4,7 @@
 # pytest distance_tests.py
 
 import pytest
-import os
-import sys
-parent_dir_name = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
-sys.path.append(parent_dir_name + "/lesson_03_functions")
-
-from the_length_of_the_segment import distance
+from students.piechowski_michal.lesson_03_functions.the_length_of_the_segment import distance
 
 
 def test_distance_from_the_same_point_to_the_same_point_is_zero():
