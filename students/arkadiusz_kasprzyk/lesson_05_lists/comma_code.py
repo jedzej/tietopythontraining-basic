@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 def comma_code(lst):
 =======
 def comma_code( lst ):
@@ -59,3 +60,27 @@ else:
 
 
 >>>>>>> 2cb88f3c0db2358d339f5bf43f3ccfccec26c78f
+=======
+def comma_code( lst ):
+
+    s = ''
+    l = len(spam)
+
+    if l > 0:
+
+        s += lst[0]
+
+        if l > 1:
+
+            sep = [', '] * (l - 2) + [' and ']
+
+            for k in range(l-1):
+
+                s += (sep[k] + lst[k+1])
+
+    return s
+
+spam = ['apples', 'bananas', 'tofu', 'cats', 'dogs']
+
+print(comma_code(spam))
+>>>>>>> 00 adziu/lesson_05_lists

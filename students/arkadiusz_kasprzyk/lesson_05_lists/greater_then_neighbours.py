@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 def gtn(numbers):
     """
     Parameters
@@ -22,3 +23,15 @@ def gtn(numbers):
 
 
 
+=======
+ll = [1, 4, 6, 3, 8, 6, 9, 0, 3, 5, 4, 6, 7, 4]
+
+def gtn(ll):
+    s = 0
+    for k in range(1, len(ll)-1):
+        if ll[k] > ll[k-1] and ll[k] > ll[k+1]:
+            s += 1
+    return s
+
+print(gtn(ll))
+>>>>>>> 00 adziu/lesson_05_lists
