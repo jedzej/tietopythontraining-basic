@@ -1,46 +1,31 @@
-def str_to_list_of_int(string):
-    numbers = string.split()
-    list_of_number = []
-    for value in numbers:
-        list_of_number.append(int(value))
-    return list_of_number
-
-
 def up_poits_line(number_of_pins):
     pins = ''
-    for pins in range(0, number_of_pins):
-        pins.__add__('I')
+    for i in range(0, number_of_pins):
+        pins += 'I'
     return pins
 
 
-def shooting_points(poits_line = str, start_point, stop_poits):
-    start_point = start_point - 1
-    stop_poits = stop_poits - 1
+def shooting_points(poits_line = str, start_point = int, stop_poits = int):
     line_after_shot = []
     for i in range(0, len(poits_line)):
         line_after_shot.append(poits_line[i])
-    poits_line = ''
-    for poit_down in range(start_point - 1, stop_poits - 1):
+    for poit_down in range(start_point - 1, stop_poits):
         line_after_shot[poit_down] = '.'
-        poits_line += line_after_shot
-    return poits_line
-
-
-def list_to_string(list_value):
     string = ''
-    for value in list_value:
-        string += str(value) + " "
+    for t in line_after_shot:
+        string += t
     return string
 
 
 def main():
-    values = input()
-    poits_line = up_poits_line(str_to_list_of_int(values)[0])
-    number_of_players = str_to_list_of_int(values)[1]
+    info_game = input().split()
+    poits_line = up_poits_line(int(info_game[0]))
+    number_of_players = int(info_game[1])
     for player in range(0, number_of_players):
-        shoot_from = str_to_list_of_int(input())[0]
-        shoot_to = str_to_list_of_int(input())[1]
-        shooting_points(poits_line, shoot_from, shoot_to)
+        points = input().split()
+        start_point = int(points[0])
+        stop_point = int(points[1])
+        poits_line = shooting_points(poits_line, start_point, stop_point)
     print(poits_line)
 
 
