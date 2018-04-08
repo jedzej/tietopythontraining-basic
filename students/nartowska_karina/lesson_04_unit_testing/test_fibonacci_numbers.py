@@ -1,24 +1,5 @@
 import unittest
-
-
-def fib(n):
-    try:
-        if n == 0:
-            return 0
-        elif n == 1:
-            return 1
-        else:
-            return fib(n - 1) + fib(n - 2)
-    except ValueError:
-        print("Incorrect value")
-
-
-def main():
-    print("Enter a non-negative integer 'n'")
-    print("n is: ")
-    n = int(input())
-    print("Result:")
-    print(fib(n))
+from lesson_03_functions.fibonacci_numbers import fib
 
 
 class MyTest(unittest.TestCase):

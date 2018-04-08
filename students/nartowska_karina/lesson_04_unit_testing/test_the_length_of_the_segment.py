@@ -1,26 +1,5 @@
 import unittest
-from math import sqrt
-
-
-def distance(x1, y1, x2, y2):
-    if x1 is str or y1 is str or x2 is str or y2 is str:
-        raise ValueError
-    else:
-        return sqrt(((x2 - x1) ** 2) + ((y2 - y1) ** 2))
-
-
-def main():
-    print("Enter four real numbers representing cartesian coordinates")
-    print("x1 is: ")
-    x1 = float(input())
-    print("y1 is: ")
-    y1 = float(input())
-    print("x2 is: ")
-    x2 = float(input())
-    print("y2 is: ")
-    y2 = float(input())
-    print("The distance is:")
-    distance(x1, y1, x2, y2)
+from lesson_03_functions.the_length_of_the_segment import distance
 
 
 class MyTest(unittest.TestCase):
