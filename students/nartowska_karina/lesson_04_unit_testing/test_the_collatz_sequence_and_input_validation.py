@@ -1,5 +1,6 @@
 import unittest
-from lesson_03_functions.the_collatz_sequence_and_input_validation import collatz
+from lesson_03_functions.the_collatz_sequence_and_input_validation \
+    import collatz
 
 
 class MyTest(unittest.TestCase):
