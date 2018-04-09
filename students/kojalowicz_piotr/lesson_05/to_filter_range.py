@@ -1,7 +1,7 @@
 list_of_strings = ['2', '0', '8', '3']
 
 
-def string_to_int(list_of_strings = []):
+def string_to_int(list_of_strings=[]):
     list_of_number = []
     for value in list_of_strings:
         list_of_number.append(int(value))
