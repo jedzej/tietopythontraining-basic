@@ -6,7 +6,7 @@ def main():
     max_row = 0
     maxi = None
     for row in range(rows):
-        table.append([0]*columns)
+        table.append([0] * columns)
     for row in range(rows):
         row_elemnts = input().split()
         for column in range(columns):

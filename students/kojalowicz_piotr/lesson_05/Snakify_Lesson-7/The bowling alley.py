@@ -5,7 +5,7 @@ def up_poits_line(number_of_pins):
     return pins
 
 
-def shooting_points(poits_line = str, start_point = int, stop_poits = int):
+def shooting_points(poits_line=str, start_point=int, stop_poits=int):
     line_after_shot = []
     for i in range(0, len(poits_line)):
         line_after_shot.append(poits_line[i])

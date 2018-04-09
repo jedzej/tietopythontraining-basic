@@ -1,6 +1,7 @@
 list_of_ages = [34, 56, 14, 16, 19]
 
-def age_calculator(list_of_ages = []):
+
+def age_calculator(list_of_ages=[]):
     list_of_adults = []
     numer_of_kids = 0
     resalts = []

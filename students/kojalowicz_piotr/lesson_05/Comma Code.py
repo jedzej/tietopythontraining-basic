@@ -1,7 +1,7 @@
 def comma_code(list_value):
     string = '\''
     for value in list_value:
-        if value is not list_value[list_value.__len__()-1]:
+        if value is not list_value[list_value.__len__() - 1]:
             string += str(value) + ", "
         else:
             string += str(value)

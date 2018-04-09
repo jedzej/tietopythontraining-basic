@@ -8,7 +8,7 @@ def string_to_int(list_of_strings = []):
     return list_of_number
 
 
-def to_filter_range(list_of_int = [], range_for_filter = int):
+def to_filter_range(list_of_int=[], range_for_filter=int):
     list_after_filter = []
     list_of_int.sort()
     for index in range(range_for_filter - 1, list_of_int.__len__()):

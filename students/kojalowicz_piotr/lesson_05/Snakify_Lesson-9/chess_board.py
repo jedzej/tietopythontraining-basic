@@ -4,7 +4,7 @@ def main():
     columns = int(param_table[1])
     table = []
     for row in range(rows):
-        table.append([0]*columns)
+        table.append([0] * columns)
     for row in range(rows):
         for column in range(columns):
             if (row + column) % 2 == 0:
