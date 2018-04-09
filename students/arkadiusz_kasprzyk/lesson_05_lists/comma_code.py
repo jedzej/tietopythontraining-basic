@@ -1,7 +1,7 @@
 def comma_code( lst ):
 
     s = ''
-    l = len(spam)
+    l = len(lst)
 
     if l > 0:
 
@@ -11,12 +11,11 @@ def comma_code( lst ):
 
             sep = [', '] * (l - 2) + [' and ']
 
-            for k in range(l-1):
+            for k in range(l - 1):
 
-                s += (sep[k] + lst[k+1])
+                s += (sep[k] + lst[k + 1])
 
     return s
 
-spam = ['apples', 'bananas', 'tofu', 'cats', 'dogs']
-
-print(comma_code(spam))
+#spam = ['apples', 'bananas', 'tofu', 'cats', 'dogs']
+#print(comma_code(spam))
