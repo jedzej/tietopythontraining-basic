@@ -10,6 +10,3 @@ for i in range(len(array)):
     for j in range(len(array[i])):
         print(str(array[i][j]), end=' ')
     print()
-
-
-

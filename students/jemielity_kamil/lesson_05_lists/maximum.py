@@ -17,10 +17,3 @@ for i in range(len(array)):
         break
     except ValueError:
         continue
-
-
-
-
-
-
-
