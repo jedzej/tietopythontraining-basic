@@ -1,0 +1,26 @@
+'''
+'''
+
+
+def max_position():
+    rows, column = [int(s)
+                    for s in input("Enter row and column count:").split()]
+    a = []
+    max_row_index = 0
+    max_col_index = 0
+    for i in range(rows):
+        a.append([int(s) for s in input("Enter row values: ").split()])
+    for i in range(rows):
+        for j in range(len(a[i])):
+            if a[i][j] > a[max_row_index][max_col_index]:
+                max_row_index = i
+                max_col_index = j
+    print("Index of maximum number in matrix is:",
+          max_row_index, max_col_index)
+
+
+if __name__ == "__main__":
+    try:
+        max_position()
+    except ValueError:
+        print("Invalid input")

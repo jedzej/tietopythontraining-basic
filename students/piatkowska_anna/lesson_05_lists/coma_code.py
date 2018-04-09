@@ -10,9 +10,10 @@ would return 'apples, bananas, tofu, and cats'.
 But your function should be able to work with any list value passed to it.
 """
 
+
 def coma_separate_string(l):
     if not isinstance(l, list):
-        raise ValueError, "Expected list argument"
+        raise ValueError("Expected list argument")
     result = ""
     for i in range(len(l) - 1):
         result += str(l[i]) + ", "
@@ -27,6 +28,7 @@ def coma_separet_string_without_last_coma(l):
     result = ', '.join(l[:-1])
     result += ' and ' + l[-1]
     return result
+
 
 if __name__ == "__main__":
     spam = ['apples', 'bananas', 'tofu', 'cats']

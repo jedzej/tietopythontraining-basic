@@ -39,21 +39,22 @@ Also, remember to pass the end keyword argument to print()
 if you don’t want a newline printed automatically after each print() call.
 """
 
+
 def print_picture(grid):
     for j in range(len(grid[0])):
         for i in range(len(grid)):
-            print (grid[i][j], end='')
+            print(grid[i][j], end='')
         print()
 
 
 if __name__ == "__main__":
     grid = [['.', '.', '.', '.', '.', '.'],
-        ['.', 'O', 'O', '.', '.', '.'],
-        ['O', 'O', 'O', 'O', '.', '.'],
-        ['O', 'O', 'O', 'O', 'O', '.'],
-        ['.', 'O', 'O', 'O', 'O', 'O'],
-        ['O', 'O', 'O', 'O', 'O', '.'],
-        ['O', 'O', 'O', 'O', '.', '.'],
-        ['.', 'O', 'O', '.', '.', '.'],
-        ['.', '.', '.', '.', '.', '.']]
+            ['.', 'O', 'O', '.', '.', '.'],
+            ['O', 'O', 'O', 'O', '.', '.'],
+            ['O', 'O', 'O', 'O', 'O', '.'],
+            ['.', 'O', 'O', 'O', 'O', 'O'],
+            ['O', 'O', 'O', 'O', 'O', '.'],
+            ['O', 'O', 'O', 'O', '.', '.'],
+            ['.', 'O', 'O', '.', '.', '.'],
+            ['.', '.', '.', '.', '.', '.']]
     print_picture(grid)
