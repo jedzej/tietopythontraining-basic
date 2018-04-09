@@ -1,14 +1,25 @@
 import unittest
 from comma_code import *
 
+<<<<<<< HEAD
+=======
+spam = ['apples', 'bananas', 'tofu', 'cats', 'dogs']
+
+>>>>>>> 01 On branch adziu/lesson_05_lists
 class TestCommaCode(unittest.TestCase):
 
     def test_type(self):
         with self.assertRaises(TypeError):
             comma_code(None)
 
+<<<<<<< HEAD
     def test_type_2(self):
         self.assertEqual(comma_code(list(range(3))), '0, 1 and 2', "int !-> str")
+=======
+    def test_type(self):
+        with self.assertRaises(TypeError):
+            comma_code(123)
+>>>>>>> 01 On branch adziu/lesson_05_lists
 
     def test_0(self):
         self.assertEqual(comma_code([]), '', "comma_code([]) != ''")
@@ -34,5 +45,9 @@ class TestCommaCode(unittest.TestCase):
 
 
 #if __name__ == '__main__':
+<<<<<<< HEAD
 #    unittest.main()
 
+=======
+#    unittest.main()
+>>>>>>> 01 On branch adziu/lesson_05_lists

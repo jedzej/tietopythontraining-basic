@@ -1,0 +1,7 @@
+{
+  "test_distance.py::test_corners": true,
+  "test_distance.py::test_none": true,
+  "test_distance.py::test_order": true,
+  "test_distance.py::test_typical": true,
+  "test_distance.py::test_value_error": true
+}

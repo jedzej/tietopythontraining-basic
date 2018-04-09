@@ -1,0 +1,19 @@
+[
+  "test_collatz.py::TestCollatz::test_5_16",
+  "test_collatz.py::TestCollatz::test_8_4",
+  "test_collatz.py::TestCollatz::test_type",
+  "test_distance.py::TestClass::()::test_none",
+  "test_distance.py::TestClass::()::test_value_error",
+  "test_distance.py::TestClass::()::test_corners",
+  "test_distance.py::TestClass::()::test_typical",
+  "test_distance.py::TestClass::()::test_order",
+  "test_fibonacci.py::TestFib::test_0",
+  "test_fibonacci.py::TestFib::test_1",
+  "test_fibonacci.py::TestFib::test_2",
+  "test_fibonacci.py::TestFib::test_3",
+  "test_fibonacci.py::TestFib::test_4",
+  "test_fibonacci.py::TestFib::test_5",
+  "test_fibonacci.py::TestFib::test_6",
+  "test_fibonacci.py::TestFib::test_none",
+  "test_fibonacci.py::TestFib::test_type"
+]
