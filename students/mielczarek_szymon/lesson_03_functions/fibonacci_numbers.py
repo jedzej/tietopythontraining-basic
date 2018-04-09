@@ -7,4 +7,9 @@ def fib(n):
         return fib(n - 2) + fib(n - 1)
 
 
-print(fib(int(input())))
+def main():
+    print(fib(int(input())))
+
+
+if __name__ == "__main__":
+    main()
