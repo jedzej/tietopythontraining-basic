@@ -1,5 +1,6 @@
 def numbers_filter(base_list, filter_range):
-    numeric_list = [int(i) for i in base_list if int(i) not in list(filter_range)]
+    numeric_list = [int(i) for i in base_list
+                    if int(i) not in list(filter_range)]
     return numeric_list
 
 
