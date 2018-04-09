@@ -6,7 +6,7 @@ def age_calculator(ages):
     for x in adults:
         adults_average += x
 
-    adults_average = adults_average/len(adults)
+    adults_average = adults_average / len(adults)
     return adults_average, len(children)
 
 
@@ -15,6 +15,3 @@ if __name__ == "__main__":
     average, children_counter = age_calculator(people_ages)
     print("Average of adults age: " + str(average))
     print("Number of children: " + str(children_counter))
-
-
-

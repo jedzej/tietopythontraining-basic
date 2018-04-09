@@ -1,5 +1,5 @@
 def filterfunction(strings, scope):
-    elements = [int(element) for element in strings if int(element) not in scope]
+    elements = [int(elm) for elm in strings if int(elm) not in scope]
     return elements
 
 
