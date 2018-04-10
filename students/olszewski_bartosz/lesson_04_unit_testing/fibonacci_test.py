@@ -23,8 +23,3 @@ def test_raises_type_error():
 def test_non_value():
     with pytest.raises(TypeError):
         fib('None')
-
-
-def test_negative_value():
-    with pytest.raises(RecursionError):
-        fib(-1)
