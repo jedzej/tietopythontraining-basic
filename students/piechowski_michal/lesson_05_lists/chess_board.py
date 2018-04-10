@@ -9,7 +9,7 @@ for row in range(0, rows):
     for column in range((row + 1) % 2, columns, 2):
         table[row][column] = '*'
 
-for row in range(0, rows):
-    for column in range(0, columns):
-        print(table[row][column], end=' ')
+for row in table:
+    for column_item in row:
+        print(column_item, end=' ')
     print("")

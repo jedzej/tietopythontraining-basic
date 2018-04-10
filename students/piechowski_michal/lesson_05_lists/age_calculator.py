@@ -6,21 +6,17 @@ def adult_filter(age):
 
 
 people_age_list = [int(x) for x in input("Input the age list: ").split()]
-adults_age_list = [int(x) for x in people_age_list if adult_filter(x)]
-children_age_list = [int(x) for x in people_age_list if not adult_filter(x)]
+adults_age_list = [x for x in people_age_list if adult_filter(x)]
+children_age_list = [x for x in people_age_list if not adult_filter(x)]
 
-age_sum = 0
-counter = 0
-for age in adults_age_list:
-    age_sum += age
-    counter += 1
+if adults_age_list:
+    average_age = sum(adults_age_list) / len(adults_age_list)
+    print("Average age of adults: " + str(average_age))
+else:
+    print("There are no adults")
 
-print("Average age of adults: " + str(age_sum / counter))
-
-age_sum = 0
-counter = 0
-for age in children_age_list:
-    age_sum += age
-    counter += 1
-
-print("Average age of children: " + str(age_sum / counter))
+if children_age_list:
+    average_age = sum(children_age_list) / len(children_age_list)
+    print("Average age of children: " + str(average_age))
+else:
+    print("There are no children")
