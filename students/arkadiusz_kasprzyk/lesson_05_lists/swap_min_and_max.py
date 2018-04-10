@@ -1,12 +1,10 @@
-ll = [1, 4, 6, 3, 8, 6, 9, 0, 3, 5, 4, 6, 7, 4]
-
 def swap_min_max(ll):
-    lmin = min(ll)
-    lmax = max(ll)
-    imin = ll.index(lmin)
-    imax = ll.index(lmax)
-    ll[imin] = lmax
-    ll[imax] = lmin
+    if len(ll) >= 2:
+        lmin, lmax = min(ll), max(ll)
+        imin, imax = ll.index(lmin), ll.index(lmax)
+        ll[imin], ll[imax]= lmax, lmin
     return ll
 
-print(swap_min_max(ll))
+#ll = [3, 0, 1, 4, 7, 2, 6]
+#print(swap_min_max(ll))
+

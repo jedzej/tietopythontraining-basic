@@ -1,23 +1,31 @@
 def bowling(N, rolls):
-    K = len(rolls)
-    assert K > 0
-    assert K <= N
 
-    for l in rolls:
-        assert len(l) == 2
+    if N < 0:
 
-    pins = list('I' * N)
-    print(pins)
+        raise ValueError
 
-    for r in rolls:
-        r[0] -= 1
-        for k in range(*r):
-            pins[k] = '.'
+    elif N == 0:
+
+        pins = []
+
+    else:
+
+        for r in rolls:
+            if len(r) != 2: raise ValueError
+
+        pins = list('I' * N)
+
+        for r in rolls:
+            r[0] -= 1
+            for k in range(*r):
+                pins[k] = '.'
 
     return(pins)
 
 
-print(bowling(5, [[1,2], [4,5]]))
+#print(bowling(5, [[1,2], [4,5]]))
+#print(bowling(5, [[1,2], [4]]))
+#print(bowling(5, []))
+#print(bowling(0, [[1, 2]]))
 
-ll = list(range(5))
-ll[0:2] = [-1]*2
+

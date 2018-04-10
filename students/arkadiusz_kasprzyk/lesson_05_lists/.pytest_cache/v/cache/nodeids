@@ -4,5 +4,15 @@
   "test_comma_code.py::TestCommaCode::test_2",
   "test_comma_code.py::TestCommaCode::test_3",
   "test_comma_code.py::TestCommaCode::test_5",
-  "test_comma_code.py::TestCommaCode::test_type"
+  "test_comma_code.py::TestCommaCode::test_type",
+  "test_comma_code.py::TestCommaCode::test_type_2",
+  "test_greater_then_neghbours.py::TestGreaterThenNeighbours::test_gtn_012",
+  "test_greater_then_neghbours.py::TestGreaterThenNeighbours::test_gtn_smaple",
+  "test_greater_then_neghbours.py::TestGreaterThenNeighbours::test_gtn_value",
+  "test_swap_min_max.py::TestSwapMinMax::test_smm_01",
+  "test_swap_min_max.py::TestSwapMinMax::test_smm_02",
+  "test_swap_min_max.py::TestSwapMinMax::test_smm_ambig_max",
+  "test_swap_min_max.py::TestSwapMinMax::test_smm_ambig_min",
+  "test_swap_min_max.py::TestSwapMinMax::test_smm_sample",
+  "test_swap_min_max.py::TestSwapMinMax::test_smm_type"
 ]
