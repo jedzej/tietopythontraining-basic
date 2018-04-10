@@ -12,4 +12,3 @@ def print_table(table):
         print(table[r])
 
 print_table(diagonals(10,20))
-

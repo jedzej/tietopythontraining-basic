@@ -27,4 +27,3 @@ def diagonals(n, m = None):
             row += [abs(r-c)]
         res += [row]
     return res
-
