@@ -15,7 +15,7 @@ class TestDistanceFunction(unittest.TestCase):
             distance('aoeu')
 
     def test_zero_distance(self):
-        self.assertEqual(distance(1,1,1,1), 0, "zero distance")
+        self.assertEqual(distance(1, 1, 1, 1), 0, "zero distance")
 
     def test_corner_cases(self):
         self.assertEqual(distance(-1, -1, -2, -2), math.sqrt(2), "test \
