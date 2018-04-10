@@ -1,0 +1,5 @@
+[
+  "collatz_test.py::TestCollatzFunction::test_collatz_of_number_16",
+  "collatz_test.py::TestCollatzFunction::test_collatz_of_number_8",
+  "collatz_test.py::TestCollatzFunction::test_collatz_string"
+]
