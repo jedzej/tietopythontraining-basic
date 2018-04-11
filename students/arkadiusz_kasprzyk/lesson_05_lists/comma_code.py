@@ -1,4 +1,22 @@
 def comma_code( lst ):
+    """
+    Parameters
+    ----------
+    lst: list
+
+    Returns
+    -------
+    string constructed from elements of the `lst` by joining them with ', '
+    and the last two with ' and '.
+
+    Examples
+    --------
+    print(comma_code(['apples', 'bananas', 'tofu', 'cats', 'dogs']))
+    print(comma_code(['apples', 'bananas', 'tofu']))
+    print(comma_code(['apples', 'bananas']))
+    print(comma_code(['apples']))
+    print(comma_code([]))
+    """
 
     s = ''
     l = len(lst)
@@ -11,6 +29,5 @@ def comma_code( lst ):
                 s += (sep[k] + str(lst[k + 1]))
     return s
 
-#spam = ['apples', 'bananas', 'tofu', 'cats', 'dogs']
-#print(comma_code(spam))
+
 

@@ -1,10 +1,24 @@
-def swap_min_max(ll):
-    if len(ll) >= 2:
-        lmin, lmax = min(ll), max(ll)
-        imin, imax = ll.index(lmin), ll.index(lmax)
-        ll[imin], ll[imax]= lmax, lmin
-    return ll
+def swap_min_max(numbers):
+    """
+    Parameters
+    ----------
+    numbers: int[]
 
-#ll = [3, 0, 1, 4, 7, 2, 6]
-#print(swap_min_max(ll))
+    Returns
+    -------
+    numbers with maximum and minimum swapped.
+    Only the first occurences of min and max are taken into account.
+
+    Examples
+    --------
+    print(swap_min_max([3, 0, 1, 4, 7, 2, 6]))
+    print(swap_min_max([3, 0, 0, 4, 7, 2, 6]))
+    print(swap_min_max([3, 0, 1, 4, 7, 7, 6]))
+    """
+    if len(numbers) >= 2:
+        lmin, lmax = min(numbers), max(numbers)
+        imin, imax = numbers.index(lmin), numbers.index(lmax)
+        numbers[imin], numbers[imax]= lmax, lmin
+    return numbers
+
 
