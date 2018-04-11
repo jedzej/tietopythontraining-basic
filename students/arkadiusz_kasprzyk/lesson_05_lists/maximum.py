@@ -32,4 +32,3 @@ def maximum(matrix):
                 maxi = matrix[r][c]
                 idx = [r, c]
     return maxi, idx
-

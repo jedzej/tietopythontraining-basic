@@ -28,6 +28,3 @@ def comma_code( lst ):
             for k in range(l - 1):
                 s += (sep[k] + str(lst[k + 1]))
     return s
-
-
-

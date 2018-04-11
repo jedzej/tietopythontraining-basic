@@ -21,7 +21,7 @@ def rep(x, length=None, times=None):
         if length < 0:
             raise ValueError
         else:
-            n = length // len(x) + ( length % len(x) > 0 )
+            n = length // len(x) + (length % len(x) > 0)
             x = x * n
             x = x[:length]
 
@@ -51,8 +51,7 @@ def chess_board(m, n):
     chb = []
     for r in range(m):
         if r % 2:
-            chb += [list(rep("*.",n))]
+            chb += [list(rep("*.", n))]
         else:
-            chb += [list(rep(".*",n))]
+            chb += [list(rep(".*", n))]
     return chb
-

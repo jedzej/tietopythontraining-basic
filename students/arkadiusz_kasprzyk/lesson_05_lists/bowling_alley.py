@@ -13,7 +13,8 @@ def bowling(N, rolls):
     Returns
     -------
     List of all pins:
-        if the pin is standing after all rolls being done then 'I' is in its place;
+        if the pin is standing after all rolls being done
+            then 'I' is in its place;
         if the pin is put down then '.' is in its place.
 
     Examples
@@ -34,7 +35,8 @@ def bowling(N, rolls):
     else:
 
         for r in rolls:
-            if len(r) != 2: raise ValueError
+            if len(r) != 2:
+                raise ValueError
 
         pins = list('I' * N)
 
