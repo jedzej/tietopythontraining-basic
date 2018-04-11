@@ -1,7 +1,7 @@
 def knock_pins(pins, balls):
     result = pins * ['I']
     for i in range(balls):
-        start, stop = [int(x) for x in input("Type start and stop position: ").split()]
+        start, stop = [int(x) for x in input("Start and stop pos: ").split()]
         for j in range(start - 1, stop):
             result[j] = '.'
 

@@ -13,7 +13,8 @@ def count_maximum(rows, columns, a):
 
 def main():
     rows, col = [int(i) for i in input("Input rows and columns: ").split()]
-    a = [[int(j) for j in input(str(col) + " values:").split()] for i in range(rows)]
+    a = [[int(j) for j in input("Input " + str(col) + " values: ").split()]
+         for i in range(rows)]
 
     count_maximum(rows, col, a)
 
