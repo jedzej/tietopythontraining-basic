@@ -8,7 +8,7 @@ def test_if_fib_raises_type_error_when_none_provided():
 
 
 def test_if_fib_raises_type_error_when_string_provided():
-    with pytest.raises(TypeError):
+    with pytest.raises(ValueError):
         fib("3")
 
 

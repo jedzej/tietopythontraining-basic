@@ -8,9 +8,14 @@ def test_length_of_the_segment_raises_type_error_when_none_provided():
         calculate_length_of_the_segment(None, None, None, None)
 
 
-def test_length_of_the_segment_raises_type_error_when_string_provided():
-    with pytest.raises(TypeError):
+def test_length_of_the_segment_raises_value_error_when_string_provided():
+    with pytest.raises(ValueError):
         calculate_length_of_the_segment('aoeu', 'aoeu', 'aoeu', 'aoeu')
+
+
+def test_length_of_segment_raises_value_error_when_one_argument_is_string():
+    with pytest.raises(ValueError):
+        calculate_length_of_the_segment('1', 2, 3, 4)
 
 
 def test_length_of_the_segment_returns_zero_distance_when_called_on_zero():
