@@ -5,7 +5,8 @@ def swap_columns(a, i, j):
 
 def main():
     rows, col = [int(i) for i in input("Input rows and columns: ").split()]
-    a = [[int(j) for j in input(str(col) + " values:").split()] for i in range(rows)]
+    a = [[int(j) for j in input("Input " + str(col) + " values: ").split()]
+         for i in range(rows)]
     swap_col, swap_col2 = [int(i) for i in input("Columns to swap: ").split()]
 
     swap_columns(a, swap_col, swap_col2)
