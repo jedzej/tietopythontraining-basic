@@ -42,10 +42,7 @@ def input_operand2():
     return operand2
 
 
-if __name__ == '__main__':
-    print("Welcome to NEW calculator:")
-    help_calc()
-
+def calc():
     while True:
         print("Enter option:")
         option = input()
@@ -91,3 +88,9 @@ if __name__ == '__main__':
         else:
             print('Wrong option. Try again: ')
             help_calc()
+
+
+if __name__ == '__main__':
+    print("Welcome to NEW calculator:")
+    help_calc()
+    calc()

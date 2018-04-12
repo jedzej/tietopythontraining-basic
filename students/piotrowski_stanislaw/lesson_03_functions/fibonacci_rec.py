@@ -3,23 +3,19 @@
 
 
 def fib(n):
-    if int(n) == 2 or int(n) == 1:
-        return 1
+    if n > 0:
+        if int(n) == 2 or int(n) == 1:
+            return 1
+        else:
+            return fib(int(n) - 1) + fib(int(n) - 2)
     else:
-        return fib(int(n) - 1) + fib(int(n) - 2)
+        print('Wrong value. You must enter a positive integer.')
 
 
-def is_positive_int(value):
+if __name__ == '__main__':
     try:
-        if int(value) > 0:
-            return True
+        n = int(input('Enter integer value: '))
+        print(fib(n))
+
     except ValueError:
-        return False
-
-
-n = input('Enter integer value: ')
-
-if is_positive_int(n):
-    print(fib(n))
-else:
-    print('Wrong input value.')
+        print('Wrong input value.')
