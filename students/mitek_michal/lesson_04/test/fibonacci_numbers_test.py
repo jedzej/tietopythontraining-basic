@@ -1,5 +1,5 @@
 import pytest
-from lesson_04.src.fibonacci_numbers import fib
+from lesson_03_functions.fibonacci_numbers import fib
 
 
 def test_if_fib_raises_type_error_when_none_provided():

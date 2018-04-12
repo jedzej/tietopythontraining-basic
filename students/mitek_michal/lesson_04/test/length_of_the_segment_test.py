@@ -1,5 +1,6 @@
 import pytest
-from lesson_04.src.length_of_the_segment import \
+
+from lesson_03_functions.length_of_the_segment import \
     calculate_length_of_the_segment
 
 
