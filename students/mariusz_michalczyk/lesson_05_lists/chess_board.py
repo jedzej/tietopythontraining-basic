@@ -3,8 +3,10 @@ def get_user_input():
 
 
 def show_chessboard(rows, columns):
-    list_with_chars = ["." if i % 2 == 0 else "*" for i in range(columns)]
-    reversed_list_with_chars = ["." if i % 2 != 0 else "*" for i in range(columns)]
+    list_with_chars = \
+        ["." if i % 2 == 0 else "*" for i in range(columns)]
+    reversed_list_with_chars = \
+        ["." if i % 2 != 0 else "*" for i in range(columns)]
     for row_index in range(rows):
         if row_index % 2 == 0:
             print(' '.join(list_with_chars))

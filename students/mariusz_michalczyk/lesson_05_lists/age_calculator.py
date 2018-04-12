@@ -11,5 +11,7 @@ def get_amount_of_children(list_of_ages):
 
 if __name__ == '__main__':
     list_of_ages = [int(s) for s in input().split()]
-    print("Average age adults is: " + str(get_adults_avg(list_of_ages)))
-    print("Amount of children is: " + str(get_amount_of_children(list_of_ages)))
+    adults_avg = get_adults_avg(list_of_ages)
+    amount_of_children = get_amount_of_children(list_of_ages)
+    print("Average age adults is: " + str(adults_avg))
+    print("Amount of children is: " + str(amount_of_children))

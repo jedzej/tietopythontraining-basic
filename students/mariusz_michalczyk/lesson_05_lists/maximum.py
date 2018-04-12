@@ -17,5 +17,6 @@ def find_index_of_max_value(two_dim_array):
 
 
 if __name__ == '__main__':
-    max_index_row, max_index_column = find_index_of_max_value(get_array_based_on_user_input())
+    max_index_row, max_index_column = \
+        find_index_of_max_value(get_array_based_on_user_input())
     print(max_index_row, max_index_column)
