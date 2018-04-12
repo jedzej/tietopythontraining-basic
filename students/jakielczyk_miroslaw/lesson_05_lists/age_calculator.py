@@ -13,7 +13,8 @@ def calculate_average_age(list_of_ages):
 
 def main():
     list_of_ages = [10, 8, 23, 56, 78, 6, 4, 35]
-    print("Average ages for adults %f, number of children %d" % calculate_average_age(list_of_ages))
+    print("Average ages for adults %f, number of children %d"
+          % calculate_average_age(list_of_ages))
 
 
 if __name__ == "__main__":
