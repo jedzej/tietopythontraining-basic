@@ -1,5 +1,5 @@
 import unittest
-from collatz_sequence import collatz
+from lesson_03.collatz_sequence import collatz
 
 
 class TestCollatzFunction(unittest.TestCase):
