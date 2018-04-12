@@ -11,7 +11,8 @@ def collatz(argument):
     return value
 
 
-number = input()
-while number != 1:
-    number = collatz(number)
-    print(number)
+if __name__ == '__main__':
+    number = input()
+    while number != 1:
+        number = collatz(number)
+        print(number)

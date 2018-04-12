@@ -3,24 +3,17 @@
 
 
 def power(a, n):
-    if float(n) == 0:
+    if n == 0:
         return 1
     else:
-        return float(a) * power(float(a), float(n) - 1)
+        return a * power(a, n - 1)
 
 
-def is_float(value):
+if __name__ == '__main__':
     try:
-        float(value)
-        return True
+        a = float(input())
+        n = float(input())
+        print(power(a, n))
+
     except ValueError:
-        return False
-
-
-a = input()
-n = input()
-
-if is_float(a) and is_float(n):
-    print(power(a, n))
-else:
-    print('Wrong input values.')
+        print('Wrong value. Enter a real number.')
