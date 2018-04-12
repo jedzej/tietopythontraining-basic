@@ -1,9 +1,5 @@
 def numbers_filter(string_list, range_list):
-    final_list = []
-    for element in string_list:
-        if int(element) not in range_list:
-            final_list.append(int(element))
-    return final_list
+    return [int(element) for element in string_list if int(element) not in range_list]
 
 
 def main():
