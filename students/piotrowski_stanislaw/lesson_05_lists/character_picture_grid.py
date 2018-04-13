@@ -1,6 +1,6 @@
-#piotrsta
-#character picture grid
-#https://automatetheboringstuff.com/chapter4/
+# piotrsta
+# character picture grid
+# https://automatetheboringstuff.com/chapter4/
 
 grid = [['.', '.', '.', '.', '.', '.'],
         ['.', 'O', 'O', '.', '.', '.'],

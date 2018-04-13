@@ -1,6 +1,6 @@
-#piotrsta
-#comma code
-#https://automatetheboringstuff.com/chapter4/
+# piotrsta
+# comma code
+# https://automatetheboringstuff.com/chapter4/
 
 
 def comma_code(input_list):
