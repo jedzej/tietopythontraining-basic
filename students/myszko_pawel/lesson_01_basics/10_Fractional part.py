@@ -9,3 +9,8 @@ for i in a:
     if(i == '.'):
         break
 print('0' + a[index-1:])
+
+###**********************###
+
+a = float(input())
+print (a-int(a))

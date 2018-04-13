@@ -5,8 +5,6 @@
 # Read the numbers like this:
 N = int(input())    # number of students
 K = int(input())    # number of apples
-# Print the result with print()
-
 # Example of division, integer division and remainder:
 print(K // N)       # apples per student
 print(K % N)        # apples left
