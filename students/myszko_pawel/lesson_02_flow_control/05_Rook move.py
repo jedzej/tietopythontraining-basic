@@ -4,12 +4,11 @@
 # first two - for the first cell, and then the last two - for the second cell.
 # The program should output YES if a rook can go from the first cell to the second in one move, or NO otherwise.
 
-# Read an integer:
 x1 = int(input())
 y1 = int(input())
 x2 = int(input())
 y2 = int(input())
-# Print a value:
+
 if( (x1 == x2) or (y1 == y2) ):
     print("YES")
 else:

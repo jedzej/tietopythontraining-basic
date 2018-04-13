@@ -3,12 +3,11 @@
 # Determine whether it is possible to split it so that one of the parts will have exactly k squares.
 # The program reads three integers: n, m, and k. It should print YES or NO.
 
-# Read an integer:
 n = int(input())
 m = int(input())
 k = int(input())
-# Print a value:
-if( (k > n*m) and (k%(n-1)==0) or (k%(m-1)==0) ):
+
+if( (k > n*m) and (k%(n-1) == 0) or (k%(m-1) == 0) ):
     print("YES")
 else:
     print("NO")

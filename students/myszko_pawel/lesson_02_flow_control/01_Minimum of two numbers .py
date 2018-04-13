@@ -1,7 +1,6 @@
 # Given two integers, print the smaller value.
 
-# Read an integer:
-a = int(input())
-b = int(input())
-# Print a value:
-print(min(a, b))
+val_1 = int(input())
+val_2 = int(input())
+
+print(min(val_1, val_2))

@@ -10,5 +10,5 @@ while True:
         break
 
 lista.sort()
-max_elem = lista[len(lista)-1]
+max_elem = lista[-1]
 print(lista.count(max_elem))

@@ -10,7 +10,7 @@ while True:
     else:
         break
 
-lista = (set(lista))
-lista = list(lista)
+ciag = set(lista)
+lista = list(ciag)
 lista.sort()
-print (lista[len(lista)-2])
+print (lista[-2])
