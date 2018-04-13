@@ -1,6 +1,7 @@
 import pytest
 from fibonacci_rec import fib
-#from lesson_03_functions.fibonacci_rec import fib
+# from lesson_03_functions.fibonacci_rec import fib
+
 
 class TestFibonacciFunction(object):
     def test_none_as_input_parameter(self):
