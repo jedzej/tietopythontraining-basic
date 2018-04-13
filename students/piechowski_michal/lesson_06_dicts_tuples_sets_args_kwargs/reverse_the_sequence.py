@@ -2,7 +2,7 @@
 
 
 def print_reversed():
-    value = int (input())
+    value = int(input())
     if value != 0:
         print_reversed()
     print(value)

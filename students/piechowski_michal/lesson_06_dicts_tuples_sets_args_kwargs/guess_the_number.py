@@ -25,7 +25,7 @@ def main():
         for element in sorted(yes_set.difference(no_set)):
             print(element, end=" ")
     else:
-        for i in range(1, n+1):
+        for i in range(1, n + 1):
             if i not in no_set:
                 print(i, end=" ")
 
