@@ -7,7 +7,7 @@
 
 def insert_commas(list_value):
     connected_string = ', '.join(list_value[:-1]) + ' and ' + list_value[-1]
-    
+
     return connected_string
 
 
