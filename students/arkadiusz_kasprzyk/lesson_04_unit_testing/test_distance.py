@@ -31,4 +31,3 @@ class TestClass(object):
 
     def test_order(self):
         assert math.fabs(distance(0, 1, 1, 0) - distance(1, 0, 0, 1)) < epsilon
-
