@@ -9,4 +9,3 @@ for row in range(len(matrix)):
 """Print result"""
 for row in matrix:
     print(' '.join([str(elem) for elem in row]))
-
