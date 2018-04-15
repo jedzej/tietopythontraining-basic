@@ -1,4 +1,5 @@
-# Function return/print number of elements that are greater than both of their neighbors
+# Function return/print number of elements
+# that are greater than both of their neighbors
 from create_lists import list_elements
 
 

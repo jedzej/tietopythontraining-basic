@@ -4,7 +4,8 @@ from create_lists import array_2dem_random
 
 
 def max_index(mylist):
-    # maximum = max([max(i) for i in mylist]) # if I use it, how I can find index?
+    # maximum = max([max(i) for i in mylist])
+    # if I use it, how I can find index?
     maximum = mylist[0][0]
     index = [0, 0]
     for i in range(len(mylist)):
