@@ -1,8 +1,8 @@
-input_list = [int(i) for i in input().split()]
+in_list = [int(i) for i in input().split()]
 
-max_val = input_list.index(max(input_list))
-min_val = input_list.index(min(input_list))
+max_val = in_list.index(max(in_list))
+min_val = in_list.index(min(in_list))
 
-input_list[min_val], input_list[max_val] = input_list[max_val], input_list[min_val]
+in_list[min_val], in_list[max_val] = in_list[max_val], in_list[min_val]
 
-print(' '.join([str(i) for i in input_list]))
+print(' '.join([str(i) for i in in_list]))
