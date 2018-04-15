@@ -2,7 +2,7 @@ import pytest
 from the_length_of_the_segment import distance
 
 
-class MyTest(unittest.TestCase):
+class MyTest(pytest.TestCase):
 
     def test_1(self):
         self.assertRaises(TypeError, distance, None, 1, 2, 3)
@@ -32,4 +32,4 @@ class MyTest(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main()
+    pytest.main()
