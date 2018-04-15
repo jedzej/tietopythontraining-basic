@@ -2,6 +2,7 @@ def swap_columns(a, i, j):
     for row in a:
         row[i], row[j] = row[j], row[i]
 
+
 m, n = [int(i) for i in input().split()]
 a = []
 
