@@ -8,10 +8,10 @@ class TestFib(unittest.TestCase):
         self.assertRaises(TypeError, fib, 'aoeu')
 
     def test_1(self):
-        self.assertRaises(fib(8), 4)
+        self.assertEqual(fib(8), 21)
 
     def test_2(self):
-        self.assertRaises(fib(16), 5)
+        self.assertEqual(fib(16), 987)
 
 
 if __name__ == "__main__":
