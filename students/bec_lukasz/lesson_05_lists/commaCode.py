@@ -8,11 +8,11 @@ def show_my_list(spam):
     my_string = ''
 
     for i in range(len(spam)):
-        if i == len(spam)-2:
+        if i == len(spam) - 2:
             sep = ' and '
             my_string += str(spam[i])
             my_string += sep
-        elif i == len(spam)-1:
+        elif i == len(spam) - 1:
             sep = ''
             my_string += str(spam[i])
             my_string += sep

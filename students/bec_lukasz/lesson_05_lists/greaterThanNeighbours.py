@@ -18,10 +18,10 @@ class GreaterThanNeighbours:
 
         if len(list) >= 3:
             for i in range(len(list)):
-                if 0 < i < len(list)-1:
-                    previous = list[i-1]
+                if 0 < i < len(list) - 1:
+                    previous = list[i - 1]
                     current = list[i]
-                    next = list[i+1]
+                    next = list[i + 1]
 
                     if previous < current > next:
                         greatest_neighbours += [current]
