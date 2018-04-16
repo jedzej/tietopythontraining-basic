@@ -9,7 +9,8 @@ def inspect_args(*args, **kwargs):
     print("***** List of kwargs: ******")
     counter = 1
     for kwarg_key, kwarg_value in kwargs.items():
-        print("Kwarg " + str(counter) + ": " + str(kwarg_key) + " value: " + str(kwarg_value))
+        print("Kwarg " + str(counter) + ": " + str(kwarg_key) +
+              " value: " + str(kwarg_value))
         counter += 1
 
 
