@@ -1,7 +1,8 @@
-def reverse_the_sequence(*args):
-    if len(args) is not 0:
-        print(args[-1])
-        reverse_the_sequence(*args[0:-1])
+def reverse_the_sequence():
+    number = int(input('Value: '))
+    if number != 0:
+        reverse_the_sequence()
+    print(number)
 
 
-reverse_the_sequence(1, 2, 3, 4, 5, 0)
+reverse_the_sequence()

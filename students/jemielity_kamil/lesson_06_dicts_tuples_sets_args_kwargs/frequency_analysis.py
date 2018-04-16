@@ -22,5 +22,3 @@ for i in range(len(Dictionary)):
 for i in range(len(Dictionary)):
     print(min(Dictionary)[1])
     Dictionary.remove(min(Dictionary))
-
-
