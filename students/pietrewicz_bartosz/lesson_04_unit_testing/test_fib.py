@@ -1,4 +1,4 @@
-from fibonacci_numbers import fib
+from lesson_03_functions.fibonacci_numbers import fib
 import pytest
 
 

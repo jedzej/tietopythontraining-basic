@@ -1,6 +1,6 @@
 import pytest
 import math
-from the_length_of_the_segment import distance
+from lesson_03_functions.the_length_of_the_segment import distance
 
 
 class TestDistanceFunction(object):

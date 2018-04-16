@@ -1,5 +1,5 @@
 import unittest
-from the_collatz_sequence import collatz
+from lesson_03_functions.the_collatz_sequence import collatz
 
 
 class TestCollatzFunction(unittest.TestCase):
@@ -7,10 +7,10 @@ class TestCollatzFunction(unittest.TestCase):
         self.assertRaises(TypeError, collatz, 'aoeu')
 
     def test_value_8(self):
-        self.assertEquals(collatz(8), 4)
+        self.assertEqual(collatz(8), 4)
 
     def test_value_5(self):
-        self.assertEquals(collatz(5), 16)
+        self.assertEqual(collatz(5), 16)
 
 
 if __name__ == '__main__':
