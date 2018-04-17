@@ -8,4 +8,3 @@ for i in range(n):
     n = result * i
     result += n
 print('The result is: ' + str(result))
-
