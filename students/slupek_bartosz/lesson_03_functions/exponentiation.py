@@ -2,6 +2,7 @@ def exponentiation(a, n):
     result = 1
     if n < 0:
         print("Error n cannot be less than 0")
+        return ValueError
     elif n == 0:
         return 1
     else:
