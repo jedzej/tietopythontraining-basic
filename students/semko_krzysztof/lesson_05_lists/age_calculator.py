@@ -23,7 +23,7 @@ def main():
     adults = [x for x in ages if x > 18]
 
     if len(adults) > 0:
-        print("Average of adults age = " +  str(sum(adults) / len(adults)))
+        print("Average of adults age = " + str(sum(adults) / len(adults)))
     print("Number of children = " + str(len(ages) - len(adults)))
 
 
