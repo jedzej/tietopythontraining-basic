@@ -1,4 +1,5 @@
-# Given the year number. You need to check if this year is a leap year. If it is, print LEAP, //
+# Given the year number. You need to check if this year is //
+# a leap year. If it is, print LEAP, //
 # otherwise print COMMON.
 
 print('Given the year number: ')
