@@ -53,6 +53,7 @@ if __name__ == '__main__':
     print("Welcome to badly organized calculator:")
     help()
 
+    
     while True:
         option = input('Enter option: ')
         if option == "a":
