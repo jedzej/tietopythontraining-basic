@@ -1,12 +1,15 @@
 stuff = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
 
-def displayInventory(inventory):
+
+def display_inventory(inventory):
     print("Inventory:")
     for k, v in inventory.items():
         print(str(v) + " " + str(k))
     print("Total number of items: " + str(sum(inventory.values())))
 
-displayInventory(stuff)
+
+display_inventory(stuff)
+
 
 def add_to_inventory(inventory, added_items):
     for item in added_items:
@@ -18,7 +21,7 @@ def add_to_inventory(inventory, added_items):
 
 
 inv = {'gold coin': 42, 'rope': 1}
-displayInventory(inv)
+display_inventory(inv)
 dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
 inv = add_to_inventory(inv, dragonLoot)
-displayInventory(inv)
+display_inventory(inv)

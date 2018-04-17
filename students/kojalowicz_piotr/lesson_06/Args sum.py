@@ -3,4 +3,3 @@ def sum_all(*list_of_number):
 
 
 
-
