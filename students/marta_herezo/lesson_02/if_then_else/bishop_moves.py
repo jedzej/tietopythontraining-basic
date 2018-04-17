@@ -21,8 +21,6 @@ x1 = x0 - x
 y1 = y0 - y
 
 if abs(x1) == abs(y1):
-   # print(abs(x1))
-   # print(abs(y1))
     print('YES')
 else:
     print('NO')
