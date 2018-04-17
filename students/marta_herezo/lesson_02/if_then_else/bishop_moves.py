@@ -1,4 +1,5 @@
-# The program directed corrected or not corrected move of bishop on the chessboard.
+# The program directed corrected or not corrected
+# move of bishop on the chessboard.
 # (x0, y0) - start position, (x, y) - new position on the chessboard.
 
 print('Enter start posiotion for bishop, column x0: ')
