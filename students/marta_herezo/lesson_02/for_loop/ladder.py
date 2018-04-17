@@ -1,4 +1,4 @@
-# For given integer n ≤ 9 print a ladder of n steps./
+# For given integer n ≤ 9 print a ladder of n steps.
 # The k-th step consists of the integers from 1 to k
 # without spaces between them.
 
