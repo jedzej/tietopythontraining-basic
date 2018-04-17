@@ -11,4 +11,4 @@ def length_of_segment(x1, y1, x2, y2):
         print("You have to input a real number not a string")
     return length
 
-print(length_of_segment(input(), input(), input(), input())
+print(length_of_segment(input(), input(), input(), input()))
