@@ -5,4 +5,5 @@ def capitalize(lower_case_word):
         output += word.capitalize() + " "
     return output
 
+
 print(capitalize(input()))
