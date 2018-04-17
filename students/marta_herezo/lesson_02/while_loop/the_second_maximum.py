@@ -1,4 +1,5 @@
-# The sequence consists of distinct positive integer numbers and ends with the number 0.
+# The sequence consists of distinct positive integer
+# numbers and ends with the number 0.
 print('Enter numbers: ')
 
 num1 = int(input())
