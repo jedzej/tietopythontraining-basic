@@ -1,0 +1,1 @@
+# Sprawdzenie comita.
