@@ -1,6 +1,5 @@
 from math import sqrt
 
-
 def length_of_segment(x1, y1, x2, y2):
     try:
         x1 = float(x1)
