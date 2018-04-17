@@ -1,12 +1,9 @@
 def swap_columns(a, i, j):
-
     for loop in range(len(a)):
         a[loop][i], a[loop][j] = a[loop][j], a[loop][i]
-
     for i in range(len(a)):
         for j in range(len(a[0])):
             a[i][j] = str(a[i][j])
-
     return a
 
 
