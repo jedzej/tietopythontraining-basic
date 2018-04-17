@@ -49,6 +49,7 @@ def help():
 def quit():
     print("GOOD BYE")
 
+
 if __name__ == '__main__':
     print("Welcome to badly organized calculator:")
     help()
