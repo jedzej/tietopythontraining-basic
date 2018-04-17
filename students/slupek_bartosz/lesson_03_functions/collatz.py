@@ -7,9 +7,10 @@ def collatz(number):
         return 3 * number + 1
 
 
-try:
-    a = int(input('Enter number: '))
-    while a > 1:
-        collatz(int(a))
-except ValueError:
-    print('Wrong argument, please give a number')
+if __name__ == '__main__':
+    try:
+        a = int(input('Enter number: '))
+        while a > 1:
+            collatz(int(a))
+    except ValueError:
+        print('Wrong argument, please give a number')
