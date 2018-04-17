@@ -2,6 +2,11 @@ import math
 
 
 def calculate_length_of_the_segment(x1, y1, x2, y2):
+
+    if isinstance(x1, str) or isinstance(y1, str) or isinstance(x2, str) or \
+            isinstance(y2, str):
+        raise ValueError
+
     distance = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
     print(distance)
     return distance
