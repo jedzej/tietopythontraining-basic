@@ -1,6 +1,6 @@
 def capitalize(lower_case_word):
     table_with_letters = [i for i in lower_case_word]
-    first_letter_ascii = ord(table_with_letters[0])-32
+    first_letter_ascii = ord(table_with_letters[0]) - 32
     table_with_letters[0] = chr(first_letter_ascii)
     print(''.join(table_with_letters), end=" ")
 

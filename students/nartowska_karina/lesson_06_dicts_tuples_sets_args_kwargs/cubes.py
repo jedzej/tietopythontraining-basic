@@ -8,7 +8,8 @@ def cubes(number_of_blocks):
 
 def main():
     print("Result:")
-    number_of_blocks_alice, number_of_blocks_bob = [int(i) for i in input().split()]
+    number_of_blocks_alice, number_of_blocks_bob \
+        = [int(i) for i in input().split()]
     alice_cube = cubes(number_of_blocks_alice)
     bob_cube = cubes(number_of_blocks_bob)
     alice_bob = sorted(alice_cube.intersection(bob_cube))
