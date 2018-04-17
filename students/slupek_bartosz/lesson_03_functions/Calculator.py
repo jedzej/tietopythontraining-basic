@@ -50,25 +50,25 @@ def quit():
     print("GOOD BYE")
 
 if __name__ == '__main__':
-print("Welcome to badly organized calculator:")
-help()
+    print("Welcome to badly organized calculator:")
+    help()
 
-while True:
-    option = input('Enter option: ')
-    if option == "a":
-        add()
-    elif option == "s":
-        subtract()
-    elif option == "m":
-        multiply()
-    elif option == "d":
-        divide()
-    elif option == "p":
-        power()
-    elif option == "h" or option == "?":
-        help()
-    elif option == "q":
-        quit()
-        break
-    else:
-        print('Option unknown, please retype or check help "h"')
+    while True:
+        option = input('Enter option: ')
+        if option == "a":
+            add()
+        elif option == "s":
+            subtract()
+        elif option == "m":
+            multiply()
+        elif option == "d":
+            divide()
+        elif option == "p":
+            power()
+        elif option == "h" or option == "?":
+            help()
+        elif option == "q":
+            quit()
+            break
+        else:
+            print('Option unknown, please retype or check help "h"')
