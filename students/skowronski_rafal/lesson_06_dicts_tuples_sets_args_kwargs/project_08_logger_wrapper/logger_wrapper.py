@@ -20,6 +20,7 @@ def print_arguments(*args, **kwargs):
 
 def logger_wrapper(foo, *args, **kwargs):
     """Logs arguments passed to function."""
+
     print_arguments(*args, **kwargs)
     foo(*args, **kwargs)
 
