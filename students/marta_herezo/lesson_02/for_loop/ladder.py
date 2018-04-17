@@ -1,5 +1,6 @@
 # For given integer n ≤ 9 print a ladder of n steps./
-# The k-th step consists of the integers from 1 to k without spaces between them.
+# The k-th step consists of the integers from 1 to k
+# without spaces between them.
 
 print('Give integer n <= 9')
 n = int(input())
