@@ -11,5 +11,5 @@ def fib(n):
 
 if __name__ == '__main__':
 
-    
+
     print(fib(int(input())))
