@@ -6,7 +6,7 @@ class TestDistance(object):
 
     def test_1(self):
         with pytest.raises(TypeError):
-            distance(None)
+            distance(None, 1, 2, 3)
 
     def test_2(self):
         with pytest.raises(TypeError):
