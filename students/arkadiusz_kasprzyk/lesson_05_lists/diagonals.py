@@ -1,4 +1,4 @@
-def diagonals(n, m = None):
+def diagonals(n, m=None):
     """
     n: int
         number of rows
@@ -24,7 +24,6 @@ def diagonals(n, m = None):
     for r in range(n):
         row = []
         for c in range(m):
-            row += [abs(r-c)]
+            row += [abs(r - c)]
         res += [row]
     return res
-

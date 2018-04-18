@@ -1,8 +1,10 @@
 """
 random_matrix
 
-Generator of random matrix == list of lists (rows), all sublists of the same length.
-Also a function to print such matrices (each row (sublist) in a separate line).
+Generator of random matrix == list of lists (rows),
+all sublists of the same length.
+Also a function to print such matrices
+(each row (sublist) in a separate line).
 Currently only integer values.
 
 Examples
@@ -15,7 +17,7 @@ print_table(random_matrix_int(5, 7, 20, 10))
 import random
 
 
-def random_matrix_int(R = 5, C = 7, max=9, min=0):
+def random_matrix_int(R=5, C=7, max=9, min=0):
     """
     Parameters
     ----------
@@ -38,7 +40,7 @@ def random_matrix_int(R = 5, C = 7, max=9, min=0):
     for r in range(R):
         row = []
         for c in range(C):
-            row += [random.randint(min,max)]
+            row += [random.randint(min, max)]
         mtx += [row]
 
     return(mtx)
