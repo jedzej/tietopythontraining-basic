@@ -1,5 +1,6 @@
 # As first are defined functions.
 
+
 def help():
     print('a - add')
     print('s - subtract')
@@ -9,30 +10,36 @@ def help():
     print('h,? - help')
     print('q - QUIT')
 
+
 def variables():
     var_1 = int(input('Enter a first variable \n'))
     var_2 = int(input('Enter a second variable \n'))
     return var_1, var_2
+
 
 def add():
     var_1, var_2 = variables()
     print('Result of adding:')
     print(var_1 + var_2)
 
+
 def sub():
     var_1, var_2 = variables()
     print('Result of subtract:')
     print(var_1 - var_2)
+
 
 def multi():
     var_1, var_2 = variables()
     print('Result of multiply:')
     print(var_1 * var_2)
 
+
 def divide():
     var_1, var_2 = variables()
     print('Result of dividing:')
     print(var_1 / var_2)
+
 
 def power():
     var_1, var_2 = variables()

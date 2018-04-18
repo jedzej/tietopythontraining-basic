@@ -1,7 +1,8 @@
-# Given four real numbers representing cartesian coordinates: (x1,y1),(x2,y2) and calculated distance between two points.
-# Set the Wolfram's formula.
+# Given four real numbers: (x1,y1),(x2,y2)//
+# calculated distance between two points.
 
 import math
+
 
 def distance(x1, y1, x2, y2):
     return math.sqrt((x2 - x1)**2 + (y2 - y1)**2)

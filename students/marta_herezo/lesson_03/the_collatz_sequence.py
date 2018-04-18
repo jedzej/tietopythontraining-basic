@@ -1,5 +1,6 @@
 # Write a function named collatz() that has one parameter named number.
 
+
 def collatz(number):
     if number % 2 == 0:
         print(number // 2)
@@ -14,6 +15,7 @@ def main():
     number = int(input())
     while number != 1:
         number = collatz(number)
+
 
 if __name__ == "__main__":
     main()

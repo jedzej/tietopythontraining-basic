@@ -1,4 +1,6 @@
-# Given a non-negative integer n, print the nth Fibonacci number.
+# Given a non-negative integer n,//
+# print the nth Fibonacci number.
+
 
 def fib(n):
     if n == 1 or n == 2:

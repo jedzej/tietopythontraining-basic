@@ -1,4 +1,6 @@
-# Add try and except statements to the previous project to detect whether the user types in a noninteger string.
+# Add try and except statements to the previous project//
+# to detect whether the user types in a noninteger string.
+
 
 def collatz(number):
     if number % 2 == 0:
@@ -8,6 +10,7 @@ def collatz(number):
         print(3 * number + 1)
         return (3 * number + 1)
 
+
 def main():
     print('Provide number')
     try:
@@ -16,6 +19,7 @@ def main():
             number = collatz(number)
     except ValueError:
         print('Number did not enter')
+
 
 if __name__ == "__main__":
     main()
