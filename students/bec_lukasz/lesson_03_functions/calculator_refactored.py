@@ -25,7 +25,7 @@ while True:
     firstNumber = input('Enter first number or \'q\' to quit: ')
     if firstNumber == 'q':
         break
-    operationType = input('Enter one of operands + - * / ** or \'q\' to quit: ')
+    operationType = input('Enter operator: + - * / ** or \'q\' to quit ')
     if operationType == 'q':
         break
     secondNumber = input('Second Number or \'q\': ')
