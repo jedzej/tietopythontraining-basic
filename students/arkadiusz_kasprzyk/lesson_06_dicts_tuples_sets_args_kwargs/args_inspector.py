@@ -1,11 +1,12 @@
 # args_inspector.py
 
+
 def args_inspector(*args, **kwargs):
     """
     Examples
     --------
     args = [0, 2, "a"]
-    kwargs = {'aa':0, 'bb':'qq', 'cc':1.}
+    kwargs = {'aa': 0, 'bb': 'qq', 'cc': 1.}
     args_inspector(*args, **kwargs)
     """
     k = 0
@@ -15,6 +16,7 @@ def args_inspector(*args, **kwargs):
         print("{} : {}".format(k, arg))
 
     print("\nkwargs:")
-    #print(kwargs)
+
+    # print(kwargs)
     for arg in kwargs:
         print("{} : {}".format(arg, kwargs[arg]))
