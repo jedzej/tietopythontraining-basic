@@ -5,6 +5,7 @@
 add_var_1 = 0
 add_var_2 = 0
 
+
 def menu():
     print("Enter option:")
     print("a - add")

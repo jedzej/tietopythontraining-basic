@@ -9,6 +9,7 @@ y1 = float(input())
 x2 = float(input())
 y2 = float(input())
 
+
 def distance(a, b, c, d):
     distance = ((c - a) ** 2 + (d - b) ** 2) ** (.5)
     print(distance)
