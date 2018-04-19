@@ -15,17 +15,20 @@ def menu():
     print("h,? - help")
     print("q - QUIT")
 
+
 def get_operand_1():
     print("Input 1st operand:")
     global add_var_1
     add_var_1 = int(input())
     return add_var_1
 
+
 def get_operand_2():
     print("Input 2nd operand:")
     global add_var_2
     add_var_2 = int(input())
     return add_var_2
+
 
 def adding():
     print("ADDING")
@@ -34,12 +37,14 @@ def adding():
     print("Result:")
     print(add_var_1 + add_var_2)
 
+
 def substrac():
     print("SUBTRACT")
     get_operand_1()
     get_operand_2()
     print("Result:")
     print(add_var_1 - add_var_2)
+
 
 def multiply():
     print("MULTIPLY")
@@ -48,6 +53,7 @@ def multiply():
     print("Result:")
     print(add_var_1 * add_var_2)
 
+
 def divide():
     print("DIVIDE")
     get_operand_1()
@@ -55,12 +61,14 @@ def divide():
     print("Result:")
     print(add_var_1 / add_var_2)
 
+
 def power():
     print("POWER")
     get_operand_1()
     get_operand_2()
     print("Result:")
     print(add_var_1 ** add_var_2)
+
 
 def help():
     print("HELP")
@@ -71,7 +79,6 @@ def help():
     print("p - power")
     print("h,? - help")
     print("q - QUIT")
-
 
 
 while True:
