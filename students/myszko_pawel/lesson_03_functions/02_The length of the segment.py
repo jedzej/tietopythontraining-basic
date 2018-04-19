@@ -1,7 +1,7 @@
 # Given four real numbers representing cartesian coordinates: (x1,y1),(x2,y2).
 # Write a function distance(x1, y1, x2, y2) to compute the distance between the
-# points (x1,y1) and (x2,y2). # Read four real numbers and print the resulting
-# distance calculated by the function. # The formula for distance between two
+# points (x1,y1) and (x2,y2). Read four real numbers and print the resulting
+# distance calculated by the function. The formula for distance between two
 # points can be found at Wolfram.
 
 x1 = float(input())
