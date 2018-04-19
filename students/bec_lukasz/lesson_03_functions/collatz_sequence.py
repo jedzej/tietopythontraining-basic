@@ -1,8 +1,6 @@
+class CollatzSequence(object):
 
-
-class CollatzSequence():
-
-    def collatz(number):
+    def collatz(self, number):
         if number % 2 == 0:
             print(number // 2)
             return number // 2
@@ -10,19 +8,18 @@ class CollatzSequence():
             print(3 * number + 1)
             return 3 * number + 1
 
-
-    def take_number():
-        print('Type an integer')
-        number = int(input())
-
-        result = collatz(number)
-
+    def pick_number(self, number):
+        result = self.collatz(number)
         while result != 1:
-            number = collatz(result)
-            result = collatz(number)
+            number = self.collatz(result)
+            result = self.collatz(number)
+
+    def __init__(self):
+        try:
+            number = int(input('Enter number: '))
+            self.pick_number(number)
+        except ValueError:
+            print('Only integers accepted')
 
 
-    try:
-        take_number()
-    except ValueError:
-        print('Only integers accepted')
+c = CollatzSequence()
