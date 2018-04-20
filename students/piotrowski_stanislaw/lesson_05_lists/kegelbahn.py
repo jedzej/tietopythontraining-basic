@@ -13,7 +13,7 @@ pins = n * ['I']
 
 for i in range(k):
     start, stop = [int(i) for i in input('Enter a pair of input data no.' + str(i + 1) + '(sep. by a space): ').split()]
-    for pin in range(start-1, stop):
+    for pin in range(start - 1, stop):
         pins[pin] = '.'
 
 print(''.join(pins))
