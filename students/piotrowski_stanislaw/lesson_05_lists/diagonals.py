@@ -8,7 +8,7 @@ spam = [[0] * m for i in range(n)]
 
 for i in range(n):
     for j in range(m):
-        spam[i][j] = abs(j-i)
+        spam[i][j] = abs(j - i)
 
 for i in spam:
     print(' '.join([str(j) for j in i]))
