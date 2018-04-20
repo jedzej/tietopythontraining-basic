@@ -6,6 +6,6 @@ print('Second: ')
 b = int(input())
 print('Third')
 c = int(input())
-sum = a+b+c
+SUM = a + b + c
 
-print('Sum: ' + str(sum))
+print('Sum: ' + str(SUM))

@@ -1,2 +1,2 @@
 a = float(input('a = '))
-print(int((a % 1)*10))
+print(int((a % 1) * 10))
