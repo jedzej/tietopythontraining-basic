@@ -18,11 +18,12 @@ def logger_wrapper(function_to_be_called, *args, **kwargs):
     print("\nKwargs captured by Logger wrapper:")
     for key in kwargs:
         print(key, "==>", kwargs[key])
-    print("\nResult of called function ", function_to_be_called(*args, **kwargs))
+    print("\nResult : ", function_to_be_called(*args, **kwargs))
 
 
 def main():
-    logger_wrapper(example_function, 2, 6, 30, 13, brand="Volkswagen", car="Polo", year=2002, power=105)
+    logger_wrapper(example_function, 2, 6, 30, 13, brand="Volkswagen",
+                   car="Polo", year=2002, power=105)
 
 
 if __name__ == "__main__":

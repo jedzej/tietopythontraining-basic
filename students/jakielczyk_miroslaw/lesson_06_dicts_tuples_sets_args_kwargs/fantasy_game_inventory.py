@@ -18,7 +18,8 @@ def add_to_inventory(inventory, added_items):
 
 
 def main():
-    inventory = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
+    inventory = {'rope': 1, 'torch': 6, 'gold coin': 42,
+                 'dagger': 1, 'arrow': 12}
     display_inventory(inventory)
     inv = {'gold coin': 42, 'rope': 1}
     dragon_loot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
