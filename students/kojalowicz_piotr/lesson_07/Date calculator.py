@@ -13,7 +13,8 @@ def data_calculator(years=0, months=0, days=0, hours=0, minutes=0):
 
     current_day = time.strftime("%d")
     full_days = int(current_day) + days + int(full_hours / 24)
-    days_in_month = calendar.monthrange(int(time.strftime("%Y")), int(time.strftime("%m")))[1]
+    days_in_month = calendar.monthrange(int(time.strftime("%Y")),
+                                        int(time.strftime("%m")))[1]
     new_day = int(full_days % days_in_month)
 
     current_month = time.strftime("%m")
@@ -24,8 +25,8 @@ def data_calculator(years=0, months=0, days=0, hours=0, minutes=0):
     full_years = int(current_year) + years + int(full_months / 12)
     new_year = int(full_years)
 
-    print(str(new_year) + '/' + str(new_month) + '/' + str(new_day) + ' ' + str(new_hour) + ':' + str(new_minute))
+    print(str(new_year) + '/' + str(new_month) + '/' + str(new_day) + ' ' +
+          str(new_hour) + ':' + str(new_minute))
 
 
 data_calculator(2, 45, 4, 60)
-
