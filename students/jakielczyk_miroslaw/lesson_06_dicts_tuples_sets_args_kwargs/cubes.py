@@ -8,8 +8,8 @@ for alice_cub in range(n):
 for bob_cub in range(m):
     bob_set.add(int(input()))
 both_set = alice_set.intersection(bob_set)
-alice_set, bob_set = alice_set.difference(bob_set), \
-                     bob_set.difference(alice_set)
+alice_set, bob_set = \
+    alice_set.difference(bob_set), bob_set.difference(alice_set)
 print(len(both_set))
 if len(both_set) != 0:
     [print(str(cub)) for cub in sorted(both_set)]
