@@ -10,7 +10,7 @@ while True:
     answer = input()
     if answer == 'YES':
         numbers &= guess
-    elif answer =='NO':
+    elif answer == 'NO':
         numbers &= wrong_numbers - guess
 
 print(' '.join(str(i) for i in sorted(numbers)))

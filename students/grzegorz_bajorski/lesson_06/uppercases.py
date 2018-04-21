@@ -1,5 +1,5 @@
 def capitalize(letter):
-    letter = (chr(ord(letter)-32))
+    letter = (chr(ord(letter) - 32))
     return letter
 
 
