@@ -5,4 +5,4 @@ def inspect_args(*args, **kwargs):
         print(str(keyword) + " " + str(value))
 
 
-inspect_args(1, "string", [2, 3, 4], a = 1, b = 2, c = True)
+inspect_args(1, "string", [2, 3, 4], a=1, b=2, c=True)
