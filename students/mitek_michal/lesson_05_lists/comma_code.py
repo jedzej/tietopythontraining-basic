@@ -4,7 +4,8 @@ def turn_list_into_string(list_to_change):
     if len(list_to_change) == 1:
         return list_to_change[0]
 
-    return '{}, and {}'.format(', '.join(list_to_change[:-1]), list_to_change[-1])
+    return '{}, and {}'.format(', '.join(list_to_change[:-1]),
+                               list_to_change[-1])
 
 
 if __name__ == '__main__':

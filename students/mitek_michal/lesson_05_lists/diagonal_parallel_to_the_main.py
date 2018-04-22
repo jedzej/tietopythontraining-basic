@@ -6,7 +6,7 @@ def diagonal_parallel_to_the_main():
 
     for i in range(n):
         counter = 1
-        for j in range(i+1, n):
+        for j in range(i + 1, n):
             array[i][j] = counter
             counter += 1
 
