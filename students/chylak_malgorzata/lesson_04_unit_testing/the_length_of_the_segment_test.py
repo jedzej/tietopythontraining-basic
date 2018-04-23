@@ -8,6 +8,7 @@ def distance(a1, b1, a2, b2):
 
 class MyTest(object):
 
+
     def test_none_value():
         with pytest.raises(TypeError):
             distance(None, None, None, None)
