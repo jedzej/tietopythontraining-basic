@@ -9,7 +9,8 @@ def is_valid(phone_number):
         if re.compile(r'.* |.*-').match(phone_number):
             prefix_size = 4
 
-        prefix, phone_number = phone_number[:prefix_size], phone_number[prefix_size:]
+        prefix, phone_number = phone_number[:prefix_size],\
+                               phone_number[prefix_size:]
 
         if not re.compile(r'^\+\d\d[ -]*$').match(prefix):
             return False

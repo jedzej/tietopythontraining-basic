@@ -13,7 +13,8 @@ def is_valid(email):
             len(domain) < 0 or len(domain) > 255):
         return False
 
-    if re.compile(r'.*\.\.').match(local_part) or re.compile(r'.*\.\.').match(domain):
+    if (re.compile(r'.*\.\.').match(local_part) or
+            re.compile(r'.*\.\.').match(domain)):
         return False
 
     if re.compile(r'^\.|.*\.$').match(local_part):
