@@ -1,4 +1,4 @@
-import unittest
+import pytest
 from fibbonaci import fib
 
 
@@ -27,7 +27,3 @@ def test_5():
 
 def test_6():
     assert fib(6) == 8
-
-
-if __name__ == '__main__':
-    unittest.main()
