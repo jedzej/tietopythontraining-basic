@@ -1,7 +1,7 @@
 
 
-# Prints rectangular image, assumes that all elements of the list passed as parameter
-# are lists of the same length
+# Prints rectangular image, assumes that all elements of the list passed
+# as parameter are lists of the same length
 def print_image(image):
     width = len(image)
     height = len(image[0])

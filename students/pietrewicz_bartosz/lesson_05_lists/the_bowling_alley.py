@@ -5,7 +5,7 @@ def main():
     pin_status = ['I'] * pins
     for i in range(balls):
         start_pin, end_pin = [int(x) for x in input().split()]
-        for j in range(start_pin-1, end_pin):
+        for j in range(start_pin - 1, end_pin):
             pin_status[j] = '.'
     print(''.join(pin_status))
 
