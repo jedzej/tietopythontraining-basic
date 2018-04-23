@@ -4,8 +4,8 @@ import re
 
 
 def my_strip(string_to_be_stripped, stripped_characters=" "):
-    expression = "^([" + stripped_characters\
-                + "]*)|([" + stripped_characters + "]*)$"
+    expression = "^([" + stripped_characters
+    expression += "]*)|([" + stripped_characters + "]*)$"
     regex = re.compile(expression)
     print(regex.sub("", string_to_be_stripped))
 
