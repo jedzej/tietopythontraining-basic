@@ -6,7 +6,7 @@ def foo(*args, **kwargs):
     print(args, kwargs)
 
 
-def logger_wrapper(*args, **kwargs):
+def logger_wrapper(some_function, *args, **kwargs):
     print("Positional arguments:")
     for arg in args:
         print("- " + str(arg))
@@ -15,11 +15,11 @@ def logger_wrapper(*args, **kwargs):
     for keyword, value in kwargs.items():
         print("- " + str(keyword) + " : " + str(value))
 
-    foo(args, kwargs)
+    some_function(args, kwargs)
 
 
 def main():
-    logger_wrapper(4, "arg", [2, 7, 5], key_word_arg=True, some_string="Hello")
+    logger_wrapper(foo, 4, "arg", [2, 7, 5], key_arg=True, some_string="Hi")
 
 
 if __name__ == "__main__":

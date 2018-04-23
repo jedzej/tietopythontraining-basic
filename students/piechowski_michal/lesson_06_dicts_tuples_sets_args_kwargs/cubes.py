@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 
 
+def print_set(set_to_be_printed):
+    print(len(set_to_be_printed))
+    for element in sorted(set_to_be_printed):
+        print(element)
+
+
 def main():
     n, m = [int(x) for x in input().split()]
     alice_set = set()
@@ -16,17 +22,9 @@ def main():
     alice_unique_elements = alice_set.difference(bob_set)
     bob_unique_elements = bob_set.difference(alice_set)
 
-    print(len(common_elements))
-    for element in sorted(common_elements):
-        print(element)
-
-    print(len(alice_unique_elements))
-    for element in sorted(alice_unique_elements):
-        print(element)
-
-    print(len(bob_unique_elements))
-    for element in sorted(bob_unique_elements):
-        print(element)
+    print_set(common_elements)
+    print_set(alice_unique_elements)
+    print_set(bob_unique_elements)
 
 
 if __name__ == "__main__":

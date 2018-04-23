@@ -2,10 +2,7 @@
 
 
 def sum_all(*args):
-    sum = 0
-    for arg in args:
-        sum += arg
-    return sum
+    return sum(args)
 
 
 def main():

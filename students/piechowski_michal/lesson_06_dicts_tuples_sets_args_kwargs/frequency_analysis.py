@@ -7,10 +7,8 @@ def main():
 
     for i in range(0, n):
         for word in input().split():
-            if word in frequencies_dict.keys():
-                frequencies_dict[word] += 1
-            else:
-                frequencies_dict[word] = 1
+            frequencies_dict.setdefault(word, 0)
+            frequencies_dict[word] += 1
 
     frequencies_list = list([-frequency, word]
                             for word, frequency in frequencies_dict.items())

@@ -6,7 +6,7 @@ def main():
     yes_set = set()
     no_set = set()
 
-    for i in range(0, n):
+    while True:
         alice_sentence = input()
         if alice_sentence == "HELP":
             break
