@@ -1,6 +1,6 @@
 # access_right.py
 
-symbols = {'execute' : 'X', 'read' : 'R', 'write' : 'W'}
+symbols = {'execute': 'X', 'read': 'R', 'write': 'W'}
 
 N = int(input("Give N: "))
 rights = dict()

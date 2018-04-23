@@ -1,5 +1,6 @@
 # sum_all.py
 
+
 def sum_all(*args):
     """
     Examples

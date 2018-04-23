@@ -2,7 +2,8 @@ import random
 
 
 def guess(N):
-    print("Give your guess (number between 1 and {} or one of '0', '?', 'h', 'help' for help):".format(N))
+    print("Give your guess (number between 1 " + \
+          "and {} or one of '0', '?', 'h', 'help' for help):".format(N))
     guesset = input("").split(" ")
     if guesset[0].lower() in {'0', '?', 'h', 'help'}:
         geusset = set()
@@ -15,7 +16,7 @@ def guess(N):
 if __name__ == "__main__":
 
     N = int(input("Maximum number is: "))
-    the_number = random.randint(1,N)
+    the_number = random.randint(1, N)
     possible = set(range(1, N + 1))
     while the_number in possible and len(possible) > 1:
         guesset = guess(N)

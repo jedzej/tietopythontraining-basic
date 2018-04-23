@@ -1,5 +1,6 @@
 # cubes.py
 
+
 def cubes(aset, bset):
     sets_sum = aset | bset
     aset_only = aset - bset
@@ -7,7 +8,7 @@ def cubes(aset, bset):
     return sets_sum, aset_only, bset_only
 
 
-def into_set(n = 0, aset = set()):
+def into_set(n=0, aset=set()):
     """
     Examples
     --------

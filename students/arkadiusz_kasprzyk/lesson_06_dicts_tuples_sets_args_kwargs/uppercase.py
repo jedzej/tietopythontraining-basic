@@ -1,5 +1,6 @@
 # uppercase.py
 
+
 def capitalize_0(word):
     """
     Parameters
