@@ -17,8 +17,8 @@ def print_table(table_data):
 
 def main():
     table_data = [['apples', 'oranges', 'cherries', 'banana'],
-                 ['Alice', 'Bob', 'Carol', 'David'],
-                 ['dogs', 'cats', 'moose', 'goose']]
+                  ['Alice', 'Bob', 'Carol', 'David'],
+                  ['dogs', 'cats', 'moose', 'goose']]
 
     print("Result:")
     print_table(table_data)
