@@ -3,15 +3,14 @@ import pytest
 
 
 test_data = [
-    ([
-        ['apples', 'oranges', 'cherries', 'banana'],
-        ['Alice', 'Bob', 'Carol', 'David'],
-        ['dogs', 'cats', 'moose', 'goose']],
-        '  apples Alice  dogs\n' +
-        ' oranges   Bob  cats\n' +
-        'cherries Carol moose\n' +
-        '  banana David goose')
-    ]
+    ([['apples', 'oranges', 'cherries', 'banana'],
+      ['Alice', 'Bob', 'Carol', 'David'],
+      ['dogs', 'cats', 'moose', 'goose']], 
+     '  apples Alice  dogs\n' +
+     ' oranges   Bob  cats\n' +
+     'cherries Carol moose\n' +
+     '  banana David goose')
+]
 
 
 @pytest.mark.parametrize('table_data, expected_string', test_data)

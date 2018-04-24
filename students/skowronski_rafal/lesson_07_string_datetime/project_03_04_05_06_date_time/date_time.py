@@ -8,7 +8,7 @@ def from_timestamp(timestamp, tz: tzinfo=None) -> datetime:
     return datetime.fromtimestamp(timestamp, tz=tz)
 
 
-def add(dt: datetime, years=0, days=0, hours=0, minutes=0) ->datetime:
+def add(dt: datetime, years=0, days=0, hours=0, minutes=0) -> datetime:
     return dt + relativedelta(
         years=years, days=days, hours=hours, minutes=minutes)
 
