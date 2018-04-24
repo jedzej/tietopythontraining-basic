@@ -13,4 +13,4 @@ for j in range(1, n):
         c = 1
 
 if c != 1:
-    print(n-1)
+    print(n - 1)
