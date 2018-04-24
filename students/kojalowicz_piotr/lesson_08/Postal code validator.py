@@ -11,4 +11,3 @@ print(valid_postal_code("@@@@@@"))
 print(valid_postal_code("@@-@@@"))
 print(valid_postal_code("QQ-@@@"))
 print(valid_postal_code("11-111"))
-

@@ -16,4 +16,3 @@ print(valid_email("my@email@buziaczek.com"))
 print(valid_email("my...email@buziaczek.com"))
 print(valid_email("my.email@Buziaczek.com"))
 print(valid_email("my.email@buziaczek.com"))
-
