@@ -1,21 +1,21 @@
 a = [int(i) for i in input().split()]
-max = 0
-min = 0
+max_v = 0
+min_v = 0
 
 for i in range(len(a)):
-    if a[i] > max:
-        max = a[i]
+    if a[i] > max_v:
+        max_v = a[i]
 
-min = max
+min_v = max_v
 
 for i in range(len(a)):
-    if a[i] < min:
-        min = a[i]
+    if a[i] < min_v:
+        min_v = a[i]
 
-index_min = a.index(min)
-index_max = a.index(max)
+index_min = a.index(min_v)
+index_max = a.index(max_v)
 
-a[index_min] = max
-a[index_max] = min
+a[index_min] = max_v
+a[index_max] = min_v
 
-print(''.join(a))
+print(''.join(str(a)))

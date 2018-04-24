@@ -5,12 +5,12 @@ tab = []
 for i in range(m):
     tab.append(input().split())
     if i == 0:
-        max = int(tab[0][0])
+        max_val = int(tab[0][0])
     for j in range(n):
-        if int(tab[i][j]) > max:
-            max = int(tab[i][j])
+        if int(tab[i][j]) > max_val:
+            max_val = int(tab[i][j])
             max_i, max_j = i, j
-        elif int(tab[i][j]) == max:
+        elif int(tab[i][j]) == max_val:
             if i < max_i:
                 max_i, max_j = i, j
             elif i == max_i and j < max_j:
