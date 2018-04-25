@@ -11,7 +11,7 @@ def collatz(number):
 
 
 while True:
-    n = input('number = ')
+    n = input('n = ')
 
     try:
         n = int(n)
