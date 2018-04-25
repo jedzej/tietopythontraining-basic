@@ -1,5 +1,5 @@
- # Write a function named printTable() that takes a list of lists of strings
- # and displays it in a well-organized table with each column right-justified.
+# Write a function named printTable() that takes a list of lists of strings
+# and displays it in a well-organized table with each column right-justified.
 
 
 tableData = [['apples', 'oranges', 'cherries', 'banana'],
@@ -18,5 +18,6 @@ def printTable(param_list):
         for j in range(len(col_widths)):
             print(str(param_list[j][c]).rjust(col_widths[j]), end='  ')
         print()
+
 
 printTable(tableData)
