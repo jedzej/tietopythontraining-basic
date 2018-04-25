@@ -1,7 +1,7 @@
 def power(x, y):
     res = x
 
-    for i in range(y-1):
+    for i in range(y - 1):
         res = res * x
 
     return res
