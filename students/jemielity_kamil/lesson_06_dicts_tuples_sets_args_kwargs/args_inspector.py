@@ -7,7 +7,8 @@ def inspect_args(*args, **kwargs):
     print()
     print("***** List of kwargs: ******")
 
-    for counter, (kwarg_key, kwarg_value) in enumerate(kwargs.items(), start=1):
+    for counter, (kwarg_key, kwarg_value) in enumerate(kwargs.items(),
+                                                       start=1):
         print("Kwarg " + str(counter) + ": " + str(kwarg_key) +
               " value: " + str(kwarg_value))
 
