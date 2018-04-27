@@ -8,17 +8,17 @@ for i in range(int(input('How many lines of text: '))):
         else:
             dictionary[sentence_word] += 1
 
-dictionary = list(dictionary.items())
+new_list = list(dictionary.items())
 
 for i in range(len(dictionary)):
-    dictionary[i] = tuple(reversed(dictionary[i]))
+    new_list[i] = tuple(reversed(new_list[i]))
 
 dictionary = sorted(dictionary)
 
-for i in range(len(dictionary)):
-    dictionary[i] = list(dictionary[i])
-    dictionary[i][0] = -dictionary[i][0]
+for i in range(len(new_list)):
+    new_list[i] = list(new_list[i])
+    new_list[i][0] = -new_list[i][0]
 
-for i in range(len(dictionary)):
-    print(min(dictionary)[1])
-    dictionary.remove(min(dictionary))
+for i in range(len(new_list)):
+    print(min(new_list)[1])
+    new_list.remove(min(new_list))

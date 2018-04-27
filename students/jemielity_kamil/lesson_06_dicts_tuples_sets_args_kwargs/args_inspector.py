@@ -1,17 +1,15 @@
 def inspect_args(*args, **kwargs):
     print("***** List of arguments: ******")
-    counter = 1
-    for arg in args:
+
+    for counter, arg in enumerate(args, start=1):
         print("Argument " + str(counter) + ": " + str(arg))
-        counter += 1
 
     print()
     print("***** List of kwargs: ******")
-    counter = 1
-    for kwarg_key, kwarg_value in kwargs.items():
+
+    for counter, (kwarg_key, kwarg_value) in enumerate(kwargs.items(), start=1):
         print("Kwarg " + str(counter) + ": " + str(kwarg_key) +
               " value: " + str(kwarg_value))
-        counter += 1
 
 
 if __name__ == "__main__":
