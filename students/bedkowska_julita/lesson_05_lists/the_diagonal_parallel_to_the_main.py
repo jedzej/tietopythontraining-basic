@@ -5,9 +5,9 @@ for i in range(size):
     array = []
     for j in range(size):
         if j >= i:
-            array.append(j-i)
+            array.append(j - i)
         if j < i:
-            array.append(i-j)
+            array.append(i - j)
     matrix.append(array)
 
 print('Result: ')

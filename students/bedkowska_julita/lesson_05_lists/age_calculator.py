@@ -11,9 +11,9 @@ def calculate_avg(list_of_ages):
             sum += list_of_ages[i]
             num_of_adults += 1
     avg_age_of_adults = sum / num_of_adults
-    print('Averge number of adults age: '+ str(avg_age_of_adults))
+    print('Averge number of adults age: ' + str(avg_age_of_adults))
     num_of_children = len(list_of_ages) - num_of_adults
-    print('Nuber of children: '+str(num_of_children))
+    print('Nuber of children: ' + str(num_of_children))
 
 
 calculate_avg(list_of_ages)

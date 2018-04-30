@@ -5,7 +5,7 @@ def commaCode(list):
     result = result + 'and ' + list[-1] + '.'
     return result
 
+
 spam = ['apples', 'bananas', 'tofu', 'cats']
 print('Input list: ' + str(spam))
 print('Result: ' + commaCode(spam))
-

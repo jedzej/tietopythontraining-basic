@@ -15,5 +15,5 @@ for i in range(rows):
             max_row = i
             max_column = j
 
-print('Row: '+str(max_row))
-print('Column: '+str(max_column))
+print('Row: ' + str(max_row))
+print('Column: ' + str(max_column))

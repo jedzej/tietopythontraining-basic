@@ -8,7 +8,7 @@ def bowling():
         if knocked_start < 0 or knocked_end > num_of_pins:
             print('Incorrect value!')
             break
-        for j in range(knocked_start-1, knocked_end):
+        for j in range(knocked_start - 1, knocked_end):
             score[j] = '.'
     return score
 

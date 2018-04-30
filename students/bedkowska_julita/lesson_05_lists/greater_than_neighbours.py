@@ -1,7 +1,7 @@
 def greater_than_neighbours(list):
     result = 0
     for i in range(1, len(list) - 1):
-        if list[i] > list[i-1] and list[i] > list[i+1]:
+        if list[i] > list[i - 1] and list[i] > list[i + 1]:
             result += 1
     return result
 
