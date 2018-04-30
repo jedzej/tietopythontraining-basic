@@ -1,8 +1,3 @@
 .idea
-.pytest_cache/v/cache/nodeids
-students/bedkowska_julita/lesson_03_functions/__pycache__/The_length_of_the_segment.cpython-36.pyc
-students/bedkowska_julita/lesson_04_unit_testing/.pytest_cache/v/cache/nodeids
-students/bedkowska_julita/lesson_04_unit_testing/__pycache__/test_distance.cpython-36-PYTEST.pyc
-students/bedkowska_julita/lesson_04_unit_testing/__pycache__/test_Fibonacci.cpython-36-PYTEST.pyc
-students/bedkowska_julita/lesson_04_unit_testing/__pycache__/test_collatz.cpython-36-PYTEST.pyc
-students/bedkowska_julita/lesson_04_unit_testing/.pytest_cache/v/cache/lastfailed
+.pytest_cache
+__pycache__
