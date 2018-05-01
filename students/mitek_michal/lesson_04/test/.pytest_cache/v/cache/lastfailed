@@ -1,0 +1,5 @@
+{
+  "collatz_sequence_test.py::TestCollatzSequence": true,
+  "fibonacci_numbers_test.py::test_if_fib_returns_0_when_0_provided": true,
+  "fibonacci_numbers_test.py::test_if_raises_error_on_negative_numbers": true
+}
