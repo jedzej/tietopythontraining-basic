@@ -16,15 +16,8 @@ def find_longest(words):
 
 
 table = [['apples', 'oranges', 'cherry', 'banana'],
-             ['Alice', 'Bob', 'Carola', 'David'],
-             ['dogs', 'cats', 'moose', 'goose']]
+         ['Alice', 'Bob', 'Carola', 'David'],
+         ['dogs', 'cats', 'moose', 'goose']]
 
-'''
-  apples Alice  dogs
- oranges   Bob  cats
-cherries Carol moose
-  banana David goose
-'''
-#print(check_length('adam'))
-#print(find_longest(table[0]))
+
 print_table(table)

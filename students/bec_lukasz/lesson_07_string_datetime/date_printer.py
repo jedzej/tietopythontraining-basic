@@ -2,11 +2,13 @@ from datetime import datetime
 import time
 
 '''
-Date printer - write a script that displays current date in human-readable format
+Date printer - write a script that 
+displays current date in human-readable format
 '''
 
-miesiace = {'01': 'styczeń', '02': 'luty', '03': 'marzec', '04': 'kwiecen', '05': 'maj',
-            '06': 'czerwiec', '07': 'lipiec', '08': 'sierpień', '09': 'wrzesień',
+miesiace = {'01': 'styczeń', '02': 'luty', '03': 'marzec',
+            '04': 'kwiecen', '05': 'maj', '06': 'czerwiec',
+            '07': 'lipiec', '08': 'sierpień', '09': 'wrzesień',
             '10': 'październik', '11': 'listopad', '12': 'grudzień'}
 
 

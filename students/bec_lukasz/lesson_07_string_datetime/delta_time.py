@@ -1,8 +1,9 @@
 from datetime import datetime
 
 '''
-Delta time calculator - write a script that calculates time difference 
-in days between current date and custom date in the future.
+Delta time calculator - write a script that
+calculates time difference in days between
+current date and custom date in the future.
 '''
 
 current_date_string = datetime.now().strftime('%d-%m-%Y')
