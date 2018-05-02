@@ -12,7 +12,7 @@ def logger_wrapper(foo, *args, **kwargs):
 
 
 def sth(*args, **kwargs):
-    print('Method: '+str(args)+str(kwargs))
+    print('Method: ' + str(args) + str(kwargs))
 
 
 logger_wrapper(sth, 1, 2, 3, cztery=4, piec=5)

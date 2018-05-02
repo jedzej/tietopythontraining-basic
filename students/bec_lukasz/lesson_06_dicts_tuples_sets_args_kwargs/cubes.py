@@ -13,5 +13,3 @@ for i in range(m):
 print_set(a_colors & b_colors)
 print_set(a_colors - b_colors)
 print_set(b_colors - a_colors)
-
-
