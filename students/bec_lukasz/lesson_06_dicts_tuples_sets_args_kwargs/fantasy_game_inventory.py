@@ -5,7 +5,7 @@ class FantasyGameInventory(object):
         items = 0
         for i, j in inv.items():
             items += j
-            print(i+' ' + str(j))
+            print(i + ' ' + str(j))
         print("Total number of items: " + str(items))
 
     def add_to_inventory(self, inv, added_items):
