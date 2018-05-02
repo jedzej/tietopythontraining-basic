@@ -2,7 +2,7 @@ from datetime import datetime
 import time
 
 '''
-Date printer - write a script that 
+Date printer - write a script that
 displays current date in human-readable format
 '''
 

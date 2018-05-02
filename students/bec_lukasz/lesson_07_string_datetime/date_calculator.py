@@ -2,7 +2,7 @@ from datetime import datetime
 from datetime import timedelta
 
 '''
-Date calculator - write a script that 
+Date calculator - write a script that
 adds custom number of years,
 days and hours and minutes to current date
 and displays the result in human readable format
