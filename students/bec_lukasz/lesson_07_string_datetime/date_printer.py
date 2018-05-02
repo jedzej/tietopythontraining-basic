@@ -11,7 +11,6 @@ miesiace = {'01': 'styczeń', '02': 'luty', '03': 'marzec',
             '07': 'lipiec', '08': 'sierpień', '09': 'wrzesień',
             '10': 'październik', '11': 'listopad', '12': 'grudzień'}
 
-
 rok = datetime.now().strftime('%Y')
 miesiac = miesiace[datetime.now().strftime('%m')]
 dzien = datetime.now().strftime('%d')
