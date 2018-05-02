@@ -12,7 +12,7 @@ def displayInventory(inventory):
 displayInventory(stuff)
 
 
-#List to Dictionary Function for Fantasy Game Inventory
+# List to Dictionary Function for Fantasy Game Inventory
 dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
 
 

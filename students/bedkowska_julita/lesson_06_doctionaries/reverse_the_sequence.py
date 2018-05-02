@@ -6,4 +6,4 @@ while input_num != '0':
     number += input_num
 print('Result:')
 for i in range(len(number)):
-    print(number[len(number)-i-1])
+    print(number[len(number) - i - 1])

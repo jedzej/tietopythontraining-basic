@@ -6,4 +6,4 @@ for i in range(lines):
     for word in words:
         words_set.add(word)
 
-print('Number of distinct wors: '+str(len(words_set)))
+print('Number of distinct wors: ' + str(len(words_set)))
