@@ -8,7 +8,7 @@ def main():
         number_of_lines = int(input("Please enter integer number\n"))
     except ValueError:
         print("It was not an integer number, try again\n")
-        exit
+        exit()
 
     for line in range(number_of_lines):
         words_from_input_message = input("Please enter a message\n").split()
