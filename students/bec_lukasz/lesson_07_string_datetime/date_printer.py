@@ -24,7 +24,3 @@ def todays_date():
 
 def date_from_timestamp():
     return datetime.now().fromtimestamp(time.time()).strftime('%d %b %Y %H:%M')
-
-
-print(todays_date())
-print(date_from_timestamp())
