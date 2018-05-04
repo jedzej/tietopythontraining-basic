@@ -19,8 +19,13 @@ minuta = datetime.now().strftime('%M')
 
 
 def todays_date():
-    return 'Dzisiaj jest ' + dzien + ' ' + miesiac + ' ' + rok + ', godzina ' + godzina + ': ' + minuta
+    return 'Dzisiaj jest ' + dzien + ' ' + miesiac + \
+           ' ' + rok + ', godzina ' + godzina + ': ' + minuta
 
 
 def date_from_timestamp():
     return datetime.now().fromtimestamp(time.time()).strftime('%d %b %Y %H:%M')
+
+
+print(todays_date())
+print(date_from_timestamp())
