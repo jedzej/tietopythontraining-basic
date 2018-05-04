@@ -18,12 +18,12 @@ def logger_wrapper(func, *args, **kwargs):
     print("**kwargs:")
     for key, val in kwargs.items():
         print(str(key) + ": " + str(val))
-    
+
     func(args, kwargs)
 
 
 def main():
-    words = {'1':  'woops', '2': 'right'}
+    words = {'1': 'woops', '2': 'right'}
     logger_wrapper(foo, 1, 2, "hello", 'a', words, reverse=True, end='')
 
 

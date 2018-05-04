@@ -29,10 +29,10 @@ def main():
 
     words_sorted = []
     for key in words:
-        tup = (words[key], key);
+        tup = (words[key], key)
         words_sorted.append(tup)
 
-    words_sorted = sorted(words_sorted,  key=lambda s: (-s[0], s[1]))
+    words_sorted = sorted(words_sorted, key=lambda s: (-s[0], s[1]))
     for frequency, key in words_sorted:
         print(key)
 

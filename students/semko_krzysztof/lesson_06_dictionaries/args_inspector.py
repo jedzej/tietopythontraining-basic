@@ -14,7 +14,7 @@ def args_inspector(*args, **kwargs):
 
 
 def main():
-    words = {'1':  'woops', '2': 'right'}
+    words = {'1': 'woops', '2': 'right'}
     args_inspector(1, 2, "hello", 'a', words, reverse=True, end='')
 
 
