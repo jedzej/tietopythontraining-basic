@@ -15,10 +15,10 @@ def main():
                 text_dict[word] = 1
 
     """"Create sorted list of tuples contained freq number and given word"""
-    list_of_tuples = sorted([(-value, key) for key, value in text_dict.items()])
+    sort_list = sorted([(-value, key) for key, value in text_dict.items()])
 
     """"Print result"""
-    for elem in list_of_tuples:
+    for elem in sort_list:
         print(elem[1])
 
 

@@ -2,12 +2,12 @@ import os
 
 
 def capitalize(lower_case_word):
-    internal_list = []
+    word = []
     for character in lower_case_word:
-        internal_list.append(character)
-    if (int(ord(internal_list[0])) >= 97) and (int(ord(internal_list[0])) <= 122):
-        internal_list[0] = chr(int(ord(internal_list[0])) - 32)
-    return ''.join(internal_list)
+        word.append(character)
+    if (int(ord(word[0])) >= 97) and (int(ord(word[0])) <= 122):
+        word[0] = chr(int(ord(word[0])) - 32)
+    return ''.join(word)
 
 
 while True:
