@@ -2,7 +2,7 @@ def prepare_cubes(n, owner):
     cubes = set()
     for x in range(n):
         cubes.add(int(input(owner + " - Numerical color of "
-                            "cube #" + str(x+1) + ": ")))
+                            "cube #" + str(x + 1) + ": ")))
     return cubes
 
 
