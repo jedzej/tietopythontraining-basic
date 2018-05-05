@@ -20,8 +20,8 @@ cherries Carol moose
 
 def main():
     table_data = [['apples', 'oranges', 'cherries', 'banana'],
-                 ['Alice', 'Bob', 'Carol', 'David'],
-                 ['dogs', 'cats', 'moose', 'goose']]
+                  ['Alice', 'Bob', 'Carol', 'David'],
+                  ['dogs', 'cats', 'moose', 'goose']]
 
     max_length = [0] * len(table_data)
     for i in range(len(table_data)):

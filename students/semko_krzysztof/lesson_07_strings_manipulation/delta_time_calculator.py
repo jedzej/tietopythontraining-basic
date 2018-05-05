@@ -4,7 +4,6 @@ time difference in days between current date and
 custom date in the future.
 """
 from datetime import date
-from datetime import timedelta
 
 
 def main():
