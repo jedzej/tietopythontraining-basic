@@ -7,13 +7,12 @@ I can fix that according specification if it is necessary.
 
 def main():
     table_data = [['apples', 'oranges', 'cherries', 'banana'],
-                 ['Alice', 'Bob', 'Carol', 'David'],
-                 ['dogs', 'cats', 'moose', 'goose']]
+                  ['Alice', 'Bob', 'Carol', 'David'],
+                  ['dogs', 'cats', 'moose', 'goose']]
     print_table(table_data)
 
 
 def print_table(data_list):
-
     """"Find the longest string in each column"""
     row_len = len(data_list)
     column_len = len(data_list[0])
