@@ -26,6 +26,6 @@ print("For size list put how many files do you have."
       " separate using space."
       "\nEg. kot.j x w r")
 access_rights(change_to_dict(list_elements_str()))
-#inventory = {'kot.j' : ['r', 'w',  'x'],
+# inventory = {'kot.j' : ['r', 'w',  'x'],
 #             'pies.l' : ['r'], 'mysz' : ['r', 'x']}
 # access_rights(inventory)
