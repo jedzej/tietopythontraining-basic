@@ -1,4 +1,4 @@
-def comma_code( lst ):
+def comma_code(lst):
     """
     Parameters
     ----------
@@ -18,16 +18,24 @@ def comma_code( lst ):
     print(comma_code([]))
     """
 
-    s = ''
-    l = len(lst)
+    string = ''
+    length = len(lst)
 
-    if l > 0:
-        s += str(lst[0])
-        if l > 1:
-            sep = [', '] * (l - 2) + [' and ']
-            for k in range(l - 1):
-                s += (sep[k] + str(lst[k + 1]))
-    return s
+    if length > 0:
+        string += str(lst[0])
+        if length > 1:
+            sep = [', '] * (length - 2) + [' and ']
+            for k in range(length - 1):
+                string += (sep[k] + str(lst[k + 1]))
+    return string
 
 
+"""
+# alternatively:
 
+if len(lst) > 1:
+    *all_but_last, last = lst   # !!!
+    return ', '.join(all_but_last) + ', and ' + last
+else:
+  return lst
+"""
