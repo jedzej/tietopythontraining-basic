@@ -5,7 +5,8 @@ now = datetime.datetime.now()
 
 print('Full current date and time using str method of datetime object: ', str(now))
 print(str(now.day) + '.' + str(now.month) + '.' + str(now.year))
-print(str(now.day) + '.' + str(now.month) + '.' + str(now.year) + ' ' + str(now.hour) + ':' + str(now.minute))
+print(str(now.day) + '.' + str(now.month) + '.' + str(now.year)
+      + ' ' + str(now.hour) + ':' + str(now.minute))
 
 
 print("\nCurrent date and time using instance attributes:")
@@ -19,8 +20,8 @@ print('Microsecond: %d' % now.microsecond)
 
 print("\nCurrent date and time using strftime:")
 print(now.strftime("%Y-%m-%d %H:%M"))
-print(now.strftime("%d.%m.%Y %H:%M")) # the best :)
-print(now.strftime("%d %B %Y %H:%M")) # month by word
+print(now.strftime("%d.%m.%Y %H:%M"))
+print(now.strftime("%d %B %Y %H:%M"))   # month by word
 
 print("\nCurrent date and time using isoformat:")
 print(now.isoformat())

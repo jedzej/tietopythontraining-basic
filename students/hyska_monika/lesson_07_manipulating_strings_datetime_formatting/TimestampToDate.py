@@ -1,4 +1,5 @@
-# Timestamp to date - script converts unix timestamp to human-readable date format
+# Timestamp to date
+# script converts unix timestamp to human-readable date format
 import time
 import datetime
 

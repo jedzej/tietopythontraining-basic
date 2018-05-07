@@ -1,13 +1,16 @@
-# Date calculator - function adds custom number of years, days and hours and minutes
-# to current date and displays the result in human readable format.
+# Date calculator - function adds custom number of years,
+# days and hours and minutes to current date
+# and displays the result in human readable format.
 import datetime
 
 
 def add_to_date(date, years, months, days, hours, minutes):
-    new_date = date + datetime.timedelta(days=days, hours=hours, minutes=minutes)
+    new_date = date + datetime.timedelta(days=days,
+                                         hours=hours,
+                                         minutes=minutes)
     years += (months + new_date.month) // 12
     months = (months + new_date.month) % 12
-    new_date2= new_date.replace(new_date.year + years, months)
+    new_date2 = new_date.replace(new_date.year + years, months)
     print('Changed date: ', new_date2.strftime("%Y-%m-%d %H:%M"))
     return new_date2
 
