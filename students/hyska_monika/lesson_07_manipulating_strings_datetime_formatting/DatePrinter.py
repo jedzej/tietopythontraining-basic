@@ -5,8 +5,8 @@ now = datetime.datetime.now()
 
 print('Full current date and time using str method of datetime object: ', str(now))
 print(str(now.day) + '.' + str(now.month) + '.' + str(now.year))
-print(str(now.day) + '.' + str(now.month) + '.' + str(now.year)
-      + ' ' + str(now.hour) + ':' + str(now.minute))
+print(str(now.day) + '.' + str(now.month) + '.' + str(now.year) +
+      ' ' + str(now.hour) + ':' + str(now.minute))
 
 
 print("\nCurrent date and time using instance attributes:")
