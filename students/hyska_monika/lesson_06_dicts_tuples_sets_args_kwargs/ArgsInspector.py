@@ -9,5 +9,5 @@ def inspect_args(*args, **kwargs):
         print(k, "=", v)
 
 
-my_dict = {'o' : '8', 'p' : 9}
+my_dict = {'o': '8', 'p': 9}
 inspect_args(5, 7, 8, **my_dict, n=9)
