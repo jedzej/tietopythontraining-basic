@@ -55,4 +55,3 @@ def chess_board(m, n):
         else:
             chb += [list(rep(".*",n))]
     return chb
-
