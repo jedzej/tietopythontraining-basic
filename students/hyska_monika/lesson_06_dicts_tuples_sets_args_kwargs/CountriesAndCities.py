@@ -22,7 +22,7 @@ print("For one element of list put country and cities, separate using space."
 countries_and_cities(change_to_dict(list_elements_str()))
 """
 inventory = {'USA' : ['Dallas', 'Chicago',  'Atlanta'],
-             'Polska' : ['Warszawa', 'Krakow'], 
+             'Polska' : ['Warszawa', 'Krakow'],
              'Niemcy' : ['Berlin', 'Dresno']}
 countries_and_cities(inventory)
 """
