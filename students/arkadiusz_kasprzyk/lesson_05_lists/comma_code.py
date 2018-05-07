@@ -1,4 +1,4 @@
-def comma_code( lst ):
+def comma_code(lst):
     """
     Parameters
     ----------
@@ -30,11 +30,11 @@ def comma_code( lst ):
     return string
 
 
-""" 
+"""
 # alternatively:
 
 if len(lst) > 1:
-    *all_but_last, last = lst   # !!! 
+    *all_but_last, last = lst   # !!!
     return ', '.join(all_but_last) + ', and ' + last
 else:
   return lst
