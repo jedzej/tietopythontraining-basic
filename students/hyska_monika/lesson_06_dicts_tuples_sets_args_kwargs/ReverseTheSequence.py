@@ -1,4 +1,5 @@
-# Given a sequence of integers that end with a 0. Print the sequence in reverse order.
+# Given a sequence of integers that end with a 0.
+# Print the sequence in reverse order.
 # Don't use lists or other data structures.
 
 

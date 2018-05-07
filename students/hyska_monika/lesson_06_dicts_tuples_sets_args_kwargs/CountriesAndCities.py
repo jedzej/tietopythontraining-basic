@@ -11,7 +11,7 @@ def countries_and_cities(inventory):
             if city in inventory[k]:
                 country = k
                 break
-        if country == None:
+        if country is None:
             print("Missing city on list.")
         else:
             print("country: ", country)
@@ -20,5 +20,6 @@ def countries_and_cities(inventory):
 print("For one element of list put country and cities, separate using space."
       "\nEg. Poland Warsszawa Wroclawa Krakow")
 countries_and_cities(change_to_dict(list_elements_str()))
-#inventory = {'USA' : ['Dallas', 'Chicago',  'Atlanta'], 'Polska' : ['Warszawa', 'Krakow'], 'Niemcy' : ['Berlin', 'Dresno']}
-#countries_and_cities(inventory)
+# inventory = {'USA' : ['Dallas', 'Chicago',  'Atlanta'],
+#             'Polska' : ['Warszawa', 'Krakow'], 'Niemcy' : ['Berlin', 'Dresno']}
+# countries_and_cities(inventory)

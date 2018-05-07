@@ -1,4 +1,5 @@
-# The number of distinct words in some text. Program display words appearing form the least times to the least
+# The number of distinct words in some text.
+# Program display words appearing form the least times to the least
 from functions_lesson06 import file_to_list
 
 

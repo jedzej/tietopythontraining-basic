@@ -1,4 +1,5 @@
-# Program return numbers that can are a secret(after receive yes or no answer for lists)
+# Program return numbers that can are a secret
+# (after receive yes or no answer for lists)
 from functions_lesson06 import create_dict_to_n, find_max
 
 
@@ -6,7 +7,8 @@ def number_check(asked_numbers):
     while True:
         numbers = (input("put numbers with space: "))
         if numbers == "help":
-            asked_numbers = {key: val for key, val in asked_numbers.items() if val != 0}
+            asked_numbers = {key: val for key, val in asked_numbers.items()
+                             if val != 0}
             break
         else:
             numbers = numbers.split(' ')
