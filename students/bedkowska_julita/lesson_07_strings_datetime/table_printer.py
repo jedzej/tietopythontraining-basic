@@ -14,7 +14,7 @@ def printTable(tableData):
     for i in range(len(tableData[0])):
         text = ''
         for j in range(len(tableData)):
-            text += tableData[j][i].rjust(col_widths[j]+1)
+            text += tableData[j][i].rjust(col_widths[j] + 1)
         print(text)
 
 
