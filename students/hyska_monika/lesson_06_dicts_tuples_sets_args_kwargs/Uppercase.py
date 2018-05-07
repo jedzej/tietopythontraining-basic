@@ -9,7 +9,6 @@ def capitalize(lower_case_word):
     return lower_case_word
 
 
-
 text = str((input("Put string - use small letter: ")))
 capitalize(text)
 

@@ -22,7 +22,8 @@ def access_rights(inventory):
 
 
 print("For size list put how many files do you have."
-      "\nFor one element of list put file name and access rights, separate using space."
+      "\nFor one element of list put file name and access rights,"
+      " separate using space."
       "\nEg. kot.j x w r")
 access_rights(change_to_dict(list_elements_str()))
 # inventory = {'kot.j' : ['r', 'w',  'x'], 'pies.l' : ['r'], 'mysz' : ['r', 'x']}

@@ -1,4 +1,5 @@
-# Function called inspect_args that prints passed args and kwargs in human-readable format.
+# Function called inspect_args that prints passed args
+# and kwargs in human-readable format.
 
 
 def inspect_args(*args, **kwargs):
@@ -8,5 +9,5 @@ def inspect_args(*args, **kwargs):
         print(k, "=", v)
 
 
-my_dict = {'o':'8', 'p':9}
-inspect_args(5, 7, 8, **my_dict, n = 9)
+my_dict = {'o' : '8', 'p' : 9}
+inspect_args(5, 7, 8, **my_dict, n=9)

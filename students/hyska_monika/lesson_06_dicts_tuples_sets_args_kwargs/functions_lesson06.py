@@ -9,19 +9,20 @@ def list_random(n, range_min, range_max):
     return my_list
 
 
-# function to create dictionary with n elements and print (put key and value from keyboard)
+# function to create dictionary
+# with n elements and print (put key and value from keyboard)
 def create_inventory():
-    n = int((input("Number of dictionary elements:")))
+    n = int((input("Number of dictionary elements: ")))
     inventory = {}
     for i in range(n):
-        inventory.setdefault((int(input("Key:"))),(int(input("Value:"))))
-    print("Inventory:", inventory)
+        inventory.setdefault((int(input("Key: "))), (int(input("Value: "))))
+    print("Inventory: ", inventory)
     return inventory
 
 
 # function display dictionary, first value, next key
 def display_inventory(inventory):
-    print("Inventory:")
+    print("Inventory: ")
     item_total = 0
     for k, v in inventory.items():
         print(v, k)
@@ -54,8 +55,10 @@ def find_max(dict):
     return max_key
 
 
-# function change list to dictionary. For key set first element for value set list with next elements
-# eg. return {'kot.j' : ['r', 'w',  'x'], 'pies.l' : ['r'], 'mysz' : ['r', 'x']}
+# function change list to dictionary.
+# For key set first element for value set list with next elements
+# eg. return
+# {'kot.j' : ['r', 'w',  'x'], 'pies.l' : ['r'], 'mysz' : ['r', 'x']}
 def change_to_dict(mylist):
     inventory = {}
     for i in range(len(mylist)):
