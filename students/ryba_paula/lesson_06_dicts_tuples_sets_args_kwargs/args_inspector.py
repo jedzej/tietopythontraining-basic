@@ -9,7 +9,7 @@ def inspect_args(*args, **kwargs):
 
 
 def main():
-    inspect_args(1, 2, 3, 4, **{'five' : 5, 'six' : 6})
+    inspect_args(1, 2, 3, 4, **{'five': 5, 'six': 6})
 
 
 if __name__ == '__main__':
