@@ -19,6 +19,7 @@ def maximum(matrix):
     mtx = random_matrix_int(5, 5)
     mtx = random_matrix_int(5, 5, 20)
     mtx = random_matrix_int(5, 5, 2, -2)
+<<<<<<< HEAD
 
     print_table(mtx)
     print(maximum(mtx))
@@ -32,3 +33,19 @@ def maximum(matrix):
                 maxi = matrix[r][c]
                 idx = [r, c]
     return maxi, idx
+=======
+
+    print_table(mtx)
+    print(maximum(mtx))
+    """
+
+    maxi = 0        # initial maximum
+    idx = [0, 0]    # initial indices
+    for r in range(len(matrix)):
+        for c in range(len(matrix[0])):
+            if maxi < matrix[r][c]:
+                maxi = matrix[r][c]
+                idx = [r, c]
+    return maxi, idx
+
+>>>>>>> 03 on adziu/lesson_05_lists

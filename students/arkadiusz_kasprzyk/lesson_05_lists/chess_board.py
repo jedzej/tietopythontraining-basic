@@ -1,6 +1,10 @@
 def rep(x, length=None, times=None):
     """
+<<<<<<< HEAD
     Replicate x (list or tuple) to the given length or times many.
+=======
+    Replicates x (list or tuple) to the given length or times many.
+>>>>>>> 03 on adziu/lesson_05_lists
 
     Parameters
     ----------
@@ -47,11 +51,15 @@ def chess_board(m, n):
 
     chb = chess_board(7,8)
     print_table(chb)
+<<<<<<< HEAD
 
     for r in range(len(chb)):
         print("".join(chb[r]))
     """
 
+=======
+    """
+>>>>>>> 03 on adziu/lesson_05_lists
     chb = []
     for r in range(m):
         if r % 2:
@@ -59,3 +67,7 @@ def chess_board(m, n):
         else:
             chb += [list(rep(".*",n))]
     return chb
+<<<<<<< HEAD
+=======
+
+>>>>>>> 03 on adziu/lesson_05_lists
