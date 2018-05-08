@@ -55,3 +55,7 @@ def chess_board(m, n):
         else:
             chb += [list(rep(".*",n))]
     return chb
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2cb88f3c0db2358d339f5bf43f3ccfccec26c78f
