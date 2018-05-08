@@ -13,7 +13,7 @@ def logger_wrapper(foo, *args, **kwargs):
 
 
 def main():
-    logger_wrapper(foo, 1, 2, 3, **{'four' : 4, 'five' : 5})
+    logger_wrapper(foo, 1, 2, 3, **{'four': 4, 'five': 5})
 
 
 if __name__ == '__main__':
