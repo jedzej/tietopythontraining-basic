@@ -30,9 +30,9 @@ import re
 
 def check_phone_number(phone_number):
     phone_number_regex = re.compile(r'''(
-        (((00|\+)\d{2}\s)|(\((00|\+)\d{2}\)(\s)?))?   # country code
-        \d{3}                                         # first 3 digits
-        ((-|\s)?\d{3}){2}$                            # two groups: space or - and 3 digits
+        (((00|\+)\d{2}\s)|(\((00|\+)\d{2}\)(\s)?))? # country code
+        \d{3}               # first 3 digits
+        ((-|\s)?\d{3}){2}$  # 2 groups: space or - and 3 digits
         )''', re.VERBOSE)
     phone_number_result = phone_number_regex.match(phone_number)
     if phone_number_result is not None:

@@ -1,5 +1,6 @@
 """
-Email validator - email validator that checks if supplied string is valid e-mail address
+Email validator
+- email validator that checks if supplied string is valid e-mail address
 correct emails:
     anaddd@gmail.com
     a@gmail.com
@@ -74,4 +75,3 @@ email = 'anaddd@gmaxxxxxxxxxxil.com'
 print('\nEmail: ', email)
 check_email(email)
 """
-
