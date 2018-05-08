@@ -1,6 +1,6 @@
-# The program reads three integers: n, m, and k.
-# It should print YES if split chocolate bar will have
-# k squares or NO if not.
+# The program reads three integers: n, m, and k. It should
+# print YES if split chocolate bar will have k squares or
+# NO if not.
 
 
 print('n x m portions: ')
