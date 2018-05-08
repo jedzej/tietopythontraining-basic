@@ -10,7 +10,7 @@ will be removed from the string.
 import re
 
 
-def delete_spaces_or_characters(sentence, character = None):
+def delete_spaces_or_characters(sentence, character=None):
     if character is not None:
         sentence = re.sub(re.escape(character), '', sentence)
     else:
@@ -24,4 +24,3 @@ sentence1 = "    ania ma ko.#!ta 78     "
 delete_spaces_or_characters(sentence1)
 delete_spaces_or_characters(sentence1, ".#!")
 delete_spaces_or_characters(sentence1, "a")
-
