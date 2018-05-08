@@ -14,10 +14,8 @@ def password_check(password):
     uppercase_error = re.search(r"[A-Z]", password) is None
     lowercase_error = re.search(r"[a-z]", password) is None
     digit_error = re.search(r"\d", password) is None
-    password_ok = not (length_error
-                       or digit_error
-                       or uppercase_error
-                       or lowercase_error)
+    password_ok = not (length_error or digit_error or
+                       uppercase_error or lowercase_error)
     password_status = {'Password is strong.': password_ok,
                        'length to short': length_error,
                        'missing digits': digit_error,
