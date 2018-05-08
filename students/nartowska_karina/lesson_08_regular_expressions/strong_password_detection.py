@@ -9,10 +9,10 @@ def strong_password_detection(password):
 
 def main():
     set_of_passwords = ("Karinanartowska",
-                          "karinanartowska1",
-                          "Karina1",
-                          "KARINANARTOWSKa1",
-                          "KarinaNartowska1")
+                        "karinanartowska1",
+                        "Karina1",
+                        "KARINANARTOWSKa1",
+                        "KarinaNartowska1")
     for password in set_of_passwords:
         if strong_password_detection(password):
             print(password + " is strong password")
