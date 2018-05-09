@@ -1,3 +1,8 @@
 .idea
+<<<<<<< HEAD
 .pytest_cache
 __pycache__
+=======
+.*
+__*
+>>>>>>> 06 On branch adziu/lesson_05_lists

@@ -1,6 +1,6 @@
 def rep(x, length=None, times=None):
     """
-    Replicate x (list or tuple) to the given length or times many.
+    Replicate sequence (list or tuple) to the given length or times many.
 
     Parameters
     ----------
@@ -10,7 +10,7 @@ def rep(x, length=None, times=None):
 
     Returns
     -------
-        x replicated to the given length or times many.
+    x replicated to the given length or times many.
     """
     if length is None:
         if times is None:

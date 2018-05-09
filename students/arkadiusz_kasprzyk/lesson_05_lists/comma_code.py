@@ -29,13 +29,13 @@ def comma_code(lst):
                 string += (sep[k] + str(lst[k + 1]))
     return string
 
-
-"""
+""" 
 # alternatively:
 
 if len(lst) > 1:
-    *all_but_last, last = lst   # !!!
-    return ', '.join(all_but_last) + ', and ' + last
+  *all_but_last, last = lst                         # !!! 
+  return ', '.join(all_but_last) + ', and ' + last
+>>>>>>> 06 On branch adziu/lesson_05_lists
 else:
   return lst
 """

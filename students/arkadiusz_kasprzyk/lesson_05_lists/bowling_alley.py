@@ -45,4 +45,4 @@ def bowling(N, rolls):
             for k in range(*r):
                 pins[k] = '.'
 
-    return(pins)
+    return(''.join(pins))
