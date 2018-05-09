@@ -1,5 +1,6 @@
 import unittest
 
+
 def fib(n):
     if n > 0:
         if n == 1 or n == 2:
@@ -8,6 +9,7 @@ def fib(n):
             return fib(n - 1) + fib(n - 2)
     else:
         raise ValueError
+
 
 class TestFib(unittest.TestCase):
 
@@ -44,3 +46,4 @@ class TestFib(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+

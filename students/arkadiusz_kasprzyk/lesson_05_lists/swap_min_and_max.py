@@ -18,5 +18,5 @@ def swap_min_max(numbers):
     if len(numbers) >= 2:
         lmin, lmax = min(numbers), max(numbers)
         imin, imax = numbers.index(lmin), numbers.index(lmax)
-        numbers[imin], numbers[imax]= lmax, lmin
+        numbers[imin], numbers[imax] = lmax, lmin
     return numbers

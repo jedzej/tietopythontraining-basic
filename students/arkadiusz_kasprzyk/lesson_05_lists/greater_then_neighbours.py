@@ -19,9 +19,3 @@ def gtn(numbers):
             if numbers[k] > numbers[k - 1] and numbers[k] > numbers[k + 1]:
                 s += 1
     return s
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> 03 on adziu/lesson_05_lists

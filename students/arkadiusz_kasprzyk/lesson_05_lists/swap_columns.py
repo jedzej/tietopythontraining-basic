@@ -20,17 +20,9 @@ def swap_columns(matrix, i, j):
 
     matrix = random_matrix_int()
     print_table(matrix)
-<<<<<<< HEAD
     print_table(swap_columns(matrix, 0, 1))
-=======
-    print_table(swap_columns())
->>>>>>> 03 on adziu/lesson_05_lists
-
     """
     for r in range(len(matrix)):
         matrix[r][i], matrix[r][j] = matrix[r][j], matrix[r][i]
-<<<<<<< HEAD
     return matrix
-=======
-    return matrix
->>>>>>> 03 on adziu/lesson_05_lists
+

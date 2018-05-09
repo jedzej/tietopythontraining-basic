@@ -15,7 +15,7 @@ def age_calculator(ages):
     print(age_calculator(ages))
     """
     adults = [l for l in ages if l >= 18]
-    adults_mean = sum(adults)/len(adults)
-    kids = [l for l in ages if l <18]
+    adults_mean = sum(adults) / len(adults)
+    kids = [l for l in ages if l < 18]
     kids_number = len(kids)
     return adults_mean, kids_number
