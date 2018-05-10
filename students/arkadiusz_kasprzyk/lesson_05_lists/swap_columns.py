@@ -25,4 +25,3 @@ def swap_columns(matrix, i, j):
     for r in range(len(matrix)):
         matrix[r][i], matrix[r][j] = matrix[r][j], matrix[r][i]
     return matrix
-

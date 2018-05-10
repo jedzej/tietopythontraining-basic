@@ -34,13 +34,8 @@ def comma_code(lst):
 # alternatively:
 
 if len(lst) > 1:
-<<<<<<< HEAD
-  *all_but_last, last = lst                         # !!! 
-  return ', '.join(all_but_last) + ', and ' + last
-=======
     *all_but_last, last = lst   # !!!
     return ', '.join(all_but_last) + ', and ' + last
->>>>>>> 180507-2 on adziu/lesson_05_lists
 else:
   return lst
 """
