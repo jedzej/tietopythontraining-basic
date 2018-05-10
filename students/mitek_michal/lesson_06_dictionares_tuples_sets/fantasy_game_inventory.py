@@ -26,4 +26,3 @@ if __name__ == '__main__':
 
     add_to_inventory(inv, dragonLoot)
     display_inventory(inv)
-

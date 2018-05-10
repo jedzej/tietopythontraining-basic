@@ -1,8 +1,8 @@
 
 def capitalize(lower_case_word):
 
-    first_letter_capitalized_word = lower_case_word[:1].upper() + \
-                                    lower_case_word[1:]
+    first_letter_capitalized_word = \
+        lower_case_word[:1].upper() + lower_case_word[1:]
     return first_letter_capitalized_word
 
 
