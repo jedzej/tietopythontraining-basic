@@ -20,12 +20,12 @@ followed by the numerical color elements, sorted in ascending order.
 '''
 
 
-def display(list):
+def display(cubes_list):
     print("Set size:")
-    list.sort()
-    print(len(list))
+    cubes_list.sort()
+    print(len(cubes_list))
     print("Set elements:")
-    for i in list:
+    for i in cubes_list:
         print(i)
 
 
