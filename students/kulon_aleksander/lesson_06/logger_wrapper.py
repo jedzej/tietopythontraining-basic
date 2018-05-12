@@ -2,7 +2,7 @@ from lesson_06.args_inspector import args_inspect
 
 
 def log_wrapper(fun, *args, **kwargs):
-    return fun(args,kwargs)
+    return fun(args, kwargs)
 
 
 def main():
