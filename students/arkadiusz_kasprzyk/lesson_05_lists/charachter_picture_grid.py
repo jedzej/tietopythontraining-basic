@@ -1,6 +1,6 @@
-# piotrsta
-# character picture grid
-# https://automatetheboringstuff.com/chapter4/
+"""
+Prints the transposition of the given grid:
+"""
 
 grid = [['.', '.', '.', '.', '.', '.'],
         ['.', 'O', 'O', '.', '.', '.'],
@@ -12,9 +12,7 @@ grid = [['.', '.', '.', '.', '.', '.'],
         ['.', 'O', 'O', '.', '.', '.'],
         ['.', '.', '.', '.', '.', '.']]
 
-output_string = ''
-for i in range(len(grid[0])):
-    for j in range(len(grid)):
-        output_string += str(grid[j][i])
-    print(output_string)
-    output_string = ''
+for y in range(len(grid[0])):
+    for x in range(len(grid)):
+        print(grid[x][y], end="")
+    print('')
