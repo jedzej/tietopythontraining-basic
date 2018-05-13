@@ -10,8 +10,7 @@ def validate_email_address(address):
 
 
 def main():
-    addresses = [  # Valid
-                 'simple@example.com',
+    addresses = ['simple@example.com',
                  'very.common@example.com',
                  'disposable.style.email.with+symbol@example.com',
                  'other.email-with-dash@example.com',
@@ -23,7 +22,6 @@ def main():
                  '#!$%&\'*+-/=?^_`{}|~@example.org',
                  'example@s.solutions',
                  'user@localserver',
-                   # Invalid
                  'Abc.example.com',
                  'A@b@c@example.com',
                  'a"b(c)d,e:f;g<h>i[j\k]l@example.com',

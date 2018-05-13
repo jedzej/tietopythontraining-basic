@@ -6,7 +6,7 @@ def check_password_strength(password):
     if regex.search(password) is None:
         print("The password should be at least 8 characters long")
         return False
-    
+
     regex = re.compile(r'^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]){8,}')
     if regex.search(password) is None:
         print("The password should contains both uppercase and lowercase "
