@@ -19,8 +19,8 @@ def main():
     current_date = datetime.now()
 
     print("Current date: " + date_printer(current_date))
-    print("Modified date: "
-          + date_calculator(current_date, years, days, hours, minutes))
+    print("Modified date: " +
+          date_calculator(current_date, years, days, hours, minutes))
 
 
 if __name__ == '__main__':
