@@ -13,7 +13,7 @@ def create_chess_board(width, height):
     print(board)
     chess_board_in_str = ''
     for k in range(len(board)):
-        chess_board_in_str += ''.join(board[k]) + '\n'
+        chess_board_in_str += ' '.join(board[k]) + '\n'
     return chess_board_in_str
 
 

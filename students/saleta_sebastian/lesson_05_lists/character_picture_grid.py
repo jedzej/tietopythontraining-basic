@@ -1,11 +1,10 @@
-def get_picture_grid(raw_grid):
-    picture_grid = ''
-    transposed_matrix = zip(*raw_grid)
+def print_picture_grid(raw_grid):
 
-    for i in range(len(transposed_matrix)):
-        picture_grid += ''.join(transposed_matrix[i]) + '\n'
-
-    return picture_grid
+    for i in range(len(raw_grid[0])):
+        line = ''
+        for j in range(len(raw_grid)):
+            line += raw_grid[j][i]
+        print(line)
 
 
 def main():
@@ -18,8 +17,7 @@ def main():
             ['O', 'O', 'O', 'O', '.', '.'],
             ['.', 'O', 'O', '.', '.', '.'],
             ['.', '.', '.', '.', '.', '.']]
-    transpose_matrix = get_picture_grid(grid)
-    print(transpose_matrix)
+    print_picture_grid(grid)
 
 
 if __name__ == '__main__':

@@ -5,7 +5,7 @@ def bowl(balls, pins):
         left, right = [int(k) for k in input().split()]
         for pin in range(left - 1, right):
             pins_table[pin] = '.'
-    print(pins_table)
+    print(''.join([i for i in pins_table]))
 
 
 def main():

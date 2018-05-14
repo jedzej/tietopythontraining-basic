@@ -1,5 +1,5 @@
 def comma(user_list):
-    if user_list == []:
+    if not user_list :
         print('the list is empty')
         return user_list
 
@@ -14,7 +14,6 @@ def comma(user_list):
 
 def main():
     input_list = [str(x) for x in input().split()]
-
     print(comma(input_list))
 
 
