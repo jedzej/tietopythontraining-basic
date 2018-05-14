@@ -10,9 +10,7 @@ def age_calculator(people_age_list):
         average_children = sum(children) / len(children)
 
     print('Average adult age is: {} and average children age is {}'
-        .format(average_adults, average_children))
-
-
+          .format(average_adults, average_children))
 
 
 def main():

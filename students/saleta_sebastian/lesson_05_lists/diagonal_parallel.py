@@ -5,8 +5,6 @@ def diagonal_parallel(dimn):
         for j in range(dimn):
             base_row[i].append(abs(i - j))
 
-
-    matrix_in_str = ''
     for k in base_row:
         print(' '.join([str(i) for i in k]))
 

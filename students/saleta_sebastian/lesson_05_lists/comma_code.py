@@ -1,5 +1,5 @@
 def comma(user_list):
-    if not user_list :
+    if not user_list:
         print('the list is empty')
         return user_list
 

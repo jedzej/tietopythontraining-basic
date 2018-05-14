@@ -1,7 +1,7 @@
 def how_many_is_greater(list_of_numbers):
     greater_index = 0
 
-    for i in range(1, len(list_of_numbers)-1):
+    for i in range(1, len(list_of_numbers) - 1):
         if list_of_numbers[i - 1] < list_of_numbers[i] > \
                 list_of_numbers[i + 1]:
             greater_index += 1
