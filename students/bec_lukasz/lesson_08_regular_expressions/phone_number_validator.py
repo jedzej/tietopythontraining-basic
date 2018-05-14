@@ -1,9 +1,9 @@
 import re
 
 '''
-write phone number validator 
-that accepts phone numbers in not separated, 
-space-separated or hypen-separated 
+write phone number validator
+that accepts phone numbers in not separated,
+space-separated or hypen-separated
 9-digit format with optional country prefix
 '''
 
