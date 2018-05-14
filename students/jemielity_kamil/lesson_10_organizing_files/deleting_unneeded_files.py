@@ -1,6 +1,6 @@
 import os
 
-path = 'C:\\Program Files'
+path = 'Path\\to\\directory'
 
 for foldername, subfolders, filenames in os.walk(path):
     for file in filenames:
