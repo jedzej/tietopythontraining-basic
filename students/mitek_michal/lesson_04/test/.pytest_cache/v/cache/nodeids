@@ -1,0 +1,10 @@
+[
+  "length_of_the_segment_test.py::test_length_of_the_segment_raises_type_error_when_none_provided",
+  "length_of_the_segment_test.py::test_length_of_the_segment_raises_value_error_when_string_provided",
+  "length_of_the_segment_test.py::test_length_of_segment_raises_value_error_when_one_argument_is_string",
+  "length_of_the_segment_test.py::test_length_of_the_segment_returns_zero_distance_when_called_on_zero",
+  "length_of_the_segment_test.py::test_length_of_the_segment_on_vertical_distance",
+  "length_of_the_segment_test.py::test_length_of_the_segment_on_horizontal_distance",
+  "length_of_the_segment_test.py::test_length_of_the_segment",
+  "length_of_the_segment_test.py::test_length_of_the_segment_if_works_with_switched_order_of_points"
+]
