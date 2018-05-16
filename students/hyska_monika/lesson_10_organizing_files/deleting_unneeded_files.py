@@ -1,9 +1,10 @@
 """
-Program  walks through a folder tree and searches for exceptionally large files or folders
-eg. size > 8 mb
+Program  walks through a folder tree and searches for
+exceptionally large files or folders, eg. size > 8 mb
 Program delete found files and folders
 """
-import shutil, os
+import shutil
+import os
 
 
 # function search folders and files bigger then some size

@@ -3,7 +3,8 @@ Program walks through a folder tree and searches for files
 with a certain file extension (such as .pdf or .jpg).
 Copy these files from whatever location they are in to a new folder.
 """
-import shutil, os
+import shutil
+import os
 
 
 # function search file on selected folder for selected extension
@@ -37,5 +38,5 @@ def copy_files_to_new_location(files_list, new_location):
 
 
 my_files_list = search_files_list('.\\folder', '.pdf', '.JPG')
-#my_files_list = search_files_list('.\\folder', '.pdf')
+# my_files_list = search_files_list('.\\folder', '.pdf')
 copy_files_to_new_location(my_files_list, 'new_folder')
