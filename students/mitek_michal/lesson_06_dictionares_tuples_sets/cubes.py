@@ -10,7 +10,7 @@ def cubes():
     for i in range(m_set):
         m_set_colors.add(int(input()))
 
-    print_set(n_set_colors and m_set_colors)
+    print_set(n_set_colors.intersection(m_set_colors))
     print_set(n_set_colors - m_set_colors)
     print_set(m_set_colors - n_set_colors)
 

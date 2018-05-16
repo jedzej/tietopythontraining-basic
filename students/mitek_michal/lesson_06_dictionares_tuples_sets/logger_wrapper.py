@@ -5,8 +5,8 @@ def foo(*args):
 
 def logger_wrapper(foo, *args, **kwargs):
 
-    for arg in args:
-        print(arg)
+    for i, arg in enumerate(args):
+        print("Arg {}: {}".format(str(i + 1), str(arg)))
         foo(arg)
 
     for key, value in kwargs.items():
@@ -15,4 +15,4 @@ def logger_wrapper(foo, *args, **kwargs):
 
 
 if __name__ == '__main__':
-    logger_wrapper()
+    logger_wrapper(foo)
