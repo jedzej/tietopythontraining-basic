@@ -2,7 +2,8 @@ import re
 
 
 def phone_number_validator(text):
-    phone_regex = re.compile(r'\(?(\d{4}|\+\d{2})?\)?\d{9}')
+    phone_regex = re.compile(r'\(?(\d{4}|\+\d{2})?\)?\s?'
+                             r'(\d{9}|(\d{3}(\s|-)\d{3}(\s|-)\d{3}))')
     try:
         print(phone_regex.search(text).group(0))
         if text == phone_regex.search(text).group(0):
@@ -13,5 +14,5 @@ def phone_number_validator(text):
         return 'Invalid phone number'
 
 
-number = '+43999999999'
+number = '999-999-999'
 print(phone_number_validator(number))
