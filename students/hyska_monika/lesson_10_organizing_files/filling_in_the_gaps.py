@@ -22,7 +22,8 @@ def search_prefix_add_gaps(path, prefix):
             ext_part = file_with_prefix.group(3)
             new_file_name = text_part + (str(number).zfill(3)) + ext_part
             print('Changed file:', file_name, 'to:', new_file_name)
-            shutil.move(os.path.join(path, file_name), os.path.join(path, new_file_name))
+            shutil.move(os.path.join(path, file_name),
+                        os.path.join(path, new_file_name))
         number += 1
 
 
