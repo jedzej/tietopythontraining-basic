@@ -1,10 +1,7 @@
 def collecting_list_elements():
     a = []
     while True:
-        try:
-            a.append(int(input('Give a list element ')))
-        except ValueError:
-            break
+        a.append(int(input('Give a list element ')))
     return a
 
 
