@@ -13,7 +13,7 @@ class DistanceTest(unittest.TestCase):
     def test_None_x1(self):
         self.assertIsNotNone(TypeError, distance.distance(None, 2, 3, 2))
 
-    def test_None_y12(self):
+    def test_None_y1(self):
         self.assertIsNotNone(TypeError, distance.distance(1, None, 3, 2))
 
     def test_None_x2(self):
@@ -29,7 +29,7 @@ class DistanceTest(unittest.TestCase):
     def test_string_x1(self):
         self.assertRaises(ValueError, distance.distance('aoeu', 2, 3, 2))
 
-    def test_string_y2(self):
+    def test_string_y1(self):
         self.assertRaises(ValueError, distance.distance(2, 'aoeu', 3, 2))
 
     def test_string_x2(self):
