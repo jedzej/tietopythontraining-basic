@@ -3,8 +3,7 @@ import re
 
 prefix = input('Prefix: ')
 suffix = '.txt'
-path = 'C:\\Users\\jemiekam\\Desktop\\kurs\\tietopythontraining-basic\\' \
-       'students\\jemielity_kamil\\lesson_10_organizing_files\\testing'
+path = 'C:\\Path\\to\\the\folder'
 
 files_tab = []
 regex = re.compile(r'^spam\d{3}\.txt$')
@@ -19,7 +18,7 @@ files_tab = sorted(files_tab)
 number_of_files = len(files_tab)
 
 new_names = []
-for i in range(1, number_of_files+1):
+for i in range(1, number_of_files + 1):
     if i < 10:
         new_names.append(prefix + '00' + str(i) + suffix)
     elif 10 < i < 100:
