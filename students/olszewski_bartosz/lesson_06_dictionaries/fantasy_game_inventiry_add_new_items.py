@@ -24,6 +24,7 @@ def added_to_inventory():
         items_to_add.append(a)
     return items_to_add
 
+
 added_inventory = added_to_inventory()
 added_to_inventory()
 display_inventory(stuff, added_inventory)
