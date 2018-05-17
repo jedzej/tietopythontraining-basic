@@ -7,7 +7,8 @@ class DistanceTest(unittest.TestCase):
 
     # Tests that it crashes with TypeError when called on None
     def test_None_all(self):
-        self.assertIsNotNone(TypeError, distance.distance(None, None, None, None))
+        self.assertIsNotNone(TypeError,
+                             distance.distance(None, None, None, None))
 
     def test_None_x1(self):
         self.assertIsNotNone(TypeError, distance.distance(None, 2, 3, 2))
@@ -42,13 +43,16 @@ class DistanceTest(unittest.TestCase):
         self.assertEqual(distance.distance(2, 1, 2, 1), 0.0) # Zero length
 
     def test_vaule_negative(self):
-        self.assertEqual(distance.distance(-1, -1, -3, -5), 4.47214)  # Negative coordinates
+        self.assertEqual(distance.distance(-1, -1, -3, -5),
+                         4.47214)  # Negative coordinates
 
     def test_vaule_vertical(self):
-        self.assertEqual(distance.distance(2, 1, 2, 7), 6.0)  # Only vertical distance
+        self.assertEqual(distance.distance(2, 1, 2, 7),
+                         6.0)  # Only vertical distance
 
     def test_vaule_horizontaly(self):
-        self.assertEqual(distance.distance(5, 1, 10, 1), 5.0)  # Only horizontal distance
+        self.assertEqual(distance.distance(5, 1, 10, 1),
+                         5.0)  # Only horizontal distance
 
     # Typical conditions (difference on both coordinates)
     def test_vaule_1(self):

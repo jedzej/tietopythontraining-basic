@@ -11,11 +11,11 @@ class CollatzTest(unittest.TestCase):
 
     # Test that it returns 4, if called on 8,
     def test_checkvalue1(self):
-        self.assertEqual(collatz.collatz(8),4)
+        self.assertEqual(collatz.collatz(8), 4)
 
     # Test that it returns 16, if called on 5.
     def test_checkvalue2(self):
-        self.assertEqual(collatz.collatz(5),16)
+        self.assertEqual(collatz.collatz(5), 16)
 
 
 if __name__ == '__main__':

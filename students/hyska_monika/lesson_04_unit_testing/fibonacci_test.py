@@ -39,5 +39,6 @@ class FibonacciTest(unittest.TestCase):
         for i in range(2, 10):
             self.assertTrue(Fibonacci.fib(i) == l[i])
 
+
 if __name__ == '__main__':
     unittest.main()
