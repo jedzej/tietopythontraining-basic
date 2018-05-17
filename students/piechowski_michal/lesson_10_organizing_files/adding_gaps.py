@@ -33,7 +33,7 @@ def add_gap(sorted_ids):
 
     for i in reversed(sorted_ids):
         path = files_dictionary[i]
-        destination = dir_path + prefix + str(i+1).zfill(3) + sufix
+        destination = dir_path + prefix + str(i + 1).zfill(3) + sufix
         os.rename(path, destination)
         if i == gap:
             break

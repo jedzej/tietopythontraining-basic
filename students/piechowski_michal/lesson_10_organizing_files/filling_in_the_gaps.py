@@ -30,7 +30,7 @@ def print_gaps(sorted_ids):
 def fill_gaps(sorted_ids):
     for i in range(0, len(sorted_ids)):
         path = files_dictionary[sorted_ids[i]]
-        destination = dir_path + prefix + str(i+1).zfill(3) + sufix
+        destination = dir_path + prefix + str(i + 1).zfill(3) + sufix
         os.rename(path, destination)
 
 
