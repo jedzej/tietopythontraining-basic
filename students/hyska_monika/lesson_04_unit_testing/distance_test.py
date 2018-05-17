@@ -41,7 +41,7 @@ class DistanceTest(unittest.TestCase):
 
     # Tests it on corner cases:
     def test_vaule_zero(self):
-        self.assertEqual(distance.distance(2, 1, 2, 1), 0.0) # Zero length
+        self.assertEqual(distance.distance(2, 1, 2, 1), 0.0)    # Zero length
 
     def test_vaule_negative(self):
         self.assertEqual(distance.distance(-1, -1, -3, -5),
