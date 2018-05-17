@@ -35,7 +35,7 @@ class DistanceTest(unittest.TestCase):
     def test_string_x2(self):
         self.assertRaises(ValueError, distance.distance(2, 3, 'aoeu', 2))
 
-    def test_string_y2(self):
+    def test_string_y222(self): # why stickler doesn't see func. changes in 32 line?
         self.assertRaises(ValueError, distance.distance(2, 3, 2, 'aoeu'))
 
     # Tests it on corner cases:
