@@ -12,8 +12,7 @@ for i in range(len(a)):
         maximum = a[i]
         max_index = i
 
-a[max_index] = minimum
-a[min_index] = maximum
+a[max_index], a[min_index] = a[min_index], a[max_index]
 
 for i in range(len(a)):
     print(a[i], end=" ")
