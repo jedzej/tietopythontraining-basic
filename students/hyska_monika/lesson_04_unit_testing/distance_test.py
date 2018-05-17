@@ -1,4 +1,4 @@
-# tests for distance
+# tests for distance.py
 import unittest
 import distance
 
