@@ -16,7 +16,7 @@ def sum_the_args_and_add_to_kwargs(*args, **kwargs):
     for arg in args:
         summary += arg
     print('summary: {}'.format(summary))
-    kwarg = {'sum' : summary}
+    kwarg = {'sum': summary}
     kwargs.update(kwarg)
     print(kwargs)
 

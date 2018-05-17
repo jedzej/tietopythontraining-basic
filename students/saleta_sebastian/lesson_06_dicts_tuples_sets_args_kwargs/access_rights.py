@@ -1,7 +1,7 @@
 OPERATION_PERMISSION = {
-    'read' : 'R',
-    'write' : 'W',
-    'execute' : 'X'
+    'read': 'R',
+    'write': 'W',
+    'execute': 'X'
 }
 
 
@@ -37,7 +37,7 @@ def main():
         if len(list_of_files) >= 2:
             file_name = list_of_files[0]
             file_access_rihts = list_of_files[1:]
-            files_with_access_rigts.update({file_name : file_access_rihts})
+            files_with_access_rigts.update({file_name: file_access_rihts})
         else:
             print('probably you dont give access rights')
     operations = 0

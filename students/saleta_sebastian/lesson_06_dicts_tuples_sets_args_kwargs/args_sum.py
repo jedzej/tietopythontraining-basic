@@ -6,7 +6,7 @@ def sum_all(*args):
 
 
 def main():
-    sum_all(1,2,3,4,5,6)
+    sum_all(1, 2, 3, 4, 5, 6)
 
 
 if __name__ == '__main__':

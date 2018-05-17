@@ -2,7 +2,7 @@ DIST_BETWEEN_SMALL_AND_BIG_LETTER = 32
 
 
 def capitalize_word(word):
-    uppercase_array=[]
+    uppercase_array = []
     for i in range(len(word)):
         if(ord(word[i][0])) > 95:
             uppercase_word = \
