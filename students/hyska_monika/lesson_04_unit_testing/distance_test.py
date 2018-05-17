@@ -68,5 +68,6 @@ class DistanceTest(unittest.TestCase):
     def test_order(self):
         self.assertEqual(distance.distance(5, 1, 10, 2), distance.distance(10, 2, 5, 1))
 
+
 if __name__ == '__main__':
     unittest.main()
