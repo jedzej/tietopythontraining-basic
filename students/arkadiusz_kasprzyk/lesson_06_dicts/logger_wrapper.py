@@ -34,10 +34,12 @@ def logger_wrapper(foo, *args, **kwargs):
         d
         e
 
-    logger_wrapper(foo, *[1, 2], **{'a': 'a', 'd': 'd', 'e': 'e'})  # ERROR, OK
+    logger_wrapper(foo, *[1, 2], **{'a': 'a', 'd': 'd', 'e': 'e'})
+        # ERROR, OK
 
     bar = foo
-    logger_wrapper(bar, *[1, 2], **{'c': 'c', 'd': 'd', 'e': 'e'})  # as for foo()
+    logger_wrapper(bar, *[1, 2], **{'c': 'c', 'd': 'd', 'e': 'e'})
+        # as for foo()
     """
 
     args_inspector(*args, **kwargs)

@@ -2,7 +2,7 @@ import random
 
 
 def guess(N):
-    print("Give your guess (number between 1 " + \
+    print("Give your guess (number between 1 " +
           "and {} or one of '0', '?', 'h', 'help' for help):".format(N))
     guesset = input("").split(" ")
     if guesset[0].lower() in {'0', '?', 'h', 'help'}:
