@@ -4,6 +4,7 @@ import collatz
 
 
 class CollatzTest(unittest.TestCase):
+
     # Test that the function raises TypeError, if called on 'aoeu'
     def test_checkstring(self):
         self.assertRaises(TypeError, collatz.collatz('aoeu'))
