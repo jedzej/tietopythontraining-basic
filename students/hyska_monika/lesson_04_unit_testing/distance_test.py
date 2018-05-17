@@ -24,7 +24,8 @@ class DistanceTest(unittest.TestCase):
 
     # Tests that it crashes with ValueError when called on 'aoeu'
     def test_string_all(self):
-        self.assertRaises(ValueError, distance.distance('aoeu', 'aoeu', 'aoeu', 'aoeu'))
+        self.assertRaises(ValueError,
+                          distance.distance('aoeu', 'aoeu', 'aoeu', 'aoeu'))
 
     def test_string_x1(self):
         self.assertRaises(ValueError, distance.distance('aoeu', 2, 3, 2))
@@ -35,8 +36,7 @@ class DistanceTest(unittest.TestCase):
     def test_string_x2(self):
         self.assertRaises(ValueError, distance.distance(2, 3, 'aoeu', 2))
 
-    # why stickler doesn't see func.changes in 32 line?
-    def test_string_y222(self):
+    def test_string_y2(self):
         self.assertRaises(ValueError, distance.distance(2, 3, 2, 'aoeu'))
 
     # Tests it on corner cases:
