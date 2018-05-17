@@ -25,6 +25,7 @@ group.add_argument('-g', action="store", dest='get',
                    help="Get a value of keyword")
 
 args = parser.parse_args()
+
 mcbShelf = shelve.open('mcb')
 
 if args.save is not None:
