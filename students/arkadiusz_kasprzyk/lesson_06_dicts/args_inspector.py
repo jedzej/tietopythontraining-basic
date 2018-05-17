@@ -8,7 +8,6 @@ def args_inspector(*args, **kwargs):
     args = [0, 2, "a"]
     kwargs = {'aa':0, 'bb':'qq', 'cc':1.}
     args_inspector(*args, **kwargs)
-<<<<<<< HEAD
 
         args:
         1 : 0
@@ -19,8 +18,7 @@ def args_inspector(*args, **kwargs):
         aa : 0
         bb : qq
         cc : 1.0
-=======
->>>>>>> 20508ca4668bf458c74a7d554f4bab5ad0bf3736
+
     """
     k = 0
     print("args:")
