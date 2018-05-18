@@ -15,3 +15,5 @@ def int_revers():
 
 
 int_revers()
+# In python is reversed function, but in this task is:
+# "Don't use lists or other data structures."
