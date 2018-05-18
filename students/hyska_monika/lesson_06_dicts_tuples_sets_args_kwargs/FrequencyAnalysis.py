@@ -6,8 +6,8 @@ def list_to_tuples_with_count(word_list):
     words_with_counters = []
     for elem in word_list:
         words_with_counters.append((word_list.count(elem), elem))
-        words_with_counters_without_duplication = set(words_with_counters)
-    return words_with_counters_without_duplication
+        unique_words_with_counters = set(words_with_counters)
+    return unique_words_with_counters
 
 
 def display_sorted_words(words_with_counters):
@@ -19,4 +19,5 @@ def display_sorted_words(words_with_counters):
 
 
 # display_sorted_words(list_to_tuples_with_count(file_to_list("text.txt")))
-display_sorted_words(list_to_tuples_with_count(file_to_list("text2.txt")))
+words = list_to_tuples_with_count(file_to_list("text2.txt"))
+display_sorted_words(words)
