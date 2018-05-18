@@ -15,9 +15,4 @@ with open(target_file, 'w') as outfile:
                         new_word = word.replace(replace_word, new_word)
                         break
                 target_line.append(new_word)
-            outfile.write(' '.join(target_line)+'\n')
-
-
-
-
-
+            outfile.write(' '.join(target_line) + '\n')
