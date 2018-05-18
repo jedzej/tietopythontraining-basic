@@ -13,10 +13,10 @@ m cubes colors (for Bob)
 Output:
 Number of cubes repeated with Alice and Bob
 Cubes colors repeated with Alice and Bob
-Number of Alice cubes not repeated (Bob hasn't the same colors)
-Alice cubes colors not repeated (Bob hasn't the same colors)
-Number of Bob cubes not repeated (Alice hasn't the same colors)
-Bob cubes colors not repeated (Alice hasn't the same colors)
+Number of Alice cubes not repeated (Bob doesn't have the same colors)
+Alice cubes colors not repeated (Bob doesn't have the same colors)
+Number of Bob cubes not repeated (Alice doesn't have the same colors)
+Bob cubes colors not repeated (Alice doesn't have the same colors)
 """
 from functions_lesson06 import list_random
 
