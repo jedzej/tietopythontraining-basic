@@ -1,6 +1,7 @@
 # Program return numbers that can are a secret
 # (after receive yes or no answer for lists)
-from functions_lesson06 import create_dict_to_n, find_max
+# from functions_lesson06 import create_dict_to_n
+from functions_lesson06 import find_max
 
 
 def number_check(asked_numbers):

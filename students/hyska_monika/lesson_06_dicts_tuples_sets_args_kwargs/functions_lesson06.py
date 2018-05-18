@@ -65,9 +65,13 @@ def change_to_dict(mylist):
         i_elem = mylist[i]
         split_elements = i_elem.split(' ')
         key, *values = split_elements
-        # inventory.setdefault(key_elem, values_elem)    # doesn't work, when put the same key
+        # -------
+        # doesn't work, when put the same key
+        # inventory.setdefault(key_elem, values_elem)
         # data wouldn't be save
-        inventory.update({key: values})  # when put the same key, data are overwritten
+        # -------
+        # when put the same key, data are overwritten
+        inventory.update({key: values})
         # inventory[key] = values    # work the same way as update
     return inventory
 
