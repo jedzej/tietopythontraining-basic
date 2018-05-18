@@ -1,8 +1,5 @@
 def sum_all(*args):
-    summary = 0
-    for arg in args:
-        summary += arg
-    print(summary)
+    print(sum(args))
 
 
 def main():
