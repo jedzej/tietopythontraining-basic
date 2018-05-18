@@ -15,9 +15,8 @@ def create_inventory():
     n = int((input("Number of dictionary elements: ")))
     inventory = {}
     for i in range(n):
-        inventory.setdefault((int(input("Key: "))), (int(input("Value: "))))
+        inventory.update({int(input("Key: ")): int(input("Value: "))})
     print("Inventory: ", inventory)
-    return inventory
 
 
 # function display dictionary, first value, next key
@@ -44,13 +43,14 @@ def list_elements_str():
 def create_dict_to_n(n):
     asked_numbers = {}
     for i in range(n):
-        asked_numbers.setdefault(i + 1, 1)
+        asked_numbers[i + 1] = 1
     return asked_numbers
 
 
-# function search max value in dictionary and return key for this max
+# function search max value in dictionary and return keys for this max
 def find_max(dict):
-    max_key = [key for key, val in dict.items() if val == max(dict.values())]
+    max_value = max(dict.values())
+    max_key = [key for key, val in dict.items() if val == max_value]
     print(' '.join(map(str, max_key)))
     return max_key
 
@@ -58,16 +58,17 @@ def find_max(dict):
 # function change list to dictionary.
 # For key set first element for value set list with next elements
 # eg. return
-# {'kot.j' : ['r', 'w',  'x'], 'pies.l' : ['r'], 'mysz' : ['r', 'x']}
+# {'kot.j' : ['r', 'w',  x'], 'pies.l' : ['r'], 'mysz' : ['r', 'x']}
 def change_to_dict(mylist):
     inventory = {}
     for i in range(len(mylist)):
         i_elem = mylist[i]
         split_elements = i_elem.split(' ')
-        key_elem = split_elements[0]
-        del split_elements[0]
-        values_elem = split_elements
-        inventory.setdefault(key_elem, values_elem)
+        key, *values = split_elements
+        # inventory.setdefault(key_elem, values_elem)    # doesn't work, when put the same key
+        # data wouldn't be save
+        inventory.update({key: values})  # when put the same key, data are overwritten
+        # inventory[key] = values    # work the same way as update
     return inventory
 
 
@@ -76,3 +77,13 @@ def file_to_list(file_name):
     my_file = open(file_name, "r")
     words_list = my_file.read().split()
     return words_list
+
+
+# function change dictionary {'Poland' : ['Warsaw', 'Krakow']}
+# to dictionary  {'Warsaw': 'Poland, 'Krakow': 'Poland'}
+def change_dict_without_list(inventory):
+    changed_dict = {}
+    for key, values in inventory.items():
+        for value in values:
+            changed_dict[value] = key
+    return changed_dict
