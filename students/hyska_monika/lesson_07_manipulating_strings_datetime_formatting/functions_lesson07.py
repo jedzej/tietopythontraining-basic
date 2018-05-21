@@ -1,7 +1,20 @@
-# function return length for the longest string
+# function return length for the longest strings in array
 def find_max_sting(my_dict):
+    # sum set all strings from array to list, next search
+    # longest word(max), and return strings length
     max_table = len(max(sum(my_dict, []), key=len))
     return max_table
+
+
+# function return length for the longest string in array
+def find_max_sting2(my_dict):
+    max_str = len(my_dict[0][0])
+    for row in my_dict:
+        max_row = len(max(row, key=len))
+        print(max_row, max_str)
+        if max_row > max_str:
+            max_str = max_row
+    return max_str
 
 
 # function print table with elements just to right
