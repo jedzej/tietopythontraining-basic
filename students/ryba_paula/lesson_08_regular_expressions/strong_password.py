@@ -8,7 +8,8 @@ def password_check(password):
 
 
 def main():
-    passwords = ("PaulaRyba1", "paula", "paulaRyba1", "PaUl1", "paulaR", "PaulaRyba123", "paularyba1")
+    passwords = ("PaulaRyba1", "paula", "paulaRyba1", "PaUl1", "paulaR",
+                 "PaulaRyba123", "paularyba1")
 
     for password in passwords:
         if password_check(password):
