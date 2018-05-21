@@ -18,5 +18,5 @@ a = "sss aa es"
 print('Number of word for text: ')
 count_words_str(a)
 
-print('\nNumber of word for text in file: ')
+print('\nNumber of word for text in a file: ')
 count_words(file_to_list("text3.txt"))
