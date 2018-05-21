@@ -42,10 +42,10 @@ We hope you will have a lot of fun learning!
 * [Lesson 4 - Unit testing](./course/lesson_04_unit_testing) -- deadline 2018-03-27
 * [Lesson 5 - Lists + list comprehensions](./course/lesson_05_lists) -- deadline 2018-04-10
 * [Lesson 6 - Dictionaries, tuples and sets + \*args and \*\*kwargs](./course/lesson_06_dicts_tuples_sets_args_kwargs) -- deadline 2018-04-17
-* Lesson 7 - Manipulating strings + datetime formatting 
-* Lesson 8 - Regular expressions
-* Lesson 9 - Reading and writing files
-* Lesson 10 - Organizing Files
+* [Lesson 7 - Manipulating strings + datetime formatting](./course/lesson_07_string_datetime) -- deadline 2018-04-24
+* [Lesson 8 - Regular expressions](./course/lesson_08_regular_expressions) -- deadline 2018-05-08
+* [Lesson 9 - Reading and writing files](./course/lesson_09_reading_and_writing_files) -- deadline 2018-05-22
+* [Lesson 10 - Organizing Files](./course/lesson_10_organizing_files) -- 2018-05-29
 * Lesson 11 - argparse  + math
 * Lesson 12 - Debugging
 * Lesson 13 - Objects and classes
