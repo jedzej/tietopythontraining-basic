@@ -35,9 +35,9 @@ class FibonacciTest(unittest.TestCase):
         self.assertEqual(fibonacci.fib(19), 4181)
 
     def test_many_values(self):
-        l = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+        fibonacci_answer = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
         for i in range(2, 10):
-            self.assertTrue(fibonacci.fib(i) == l[i])
+            self.assertTrue(fibonacci.fib(i) == fibonacci_answer[i])
 
 
 if __name__ == '__main__':
