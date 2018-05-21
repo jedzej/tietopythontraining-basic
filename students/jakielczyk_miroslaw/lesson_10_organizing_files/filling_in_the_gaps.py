@@ -5,6 +5,10 @@ import shutil
 source_folder = 'spam_folder'
 original_spam_folder = 'reference_spam_folder'
 
+if not os.path.exists(source_folder):
+    print('Creating', source_folder)
+    os.makedirs(source_folder)
+
 print('Removing content of spam_folder')
 shutil.rmtree(source_folder)
 

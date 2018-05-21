@@ -30,8 +30,8 @@ creating_folder(temp_folder)
 
 prefix = 'spam'
 
-begin_gap_index = 5
-number_of_gaps = 7
+begin_gap_index = 4
+number_of_gaps = 6
 
 file_index = 0
 regex_expression = re.compile(r'^spam\d{3}.txt$')
