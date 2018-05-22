@@ -1,4 +1,6 @@
-import shelve, sys, pyperclip
+import shelve
+import sys
+import pyperclip
 
 
 mcbShelf = shelve.open('mcb')
