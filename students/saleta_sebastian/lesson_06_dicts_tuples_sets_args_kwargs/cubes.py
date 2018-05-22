@@ -5,8 +5,8 @@ def print_set(cubes_set):
 
 def cubes():
     alice_cube, bob_cube = [int(s) for s in input().split()]
-    alice_colors_set = {int(input()) for s in range(alice_cube)}
-    bob_colors_set = {int(input()) for s in range(bob_cube)}
+    alice_colors_set = {int(input()) for _ in range(alice_cube)}
+    bob_colors_set = {int(input()) for _ in range(bob_cube)}
 
     intersection = alice_colors_set & bob_colors_set
     only_alice = alice_colors_set - bob_colors_set

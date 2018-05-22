@@ -17,8 +17,8 @@ def main():
     user_lines = 0
     try:
         user_lines = int(input('how many lines? '))
-    except:
-        print('I think its not a number')
+    except ValueError:
+        print('I think it\'s not a number')
     frequency_analysis(user_lines)
 
 
