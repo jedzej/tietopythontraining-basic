@@ -2,7 +2,9 @@
 
 
 def fib(n):
-    if isinstance(n, int) and n >= 0:
+    try:
+        if not(isinstance(n, int)) or n < 0:
+            raise TypeError
         if n == 0:
             return 0
         elif n == 1:
@@ -10,5 +12,6 @@ def fib(n):
         else:
             return fib(n - 1) + fib(n - 2)
         return n
-    else:
+    except TypeError:
         print("It isn't integer or incorrect value!")
+        raise
