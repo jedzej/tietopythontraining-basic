@@ -41,19 +41,20 @@ class DistanceTest(unittest.TestCase):
 
     # Tests it on corner cases:
     def test_vaule_zero(self):
-        self.assertAlmostEqual(distance.distance(2, 1, 2, 1), 0.0)    # Zero length
+        # Zero length
+        self.assertAlmostEqual(distance.distance(2, 1, 2, 1), 0.0)
 
     def test_vaule_negative(self):
         self.assertAlmostEqual(distance.distance(-1, -1, -3, -5),
-                         4.47214)  # Negative coordinates
+                               4.47214)  # Negative coordinates
 
     def test_vaule_vertical(self):
         self.assertAlmostEqual(distance.distance(2, 1, 2, 7),
-                         6.0)  # Only vertical distance
+                               6.0)  # Only vertical distance
 
     def test_vaule_horizontaly(self):
         self.assertAlmostEqual(distance.distance(5, 1, 10, 1),
-                         5.0)  # Only horizontal distance
+                               5.0)  # Only horizontal distance
 
     # Typical conditions (difference on both coordinates)
     def test_vaule_1(self):
