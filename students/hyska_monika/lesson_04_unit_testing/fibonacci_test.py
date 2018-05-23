@@ -7,19 +7,20 @@ class FibonacciTest(unittest.TestCase):
 
     # tests for input
     def test_checkInput_string(self):
-        self.assertRaises(TypeError, fibonacci.fib('aoeu'))
+        self.assertRaises(TypeError, fibonacci.fib, 'aoeu')
 
     def test_checkInput_None1(self):
-        self.assertRaises(TypeError, fibonacci.fib(None))
-
-    def test_checkInput_None2(self):
-        self.assertIsNotNone(TypeError, fibonacci.fib(None))
+        self.assertRaises(TypeError, fibonacci.fib, None)
 
     def test_checkInput_float(self):
-        self.assertRaises(TypeError, fibonacci.fib(25.2))
+        self.assertRaises(TypeError, fibonacci.fib, 25.2)
 
     def test_checkInput_negative(self):
-        self.assertRaises(TypeError, fibonacci.fib(-2))
+        self.assertRaises(TypeError, fibonacci.fib, -2)
+
+    # tests for output
+    def test_check_output_cant_be_None(self):
+        self.assertIsNotNone(TypeError, fibonacci.fib)
 
     # tests for values
     def test_values_0(self):
