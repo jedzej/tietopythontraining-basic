@@ -5,7 +5,7 @@ from functions_lesson06 import list_elements_str, change_to_dict,\
 
 # search country if dictionary have lists inside
 def countries_and_cities(inventory):
-    n = int((input("How many cities do you want check?: ")))
+    n = int((input("How many cities do you want to check?: ")))
     for i in range(n):
         city = str((input("put city:")))
         country = None
@@ -21,7 +21,7 @@ def countries_and_cities(inventory):
 
 # search country if dictionary doesn't have list inside
 def search_country_for_city(inventory):
-    n = int((input("How many cities do you want check?: ")))
+    n = int((input("How many cities do you want to check?: ")))
     for i in range(n):
         city = str((input("put city:")))
         country = inventory.get(city)

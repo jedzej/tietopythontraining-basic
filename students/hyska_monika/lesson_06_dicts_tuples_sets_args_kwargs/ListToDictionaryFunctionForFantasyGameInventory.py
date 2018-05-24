@@ -4,10 +4,15 @@ from FantasyGameInventory import display_inventory
 
 def add_to_inventory(inventory, added_items):
     for item in added_items:
+        """
+        inventory.setdefault(item, 0)
+        inventory[item] += 1
+        """
         if item in inventory:
             inventory[item] += 1
         else:
             inventory[item] = 1
+
     return inventory
 
 

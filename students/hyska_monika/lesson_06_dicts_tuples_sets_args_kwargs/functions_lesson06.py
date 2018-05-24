@@ -15,7 +15,10 @@ def create_inventory():
     n = int((input("Number of dictionary elements: ")))
     inventory = {}
     for i in range(n):
-        inventory.update({int(input("Key: ")): int(input("Value: "))})
+        key = int(input("Key: "))
+        value = int(input("Value: "))
+        inventory[key] = value
+        # inventory.update({int(input("Key: ")): int(input("Value: "))})
     print("Inventory: ", inventory)
 
 
@@ -71,8 +74,8 @@ def change_to_dict(mylist):
         # data wouldn't be save
         # -------
         # when put the same key, data are overwritten
-        inventory.update({key: values})
-        # inventory[key] = values    # work the same way as update
+        # inventory.update({key: values})
+        inventory[key] = values
     return inventory
 
 
