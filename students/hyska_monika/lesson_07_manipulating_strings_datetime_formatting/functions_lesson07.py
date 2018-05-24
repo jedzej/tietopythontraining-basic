@@ -17,6 +17,24 @@ def find_max_sting2(my_dict):
     return max_str
 
 
+# function return lengths for the longest strings in columns
+def find_max_stings_for_columns(table_data):
+    max_column_length = [max([len(word) for word in column]) for column in zip(*table_data)]
+    return max_column_length
+
+
+# function return lengths for the longest strings in rows
+def find_max_stings_for_rows(table_data):
+    max_row_length = [max([len(word) for word in row])for row in table_data]
+    return max_row_length
+
+
+# function to print array with check maximum elements
+def print_table2(table_data, maximum_list):
+    for row in table_data:
+        print(' '.join([cell.rjust(maximum_list[i]) for i, cell in enumerate(row)]))
+
+
 # function print table with elements just to right
 def print_table(my_dict, maximum):
     for row in my_dict:

@@ -1,6 +1,7 @@
 # function print table with each column right-justified
 
-from functions_lesson07 import print_table, find_max_sting
+from functions_lesson07 import print_table, find_max_sting,\
+    find_max_stings_for_columns, print_table2, find_max_stings_for_rows
 
 
 def change_row_to_columns(my_dict):
@@ -11,11 +12,16 @@ def change_row_to_columns(my_dict):
     return new_dict
 
 
+def change_row_to_columns2(table_data):
+    new_table = map(list, zip(*table_data))
+    return new_table
+
+
 tableData = [['apples', 'orange', 'cherries', 'banana'],
-             ['Alice', 'Bob', 'Carol', 'David'],
-             ['dogs', 'cats', 'moose', 'goose']]
+             ['Alicess', 'Bob', 'Carol', 'David'],
+             ['dogs', 'catssssss', 'moose', 'goose']]
 
 print('Table:')
-print_table(tableData, find_max_sting(tableData))
+print_table2(tableData, find_max_stings_for_columns(tableData))
 print('\nTable changed:')
-print_table(change_row_to_columns(tableData), find_max_sting(tableData))
+print_table2(change_row_to_columns2(tableData), find_max_stings_for_rows(tableData))
