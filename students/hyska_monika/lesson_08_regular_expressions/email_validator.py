@@ -13,9 +13,9 @@ import re
 
 def check_email(emial):
     email_regex = re.compile(r'''(
-        [a-zA-Z0-9._%+-] +      # username
+        [a-zA-Z0-9._%+-]+      # username
         @                       # @ symbol
-        [a-zA-Z0-9.-] +         # domain name
+        [a-zA-Z0-9.-]+         # domain name
         (\.[a-zA-Z]{2,4}$)       # dot and 2 - 4 letters
         )''', re.VERBOSE)
     email_result = email_regex.match(email)
