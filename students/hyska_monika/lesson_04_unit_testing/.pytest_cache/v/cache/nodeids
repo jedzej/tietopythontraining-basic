@@ -1,0 +1,16 @@
+[
+  "distance_pytest_parametrizing.py::test_invalid_string_arguments_to_raises[args0]", 
+  "distance_pytest_parametrizing.py::test_invalid_string_arguments_to_raises[args1]", 
+  "distance_pytest_parametrizing.py::test_invalid_string_arguments_to_raises[args2]", 
+  "distance_pytest_parametrizing.py::test_invalid_string_arguments_to_raises[args3]", 
+  "distance_pytest_parametrizing.py::test_invalid_string_arguments_to_raises[args4]", 
+  "distance_pytest_parametrizing.py::test_eval[0.0-0.0]", 
+  "distance_pytest_parametrizing.py::test_eval[4.47214-4.47214]", 
+  "distance_pytest_parametrizing.py::test_eval[6.0-6.0]", 
+  "distance_pytest_parametrizing.py::test_eval[5.0-5.0]", 
+  "distance_pytest_parametrizing.py::test_eval[9.84886-9.84886]", 
+  "distance_pytest_parametrizing.py::test_eval[18.02776-18.02776]", 
+  "distance_pytest_parametrizing.py::test_eval[13.0384-13.0384]", 
+  "distance_pytest_parametrizing.py::test_eval[8.18352-8.18352]", 
+  "distance_pytest_parametrizing.py::test_eval[5.09902-5.09902]"
+]
