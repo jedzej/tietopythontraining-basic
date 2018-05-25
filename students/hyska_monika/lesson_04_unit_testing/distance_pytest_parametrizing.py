@@ -30,7 +30,7 @@ def test_invalid_string_arguments_to_raises(args):
     (1, 2, None, 4),
     (1, 2, 3, None),
 ])
-def test_invalid_string_arguments_to_raises(args):
+def test_invalid_none_arguments_to_raises(args):
     with pytest.raises(TypeError):
         distance(*args)
 
