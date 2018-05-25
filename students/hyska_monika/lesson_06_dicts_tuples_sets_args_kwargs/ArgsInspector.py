@@ -11,3 +11,5 @@ def inspect_args(*args, **kwargs):
 
 my_dict = {'o': '8', 'p': 9}
 inspect_args(5, 7, 8, **my_dict, n=9)
+print()
+inspect_args(5, 7, 8, n=9, **my_dict)
