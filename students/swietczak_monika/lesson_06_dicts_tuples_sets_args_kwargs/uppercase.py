@@ -1,5 +1,5 @@
 def capitalize(lower_case_word):
-    title = lower_case_word[0].upper()+lower_case_word[1:]
+    title = lower_case_word[0].upper() + lower_case_word[1:]
     return title
 
 
