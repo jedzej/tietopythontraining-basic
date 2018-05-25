@@ -1,20 +1,21 @@
 import pytest
 from distance import distance
 """
-Dopisałam parametryzacje, ale jak czytam wiecj i więcej o tym jak
-to dobrze zrobic - wiem, że to nie jest jeszcze najlepsze rozwiazanie. 
-Więc jeśli nie popisałam jakiś głupot, to proszę zrob merga dla tej lekcji
-jak juz skoncze ten kurs, mam zamiar usiasc do tych testow z wiekszymu szczególami 
+Dopisalam parametryzacje, ale jak czytam wiecj i wiecej o tym jak
+to dobrze zrobic - wiem, ze to nie jest jeszcze najlepsze rozwiazanie.
+Wizc jesli nie popisalam jakis glupot, to prosze zrob merga dla tej lekcji
+jak juz skoncze ten kurs, mam zamiar usiasc do tych testow z wiekszymu
+szczegolami
 """
 
 
 # ********* tests for string input *********
 @pytest.mark.parametrize("args", [
-       ('aoeu', 'aoeu', 'aoeu', 'aoeu'),
-       ('aoeu', 2, 3, 4),
-       (1, 'aoeu', 3, 4),
-       (1, 2, 'aoeu', 4),
-       (1, 2, 3, 'aoeu'),
+    ('aoeu', 'aoeu', 'aoeu', 'aoeu'),
+    ('aoeu', 2, 3, 4),
+    (1, 'aoeu', 3, 4),
+    (1, 2, 'aoeu', 4),
+    (1, 2, 3, 'aoeu'),
 ])
 def test_invalid_string_arguments_to_raises(args):
     with pytest.raises(ValueError):
@@ -23,11 +24,11 @@ def test_invalid_string_arguments_to_raises(args):
 
 # ********* tests for None input *********
 @pytest.mark.parametrize("args", [
-       (None, None, None, None),
-       (None, 2, 3, 4),
-       (1, None, 3, 4),
-       (1, 2, None, 4),
-       (1, 2, 3, None),
+    (None, None, None, None),
+    (None, 2, 3, 4),
+    (1, None, 3, 4),
+    (1, 2, None, 4),
+    (1, 2, 3, None),
 ])
 def test_invalid_string_arguments_to_raises(args):
     with pytest.raises(TypeError):
@@ -39,7 +40,7 @@ def test_invalid_string_arguments_to_raises(args):
     (str(distance(2, 1, 2, 1)), 0.0),
     (str(distance(-1, -1, -3, -5)), 4.47214) ,
     (str(distance(2, 1, 2, 7)), 6.0),            # Only vertical distance
-    (str(distance(5, 1, 10, 1)), 5.0) ,         # Only horizontal distance
+    (str(distance(5, 1, 10, 1)), 5.0),         # Only horizontal distance
     # Typical conditions (difference on both coordinates)
     (str(distance(3, -2, -1, 7)), 9.84886),
     (str(distance(-10, 2, 5, 12)), 18.02776),
