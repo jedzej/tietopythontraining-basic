@@ -1,3 +1,4 @@
 if __name__ == '__main__':
-    str = input()
-    print((str.split()[-1] + " " + str.split()[-2]))
+    user_words = input()
+    first, last = user_words.split()
+    print(" ".join([last, first]))

@@ -1,3 +1,4 @@
 if __name__ == '__main__':
     input_str = input()
-    print(input_str.count(' ') + 1)
+    list_of_words = input_str.split()
+    print(len(list_of_words))

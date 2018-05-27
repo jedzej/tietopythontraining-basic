@@ -3,21 +3,22 @@ table_data = [['apples', 'oranges', 'cherries', 'banana'],
               ['dogs', 'cats', 'moose', 'goose']]
 
 
-def get_biggest_len(col):
-    bgst_len = 0
-    for item in col:
-        if len(item) > bgst_len:
-            bgst_len = len(item)
-    return bgst_len
-
-
 def print_table(table_data):
-    col_width = len(table_data[0])
+    col_width, max_word_len = get_maxs(table_data)
     for i in range(col_width):
         for col in table_data:
-            bgst_len = get_biggest_len(col)
-            print(str(col[i]).rjust(bgst_len), end=' ')
+            print(str(col[i]).rjust(int(max_word_len)), end=' ')
         print('')
+
+
+def get_maxs(table_data):
+    col_widths = []
+    words = []
+    for inner_list in table_data:
+        col_widths.append(len(inner_list))
+        for word in inner_list:
+            words.append(len(word))
+    return max(col_widths), max(words)
 
 
 if __name__ == '__main__':
