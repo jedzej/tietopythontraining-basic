@@ -16,15 +16,15 @@ def main():
     pn8 = "123 456 678"
     pn9 = "123456678"
 
-    print(pn1 + " is phone number: {0}".format(is_phone_number(pn1)))
-    print(pn2 + " is phone number: {0}".format(is_phone_number(pn2)))
-    print(pn3 + " is phone number: {0}".format(is_phone_number(pn3)))
-    print(pn4 + " is phone number: {0}".format(is_phone_number(pn4)))
-    print(pn5 + " is phone number: {0}".format(is_phone_number(pn5)))
-    print(pn6 + " is phone number: {0}".format(is_phone_number(pn6)))
-    print(pn7 + " is phone number: {0}".format(is_phone_number(pn7)))
-    print(pn8 + " is phone number: {0}".format(is_phone_number(pn8)))
-    print(pn9 + " is phone number: {0}".format(is_phone_number(pn9)))
+    print("{0:15s} is phone number: {1}".format(pn1, is_phone_number(pn1)))
+    print("{0:15s} is phone number: {1}".format(pn2, is_phone_number(pn2)))
+    print("{0:15s} is phone number: {1}".format(pn3, is_phone_number(pn3)))
+    print("{0:15s} is phone number: {1}".format(pn4, is_phone_number(pn4)))
+    print("{0:15s} is phone number: {1}".format(pn5, is_phone_number(pn5)))
+    print("{0:15s} is phone number: {1}".format(pn6, is_phone_number(pn6)))
+    print("{0:15s} is phone number: {1}".format(pn7, is_phone_number(pn7)))
+    print("{0:15s} is phone number: {1}".format(pn8, is_phone_number(pn8)))
+    print("{0:15s} is phone number: {1}".format(pn9, is_phone_number(pn9)))
 
 
 def is_phone_number(phone_number):
