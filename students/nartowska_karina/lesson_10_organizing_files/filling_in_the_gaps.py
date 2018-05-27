@@ -20,11 +20,11 @@ def filling_in_the_gaps():
 
     for i in range(len(tab)):
         if i < 9:
-            new.append(prefix + '00' + str(i+1) + suffix)
+            new.append(prefix + '00' + str(i + 1) + suffix)
         elif i >= 9 & i < 99:
-            new.append(prefix + '0' + str(i+1) + suffix)
+            new.append(prefix + '0' + str(i + 1) + suffix)
         else:
-            new.append(prefix + str(i+1) + suffix)
+            new.append(prefix + str(i + 1) + suffix)
     for i in range(len(tab)):
         if new[i] != tab:
             os.replace(tab[i], new[i])
