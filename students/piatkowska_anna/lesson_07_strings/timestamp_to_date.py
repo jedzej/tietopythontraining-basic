@@ -21,7 +21,7 @@ def seconds_in_year(year):
 
 
 def timestamp_to_date1(whole_seconds):
-    date = datetime.fromtimestamp(int(whole_seconds))
+    date = datetime.utcfromtimestamp(int(whole_seconds))
     return '{:%Y %B %d %H:%M:%S}'.format(date)
 
 
