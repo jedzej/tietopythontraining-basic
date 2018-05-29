@@ -1,20 +1,21 @@
 #!/usr/bin/env python3
 
 
-def comma_code(list):
-    num_of_elements = len(list)
-    out_string = ''
+def comma_code(in_list):
+    num_of_elements = len(in_list)
 
-    if num_of_elements > 1:
-        for i in range(num_of_elements - 1):
-            out_string += list[i] + ', '
+    if num_of_elements == 0:
+        return ""
+    if num_of_elements == 1:
+        return in_list[0]
 
-        out_string = out_string[:-2] + ' and ' + list[num_of_elements - 1]
+    out_str = ', '.join(in_list)
+    last_comma = out_str.rfind(',')
 
-    elif num_of_elements > 0:
-        out_string = list[0]
+    out_str = '{} and {}'.format(
+        out_str[:last_comma], out_str[last_comma + 2:])
 
-    return out_string
+    return out_str
 
 
 def main():

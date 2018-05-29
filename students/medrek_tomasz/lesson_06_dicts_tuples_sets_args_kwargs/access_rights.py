@@ -1,14 +1,16 @@
 #!/usr/bin/env python3
 
 
-OPERATIONS_PERMS = {'write': 'W', 'read': 'R', 'execute': 'X'}
+OPERATIONS = {'write': 'W', 'read': 'R', 'execute': 'X'}
 access_rights_database = {}
 
 
 def check_access_right(operation, file):
-    if file in access_rights_database.keys()\
-            and operation in OPERATIONS_PERMS.keys():
-        if OPERATIONS_PERMS[operation] in access_rights_database[file]:
+    operation_on_file = OPERATIONS.get(operation)
+    file_access_rights = access_rights_database.get(file)
+
+    if operation_on_file and file_access_rights:
+        if operation_on_file in file_access_rights:
             return "OK"
         else:
             return "Access denied"
