@@ -1,4 +1,19 @@
 import re
+import pytest
+
+
+class TestPhoneNumber:
+    @pytest.mark.parametrize("phone", [
+        '666-666-666',
+        '666666666',
+        '48-666-666-666',
+        '666 666 666',
+        '48 666 666 666',
+        'string',
+        'raz-dwa-trzy'
+    ])
+    def test_valid_phone(self, phone):
+        assert phone_validator(phone)
 
 
 def phone_validator(number):
@@ -6,12 +21,7 @@ def phone_validator(number):
     mo = regex.search(number)
     if mo is not None:
         print(mo.group())
+        return True
     else:
         print('Wrong phone number')
-
-
-phone_validator('666-666-666')
-phone_validator('666666666')
-phone_validator('48-666-666-666')
-phone_validator('666 666 666')
-phone_validator('48 666 666 666')
+        return False

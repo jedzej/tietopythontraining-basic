@@ -1,4 +1,17 @@
 import re
+import pytest
+
+
+class TestPassword:
+    @pytest.mark.parametrize("password", [
+        '123456Az@',
+        'R1ssdf#x',
+        '111',
+        'R@z1',
+        '12-132AAa'
+    ])
+    def test_password(self, password):
+        assert strong_password_detection(password)
 
 
 def strong_password_detection(password):
@@ -7,12 +20,7 @@ def strong_password_detection(password):
 
     if mo is not None:
         print('Correct password')
+        return True
     else:
         print('Incorrect password')
-
-
-strong_password_detection('123456Az@')
-strong_password_detection('R1ssdf#x')
-strong_password_detection('111')
-strong_password_detection('R@z1')
-strong_password_detection('12-132AAa')
+        return False
