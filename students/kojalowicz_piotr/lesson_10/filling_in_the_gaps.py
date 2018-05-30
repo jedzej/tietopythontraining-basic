@@ -1,47 +1,39 @@
-import glob
-import os
 import re
-
-dir_path = "test_tree2/"
-prefix = "spam"
-sufix = ".txt"
-path_format = dir_path + prefix + "*" + sufix
-enumerate_pattern = re.compile(r'.*(\d{3})' + sufix)
-files_dictionary = {}
+import os
 
 
-def fill_files_dictionary():
-    for path in glob.glob(path_format, recursive=True):
-        if enumerate_pattern.match(path):
-            id = int(enumerate_pattern.match(path).group(1))
-            files_dictionary[id] = path
+def filling_in_the_gaps():
+    prefix = 'spam'
+    suffix = '.txt'
+    folder_path = os.getcwd()
+    regex = re.compile(prefix + r'.*(\d{3})' + suffix)
+    tab = []
+    new = []
 
+    for folder, subfolders, files in os.walk(folder_path):
+        for file in files:
+            search = re.search(regex, file)
+            if search is not None:
+                tab.append(file)
 
-def print_files(sorted_ids):
-    for i in sorted_ids:
-        print("File id: " + str(i))
+    tab = sorted(tab)
 
+    for i in range(len(tab)):
+        if i < 9:
+            new.append(prefix + '00' + str(i + 1) + suffix)
+        elif i >= 9 & i < 99:
+            new.append(prefix + '0' + str(i + 1) + suffix)
+        else:
+            new.append(prefix + str(i + 1) + suffix)
 
-def add_gap(sorted_ids):
-    gap = int(input("\nChoose on of above ids to add gap: "))
-    if gap not in sorted_ids:
-        print("Such id doesn't exist")
-        exit()
-
-    for i in reversed(sorted_ids):
-        path = files_dictionary[i]
-        destination = dir_path + prefix + str(i + 1).zfill(3) + sufix
-        os.rename(path, destination)
-        if i == gap:
-            break
+    for i in range(len(tab)):
+        if new[i] != tab:
+            os.replace(tab[i], new[i])
 
 
 def main():
-    fill_files_dictionary()
-    sorted_ids = sorted(files_dictionary.keys())
-    print_files(sorted_ids)
-    add_gap(sorted_ids)
+    filling_in_the_gaps()
 
 
 if __name__ == "__main__":
-    51 + main()
+    main()
