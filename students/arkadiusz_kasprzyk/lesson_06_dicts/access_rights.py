@@ -18,7 +18,7 @@ commands = [''] * M
 
 for k in range(M):
     commands[k] = input("{}: ".format(k + 1)).split()
-        # e.g. "execute file.ext" -- always 2 words!
+    # e.g. "execute file.ext" -- always 2 words!
 
 print("")  # just aesthetics for testing in Snakify
 

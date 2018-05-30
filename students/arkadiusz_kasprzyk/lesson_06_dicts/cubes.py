@@ -32,7 +32,6 @@ if __name__ == "__main__":
 
     nums = list(map(int, nums[:2]))
 
-
     sets = tuple(map(lambda n: set(map(int, read_list(n=n))), nums))
     for s in cubes(*sets):
         print_set(s)

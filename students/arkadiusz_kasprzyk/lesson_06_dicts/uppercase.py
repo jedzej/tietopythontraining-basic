@@ -19,14 +19,16 @@ def capitalize_word(word):
     capitalize_word("_spam")        # '_spam'
     capitalize_word(" spam")        # ' spam'
     capitalize_word("_spam eggs")   # '_spam eggs'
-
     """
-    word0 = word[0]
-    char0 = ord(word0)
-    if char0 in range(97, 123):
-        word0 = chr(char0 - 32)
+    if len(word) > 0:
+        word0 = word[0]
+        char0 = ord(word0)
+        if char0 in range(97, 123):
+            word0 = chr(char0 - 32)
 
-    word_cap = word0 + word[1:]
+        word_cap = word0 + word[1:]
+    else:
+        word_cap = ""
     return word_cap
 
 
@@ -46,24 +48,14 @@ def capitalize(text):
     capitalize("spam and eggs")     # 'Spam And Eggs'
     capitalize(" spam and eggs")    # ' Spam And Eggs'
     capitalize("spam and eggs ")    # 'Spam And Eggs '
-    capitalize("?sPam aNd egGs ")   # '?sPam ANd EgGs '
+    capitalize("?sPam aNd eegGs ")  # '?sPam ANd EgGs '
     capitalize("  spam  .eGgs . ")  # '  Spam  .eGgs . '
-    capitalize(" spam   .eGgs    spam      eggS ")  # '  Spam  .eGgs . '
+    capitalize(" spam   .eGgs    spam      eggS ")  # ' Spam   .eGgs    Spam      EggS '
     """
-    text_cap = ""
-    a = 0
-    n = len(text)
-    while a < n:
-        step = text[a:].find(" ") + 1
-        if step:
-            b = a + step
-            text_cap += capitalize_word(text[a:b])
-            a = b
-        else:
-            text_cap += capitalize_word(text[a:])
-            break
-    return text_cap
-
+    words = text.split(" ")
+    words = list(map(capitalize_word, words))
+    return " ".join(words)
+    #return words
 
 if __name__ == "__main__":
 
