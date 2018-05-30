@@ -8,18 +8,12 @@ def cubes(aset, bset):
     return sets_inter, aset_only, bset_only
 
 
-def into_set(n=0, aset=set()):
-    """
-    Examples
-    --------
-    into_set()
-    into_set(2)
-    """
-    print("Enter elements of the set (only integers!): ")
+def read_list(message="Enter elements: ", n=1):
+    print(message)
+    lst = []
     for k in range(n):
-        aset |= {int(input("{}: ".format(k + 1)))}
-    print(aset)
-    return aset
+        lst.append(input("{}: ".format(k + 1)))
+    return lst
 
 
 def print_set(aset):
@@ -34,10 +28,11 @@ if __name__ == "__main__":
 
     nums = []
     while len(nums) < 2:
-        nums += input("Give numbers of elements in sets: ").split(" ")
+        nums += input("Give numbers of elements in sets: ").split()
 
-    nums = nums[:2]
-    nums = [int(n) for n in nums]
+    nums = list(map(int, nums[:2]))
 
-    for s in cubes(into_set(nums[0], set()), into_set(nums[1], set())):
+
+    sets = tuple(map(lambda n: set(map(int, read_list(n=n))), nums))
+    for s in cubes(*sets):
         print_set(s)

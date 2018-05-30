@@ -3,7 +3,7 @@
 N = int(input("Give N: "))
 cities_countries = dict()
 for n in range(N):
-    nn = input("{}: ".format(n + 1)).split(" ")
+    nn = input("{}: ".format(n + 1)).split()
     country = nn[0]
     for city in nn[1:]:
         cities_countries[city] = country

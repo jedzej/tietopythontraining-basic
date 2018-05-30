@@ -41,7 +41,6 @@ def logger_wrapper(foo, *args, **kwargs):
     logger_wrapper(bar, *[1, 2], **{'c': 'c', 'd': 'd', 'e': 'e'})
         # as for foo()
     """
-
     args_inspector(*args, **kwargs)
 
     print()

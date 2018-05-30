@@ -1,15 +1,18 @@
+# guess_the_number.py
+
 import random
 
 
 def guess(N):
-    print("Give your guess (number between 1 " +
-          "and {} or one of '0', '?', 'h', 'help' for help):".format(N))
-    guesset = input("").split(" ")
+
+    prompt = "Give your guess (number between 1 " + \
+             "and {} or one of '0', '?', 'h', 'help' for help):".format(N)
+    guesset = input(prompt).split()
     if guesset[0].lower() in {'0', '?', 'h', 'help'}:
         geusset = set()
     else:
-        guesset = set(guesset) - set("")
-        geusset = set([int(num) for num in guesset])
+        guesset = set(guesset)
+        geusset = set(map(int, guesset))
     return geusset
 
 

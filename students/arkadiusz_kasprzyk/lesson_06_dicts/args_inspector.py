@@ -18,12 +18,14 @@ def args_inspector(*args, **kwargs):
         aa : 0
         bb : qq
         cc : 1.0
-
     """
     k = 0
     print("args:")
+    """ old
     for arg in args:
         k += 1
+    """
+    for k, arg in enumerate(args):
         print("{} : {}".format(k, arg))
 
     print("\nkwargs:")

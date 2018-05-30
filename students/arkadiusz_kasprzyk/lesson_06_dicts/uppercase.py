@@ -19,6 +19,7 @@ def capitalize_word(word):
     capitalize_word("_spam")        # '_spam'
     capitalize_word(" spam")        # ' spam'
     capitalize_word("_spam eggs")   # '_spam eggs'
+
     """
     word0 = word[0]
     char0 = ord(word0)
@@ -47,6 +48,7 @@ def capitalize(text):
     capitalize("spam and eggs ")    # 'Spam And Eggs '
     capitalize("?sPam aNd egGs ")   # '?sPam ANd EgGs '
     capitalize("  spam  .eGgs . ")  # '  Spam  .eGgs . '
+    capitalize(" spam   .eGgs    spam      eggS ")  # '  Spam  .eGgs . '
     """
     text_cap = ""
     a = 0
