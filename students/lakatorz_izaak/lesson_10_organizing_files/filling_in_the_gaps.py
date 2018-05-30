@@ -38,4 +38,3 @@ for i in range(min(numbers), max(numbers)):
                 break
             j = j + 1
         shutil.move(path + pattern + str(j) + '.txt', test)
-
