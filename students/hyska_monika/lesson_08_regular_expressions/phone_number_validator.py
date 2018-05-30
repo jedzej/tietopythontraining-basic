@@ -5,6 +5,7 @@
     - hypen-separated
     - 9-digit format
     - optional country prefix
+- tests: phone_number_validator_pytest.py
 
 eg. correct numbers:
 +48 600 600 600
@@ -45,100 +46,10 @@ def check_phone_number(phone_number):
         return False
 
 
-phone_nbr = input('Put phone number: ')
-check_phone_number(phone_nbr)
+def main():
+    phone_nbr = input('Put phone number: ')
+    check_phone_number(phone_nbr)
 
-"""
-# ---------- tests ---------
-# ---------- correct cases ----------
-print('\ncorrect:')
-phone_nbr = '+48 600 600 600'
-print('\nPhone Number: ', phone_nbr)
-check_phone_number(phone_nbr)
 
-phone_nbr = '+48 600-600-600'
-print('\nPhone Number: ', phone_nbr)
-check_phone_number(phone_nbr)
-
-phone_nbr = '0048 600 600 600'
-print('\nPhone Number: ', phone_nbr)
-check_phone_number(phone_nbr)
-
-phone_nbr = '(+48) 600 600 600'
-print('\nPhone Number: ', phone_nbr)
-check_phone_number(phone_nbr)
-
-phone_nbr = '(+48) 600-600-600'
-print('\nPhone Number: ', phone_nbr)
-check_phone_number(phone_nbr)
-
-phone_nbr = '(0048) 600 600 600'
-print('\nPhone Number: ', phone_nbr)
-check_phone_number(phone_nbr)
-
-phone_nbr = '(0048) 600-600-600'
-print('\nPhone Number: ', phone_nbr)
-check_phone_number(phone_nbr)
-
-phone_nbr = '(0048)600 600 600'
-print('\nPhone Number: ', phone_nbr)
-check_phone_number(phone_nbr)
-
-phone_nbr = '(0048)600-600-600'
-print('\nPhone Number: ', phone_nbr)
-check_phone_number(phone_nbr)
-
-phone_nbr = '600-600-600'
-print('\nPhone Number: ', phone_nbr)
-check_phone_number(phone_nbr)
-
-phone_nbr = '600 600 600'
-print('\nPhone Number: ', phone_nbr)
-check_phone_number(phone_nbr)
-
-phone_nbr = '+48 600600600'
-print('\nPhone Number: ', phone_nbr)
-check_phone_number(phone_nbr)
-
-phone_nbr = '(0048) 600600600'
-print('\nPhone Number: ', phone_nbr)
-check_phone_number(phone_nbr)
-
-phone_nbr = '(0048)600600600'
-print('\nPhone Number: ', phone_nbr)
-check_phone_number(phone_nbr)
-
-phone_nbr = '0048 600600600'
-print('\nPhone Number: ', phone_nbr)
-check_phone_number(phone_nbr)
-
-phone_nbr = '(+48)600600600'
-print('\nPhone Number: ', phone_nbr)
-check_phone_number(phone_nbr)
-
-# ---------- incorrect cases ----------
-print('\nincorrect:')
-phone_nbr = '+48600 600 600'
-print('\nPhone Number: ', phone_nbr)
-check_phone_number(phone_nbr)
-
-phone_nbr = '0048600 600 600'
-print('\nPhone Number: ', phone_nbr)
-check_phone_number(phone_nbr)
-
-phone_nbr = '(+48) 600-600-600-700'
-print('\nPhone Number: ', phone_nbr)
-check_phone_number(phone_nbr)
-
-phone_nbr = '600 600'
-print('\nPhone Number: ', phone_nbr)
-check_phone_number(phone_nbr)
-
-phone_nbr = '+482 600 600 600'
-print('\nPhone Number: ', phone_nbr)
-check_phone_number(phone_nbr)
-
-phone_nbr = '(48) 600 600 600'
-print('\nPhone Number: ', phone_nbr)
-check_phone_number(phone_nbr)
-"""
+if __name__ == '__main__':
+    main()

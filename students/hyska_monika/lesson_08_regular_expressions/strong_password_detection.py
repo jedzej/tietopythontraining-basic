@@ -5,6 +5,7 @@ rules:
     min 1 digits,
     uppercase letter,
     lowercase letter)
+- tests: strong_password_detection_pytest.py
 """
 import re
 
@@ -23,33 +24,16 @@ def password_check(password):
                        'missing lowercase': lowercase_error}
     result = [k for k, v in password_status.items() if v is True]
     print(', '.join(result))
-    return password_ok
+    if password_ok is True:
+        return True
+    else:
+        return False
 
 
-password = input('Put password:')
-password_check(password)
+def main():
+    password = input('Put password:')
+    password_check(password)
 
-"""
-#----------tests----------
-password = 'kslakji'
-print('\nPassword: ', password)
-password_check(password)
-password = 'kslakijisssss'
-print('\nPassword: ', password)
-password_check(password)
-password = 'kslakijissWWs'
-print('\nPassword: ', password)
-password_check(password)
-password = 'kslakijisss4sss'
-print('\nPassword: ', password)
-password_check(password)
-password = 'kslakijissssHHHss'
-print('\nPassword: ', password)
-password_check(password)
-password = 'ksl66akijRRRs4sss'
-print('\nPassword: ', password)
-password_check(password)
-password = 'jhjk&***hbhkhjVHGGH67'
-print('\nPassword: ', password)
-password_check(password)
-"""
+
+if __name__ == '__main__':
+    main()
