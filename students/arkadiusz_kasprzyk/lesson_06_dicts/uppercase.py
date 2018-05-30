@@ -50,12 +50,13 @@ def capitalize(text):
     capitalize("spam and eggs ")    # 'Spam And Eggs '
     capitalize("?sPam aNd eegGs ")  # '?sPam ANd EgGs '
     capitalize("  spam  .eGgs . ")  # '  Spam  .eGgs . '
-    capitalize(" spam   .eGgs    spam      eggS ")  # ' Spam   .eGgs    Spam      EggS '
+    capitalize(" spam   .eGgs    spam      eggS ")
+                                    # ' Spam   .eGgs    Spam      EggS '
     """
     words = text.split(" ")
     words = list(map(capitalize_word, words))
     return " ".join(words)
-    #return words
+
 
 if __name__ == "__main__":
 
