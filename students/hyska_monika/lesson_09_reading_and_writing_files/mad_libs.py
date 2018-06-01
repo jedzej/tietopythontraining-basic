@@ -20,7 +20,7 @@ def set_words_on_file(file_name, word_to_replace):
         for elem in all_words:
             if elem in word_to_replace:
                 print("Enter " + elem + ": ")
-                new_word = input(str())
+                new_word = input()
                 file_text = file_text.replace(elem, new_word)
         changed_file.write(file_text)
         print("Changed file:\n" + file_text)
