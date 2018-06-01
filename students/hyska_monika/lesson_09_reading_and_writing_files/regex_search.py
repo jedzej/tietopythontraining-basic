@@ -4,13 +4,12 @@ searches for any line that matches a user-supplied regular expression.
 The results should be printed to the screen.
 """
 
-from os import listdir
-from os.path import isfile, join, os
 import re
+import os
 
 
 def files_in_path(path):
-    only_files = [f for f in listdir(path) if isfile(join(path, f))]
+    only_files = [f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]
     return only_files
 
 
