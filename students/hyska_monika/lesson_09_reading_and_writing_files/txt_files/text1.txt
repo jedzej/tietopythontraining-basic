@@ -1,2 +1,4 @@
 The ADJECTIVE panda walked to the NOUN ADVERB and then VERB. A nearby NOUN was
 unaffected by these events.
+The #ADJECTIVE% panda walked to the -NOUN !ADVERB and then =VERB. A nearby (NOUN) was
+unaffected by these events.
