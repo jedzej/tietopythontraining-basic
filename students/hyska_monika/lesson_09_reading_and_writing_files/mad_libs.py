@@ -28,9 +28,14 @@ def set_words_on_file(file_name, word_to_replace):
 
 
 def prepare_file_name(file_name):
-    new_file_name = str(os.path.splitext(file_name)[0]) + \
+    new_file_name = "{0}_{1}_{2}.txt".format(
+        str(os.path.splitext(file_name)[0]),
+        str(date.today()),str(random.randrange(999)))
+    """
+    new_file_name = str(os.path.splitext(file_name)[0]) +\
                     "_" + str(date.today()) + "_" +\
                     str(random.randrange(999)) + ".txt"
+    """
     return new_file_name
 
 
