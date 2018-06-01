@@ -9,7 +9,8 @@ import os
 
 
 def files_in_path(path):
-    only_files = [f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]
+    only_files = [f for f in os.listdir(path)
+                  if os.path.isfile(os.path.join(path, f))]
     return only_files
 
 
