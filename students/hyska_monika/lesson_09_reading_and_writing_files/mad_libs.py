@@ -40,8 +40,11 @@ def remove_special_characters(file_text):
     return all_words
 
 
-def __main__():
+def main():
     my_file_name = "./txt_files/text1.txt"
     base_words = ["ADJECTIVE", "NOUN", "ADVERB", "VERB"]
     set_words_on_file(my_file_name, base_words)
 
+
+if __name__ == '__main__':
+    main()
