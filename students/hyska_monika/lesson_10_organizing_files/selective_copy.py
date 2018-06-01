@@ -26,6 +26,18 @@ def search_files_list(path, ext1, ext2=None):
     return files_list
 
 
+# function search files on selected folder for selected extensions
+def search_files_list2(path, *extensions):
+    files_list = []
+    print('Found files:')
+    for folder_name, sub_folders, file_names in os.walk(path):
+        for file_name in file_names:
+            if file_name.endswith(extensions):
+                print(folder_name + '\\' + file_name)
+                files_list.append(os.path.join(folder_name, file_name))
+    return files_list
+
+
 # function copy files from list to new location
 def copy_files_to_new_location(files_list, new_location):
     if not os.path.exists(new_location):
@@ -37,6 +49,6 @@ def copy_files_to_new_location(files_list, new_location):
             shutil.copy(file, new_location)
 
 
-my_files_list = search_files_list('.\\folder', '.pdf', '.JPG')
+my_files_list = search_files_list2('.\\folder', '.pdf', '.JPG')
 # my_files_list = search_files_list('.\\folder', '.pdf')
 copy_files_to_new_location(my_files_list, 'new_folder')
