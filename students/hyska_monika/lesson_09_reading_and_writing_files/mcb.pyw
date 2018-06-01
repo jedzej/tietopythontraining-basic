@@ -16,18 +16,21 @@ import shelve, pyperclip, sys
 
 
 mcbShelf = shelve.open("mcb")
+keyword = sys.argv
+command = keyword[1].lower()
+sub_command = keyword[2].lower()
 
-if len(sys.argv) == 3 and sys.argv[1].lower() == 'save':
-    mcbShelf[sys.argv[2]] = pyperclip.paste()
-elif len(sys.argv) == 2:
-    if sys.argv[1].lower() == 'list':
+if len(keyword) == 3 and command == 'save':
+    mcbShelf[keyword[2]] = pyperclip.paste()
+elif len(keyword) == 2:
+    if command == 'list':
         pyperclip.copy(str(list(mcbShelf.keys())))
-    elif sys.argv[1] in mcbShelf:
-        pyperclip.copy(mcbShelf[sys.argv[1]])
-elif len(sys.argv) == 3 and sys.argv[1].lower() == 'delete':
-    if sys.argv[2].lower() == 'all':
+    elif keyword[1] in mcbShelf:
+        pyperclip.copy(mcbShelf[keyword[1]])
+elif len(keyword) == 3 and command == 'delete':
+    if sub_command == 'all':
         mcbShelf.clear()
-    elif sys.argv[2] in mcbShelf:
-        del mcbShelf[sys.argv[2]]
+    elif keyword[2] in mcbShelf:
+        del mcbShelf[keyword[2]]
 
 mcbShelf.close()
