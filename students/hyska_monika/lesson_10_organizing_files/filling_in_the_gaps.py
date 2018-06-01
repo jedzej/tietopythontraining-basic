@@ -27,9 +27,9 @@ def search_prefix_add_gaps(path, prefix):
         number += 1
 
 
-my_prefix = re.compile(r'(spam)(\d\d\d)(.txt)')
+my_prefix = re.compile(r'(spam)(\d\d\d)(.txt)$')
 search_prefix_add_gaps('.\\folder\\txt_files', my_prefix)
 
 print('')
-my_prefix = re.compile(r'(ada)(\d\d\d)(.doc)')
+my_prefix = re.compile(r'(ada)(\d\d\d)(.doc)$')
 search_prefix_add_gaps('.\\folder\\txt_files', my_prefix)
