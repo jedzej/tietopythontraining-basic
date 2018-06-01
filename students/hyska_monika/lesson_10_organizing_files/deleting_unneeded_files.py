@@ -12,7 +12,7 @@ def search_files_folders_bigger_size(path, size):
     size_in_bytes = size * 1048576
     files_list = []
     folders_list = []
-    find_files_folder_bigger_size(files_list, folders_list, path, size_in_bytes)
+    find_files_folder_bigger(files_list, folders_list, path, size_in_bytes)
     print('Folders bigger then', size, 'mb:')
     print('\n'.join(map(str, folders_list)))
     print('Files bigger then', size, 'mb:')
@@ -20,7 +20,7 @@ def search_files_folders_bigger_size(path, size):
     return folders_list, files_list
 
 
-def find_files_folder_bigger_size(files_list, folders_list, path, size_in_bytes):
+def find_files_folder_bigger(files_list, folders_list, path, size_in_bytes):
     for folder_name, sub_folders, file_names in os.walk(path):
         folder_size = 0
         for file_name in file_names:
