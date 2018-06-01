@@ -8,15 +8,14 @@ The results should be printed to the screen and saved to a new text file.
 import os
 from datetime import date
 import random
+import re
 
 
 def set_words_on_file(file_name, word_to_replace):
     file_text = open(file_name).read()
     print("My file:\n" + file_text)
-    my_file_without_dots = file_text.replace(".", "")
-    all_words = my_file_without_dots.split(" ")
-    new_file_name = str(os.path.splitext(file_name)[0]) + \
-        "_" + str(date.today()) + "_" + str(random.randrange(999)) + ".txt"
+    all_words = remove_special_characters(file_text)
+    new_file_name = prepare_file_name(file_name)
     with open(new_file_name, "w+") as changed_file:
         for elem in all_words:
             if elem in word_to_replace:
@@ -28,6 +27,21 @@ def set_words_on_file(file_name, word_to_replace):
         changed_file.close()
 
 
-my_file_name = "./txt_files/text1.txt"
-base_words = ["ADJECTIVE", "NOUN", "ADVERB", "VERB"]
-set_words_on_file(my_file_name, base_words)
+def prepare_file_name(file_name):
+    new_file_name = str(os.path.splitext(file_name)[0]) + \
+                    "_" + str(date.today()) + "_" + str(random.randrange(999)) + ".txt"
+    return new_file_name
+
+
+def remove_special_characters(file_text):
+    file_without_special_characters = re.sub('[^ a-zA-Z0-9]', '', file_text)
+    # my_file_without_dots = file_text.replace(".", "")
+    all_words = file_without_special_characters.split(" ")
+    return all_words
+
+
+def __main__():
+    my_file_name = "./txt_files/text1.txt"
+    base_words = ["ADJECTIVE", "NOUN", "ADVERB", "VERB"]
+    set_words_on_file(my_file_name, base_words)
+
