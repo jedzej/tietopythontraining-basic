@@ -3,6 +3,6 @@ import time
 
 
 timestamp = time.mktime(datetime.now().timetuple())
+time = datetime.fromtimestamp(timestamp)
 print("Time stamp: ", timestamp)
-print("Converted timestamp: ", 
-	datetime.fromtimestamp(timestamp).strftime('%Y-%m-%d'))
+print("Converted timestamp: ", time.strftime('%Y-%m-%d'))
