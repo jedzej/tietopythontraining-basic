@@ -10,12 +10,12 @@ def check_access(rights):
 n = int(input())
 files = {}
 
-for i in range(n):
+for _ in range(n):
     names, *access = input().split()
     files[names] = set(access)
 
 m = int(input())
-for i in range(m):
+for _ in range(m):
     method, file_name = input().split()
     for names, access in files.items():
         if file_name in names:
