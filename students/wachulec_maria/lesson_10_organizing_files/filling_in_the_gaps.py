@@ -41,11 +41,11 @@ def change_name(list_of_all, new_names, base_path):
         print("Renaming...")
         for i in range(len(list_of_all)):
             shutil.move(os.path.join(base_path, list_of_all[i]),
-                        os.path.join(base_path, 'r_'
-                                     + new_names[list_of_all[i]]))
+                        os.path.join(base_path, 'r_' +
+                                     new_names[list_of_all[i]]))
         for i in range(len(list_of_all)):
-            shutil.move(os.path.join(base_path, 'r_'
-                                     + new_names[list_of_all[i]]),
+            shutil.move(os.path.join(base_path, 'r_' +
+                                     new_names[list_of_all[i]]),
                         os.path.join(base_path, new_names[list_of_all[i]]))
     else:
         print("Cancel")
