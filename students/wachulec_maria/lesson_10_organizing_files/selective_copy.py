@@ -5,8 +5,7 @@ import shutil
 def solve_conflicts(file_name, new_file, extension):
     copy_file_name = file_name
     while copy_file_name in os.listdir(new_file):
-        copy_file_name = copy_file_name[:-len(extension)] + str(1) +\
-                         extension
+        copy_file_name = copy_file_name[:-len(extension)] + str(1) + extension
     return file_name
 
 
