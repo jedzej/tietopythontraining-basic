@@ -8,9 +8,10 @@ import sys
 
 
 def check_arg(args):
-    parser = argparse.ArgumentParser(description='Script for selectively copying files')
+    parser = argparse.ArgumentParser(
+        description='Script for selectively copying files')
     parser.add_argument('-o', '--output_dir',
-                        help='Output directory where copied files will be stored',
+                        help='Output dir where copied files will be stored',
                         default="new_folder")
     parser.add_argument('-e', '--extension',
                         action='append',

@@ -7,7 +7,8 @@ import sys
 
 
 def check_arg(args):
-    parser = argparse.ArgumentParser(description='Script to search for regex in all .txt files')
+    parser = argparse.ArgumentParser(
+        description='Script to search for regex in all .txt files')
     parser.add_argument('-r', '--regex',
                         help='Regex to be searched (for example .*)',
                         required=True)
