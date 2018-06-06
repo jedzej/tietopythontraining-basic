@@ -13,9 +13,8 @@ def logger_wrapper(foo, *args, **kwargs):
     foo(*args, **kwargs)
 
 
-def foo(*args, **kwargs):
+def together(*args, **kwargs):
     print("Foo:\n args:", args, "\n kwargs: ", kwargs)
 
 
-print(sum_all(2, 8, 5.7))
-logger_wrapper(foo, 11, second=2, third='a')
+logger_wrapper(together, 11, second=2, third='a')

@@ -5,9 +5,9 @@ while True:
     number = input()
     if number not in ("YES", "NO", "HELP"):
         a = set(int(s) for s in number.split())
-    if number == "YES":
+    elif number == "YES":
         guess &= a
-    if number == "NO":
+    elif number == "NO":
         guess -= a
     elif number == "HELP":
         break
