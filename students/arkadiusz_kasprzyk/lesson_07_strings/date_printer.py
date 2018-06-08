@@ -1,5 +1,5 @@
 # date_printer.py
 
-from datetime import *
+import datetime as dt
 
-print("{:%Y-%m-%d %H:%M}".format(datetime.now()))
+print("{:%Y-%m-%d %H:%M}".format(dt.datetime.now()))
