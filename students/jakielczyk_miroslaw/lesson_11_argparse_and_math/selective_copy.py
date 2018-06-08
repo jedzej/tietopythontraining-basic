@@ -14,13 +14,13 @@ def create_empty_folder(folder):
 
 def collect_arguments(args=None):
     parser = argparse.ArgumentParser(description='Script to learn basic arg-parse')
-    
+
     parser.add_argument('-R', '--root_folder',
-                        help='provide either relative or absolute path to the root folder',
+                        help='provide relative or absolute path to the root folder',
                         default='..\\lesson_10_organizing_files\\folder_1')
-    
+
     parser.add_argument('-D', '--destination_folder',
-                        help='provide either relative or absolute path to the destination folder',
+                        help='provide relative or absolute path to the destination folder',
                         default='target_folder')
 
     parser.add_argument('-F', '--files_type_ext',
@@ -28,7 +28,7 @@ def collect_arguments(args=None):
                         nargs='+',
                         help='provide files type extension, example: .jpg .pdf .txt',
                         default=['.pdf', '.jpg'])
-    
+
     results = parser.parse_args(args)
 
     return (results.root_folder,

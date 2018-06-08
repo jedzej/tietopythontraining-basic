@@ -6,15 +6,15 @@ import sys
 
 def collect_arguments(args=None):
     parser = argparse.ArgumentParser(description='Script to learn basic arg-parse')
-    
+
     parser.add_argument('-F', '--folder_to_be_searched',
-                        help='provide either relative or absolute path to the searched folder',
+                        help='provide relative or absolute path to the searched folder',
                         default='..\\lesson_09_reading_and_writing_files\\folder_with_text_files')
-    
+
     parser.add_argument('-R', '--regex_expr',
-                        help='regex expression which will be used, default is: \d{2}-\d{3}',
+                        help='regex expr. that will be used, default is: \d{2}-\d{3}',
                         default='\d{2}-\d{3}')
-    
+
     results = parser.parse_args(args)
     return (results.folder_to_be_searched,
             results.regex_expr)

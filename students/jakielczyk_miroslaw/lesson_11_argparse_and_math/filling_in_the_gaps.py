@@ -11,7 +11,7 @@ def collect_arguments(args=None):
     parser = argparse.ArgumentParser(description='Script to learn basic arg-parse')
 
     parser.add_argument('-F', '--source_folder_path',
-                        help='provide either relative or absolute path to the source folder',
+                        help='provide relative or absolute path to the source folder',
                         default='spam_folder')
 
     parser.add_argument('-P', '--prefix',
