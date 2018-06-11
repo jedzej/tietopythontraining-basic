@@ -11,7 +11,7 @@ args = parser.parse_args()
 
 text_files = []
 
-for file in os.listdir(os.getcwd()):
+for file in os.listdir('.'):
     if file.endswith(".txt"):
         text_files.append(file)
 
