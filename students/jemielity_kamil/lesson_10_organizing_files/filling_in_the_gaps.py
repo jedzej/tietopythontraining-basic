@@ -3,7 +3,7 @@ import re
 
 prefix = input('Prefix: ')
 SUFFIX = '.txt'
-PATH = 'C:\\Users\\dige\\Desktop\\tietopythontraining-basic\\students\\jemielity_kamil\\lesson_10_organizing_files'
+PATH = 'C:\\Path\\to\\folder'
 
 files_tab = []
 regex = re.compile(r'^spam\d{3}\.txt$')
