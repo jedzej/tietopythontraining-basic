@@ -22,16 +22,15 @@ def search_prefix_in_files_names(prefix):
 def create_new_names(surfix_len, start_surfix, names_list, split_text_list,
                      gap_in):
     new_names, step = {}, 1
-    for i in range(len(names_list)):
+    for i, name in enumerate(names_list):
         if gap_in == i + step:
             step += 1
         amount_null = surfix_len - len(str(start_surfix + i))
-        new_names[names_list[i]] = (split_text_list[i][1] + '0' *
-                                    amount_null + str(i + step) +
-                                    split_text_list[i][3])
+        new_names[name] = (split_text_list[i][1] + '0' *
+                           amount_null + str(i + step) + split_text_list[i][3])
         print('Renaming "%s" to "%s"...' % (
-            os.path.join(PATH, names_list[i]),
-            os.path.join(PATH, new_names[names_list[i]])))
+            os.path.join(PATH, name),
+            os.path.join(PATH, new_names[name])))
     return new_names
 
 
