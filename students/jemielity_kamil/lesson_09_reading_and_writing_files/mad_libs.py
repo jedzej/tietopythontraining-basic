@@ -1,6 +1,6 @@
-mad_libs_file = open('mad_libs')
-mad_libs_content = mad_libs_file.read()
-mad_libs_file.close()
+with open('mad_libs') as mad_libs_file:
+    mad_libs_content = mad_libs_file.read()
+
 
 dictionary = {'ADJECTIVE': input('Enter an adjective: '),
               'NOUN': input('Enter a noun: '),
@@ -8,8 +8,8 @@ dictionary = {'ADJECTIVE': input('Enter an adjective: '),
               'VERB': input('Enter a verb: ')
               }
 
-for i in dictionary:
-    mad_libs_content = mad_libs_content.replace(i, dictionary[i])
+for old_word, new_word in dictionary.items():
+    mad_libs_content = mad_libs_content.replace(old_word, new_word)
 
 print(mad_libs_content)
 
