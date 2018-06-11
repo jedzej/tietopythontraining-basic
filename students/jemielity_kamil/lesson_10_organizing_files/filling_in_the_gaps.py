@@ -2,13 +2,13 @@ import os
 import re
 
 prefix = input('Prefix: ')
-suffix = '.txt'
-path = 'C:\\Path\\to\\the\folder'
+SUFFIX = '.txt'
+PATH = 'C:\\Users\\dige\\Desktop\\tietopythontraining-basic\\students\\jemielity_kamil\\lesson_10_organizing_files'
 
 files_tab = []
 regex = re.compile(r'^spam\d{3}\.txt$')
 
-for folder, subfolders, files in os.walk(path):
+for _, _, files in os.walk(PATH):
     for file in files:
         mo = re.search(regex, file)
         if mo is not None:
@@ -19,13 +19,8 @@ number_of_files = len(files_tab)
 
 new_names = []
 for i in range(1, number_of_files + 1):
-    if i < 10:
-        new_names.append(prefix + '00' + str(i) + suffix)
-    elif 10 < i < 100:
-        new_names.append(prefix + '0' + str(i) + suffix)
-    else:
-        new_names.append(prefix + str(i) + suffix)
+    new_names.append(prefix + "{:03d}".format(i) + SUFFIX)
 
 for i in range(len(files_tab)):
-    if new_names[i] != files_tab:
-        os.replace(files_tab[i], new_names[i])
+    if new_names[i] != files_tab[i]:
+        os.replace(PATH + '\\' + files_tab[i], PATH + '\\' + new_names[i])
