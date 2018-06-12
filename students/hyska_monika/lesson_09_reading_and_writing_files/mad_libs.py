@@ -9,7 +9,7 @@ import os
 from datetime import date
 import random
 import re
-
+# import tempfile
 
 def set_words_on_file(file_name, word_to_replace):
     file_text = open(file_name).read()
@@ -21,10 +21,12 @@ def set_words_on_file(file_name, word_to_replace):
             if elem in word_to_replace:
                 print("Enter " + elem + ": ")
                 new_word = input()
-                file_text = file_text.replace(elem, new_word)
+                file_text = file_text.replace(elem, new_word, 1)
         changed_file.write(file_text)
         print("Changed file:\n" + file_text)
-        changed_file.close()
+        # With with you don't close the file at the end.
+        # It is automatically closed when leaving the context.
+        #changed_file.close()
 
 
 def prepare_file_name(file_name):
@@ -36,6 +38,8 @@ def prepare_file_name(file_name):
                     "_" + str(date.today()) + "_" +\
                     str(random.randrange(999)) + ".txt"
     """
+    # generate name using tempfile:
+    # new_file_name = next(tempfile._get_candidate_names())
     return new_file_name
 
 
