@@ -11,6 +11,7 @@ import random
 import re
 # import tempfile
 
+
 def set_words_on_file(file_name, word_to_replace):
     file_text = open(file_name).read()
     print("My file:\n" + file_text)
@@ -26,7 +27,7 @@ def set_words_on_file(file_name, word_to_replace):
         print("Changed file:\n" + file_text)
         # With with you don't close the file at the end.
         # It is automatically closed when leaving the context.
-        #changed_file.close()
+        # changed_file.close()
 
 
 def prepare_file_name(file_name):
