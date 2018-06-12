@@ -17,4 +17,5 @@ extension = args.extension
 for foldername, _, filenames in os.walk(FOLDER_PATH):
     for filename in filenames:
         if filename.endswith(extension):
-            shutil.copy(os.path.join(foldername, filename), PATH_TO_FINAL_DESTINATION)
+            shutil.copy(os.path.join(foldername, filename),
+                        PATH_TO_FINAL_DESTINATION)
