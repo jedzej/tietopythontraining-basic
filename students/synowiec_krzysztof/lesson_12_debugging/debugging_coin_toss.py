@@ -5,35 +5,31 @@ logging.basicConfig(level=logging.DEBUG,
 
 HEADS = 'heads'
 TAILS = 'tails'
+coin_sides = (HEADS, TAILS)
 
 
 def main():
-    guess = ''
-    while guess not in (HEADS, TAILS):
-        print('Guess the coin toss! Enter heads or tails:')
-        guess = input()
-    toss = random.randint(0, 1)
-    logging.debug('Drawn int value {}'.format(toss))
-    conv_guess = convert(guess)
-    logging.debug('Choosen value after conversion {}'.format(conv_guess))
-    if toss == conv_guess:
+    guess = choose_side()
+    toss = coin_sides[random.randint(0, 1)]
+    logging.debug('Drawn value {}'.format(toss))
+    if toss == guess:
         print('You got it!')
     else:
         print('Nope! Guess again!')
-        guess = input()
-        conv_guess = convert(guess)
-        logging.debug('Choosen value after conversion {}'.format(conv_guess))
-        if toss == conv_guess:
+        guess = choose_side()
+        if toss == guess:
             print('You got it!')
         else:
             print('Nope. You are really bad at this game.')
 
 
-def convert(guess):
-    if guess == HEADS:
-        return 0
-    else:
-        return 1
+def choose_side():
+    guess = ''
+    while guess not in coin_sides:
+        print('Guess the coin toss! Enter heads or tails:')
+        guess = input()
+    logging.debug('Chosen value {}'.format(guess))
+    return guess
 
 
 if __name__ == '__main__':
