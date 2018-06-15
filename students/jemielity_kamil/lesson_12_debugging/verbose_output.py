@@ -7,7 +7,8 @@ import logging
 parser = argparse.ArgumentParser(description='Regex search')
 
 parser.add_argument('-v', action='store',
-                    dest='verbose', help='Verbose level - disabled, warning, info',
+                    dest='verbose', help='Verbose level - '
+                                         'disabled, warning, info',
                     choices=['disabled', 'warning', 'info'])
 
 parser.add_argument('-r', action='store',

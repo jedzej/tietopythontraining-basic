@@ -1,7 +1,8 @@
 import random
 import logging
 
-logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.DEBUG,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
 logging.disable(logging.CRITICAL)
 
 guess = ''
@@ -14,7 +15,7 @@ if guess == 'heads':
     guess = 1
 elif guess == 'tails':
     guess = 0
-toss = random.randint(0, 1) # 0 is tails, 1 is heads
+toss = random.randint(0, 1)  # 0 is tails, 1 is heads
 logging.debug('Toss value: ' + str(toss))
 logging.debug('Guess value: ' + str(guess))
 assert toss == 0 or toss == 1, 'toss doesn\'t contain a value of 0 or 1'
@@ -41,6 +42,7 @@ else:
 
 
 # Bugi:
-#   1. statement toss == guess - nigdy nie zostanie spelniony(poprawione)(poprawione)
+#   1. statement toss == guess - nigdy nie
+#   zostanie spelniony(poprawione)(poprawione)
 #   2. zla nazwa zmiennej 'guesss' zamiast 'guess'(poprawione)
 #   3. brak walidacji guessa w drugim input()(poprawione)

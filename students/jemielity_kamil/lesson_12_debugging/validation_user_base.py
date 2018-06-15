@@ -13,7 +13,8 @@ def get_arguments():
 
     parser.add_argument('-v', action='store',
                         dest='verbose', help='Verbose level - disabled, warning, info',
-                        choices=['disabled', 'warning', 'info'], default='disabled')
+                        choices=['disabled', 'warning', 'info'],
+                        default='disabled')
 
     parser.add_argument('-e', '--email', action='store',
                         dest="email", required=True,
@@ -95,7 +96,8 @@ def write_to_file(data):
 
         if flag == 0:
             logging.info('Adding new record to list')
-            list_of_rows.append([data['email'], data['password'], data['phone_number'], data['postal_code']])
+            list_of_rows.append([data['email'], data['password'],
+                                 data['phone_number'], data['postal_code']])
 
     with open('test.csv', 'w') as myfile:
         for list_row in list_of_rows:
