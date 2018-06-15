@@ -11,22 +11,24 @@ import argparse, sys
 
 
 def check_arg(args=None):
-    parser = argparse.ArgumentParser(description='Search files for selected'
-                                                 'extension and copy to chose location')
+    parser = argparse.ArgumentParser(description='Search files for selected '
+                                                 'prefix and change name in order')
     parser.add_argument('-p', '--path',
                         help='path to search files',
                         default='.')
-    parser.add_argument('-pr', '--pefix',
-                        help='search file with put prefix',
+    parser.add_argument('-pr', '--prefix',
+                        help='search file with put prefix, prefix eg.: '
+                             '(spam)(\d\d\d)(.txt)$',
                         required='True')
     results = parser.parse_args(args)
     return (results.path,
-            results.pefix)
+            results.prefix)
 
 
 def search_prefix_add_gaps(path, prefix_not_compiled):
     prefix = re.compile(prefix_not_compiled)
     number = 1
+    print(prefix)
     for file_name in os.listdir(path):
         file_with_prefix = prefix.search(file_name)
         if file_with_prefix is None:
@@ -41,16 +43,6 @@ def search_prefix_add_gaps(path, prefix_not_compiled):
             shutil.move(os.path.join(path, file_name),
                         os.path.join(path, new_file_name))
         number += 1
-
-"""
-my_prefix = re.compile(r'(spam)(\d\d\d)(.txt)$')
-search_prefix_add_gaps('.\\folder\\txt_files', my_prefix)
-
-print('')
-my_prefix = re.compile(r'(ada)(\d\d\d)(.doc)$')
-search_prefix_add_gaps('.\\folder\\txt_files', my_prefix)
-
-"""
 
 
 def main():
