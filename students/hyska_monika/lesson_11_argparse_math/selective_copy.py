@@ -29,8 +29,11 @@ def check_arg(args=None):
 
 # function search files on selected folder for selected extensions
 # and paste files to new location
-def copy_files_to_new_location2(path, paste_path, extensions):
-    extensions = tuple(extensions)
+def copy_files_to_new_location2(path, paste_path, *extensions):
+    extensions = tuple(extensions[0])
+    # zapomnialam jak mozna zapisac tablice w jednej liscie za pomoca sumy
+    # probowalam dojsc do tego, ale juz nie mam pomyslow, prosze napisz
+    # jak to bylo
     if not os.path.exists(paste_path):
         os.makedirs(paste_path)
     print('Copied files:')
