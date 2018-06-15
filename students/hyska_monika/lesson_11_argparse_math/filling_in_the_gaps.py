@@ -7,12 +7,13 @@ spam002.txt). Have the program rename all the later files to close this gap.
 import shutil
 import os
 import re
-import argparse, sys
+import argparse
+import sys
 
 
 def check_arg(args=None):
     parser = argparse.ArgumentParser(description='Search files for selected '
-                                                 'prefix and change name in order')
+                                                 'prefix and change names')
     parser.add_argument('-p', '--path',
                         help='path to search files',
                         default='.')
@@ -48,6 +49,7 @@ def search_prefix_add_gaps(path, prefix_not_compiled):
 def main():
     my_path, prefix = check_arg(sys.argv[1:])
     search_prefix_add_gaps(my_path, prefix)
+
 
 if __name__ == '__main__':
     main()

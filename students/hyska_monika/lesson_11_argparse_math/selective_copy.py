@@ -10,7 +10,8 @@ import argparse, sys
 
 def check_arg(args=None):
     parser = argparse.ArgumentParser(description='Search files for selected'
-                                                 'extension and copy to chose location')
+                                                 'extension and copy to chose '
+                                                 'location')
     parser.add_argument('-p', '--path',
                         help='path to search files',
                         default='.')
@@ -20,7 +21,7 @@ def check_arg(args=None):
     parser.add_argument('-e', '--extension',
                         nargs='*',
                         help='to search file with put extension',
-                        required = 'True')
+                        required='True')
     results = parser.parse_args(args)
     return (results.path,
             results.destination_path,
@@ -43,7 +44,8 @@ def copy_files_to_new_location2(path, paste_path, *extensions):
                 if os.path.isfile(os.path.join(paste_path, file_name)):
                     continue
                 else:
-                    shutil.copy(os.path.join(folder_name, file_name), paste_path)
+                    shutil.copy(os.path.join(folder_name, file_name),
+                                paste_path)
                     print(folder_name + '\\' + file_name +
                           "   -->   " + paste_path + '\\' + file_name)
 
@@ -51,6 +53,7 @@ def copy_files_to_new_location2(path, paste_path, *extensions):
 def main():
     search_my_path, paste_path, extension = check_arg(sys.argv[1:])
     copy_files_to_new_location2(search_my_path, paste_path, extension)
+
 
 if __name__ == '__main__':
     main()
