@@ -47,8 +47,8 @@ We hope you will have a lot of fun learning!
 * [Lesson 9 - Reading and writing files](./course/lesson_09_reading_and_writing_files) -- deadline 2018-05-22
 * [Lesson 10 - Organizing Files](./course/lesson_10_organizing_files) -- 2018-05-29
 * [Lesson 11 - argparse  + math](./course/lesson_11_argparse_and_math) -- 2018-06-05
-* [Lesson 12 - Debugging](./course/lesson_12_debugging) -- 2018-06-12
-* Lesson 13 - Objects and classes
+* [Lesson 12 - Debugging](./course/lesson_12_debugging) -- 2018-06-19
+* [Lesson 13 - Objects and classes](./course/lesson_13_objects_and_classes) -- 2018-06-26
 * Lesson 14 - Decorators + more OOP -- deadline 2018-06-05
 
 
