@@ -5,7 +5,8 @@ Copy these files from whatever location they are in to a new folder.
 """
 import shutil
 import os
-import argparse, sys
+import argparse
+import sys
 
 
 def check_arg(args=None):
