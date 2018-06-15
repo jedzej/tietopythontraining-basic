@@ -12,7 +12,8 @@ def get_arguments():
     parser = argparse.ArgumentParser(description='User base')
 
     parser.add_argument('-v', action='store',
-                        dest='verbose', help='Verbose level - disabled, warning, info',
+                        dest='verbose',
+                        help='Verbose level - disabled, warning, info',
                         choices=['disabled', 'warning', 'info'],
                         default='disabled')
 
