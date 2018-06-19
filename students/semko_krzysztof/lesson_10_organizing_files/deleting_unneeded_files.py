@@ -24,7 +24,8 @@ def find_and_delete(directory):
             size = os.path.getsize(os.path.join(folderName, file))
             if size > 100:
                 print(os.path.join(folderName, file), end=" size: ")
-                print(os.path.getsize(os.path.join(folderName, file)), end=" bytes")
+                print(os.path.getsize(
+                    os.path.join(folderName, file)), end=" bytes")
                 print()
 
                 # Files could be removed with commands below:
