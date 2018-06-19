@@ -24,8 +24,8 @@ def find_and_copy(extension, src, dst):
 
 
 def main():
-    find_and_copy("mp4",  os.getcwd()
-                  + "/selective_copy_dir", os.getcwd() + "/new_folder")
+    find_and_copy("mp4", os.getcwd() + "/selective_copy_dir",
+                  os.getcwd() + "/new_folder")
 
 
 if __name__ == '__main__':
