@@ -19,14 +19,14 @@ logging.basicConfig(level=logging.INFO,
 
 
 def combined_validator(email, password, phone_number, postal_code):
-    logging.info( "Verifying user data")
+    logging.info("Verifying user data")
 
     if is_valid_email(email) and is_strong_password(password) \
             and is_valid_phone_number(phone_number) \
             and is_valid_postal_code(postal_code):
-        logging.info( "Verification passed")
+        logging.info("Verification passed")
     else:
-        logging.warning( "Verification failed")
+        logging.warning("Verification failed")
         raise Exception("One of arguments didn't pass verification.")
 
 
@@ -54,13 +54,13 @@ def save_user_data(email, password, phone_number, postal_code):
     with open(csv_file, 'a') as file:
         writer = csv.writer(file, delimiter=',')
         writer.writerow([email, password, phone_number, postal_code])
-        logging.warning( "User data has been written")
+        logging.warning("User data has been written")
 
     with open(csv_file, 'r') as file:
         reader = csv.reader(file, delimiter=',')
-        logging.info( "Currently we have following rows:")
+        logging.info("Currently we have following rows:")
         for row in reader:
-            logging.info( ' '.join(row))
+            logging.info(' '.join(row))
 
 
 def main():
@@ -75,7 +75,7 @@ def main():
     try:
         combined_validator(email, password, phone_number, postal_code)
     except Exception:
-        logging.warning( "Exception arised, not saving the user data")
+        logging.warning("Exception arised, not saving the user data")
         return
 
     save_user_data(email, password, phone_number, postal_code)
