@@ -2,18 +2,12 @@
 
 import argparse
 import glob
+import logging
 import re
 import sys
 
-
-verbosity = ""
-
-
-def my_print(tag, text):
-    if verbosity == "disabled":
-        return
-    if tag == "warning" or verbosity == "info":
-        print(text)
+logging.basicConfig(level=logging.INFO,
+                    format=' %(asctime)s - %(levelname)s - %(message)s')
 
 
 def check_arg(args):
@@ -28,20 +22,27 @@ def check_arg(args):
                         default='info')
 
     results = parser.parse_args(args)
-    return results.regex, results.log
+
+    if results.log == 'disabled':
+        return results.regex, logging.CRITICAL
+    elif results.log == 'warning':
+        return results.regex, logging.WARNING
+    else:
+        return results.regex, logging.INFO
 
 
 def main():
-    global verbosity
     regex, verbosity = check_arg(sys.argv[1:])
-    my_print("info", "Searching for following regex in .txt files: " + regex)
+    logging.getLogger().setLevel(verbosity)
+
+    logging.info("Searching for following regex in .txt files: " + regex)
     pattern = re.compile(regex)
 
     for path in glob.glob("*.txt"):
         file = open(path, "r")
         for line in file:
             if pattern.match(line):
-                my_print("warning", "line:\n" + line + "from file: " + path
+                logging.warning("line:\n" + line + "from file: " + path
                          + " matches!\n")
 
 
