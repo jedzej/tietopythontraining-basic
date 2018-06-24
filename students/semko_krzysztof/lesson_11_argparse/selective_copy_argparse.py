@@ -5,17 +5,37 @@ searches for files with a certain file extension
 location they are in to a new folder.
 """
 
+import argparse
 import os
 import re
 import shutil
+import sys
 
 
-def find_and_copy(extension, src, dst):
+def args_parameters(args):
+    parser = argparse.ArgumentParser(
+        description='Copy only specific file format:')
+    parser.add_argument('-e', '--extension',
+                        help="extension of the files to copy", required=True)
+    parser.add_argument('-s', '--source', help="source directory",
+                        default=os.getcwd() + "/selective_copy_dir")
+    parser.add_argument('-d', '--destination', help="destination directory",
+                        default=os.getcwd() + "/selective_copies")
+
+    result = parser.parse_args()
+
+    return result.extension, result.source, result.destination
+
+
+extension, source, destination = args_parameters(sys.argv)
+
+
+def find_and_copy(ext, src, dst):
     copy_dir = os.path.join(os.getcwd(), dst)
     if not os.path.exists(copy_dir):
         os.makedirs(copy_dir)
 
-    pattern = re.compile("^.*\." + extension)
+    pattern = re.compile("^.*\." + ext)
     for folderName, subfolders, filenames in os.walk(src):
         for file in filenames:
             if pattern.match(file):
@@ -24,8 +44,7 @@ def find_and_copy(extension, src, dst):
 
 
 def main():
-    find_and_copy("mp4", os.getcwd() + "/selective_copy_dir",
-                  os.getcwd() + "/new_folder")
+    find_and_copy(extension, source, destination)
 
 
 if __name__ == '__main__':

@@ -11,17 +11,44 @@ insert gaps into numbered files so that a new file
 can be added.
 """
 
+import argparse
 import os
 import shutil
+import sys
 
 
-def remove_gaps(directory, prefix):
+def args_parameters(args):
+    parser = argparse.ArgumentParser(
+        description='Copy only specific file format:')
+    parser.add_argument('-p', '--path',
+                        help="path to directory", default=os.getcwd())
+    parser.add_argument('-r', '--relative',
+                        help="Relative path to the directory", default="")
+    parser.add_argument('-c', '--core',
+                        help="Core part of the file names", required=True)
+
+    result = parser.parse_args()
+
+    return result.path, result.relative, result.core
+
+
+path, relative, core_name_part = args_parameters(sys.argv)
+
+
+def remove_gaps(directory, rel_path, prefix):
+    if len(rel_path):
+        directory = os.path.join(os.getcwd(), rel_path)
     files = os.listdir(directory)
 
     if len(files) == 0:
         return
 
-    last_number = int(get_string_number(files[0], prefix))
+    try:
+        last_number = int(get_string_number(files[0], prefix))
+    except ValueError:
+        print("Oops! Something went wrong!")
+        return
+
     for file_name in files:
         current_str_number = int(get_string_number(file_name, prefix))
         if current_str_number != last_number:
@@ -44,8 +71,7 @@ def get_extension(name):
 
 
 def main():
-    gaps_dir = os.path.join(os.getcwd(), "filling_gaps")
-    remove_gaps(gaps_dir, "spam_")
+    remove_gaps(path, relative, core_name_part)
 
 
 if __name__ == '__main__':
