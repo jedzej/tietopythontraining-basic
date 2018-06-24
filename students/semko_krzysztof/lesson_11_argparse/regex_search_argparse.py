@@ -15,8 +15,10 @@ def args_parameters(args):
         description='Saerch for a specific pattern:')
     parser.add_argument('-d', '--directory',
                         help="directory to parse files", default=os.getcwd())
-    parser.add_argument('-s', '--suffix', help='File type(suffix)', default="")
-    parser.add_argument('-r', '--regex', help="Phrase to search", required=True)
+    parser.add_argument('-s', '--suffix',
+                        help='File type(suffix)', default="")
+    parser.add_argument('-r', '--regex',
+                        help="Phrase to search", required=True)
 
     result = parser.parse_args()
 
