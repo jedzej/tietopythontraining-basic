@@ -51,11 +51,27 @@ def check_arg(args):
 def save_user_data(email, password, phone_number, postal_code):
     csv_file = 'userdata.csv'
 
+    # create file if it doesn't exist
+    with open(csv_file, 'a') as file:
+        pass
+
+    # check if user is already in the file and if yes remove it
+    with open(csv_file, 'r') as file:
+        reader = csv.reader(file, delimiter=',')
+        rows = [x for x in list(reader) if not x[0] == email]
+
+    with open(csv_file, 'w') as file:
+        writer = csv.writer(file, delimiter=',')
+        if rows:
+            writer.writerows(rows)
+
+    # append user
     with open(csv_file, 'a') as file:
         writer = csv.writer(file, delimiter=',')
         writer.writerow([email, password, phone_number, postal_code])
         logging.warning("User data has been written")
 
+    # print users
     with open(csv_file, 'r') as file:
         reader = csv.reader(file, delimiter=',')
         logging.info("Currently we have following rows:")
