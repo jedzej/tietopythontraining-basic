@@ -17,14 +17,14 @@ def get_guess():
 if __name__ == "__main__":
     guess = get_guess()
 
-    toss = random.randint(0, 1) # 0 is tails, 1 is heads
+    toss = random.choice(guessArray)
 
-    if guessArray[toss] == guess:
+    if toss == guess:
         print('You got it!')
     else:
         print('Nope! Guess again!')
         guess = get_guess()
-        if guessArray[toss] == guess:
+        if toss == guess:
             print('You got it!')
         else:
             print('Nope. You are really bad at this game.')
