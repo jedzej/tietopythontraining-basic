@@ -30,7 +30,8 @@ def args_parameters(args):
     parser.add_argument('-r', '--regex',
                         help="Phrase to search", required=True)
     parser.add_argument('-l', '--logger',
-                        help="Log level: debug, info, warning, error, critical",
+                        help="Log level: debug, info, warning, "
+                             "error, critical",
                         default="debug",)
     result = parser.parse_args()
 

@@ -35,7 +35,8 @@ def args_parameters(args):
     parser = argparse.ArgumentParser(
         description='Validate data ')
     parser.add_argument('-l', '--logger',
-                        help="Log level: debug, info, warning, error, critical",
+                        help="Log level: debug, info, warning, "
+                             "error, critical",
                         default="warning",)
     result = parser.parse_args()
 
@@ -74,8 +75,8 @@ def duplicate_check(uid, path):
 
 
 def combined_validator(email, phone_number, postal_code, password):
-    if (check_email(email) and check_number(phone_number)
-            and check_postal_code(postal_code) and check_password(password)):
+    if (check_email(email) and check_number(phone_number) and
+            check_postal_code(postal_code) and check_password(password)):
         logging.debug("Input data is correct")
     else:
         raise Exception("Personal data is not correct")

@@ -10,7 +10,7 @@ import logging
 import random
 
 logging.basicConfig(level=logging.DEBUG, format='%(asctime)s '
-                                                '- %(levelname)s - %(message)s')
+                    '- %(levelname)s - %(message)s')
 
 GUESS_COUNT = 2
 options = {0: "tails", 1: "heads"}
