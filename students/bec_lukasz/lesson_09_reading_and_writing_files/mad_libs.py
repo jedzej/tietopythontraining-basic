@@ -8,7 +8,9 @@ input_file.close()
 
 for word in secret_words:
     while word in contents:
-        contents = contents.replace(word, input("Enter an " + word.lower() + ': '), 1)
+        contents = contents.replace(word,
+                                    input("Enter an " +
+                                          word.lower() + ': '), 1)
 
 output_file_name = input('Enter file name to save content to: ')
 output_file = open(output_file_name, 'w')
