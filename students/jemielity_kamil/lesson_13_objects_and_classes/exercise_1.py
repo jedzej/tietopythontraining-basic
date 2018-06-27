@@ -24,8 +24,8 @@ class Rectangle:
 
 
 def point_in_circle(circle, point):
-    distance = math.sqrt((circle.center.x - point.x) ** 2
-                         + (circle.center.y - point.y) ** 2)
+    distance = math.sqrt((circle.center.x - point.x) ** 2 +
+                         (circle.center.y - point.y) ** 2)
     if distance <= circle.radius:
         return True
     else:
