@@ -11,8 +11,8 @@ class Object2:
     age = 32
 
 
-def shallow_compare(obj1, obj2, list):
-    for element in list:
+def shallow_compare(obj1, obj2, attr_list):
+    for element in attr_list:
         if getattr(obj1, element) == getattr(obj2, element):
             print('Values of attr ' + element + ' are the same')
         else:
