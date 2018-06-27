@@ -17,7 +17,8 @@ def check_arg(args=None):
 
     parser.add_argument('-f', '--folder',
                         help='folder',
-                        default='/home/user/Desktop/lesson_11_argparse_and_math/')
+                        default='/home/user/Desktop/'
+                                'lesson_11_argparse_and_math/')
 
     results = parser.parse_args(args)
     return (results.prefix,
