@@ -1,6 +1,8 @@
 ### Lesson 14 - Decorators
 #### introduction
-[A guide to Python's function decorators](https://www.thecodeship.com/patterns/guide-to-python-function-decorators/)
+
+- [A guide to Python's function decorators](https://www.thecodeship.com/patterns/guide-to-python-function-decorators/)
+- [Easy introduction into decorators](https://www.python-course.eu/python3_decorators.php)
 
 #### practice projects
 
