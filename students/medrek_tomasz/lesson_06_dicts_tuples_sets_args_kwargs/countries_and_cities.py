@@ -5,8 +5,9 @@ countries_and_cities_database = {}
 
 
 def check_which_country(city):
-    if city in countries_and_cities_database:
-        return(countries_and_cities_database[city])
+    country = countries_and_cities_database.get(city)
+    if country:
+        return(country)
     else:
         return("There's ain't such city in da database")
 

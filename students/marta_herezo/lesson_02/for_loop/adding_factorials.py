@@ -2,10 +2,10 @@
 print('Enter the number of factorials to add up: ')
 n = int(input())
 factorial = 1
-sum = 0
+result = 0
 
 for i in range(1, n + 1):
-    factorial = factorial * i
-    sum += factorial
+    factorial *= i
+    result += factorial
 
-print('Result = ' + str(int(sum)))
+print('Result = ' + str(int(result)))

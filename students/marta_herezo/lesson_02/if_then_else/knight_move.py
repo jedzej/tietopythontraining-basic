@@ -1,7 +1,6 @@
-# The program directed corrected or not corrected//
-# move of bishop on the chessboard.
-# (x0, y0) - start position, (x, y) - new position//
-# on the chessboard.
+# The program directed corrected or not corrected move
+# of bishop on the chessboard.
+# (x0, y0) - start position, (x, y) - new position on the chessboard.
 
 print('Enter start posiotion for bishop, column x0: ')
 x0 = int(input())
@@ -22,8 +21,8 @@ x1 = x0 - x
 y1 = y0 - y
 
 if abs(x1) != abs(y1) and abs(x1) == 2:
-     print('YES')
+    print('YES')
 elif abs(x1) != abs(y1) and abs(y1) == 2:
-     print('YES')
+    print('YES')
 else:
     print('NO')

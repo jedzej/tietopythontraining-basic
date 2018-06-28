@@ -63,17 +63,15 @@ expected_one_collumn_is_bigger = '''zbyszek
 marek'''
 
 
-@pytest.mark.parametrize("test_input,expected", [
-    ("transpose_matrix_and_ret_str(grid)", expected_grid),
-    ("transpose_matrix_and_ret_str(names)", expected_names),
-    ("transpose_matrix_and_ret_str(only_one_row)", expected_only_one_row),
-    ("transpose_matrix_and_ret_str(one_row_is_bigger)",
-     expected_one_row_is_bigger),
-    ("transpose_matrix_and_ret_str(one_collumn_is_bigger)",
-     expected_one_collumn_is_bigger)
+@pytest.mark.parametrize("test_input, expected", [
+    (grid, expected_grid),
+    (names, expected_names),
+    (only_one_row, expected_only_one_row),
+    (one_row_is_bigger, expected_one_row_is_bigger),
+    (one_collumn_is_bigger, expected_one_collumn_is_bigger)
 ])
 def test_eval(test_input, expected):
-    assert eval(test_input) == expected
+    assert transpose_matrix_and_ret_str(test_input) == expected
 
 
 def test_none_input():
