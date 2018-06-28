@@ -1,6 +1,6 @@
 import re
 
-regex = re.compile(r"^\d\d\d[- ]?\d\d\d[- ]?\d\d\d$")
+regex = re.compile(r"^\d{3}[- ]?\d{3}[- ]?\d{3}$")
 
 
 def phone_number_validator(some_number):

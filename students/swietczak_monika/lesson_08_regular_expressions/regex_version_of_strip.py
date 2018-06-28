@@ -6,8 +6,9 @@ def regex_strip(some_string, chars_to_strip):
         result = re.sub("^" + re.escape(chars_to_strip) + "*", '', some_string)
         result = re.sub(re.escape(chars_to_strip) + "*$", '', result)
     else:
-        result = re.sub(r'^' + chars_to_strip + '*', '', some_string)
-        result = re.sub(chars_to_strip + '*$', '', result)
+        regex = re.compile(
+            r'^[' + chars_to_strip + ']|[' + chars_to_strip + ']$')
+        result = re.sub(regex, '', some_string)
     return result
 
 
