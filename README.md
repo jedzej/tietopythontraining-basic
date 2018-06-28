@@ -49,7 +49,7 @@ We hope you will have a lot of fun learning!
 * [Lesson 11 - argparse  + math](./course/lesson_11_argparse_and_math) -- 2018-06-05
 * [Lesson 12 - Debugging](./course/lesson_12_debugging) -- 2018-06-19
 * [Lesson 13 - Objects and classes](./course/lesson_13_objects_and_classes) -- 2018-06-26
-* Lesson 14 - Decorators + more OOP -- deadline 2018-07-03
+* [Lesson 14 - Decorators](./course/lesson_14_decorators) -- deadline 2018-07-03
 
 
 #### Not in scope / proposals for next levels
