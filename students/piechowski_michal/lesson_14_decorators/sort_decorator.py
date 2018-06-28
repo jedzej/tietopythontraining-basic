@@ -15,7 +15,7 @@ def data_feeder():
 
 def main():
     print("This is how data looks like: " + str(data_feeder()))
-    print("Is data sorted? -> " + str(data_feeder() == [1,2,3,4]))
+    print("Is data sorted? -> " + str(data_feeder() == [1, 2, 3, 4]))
 
 
 if __name__ == "__main__":
