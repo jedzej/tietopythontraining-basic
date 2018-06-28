@@ -1,15 +1,16 @@
-import os, re
+import os
+import re
 
 
 def regex_search(reg):
-    regex = re.compile(reg)
+    regex_text = re.compile(reg)
     files_list = os.listdir('.')
 
     for file in files_list:
         if file.endswith('.txt'):
             with open(file) as textfile:
                 for line in textfile:
-                    if regex.match(line):
+                    if regex_text.match(line):
                         print("Regex found " + line)
 
 
