@@ -6,7 +6,7 @@ def alternative_strip(word, character):
         word_regex = re.compile(r'\s+')
         return word_regex.sub('', word)
     else:
-        word_regex = re.compile(r'^[{}]+|[{}]+$'.format(character, character))
+        word_regex = re.compile(r'^[{0}]+|[{0}]+$'.format(character))
         return word_regex.sub('', word)
 
 
