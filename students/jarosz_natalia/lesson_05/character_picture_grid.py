@@ -9,7 +9,6 @@ def main():
             ['.', 'O', 'O', '.', '.', '.'],
             ['.', '.', '.', '.', '.', '.']]
 
-
     for x in range(len(grid[0])):
         new = ''
         for y in range(len(grid)):

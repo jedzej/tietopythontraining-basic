@@ -18,7 +18,7 @@ def average_age(list_of_people):
 def main():
     list_of_people = ['2', '0', '58', '38']
     print("Average ages for adults %f, number of children %d"
-          %average_age(list_of_people))
+          % average_age(list_of_people))
 
 
 if __name__ == "__main__":
