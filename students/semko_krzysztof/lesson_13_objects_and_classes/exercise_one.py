@@ -45,8 +45,8 @@ class Rectangle:
 
 def point_in_circle(circle, point):
     distance = math.sqrt(
-        pow(point.x - circle.center.x, 2)
-        + pow(point.y - circle.center.y, 2))
+        pow(point.x - circle.center.x, 2) +
+        pow(point.y - circle.center.y, 2))
     return circle.radius > distance
 
 
@@ -57,10 +57,10 @@ def rect_in_circle(circle, rectangle):
                          rectangle.corner.y + rectangle.height)
     point_opposite = Point(rectangle.corner.x + rectangle.width,
                            rectangle.corner.y + rectangle.height)
-    return (point_in_circle(circle, rectangle.corner)
-            and point_in_circle(circle, point_width)
-            and point_in_circle(circle, point_height)
-            and point_in_circle(circle, point_opposite))
+    return (point_in_circle(circle, rectangle.corner) and
+            point_in_circle(circle, point_width) and
+            point_in_circle(circle, point_height) and
+            point_in_circle(circle, point_opposite))
 
 
 def rect_circle_overlap(circle, rectangle):
@@ -70,10 +70,10 @@ def rect_circle_overlap(circle, rectangle):
                          rectangle.corner.y + rectangle.height)
     point_opposite = Point(rectangle.corner.x + rectangle.width,
                            rectangle.corner.y + rectangle.height)
-    return (point_in_circle(circle, rectangle.corner)
-            or point_in_circle(circle, point_width)
-            or point_in_circle(circle, point_height)
-            or point_in_circle(circle, point_opposite))
+    return (point_in_circle(circle, rectangle.corner) or
+            point_in_circle(circle, point_width) or
+            point_in_circle(circle, point_height) or
+            point_in_circle(circle, point_opposite))
 
 
 def main():

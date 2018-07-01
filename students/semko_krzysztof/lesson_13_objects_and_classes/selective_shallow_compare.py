@@ -5,7 +5,6 @@ if objects' attributes are equal.
 """
 
 from exercise_one import Point
-from object_inspectors import object_inspector_1
 from object_inspectors import Person
 
 
