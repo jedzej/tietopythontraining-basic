@@ -87,7 +87,7 @@ def check_arg(args=None):
                         default=".txt")
 
     results = parser.parse_args(args)
-    return results.src_folder, results.prefix,  results.extension
+    return results.src_folder, results.prefix, results.extension
 
 
 def main():
