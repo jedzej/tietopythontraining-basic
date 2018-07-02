@@ -60,7 +60,8 @@ def search_regex(path, regex, logs):
             line = line.rstrip()
             if re.search(pattern, line):
                 print(str(file_name) + ": " + str(line))
-                logging.info('Founded: %s in %s (%s file)' % (regex, line, file_name))
+                logging.info('Founded: %s in %s (%s file)'
+                             % (regex, line, file_name))
         file_text.close()
     logging.info('End searching')
     print("")
