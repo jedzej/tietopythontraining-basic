@@ -34,10 +34,11 @@ def files_in_path(path):
         only_files = [f for f in os.listdir(path)
                       if os.path.isfile(os.path.join(path, f))]
         return only_files
+    # except FileNotFoundError as err:
+    # why sticker display F821 undefined name 'FileNotFoundError'?
     except OSError as err:
-        if isinstance(err, FileNotFoundError):
-            logging.error(err)
-            sys.exit(1)
+        logging.error(err)
+        sys.exit(1)
 
 
 def search_regex(path, regex, logs):
