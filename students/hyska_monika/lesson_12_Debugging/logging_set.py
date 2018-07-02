@@ -9,4 +9,3 @@ def create_logsfile(logs_name, directory='.\logs', log_level='INFO'):
     logging.basicConfig(level=log_level, filename=file_name_wit_path,
                         format=' %(asctime)s - %(levelname)s - %(message)s')
     logging.info('******* start logging *******')
-

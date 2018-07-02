@@ -5,7 +5,8 @@ import logging
 
 # save data to new line or replace row when data from fist column is the same
 def save_data_to_csv(filename, header, data):
-    logging.info('filename: %s, header: %s, data: %s' % (filename, header, data))
+    logging.info('filename: %s, header: %s, data: %s'
+                 % (filename, header, data))
     if not (os.path.isfile(filename)):
         with open(filename, 'w', newline='') as emty_csv:
             writer = csv.writer(emty_csv)
@@ -22,7 +23,8 @@ def save_data_to_csv(filename, header, data):
             if not line:
                 logging.error('IndexError: list index out of range. '
                               'Empty line in file.  Next lines are lost.')
-            logging.info('Check that %s(old value) = %s(new value)' % (line[0], data[0]))
+            logging.info('Check that %s(old value) = %s(new value)'
+                         % (line[0], data[0]))
             if line[0] == data[0]:
                 logging.info('%s = %s' % (line[0], data[0]))
                 writer.writerow(data)

@@ -24,7 +24,7 @@ def combined_validator():
     # save data to csv
     columns_names = ['Email', 'Password', 'Postcode', 'PhoneNumber']
     data = [email, password, post_code, phone_nbr]
-    csv_functions.save_data_to_csv("emails_data.csv", columns_names,data)
+    csv_functions.save_data_to_csv("emails_data.csv", columns_names, data)
 
 
 def main():

@@ -35,7 +35,7 @@ def check_email(email):
     email_result = email_regex.match(email)
     if email_result is not None:
         print("Email is valid.")
-        logging.info('Email: %s is valid' %email)
+        logging.info('Email: %s is valid' % email)
         return True
     else:
         print("Email isn't valid.")

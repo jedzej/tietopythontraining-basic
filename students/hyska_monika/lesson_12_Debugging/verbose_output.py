@@ -34,24 +34,20 @@ def files_in_path(path):
         only_files = [f for f in os.listdir(path)
                       if os.path.isfile(os.path.join(path, f))]
         return only_files
-    except FileNotFoundError as err:
-        logging.error(err)
-        sys.exit(1)
+    except OSError as err:
+        if isinstance(err, FileNotFoundError):
+            logging.error(err)
+            sys.exit(1)
 
 
 def search_regex(path, regex, logs):
     if logs not in(logging._nameToLevel):
         raise ValueError('Invalid log level: %s' % logs)
     directory = "./logs"
-    logging.basicConfig(level=logs, filename='%s/info_war_err.log' % directory,
-                        format=' %(asctime)s - %(levelname)s - %(message)s')
-    logging_set.create_logsfile('verbose_logs.log', '.\logs', logs)
-    logging.info('New searching:')
+    logging_set.create_logsfile('verbose_logs.log', directory, logs)
     if path == directory:
         logging.warning('You should not search data in logs. Program closed.')
         sys.exit(1)
-    if not os.path.exists(directory):
-        os.makedirs(directory)
     files = files_in_path(path)
     pattern = re.compile(regex)
     print("Lines contain searched regex:")
