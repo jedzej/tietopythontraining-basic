@@ -23,7 +23,7 @@ def main():
     bunny = Bunny("Peter", 3, "black")
     print(object_inspector1(bunny))
 
-    bunny2 = Bunny("Tuptus", 8.5, [1,2])
+    bunny2 = Bunny("Tuptus", 8.5, [1, 2])
     print(object_inspector2(bunny2))
 
 
