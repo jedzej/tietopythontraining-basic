@@ -19,8 +19,8 @@ def printTable(table, sep=' ', fill=' '):
     for k in range(len(table)):
         lengths = []
         for s in table[k]:
-            lengths += [len(s)]
-        col_widths += [max(lengths)]
+            lengths.append(len(s))
+        col_widths.append(max(lengths))
 
     for r in range(len(lengths)):       # rows
         for c in range(len(table)):     # columns

@@ -2,7 +2,7 @@
 
 
 def words_number(string):
-    nr = string.count(" ") + 1
+    nr = len(string.split())    # better then  string.count(" ") + 1
     return nr
 
 
