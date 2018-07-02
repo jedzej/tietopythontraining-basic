@@ -69,6 +69,9 @@ def main():
     point = Point(100, 100)
     rectangle = Rectangle(100, 10, point)
 
+    print("Circle: ", circle.__dict__)
+    print("Point: ", point.__dict__)
+    print("Rectangle: ", rectangle.__dict__)
     print("Is point in the circle? ", point_in_circle(circle, point))
     print("Is rectangle in the circle? ", rect_in_circle(circle, rectangle))
     print("Does rectangle overlap the circle? ",
