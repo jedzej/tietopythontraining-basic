@@ -63,7 +63,8 @@ def rect_circle_overlap(circle, rectangle):
                          [rectangle.corner.x, rectangle.corner.y + rectangle.height]]
 
     for rect_corner in rectangle_corners:
-        if distance_between_points(rect_corner[0], rect_corner[1], circle.center.x, circle.center.y) <= circle.radius:
+        if distance_between_points(rect_corner[0], rect_corner[1],
+                                   circle.center.x, circle.center.y) <= circle.radius:
             corner_inside_circle = True
             break
 
