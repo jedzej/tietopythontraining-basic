@@ -4,7 +4,7 @@ DIST_BETWEEN_SMALL_AND_BIG_LETTER = 32
 def capitalize_word(word):
     uppercase_array = []
     for i in range(len(word)):
-        if(ord(word[i][0])) > 95:
+        if ord(word[i][0]) > 95:
             uppercase_word = \
                 ''.join(chr(ord(word[i][0]) -
                             DIST_BETWEEN_SMALL_AND_BIG_LETTER) + word[i][1:])
@@ -20,7 +20,7 @@ def uppercase(word):
     finish_string = ''
     for i in range(len(big_words)):
         finish_string = ' '.join(str(i) for i in big_words)
-    return(finish_string)
+    return finish_string
 
 
 def main():

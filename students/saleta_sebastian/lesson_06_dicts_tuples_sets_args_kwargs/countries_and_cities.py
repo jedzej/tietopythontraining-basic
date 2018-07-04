@@ -4,7 +4,7 @@ countries_with_cities = {}
 def add_cities_and_countries(num_of_countries):
     for i in range(num_of_countries):
         list_of_countries = input(
-            'Give a countryname and cities separate by spaces').split()
+            'Give a country name and cities separate by spaces').split()
         country = list_of_countries[0]
         cities = list_of_countries[1:]
         countries_with_cities.update({c: country for c in cities})
