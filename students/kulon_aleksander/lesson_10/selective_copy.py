@@ -7,8 +7,8 @@ new_folder = 'new_folder'
 
 
 def main():
-    if not os.path.exists(path+new_folder):
-        os.makedirs(path+new_folder)
+    if not os.path.exists(path + new_folder):
+        os.makedirs(path + new_folder)
 
     for root, directory, files in os.walk(path):
         for file in files:
