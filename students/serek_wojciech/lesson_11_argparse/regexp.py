@@ -11,9 +11,9 @@ def main():
     """Main function"""
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('--path',  help='Path to search location',
+    parser.add_argument('--path', help='Path to search location',
                         default='.\\txt_files')
-    parser.add_argument('--regex',  help='Regex to search',
+    parser.add_argument('--regex', help='Regex to search',
                         default='\d{2}')
 
     args = parser.parse_args()
