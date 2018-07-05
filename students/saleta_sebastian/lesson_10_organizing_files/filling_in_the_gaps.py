@@ -1,8 +1,10 @@
 import os
 import re
+import random
 
 
-TEST_FILES_DIRECTORY = 'fill_gaps_files'
+TEST_FILES_DIRECTORY = 'spam_fill_gaps_files'
+CORRECT_FILE_NAMES_DIRECTORY = 'fill_gaps_files'
 FILE_NAME = 'spam'
 TXT_EXTENSION = 'txt'
 
@@ -12,21 +14,23 @@ def create_test_data():
         os.makedirs(TEST_FILES_DIRECTORY)
 
     # Create files with gaps
-    for i in range(2, 9):
-        open(os.path.join(TEST_FILES_DIRECTORY, "{}{:03d}.{}".
-                          format(FILE_NAME, i, TXT_EXTENSION)), 'w')
+    for i in random.sample(range(2, 20), 5):
+        open(os.path.join(TEST_FILES_DIRECTORY, "{}{:03d}.{}".format
+                          (FILE_NAME, i, TXT_EXTENSION)), 'w')
 
 
 def fill_the_gaps():
     start_number = 0
     for filename in sorted(os.listdir(TEST_FILES_DIRECTORY)):
-        if re.match(r"{0}\d{{3}}".format(FILE_NAME), filename):
-            fileNumRegex = re.compile(r'(\d)[^\d]*$')
-            mo = fileNumRegex.search(filename)
-            number_expected = start_number + 1
-            current_number = int(mo.group(1))
 
-            if current_number != number_expected:
+        if re.match(r"{0}\d{{3}}.{1}$".format
+                    (FILE_NAME, TXT_EXTENSION), filename):
+            number_expected = start_number + 1
+            correct_file_name = (FILE_NAME +
+                                 '0' *
+                                 (3 - len(str(number_expected))) +
+                                 str(number_expected) + '.txt')
+            if correct_file_name != filename:
                 rename_file(filename, number_expected)
 
             start_number = number_expected

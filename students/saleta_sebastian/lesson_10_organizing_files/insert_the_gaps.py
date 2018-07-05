@@ -1,5 +1,7 @@
 import os
 import re
+import random
+
 
 TEST_FILES_DIRECTORY = 'insert_gaps_files'
 FILE_NAME = 'spam'
@@ -10,31 +12,43 @@ def create_test_data():
     if not os.path.exists(TEST_FILES_DIRECTORY):
         os.makedirs(TEST_FILES_DIRECTORY)
     # Create files with gaps
-    for i in range(2, 9):
+    for i in random.sample(range(2, 20), 5):
         open(os.path.join(TEST_FILES_DIRECTORY,
                           "{}{:03d}.{}".format(FILE_NAME, i, TXT_EXTENSION)),
              'w')
 
 
 def insert_file_in_gap():
-    start_number = 0
+    gap_index = []
     for filename in sorted(os.listdir(TEST_FILES_DIRECTORY)):
-        if re.match(r"{0}\d{{3}}".format(FILE_NAME), filename):
-            fileNumRegex = re.compile(r'(\d)[^\d]*$')
-            mo = fileNumRegex.search(filename)
-            number_expected = start_number + 1
-            current_number = int(mo.group(1))
+        if re.match(r"{0}\d{{3}}.{1}$".format(FILE_NAME, TXT_EXTENSION),
+                    filename):
+            print(filename)
+            index_regex = re.compile(r'[1-9][0-9]{0,1}')
+            mo = index_regex.search(filename).group(0)
+            if mo:
+                gap_index.append(int(mo))
 
-            if current_number != number_expected:
-                insert_file(number_expected)
-
-            start_number = number_expected
+    insert_file(list(find_gaps(gap_index)))
 
 
-def insert_file(index_file):
-    open(os.path.join(TEST_FILES_DIRECTORY,
-                      "{}{:03d}.{}".format(FILE_NAME, index_file,
-                                           TXT_EXTENSION)), 'w')
+def find_gaps(ids):
+    """Generate the gaps in the list of file ids."""
+    j = 1
+    for id_i in sorted(ids):
+        while True:
+            id_j = int('%d' % j)
+            j += 1
+            if id_j >= id_i:
+                break
+            yield id_j
+
+
+def insert_file(files_ids):
+    for index_file in files_ids:
+        open(os.path.join(TEST_FILES_DIRECTORY,
+                          "{}{:03d}.{}".format(FILE_NAME, index_file,
+                                               TXT_EXTENSION)), 'w')
 
 
 def main():
