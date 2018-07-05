@@ -12,8 +12,10 @@ def is_strong(password):
 
     if strong:
         print("Password: '" + password + "' is strong")
+        return True
     else:
         print("Password: '" + password + "' is not strong")
+        return False
 
 
 def main():
