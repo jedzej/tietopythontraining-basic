@@ -9,7 +9,7 @@ def check_postal_code(postal_code):
 
 def main():
     postal_code = '54-123'
-    print('Postal code: '+postal_code)
+    print('Postal code: ' + postal_code)
     print('Result: ' + str(check_postal_code(postal_code)))
 
 

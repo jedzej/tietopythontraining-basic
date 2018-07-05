@@ -9,7 +9,7 @@ def check_phone_number(phone):
 
 def main():
     phone_num = '123-123-456'
-    print('Phone number: '+phone_num)
+    print('Phone number: ' + phone_num)
     print('Result: ' + str(check_phone_number(phone_num)))
 
 

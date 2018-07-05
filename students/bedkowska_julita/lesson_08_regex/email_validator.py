@@ -9,7 +9,7 @@ def check_email(email):
 
 def main():
     email = 'julita@test.pl'
-    print('Email: '+email)
+    print('Email: ' + email)
     print('Result: ' + str(check_email(email)))
 
 

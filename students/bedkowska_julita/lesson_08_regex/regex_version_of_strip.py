@@ -2,8 +2,8 @@ import re
 
 
 def regex_strip(text, chars=''):
-    escape_chars = re.escape(chars)
-    regex = re.compile(r'^[' + escape_chars + ']*(.*?)[' + escape_chars + ']*$')
+    e_chars = re.escape(chars)
+    regex = re.compile(r'^[' + e_chars + ']*(.*?)[' + e_chars + ']*$')
     match = regex.search(text)
     return match.group(1)
 

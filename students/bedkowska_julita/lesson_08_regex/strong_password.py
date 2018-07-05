@@ -20,7 +20,7 @@ def check_password(password):
 
 def main():
     test_pass = "ABC123asdasdas"
-    print('Password: '+test_pass)
+    print('Password: ' + test_pass)
     check_password(test_pass)
 
 
