@@ -24,8 +24,8 @@ def main():
     ainspector.x = 12
     ainspector.b = [77, 88]
     ainspector.c = 4
-    ainspector.y = {'c':77, 'g':88}
-    ainspector.s = "sssss"
+    ainspector.y = {'c': 77, 'g': 88}
+    ainspector.s = 'sssss'
     ainspector.p = 4.564744
     ainspector.q = 5
     ainspector.m = 4.564744

@@ -46,14 +46,14 @@ class Rectangle:
 
 
 def point_in_circle(point, circle):
-    distance_between_points = math.sqrt((point.x - circle.center.x)** 2 +
-                                        (point.y - circle.center.y)**2)
+    distance_between_points = math.sqrt((point.x - circle.center.x) ** 2 +
+                                        (point.y - circle.center.y) ** 2)
     return distance_between_points <= circle.radius
 
 
 def point_in_circle_bounduary(point, circle):
-    distance_between_points = math.sqrt((point.x - circle.center.x)** 2 +
-                                        (point.y - circle.center.y)**2)
+    distance_between_points = math.sqrt((point.x - circle.center.x) ** 2 +
+                                        (point.y - circle.center.y) ** 2)
     return distance_between_points == circle.radius
 
 
@@ -74,7 +74,7 @@ def rect_circle_overlap(rectangle, circle):
 
 
 def main():
-    point1 = Point(370,550)
+    point1 = Point(370, 550)
     circle_center = Point(150, 100)
     my_circle = Circle(circle_center, 75)
     print('Is point(%s, %s) in the circle(center=(%s, %s), radious=%s)?'
@@ -84,14 +84,17 @@ def main():
 
     # rectangle in circle
     # rectangle1 = Rectangle(Point(1,10),Point(6,10), Point(1,5), Point(6,5))
-    rectangles_points = (Point(-2, 2), Point(2, 2), Point(-2, -2), Point(2, -2))
+    rectangles_points = (Point(-2, 2), Point(2, 2),
+                         Point(-2, -2), Point(2, -2))
     rectangle2 = Rectangle(*rectangles_points)
     circle_center = Point(0, 0)
     my_circle2 = Circle(circle_center, math.sqrt(8))
     print('Is rectangle:((%s,%s),(%s,%s),(%s,%s),(%s,%s)) in the circle'
           '(center=(%s, %s),radius=%s) board?'
-          % (rectangle2.tL.x, rectangle2.tL.y, rectangle2.tR.x, rectangle2.tR.y,
-             rectangle2.bL.x, rectangle2.bL.y, rectangle2.bL.x, rectangle2.bL.y,
+          % (rectangle2.tL.x, rectangle2.tL.y,
+             rectangle2.tR.x, rectangle2.tR.y,
+             rectangle2.bL.x, rectangle2.bL.y,
+             rectangle2.bL.x, rectangle2.bL.y,
              circle_center.x, circle_center.y, my_circle2.radius))
     print(rect_circle(rectangle2, my_circle2))
 

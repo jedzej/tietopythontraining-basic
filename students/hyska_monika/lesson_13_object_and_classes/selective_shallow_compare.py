@@ -25,8 +25,8 @@ def main():
     ainspector.x = 12
     ainspector.b = [77, 88]
     ainspector.c = 4
-    ainspector.y = {'c':77, 'g':88}
-    ainspector.s = "sssss"
+    ainspector.y = {'c': 77, 'g': 88}
+    ainspector.s = 'sssss'
     ainspector.p = 4.564744
     ainspector.q = 5
     ainspector.m = 4.564744
@@ -36,8 +36,8 @@ def main():
     binspector.x = 5
     binspector.b = [22, 88]
     binspector.c = 4
-    binspector.y = {'c':77, 'g':88}
-    binspector.s = "ssassss"
+    binspector.y = {'c': 77, 'g': 88}
+    binspector.s = 'ssassss'
     binspector.p = 4.564744
     binspector.q = 5
     ainspector.m = 4.564744
