@@ -99,7 +99,7 @@ def main():
     print(rect_circle(rectangle2, my_circle2))
 
     # rectangle in circle overlap
-    #rectangle1 = Rectangle(Point(1,10),Point(6,10), Point(1,5), Point(6,5))
+    # rectangle1 = Rectangle(Point(1,10),Point(6,10), Point(1,5), Point(6,5))
     rectangles_points = (Point(1, 10), Point(6, 10), Point(1, 5), Point(6, 5))
     rectangle2 = Rectangle(*rectangles_points)
     circle_center = Point(2, 3)
@@ -110,7 +110,6 @@ def main():
              rectangle2.bL.x, rectangle2.bL.y, rectangle2.bL.x, rectangle2.bL.y,
              circle_center.x, circle_center.y, my_circle.radius))
     print(rect_circle_overlap (rectangle2, my_circle2))
-
 
 
 if __name__ == "__main__":
