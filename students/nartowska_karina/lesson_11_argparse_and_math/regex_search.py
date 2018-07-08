@@ -8,8 +8,7 @@ def check_arg(args=None):
     parser = argparse.ArgumentParser(description='Regex search')
     parser.add_argument('-r', '--regex',
                         help='search regex',
-                        required='True',
-                        default='')
+                        required=True)
     return parser.parse_args(args).regex
 
 

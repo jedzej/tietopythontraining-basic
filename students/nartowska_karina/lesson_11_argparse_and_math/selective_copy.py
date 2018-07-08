@@ -8,7 +8,7 @@ def check_arg(args=None):
     parser = argparse.ArgumentParser(description='Selective copy')
     parser.add_argument('-e', '--extension',
                         help='file extension',
-                        required='True',
+                        required=True,
                         default='.txt')
     return parser.parse_args(args).extension
 
