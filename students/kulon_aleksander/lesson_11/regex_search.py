@@ -2,7 +2,6 @@
 import os
 import re
 import argparse
-import sys
 
 """
 The program opens all .txt files in a folder and searches for any line

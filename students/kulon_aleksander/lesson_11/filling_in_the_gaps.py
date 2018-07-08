@@ -10,7 +10,7 @@ path = '../lesson_11/testfolder/'
 
 def main():
     sorted_numbers = []
-    
+
     parser = argparse.ArgumentParser(description='Filling gaps.')
 
     parser.add_argument(

@@ -2,6 +2,7 @@ import os
 import shutil
 import argparse
 import sys
+import fnmatch
 
 path = '../lesson_11/testfolder/'
 new_folder = 'new_folder'
@@ -20,16 +21,16 @@ def main():
         dest='path',
         default=path)
 
-    results = parser.parse_args(sys.argv[1:])
-    if not os.path.exists(path + new_folder):
-        os.makedirs(path + new_folder)
+    args = parser.parse_args(sys.argv[1:])
+    if not os.path.exists(args.path + args.new_folder):
+        os.makedirs(args.path + args.new_folder)
 
-    for root, directory, files in os.walk(path):
+    for root, directory, files in os.walk(args.path):
         for file in files:
             if fnmatch.fnmatch(file, "*.jpg"):
                 file_path = os.path.join(root, file)
                 print(file_path)
-                shutil.copy(file_path, path + new_folder)
+                shutil.copy(file_path, args.path + args.new_folder)
 
 
 if __name__ == "__main__":
