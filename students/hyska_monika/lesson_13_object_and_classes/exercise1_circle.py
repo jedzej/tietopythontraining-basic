@@ -106,10 +106,12 @@ def main():
     my_circle2 = Circle(circle_center, 20)
     print('Is rectangle:((%s,%s),(%s,%s),(%s,%s),(%s,%s)) in the circle'
           '(center=(%s, %s),radius=%s)?'
-          % (rectangle2.tL.x, rectangle2.tL.y, rectangle2.tR.x, rectangle2.tR.y,
-             rectangle2.bL.x, rectangle2.bL.y, rectangle2.bL.x, rectangle2.bL.y,
+          % (rectangle2.tL.x, rectangle2.tL.y,
+             rectangle2.tR.x, rectangle2.tR.y,
+             rectangle2.bL.x, rectangle2.bL.y,
+             rectangle2.bL.x, rectangle2.bL.y,
              circle_center.x, circle_center.y, my_circle.radius))
-    print(rect_circle_overlap (rectangle2, my_circle2))
+    print(rect_circle_overlap(rectangle2, my_circle2))
 
 
 if __name__ == "__main__":

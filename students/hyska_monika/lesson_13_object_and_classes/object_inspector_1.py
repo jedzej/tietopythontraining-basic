@@ -14,7 +14,7 @@ class Point:
 
 def object_inspector1(instance, keys):
     instance_all = instance.__dict__
-    selected_keys = {key:instance_all[key] for key in keys}
+    selected_keys = {key: instance_all[key] for key in keys}
     return(selected_keys)
 
 
