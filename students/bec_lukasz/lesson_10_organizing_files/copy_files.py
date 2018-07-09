@@ -1,8 +1,9 @@
-import shutil
 import os
-import send2trash
 
-for folder_name, sub_folders, file_names in os.walk('C:\\Users\\becccluk\\Documents\\pythontraining'):
+folder = 'C:\\Users\\becccluk\\Documents\\pythontraining'
+
+for folder_name, sub_folders, \
+    file_names in os.walk(folder):
     print('Folder name: ' + folder_name)
 
     for sub_folder in sub_folders:

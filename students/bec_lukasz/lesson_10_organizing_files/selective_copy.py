@@ -7,7 +7,8 @@ def selective_copy(given_folder, given_extension, target_folder):
         print('first')
         for filename in filenames:
             if filename.endswith(given_extension):
-                shutil.copy(os.path.join(given_folder, filename), target_folder)
+                shutil.copy(os.path.join(given_folder, filename),
+                            target_folder)
 
 
 selective_copy('C:\Pajton', '.txt', 'C:\Pajton\copy')
