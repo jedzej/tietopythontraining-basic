@@ -15,13 +15,12 @@ def main():
                                                         i.lower() + ': '))
             content.remove('NOUN')
         elif i == 'VERB':
-            content.insert(content.index('VERB'), input('Enter a ' + i.lower()
-                                                        + ': '))
+            content.insert(content.index('VERB'), input('Enter a ' +
+                                                        i.lower() + ': '))
             content.remove('VERB')
         elif i == 'ADJECTIVE':
             content.insert(content.index('ADJECTIVE'), input('Enter an ' +
-                                                             i.lower()
-                                                             + ': '))
+                                                             i.lower() + ': '))
             content.remove('ADJECTIVE')
 
     content = ''.join(content)
@@ -33,4 +32,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
