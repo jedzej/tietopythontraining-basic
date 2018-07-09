@@ -14,7 +14,7 @@ def main():
     parser.add_argument(
         '-d', action="store",
         dest='new_folder',
-        required='True')
+        required=True)
 
     parser.add_argument(
         '-p', action="store",

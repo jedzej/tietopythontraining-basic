@@ -4,7 +4,6 @@ import shutil
 import argparse
 import sys
 
-pattern = 'spam00'
 path = '../lesson_11/testfolder/'
 
 
@@ -16,8 +15,7 @@ def main():
     parser.add_argument(
         '--pattern', action="store",
         dest='pattern',
-        default=pattern,
-        required='True')
+        required=True)
 
     parser.add_argument(
         '-p', action="store",
@@ -26,21 +24,26 @@ def main():
 
     results = parser.parse_args(sys.argv[1:])
 
-    prefix_pattern = re.compile('(?<={})\w+'.format(results.pattern))
+    prefix_pattern = re.compile(r"{0}\d{{3}}".format(results.pattern))
 
     for folder_name, sub_folder, file_names in os.walk(path):
         for file_name in file_names:
             result = re.search(prefix_pattern, file_name)
             if result is not None:
-                sorted_numbers.append(int(result.group(0)))
+                sorted_numbers.append(result.group(0).replace(results.pattern, ''))
 
     sorted_numbers = sorted(sorted_numbers)
 
-    for i in range(min(sorted_numbers), max(sorted_numbers)):
-        test = path + pattern + str(i) + '.txt'
+    for i in range(int(sorted_numbers[0]), int(sorted_numbers[-1]) - 1):
+        current = str(sorted_numbers[i-1]).zfill(3)
+        next = str(int(sorted_numbers[i-1]) + 1).zfill(3)
+        later = str(int(sorted_numbers[i-1]) + 2).zfill(3)
 
-        if not os.path.isfile(test):
-            shutil.move(path + pattern + str(i + 1) + '.txt', test)
+        current_file = path + results.pattern + current + '.txt'
+        next_file = path + results.pattern + next + '.txt'
+        later_file = path + results.pattern + later + '.txt'
+        if not os.path.isfile(next):
+            shutil.move(later_file, next_file)
 
 
 if __name__ == "__main__":
