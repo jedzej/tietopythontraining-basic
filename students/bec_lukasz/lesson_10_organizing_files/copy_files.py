@@ -2,8 +2,7 @@ import os
 
 folder = 'C:\\Users\\becccluk\\Documents\\pythontraining'
 
-for folder_name, sub_folders, \
-    file_names in os.walk(folder):
+for folder_name, sub_folders, file_names in os.walk(folder):
     print('Folder name: ' + folder_name)
 
     for sub_folder in sub_folders:
