@@ -11,11 +11,12 @@ def main():
         os.makedirs(path + new_folder)
 
     for root, directory, files in os.walk(path):
-        for file in files:
-            if fnmatch.fnmatch(file, "*.jpg"):
-                file_path = os.path.join(root, file)
-                print(file_path)
-                shutil.copy(file_path, path + new_folder)
+        if directory:
+            for file in files:
+                if fnmatch.fnmatch(file, "*.jpg"):
+                    file_path = os.path.join(root, file)
+                    print(file_path)
+                    shutil.copy(file_path, path + new_folder)
 
 
 if __name__ == "__main__":
