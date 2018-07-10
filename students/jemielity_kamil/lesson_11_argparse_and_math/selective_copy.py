@@ -1,0 +1,21 @@
+import os
+import shutil
+import argparse
+
+
+parser = argparse.ArgumentParser(description='Selective copy')
+parser.add_argument('-e', action='store',
+                    dest="extension", required=True,
+                    help='extension')
+args = parser.parse_args()
+
+FOLDER_PATH = 'C:\\Path\\to\\starting\\folder'
+PATH_TO_FINAL_DESTINATION = 'C:\\Path\\to\\final\\destination'
+
+extension = args.extension
+
+for foldername, _, filenames in os.walk(FOLDER_PATH):
+    for filename in filenames:
+        if filename.endswith(extension):
+            shutil.copy(os.path.join(foldername, filename),
+                        PATH_TO_FINAL_DESTINATION)
