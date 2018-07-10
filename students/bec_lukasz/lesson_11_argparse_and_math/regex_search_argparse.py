@@ -21,5 +21,3 @@ for file in os.listdir(target_folder_path):
             print(result.group())
         except AttributeError:
             print('Not found')
-
-
