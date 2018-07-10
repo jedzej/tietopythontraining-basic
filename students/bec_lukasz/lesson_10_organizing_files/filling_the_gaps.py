@@ -15,8 +15,12 @@ def list_files(given_folder):
     for files in os.listdir(given_folder):
         print(files)
         similar_name = name_pattern.search(files)
-        if similar_name.group():
-            names.append(similar_name.group())
+        try:
+            if similar_name.group():
+                names.append(similar_name.group())
+
+        except AttributeError:
+            print('No match')
 
 
 def slice_filename(table):
