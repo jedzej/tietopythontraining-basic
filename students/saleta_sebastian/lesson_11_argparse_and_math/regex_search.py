@@ -7,7 +7,7 @@ import re
 def check_arg(args=None):
     parser = argparse.ArgumentParser(description='Script to find sentence'
                                                  ' in txt files ')
-    parser.add_argument('-p', '--sentence',
+    parser.add_argument('-s', '--sentence',
                         help='sentence to find in txt files',
                         required=True)
     results = parser.parse_args(args)
