@@ -5,12 +5,6 @@ import datetime
 import sys
 import logging
 
-"""Verbose output - add configurable logger and 'verbose output' command line
-argument to project 1 from lesson 11 to allow the user to follow intermediate
-steps of program execution. The program must allow to configure verbosity
- on at least 3 levels - disabled, warning (warns and errors only)
-  and info (most detailed)"""
-
 
 def create_example_test_files(path, source_folder_param):
     index = 100

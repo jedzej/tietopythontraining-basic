@@ -42,20 +42,19 @@ def parse_args(args=None):
                         # TODO: finally add unit test
                         )
 
-    parser.add_argument('-pc', '--postal_code',
+    parser.add_argument('-pc', '--postal',
                         help='regex user definition',
                         required='True',
                         # default='00-999'  # uncomment if workaround for fast
                         # testing
                         )
 
-    parser.add_argument('-vo', '--verbose_output',
+    parser.add_argument('-vo', '--verbose',
                         help='verbosity level: disabled, warning, info',
                         choices=['disabled', 'warning', 'info'],
                         default='info')
-    results = parser.parse_args(args)
-    return results.email, results.password, results.phone_number, \
-           results.postal_code, results.verbose_output
+    res = parser.parse_args(args)
+    return res.email, res.password, res.phone_number, res.postal, res.verbose
 
 
 def set_verbosity_level(verbosity_level):
@@ -130,8 +129,10 @@ def save_user_base_to_file(user_base_item):
                 open('user_base_temp.csv', 'w', newline='') as csv_wr_file:
 
             try:
-                reader = csv.DictReader(csv_rd_file, fieldnames=user_base_item.keys())
-                writer = csv.DictWriter(csv_wr_file, fieldnames=user_base_item.keys())
+                reader = csv.DictReader(csv_rd_file,
+                                        fieldnames=user_base_item.keys())
+                writer = csv.DictWriter(csv_wr_file,
+                                        fieldnames=user_base_item.keys())
                 for row in reader:
                     if row['email'] != user_base_item['email']:
                         writer.writerow(row)
@@ -150,7 +151,8 @@ def save_user_base_to_file(user_base_item):
         with open('user_base.csv', 'a', newline='') as csv_file:
 
             try:
-                writer = csv.DictWriter(csv_file, fieldnames=user_base_item.keys())
+                writer = csv.DictWriter(csv_file,
+                                        fieldnames=user_base_item.keys())
                 writer.writeheader()
                 writer.writerow(user_base_item)
 
