@@ -12,4 +12,3 @@ def has_access():
     if access_count >= 3:
         access_count = 0
     return access_count == 0
-
