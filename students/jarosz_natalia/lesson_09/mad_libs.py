@@ -2,11 +2,8 @@ import re
 
 
 def main():
-    mad_text = open('mad_text.txt', 'w')
-    text = 'The ADJECTIVE panda walked to the NOUN and then VERB. A nearby ' \
-           'NOUN was unaffected by these events.'
-    mad_text.write(text)
-    mad_text.close()
+    mad_text = open('mad_text.txt', 'r')
+    text = mad_text.read()
     content = re.split('(\W+)', text)
 
     for i in content:
