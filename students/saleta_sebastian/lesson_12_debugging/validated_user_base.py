@@ -9,8 +9,8 @@ from lesson_08_regular_expressions import \
     strong_password_detection, email_validator, phone_number_validator,\
     postal_code_validator
 
-
 sys.path.append('..')
+
 logging.basicConfig(level=logging.DEBUG, format=(' %(asctime)s - %(levelname)s'
                                                  ' - %(message)s'))
 
@@ -35,29 +35,39 @@ def check_arg(args=None):
     parser = argparse.ArgumentParser(description='Script to validate and save'
                                                  ' user data in csv file')
     parser.add_argument('-v', '--verbose',
+                        default=0,
                         help=('Verbose level.'
                               '0 - disabled, '
                               '1 - warnings and errors enabled '
                               '2 - info enabled'),
+                        choices=[0, 1, 2],
                         type=int)
     results = parser.parse_args(args)
     return results.verbose
 
 
+class ValidationUserBaseException(Exception):
+    module = 'ValidationUserBaseException'
+
+    def __init__(self, message):
+        super(ValidationUserBaseException, self).__init__(
+            self.module + ': ' + message)
+
+
 def validate_user_data(email, password, phone_number, postal_code):
     logging.info('Validating user data')
     if not email_validator.check_email(email):
-        logging.info('Email adress is invalid')
-        raise Exception('Email address is invalid')
+        logging.error('Email adress is invalid')
+        raise ValidationUserBaseException('Email address is invalid')
     if not strong_password_detection.check_if_password_is_strong(password):
-        logging.info('Password is too weak')
-        raise Exception('Password is too weak')
+        logging.error('Password is too weak')
+        raise ValidationUserBaseException('Password is too weak')
     if not phone_number_validator.check_phone_number(phone_number):
-        logging.info('Phone number is invalid')
-        raise Exception('Phone number is invalid')
+        logging.error('Phone number is invalid')
+        raise ValidationUserBaseException('Phone number is invalid')
     if not postal_code_validator.check_postal_code(postal_code):
-        logging.info('Postal code is invalid')
-        raise Exception('Postal code is invalid')
+        logging.error('Postal code is invalid')
+        raise ValidationUserBaseException('Postal code is invalid')
 
 
 def create_csv_file():
@@ -78,11 +88,11 @@ def save_user_data(email, password, phone_number, postal_code):
                   ' phone_number{}, postal_code: {}'
                   .format(email, password, phone_number, postal_code))
 
-    with open(TEST_FILE_NAME, 'r', newline='') as csvfile, \
-            open(TEMP_FILE_NAME, 'w', newline='') as tempfile:
+    with open(TEST_FILE_NAME, 'r', newline='') as csv_file, \
+            open(TEMP_FILE_NAME, 'w', newline='') as temp_file:
         logging.info('temp_base.csv created')
-        reader = csv.DictReader(csvfile, fieldnames=user_data.keys())
-        writer = csv.DictWriter(tempfile, fieldnames=user_data.keys())
+        reader = csv.DictReader(csv_file, fieldnames=user_data.keys())
+        writer = csv.DictWriter(temp_file, fieldnames=user_data.keys())
         row = 0
         email_found = False
 

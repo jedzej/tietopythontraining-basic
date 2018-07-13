@@ -22,14 +22,16 @@ def set_logger_level(lvl):
 def check_arg(args=None):
     parser = argparse.ArgumentParser(description='Script to find sentence'
                                                  ' in txt files ')
-    parser.add_argument('-p', '--sentence',
+    parser.add_argument('-s', '--sentence',
                         help='sentence to find in txt files',
                         required=True)
     parser.add_argument('-v', '--verbose',
+                        default=0,
                         help=('Verbose level.'
                               '0 - disabled, '
                               '1 - warnings and errors enabled '
                               '2 - info enabled'),
+                        choices=[0, 1, 2],
                         type=int)
     results = parser.parse_args(args)
     return results.sentence, results.verbose
