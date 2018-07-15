@@ -71,7 +71,7 @@ def save_user_data(email, password, phone_number, postal_code):
             if row[0] == email:
                 row = email, password, phone_number, postal_code
                 user_record_exist = True
-                logging.warning('This email exist in database, will be altered')
+                logging.warning('This email already exists, will be altered')
             user_data_list.append(row)
         if not user_record_exist:
             user_data_list.append([email, password, phone_number, postal_code])
