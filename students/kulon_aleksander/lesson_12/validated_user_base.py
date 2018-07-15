@@ -4,6 +4,7 @@ import argparse
 import csv
 import logging
 import sys
+import os
 
 from lesson_08.email_validator\
     import email_validate as is_valid_email
@@ -21,13 +22,19 @@ logging.basicConfig(level=logging.INFO,
 def combined_validator(email, password, phone_number, postal_code):
     logging.info("Verifying user data")
 
-    if is_valid_email(email) and is_strong_password(password) \
-            and is_valid_phone_number(phone_number) \
-            and is_valid_postal_code(postal_code):
-        logging.info("Verification passed")
-    else:
-        logging.warning("Verification failed")
-        raise Exception("One of arguments didn't pass verification.")
+    if not is_valid_email(email):
+        raise Exception("Invalid email.")
+        return
+    if not is_strong_password(password):
+        raise Exception("Invalid password.")
+        return
+    if not is_valid_phone_number(phone_number):
+        raise Exception("Invalid phone number.")
+        return
+    if not is_valid_postal_code(postal_code):
+        raise Exception("Invalid postal code.")
+        return
+    logging.info("Verification passed")
 
 
 def parse_args(args):
@@ -51,28 +58,27 @@ def parse_args(args):
 def save_user_data(email, password, phone_number, postal_code):
     csv_file = 'userdata.csv'
 
-    with open(csv_file, 'a') as file:
-        pass
+    user_data_list = []
+    user_record_exist = False
 
-    with open(csv_file, 'r') as file:
-        reader = csv.reader(file, delimiter=',')
-        rows = [x for x in list(reader) if not x[0] == email]
+    if not os.path.exists(csv_file):
+        with open(csv_file, 'a') as file:
+            pass
 
-    with open(csv_file, 'w') as file:
-        writer = csv.writer(file, delimiter=',')
-        if rows:
-            writer.writerows(rows)
-
-    with open(csv_file, 'a') as file:
-        writer = csv.writer(file, delimiter=',')
-        writer.writerow([email, password, phone_number, postal_code])
-        logging.warning("User data written.")
-
-    with open(csv_file, 'r') as file:
-        reader = csv.reader(file, delimiter=',')
-        logging.info("Current rows:")
+    with open(csv_file, newline='') as file:
+        reader = csv.reader(file)
         for row in reader:
-            logging.info(' '.join(row))
+            if row[0] == email:
+                row = email, password, phone_number, postal_code
+                user_record_exist = True
+                logging.warning('This email exist in database, will be altered')
+            user_data_list.append(row)
+        if not user_record_exist:
+            user_data_list.append([email, password, phone_number, postal_code])
+
+    with open(csv_file, 'w', newline='') as file:
+        writer = csv.writer(file)
+        writer.writerows(user_data_list)
 
 
 def main():
@@ -86,8 +92,9 @@ def main():
 
     try:
         combined_validator(email, password, phone_number, postal_code)
-    except Exception:
-        logging.warning("Exception caught, not")
+    except Exception as e:
+        logging.warning("Verification failed.")
+        logging.warning("Exception caught: " + str(e))
         return
 
     save_user_data(email, password, phone_number, postal_code)

@@ -43,7 +43,7 @@ def main():
                 for line in file.readlines():
                     if regex.match(line):
                         found = True
-                        print(line)
+                        logging.info(line)
 
     if not found:
         logging.warning("Searching for regex: " + args.regex + " failed!")
