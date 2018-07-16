@@ -8,7 +8,8 @@ def selective_copy(folder_path, new_folder_path):
     for foldername, subfolders, filenames in os.walk(folder_path):
         for filename in filenames:
             if filename.endswith('.pdf') or filename.endswith('.jpg'):
-                shutil.copy(os.path.join(foldername, filename), new_folder_path)
+                shutil.copy(os.path.join(foldername, filename),
+                            new_folder_path)
                 print("Copy {}".format(os.path.join(foldername, filename)))
 
 
