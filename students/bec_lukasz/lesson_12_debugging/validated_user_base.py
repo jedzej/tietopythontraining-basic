@@ -135,13 +135,11 @@ def save_to_csv(email, password, phone, code):
 
 
 def update_csv_file(new_content, email):
+    data_string = user_data[0] + ' ' + user_data[1] + ' ' + user_data[2] + ' ' + user_data[3]
     data_file = open(user_data_file, 'w')
     for line in new_content:
         if email in line:
-            line = user_data[0] + ' ' \
-                   + user_data[1] \
-                   + ' ' + user_data[2] \
-                   + ' ' + user_data[3]
+            line = data_string
         data_file.write(line)
     data_file.write('\n')
     data_file.close()
