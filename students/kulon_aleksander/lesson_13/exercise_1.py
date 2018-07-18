@@ -20,7 +20,7 @@ class Circle:
 
     @param center: The center point of the circle.
     @type center: Point
-    @param radius: The length of the line from the center to any point on its edge.
+    @param radius: length of the line from the center to any point on its edge.
     @type radius: float
     """
     def __init__(self, center, radius):
