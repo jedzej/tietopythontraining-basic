@@ -32,4 +32,3 @@ def pass_checker(some_password):
         return False
     else:
         return True
-
