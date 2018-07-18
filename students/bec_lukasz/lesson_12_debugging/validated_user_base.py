@@ -139,7 +139,7 @@ def update_csv_file(new_content, email):
     for line in new_content:
         if email in line:
             line = user_data[0] + ' ' + user_data[1] + \
-                   ' ' + user_data[2] + ' ' +user_data[3]
+                   ' ' + user_data[2] + ' ' + user_data[3]
         data_file.write(line)
     data_file.write('\n')
     data_file.close()

@@ -15,8 +15,10 @@ import logging
 
 def set_logging():
     logging.basicConfig(level=logging.NOTSET)
-    logging.basicConfig(level=logging.INFO, format=' %(asctime)s - %(levelname)s - %(message)s')
-    logging.basicConfig(level=logging.WARNING, format='s - %(asctime)s - %(levelname)s - %(message)s')
+    logging.basicConfig(level=logging.INFO,
+                        format=' %(asctime)s - %(levelname)s - %(message)s')
+    logging.basicConfig(level=logging.WARNING,
+                        format='s - %(asctime)s - %(levelname)s - %(message)s')
 
 
 def pick_arguments():
@@ -25,7 +27,8 @@ def pick_arguments():
     parser.add_argument('-f', '--folder', action="store", type=str)
     parser.add_argument('-r', '--regex', action="store", type=str)
     parser.add_argument('-v', '--verbose', dest='verbose',
-                        help='Logging level', choices=['n', 'i', 'w'], default='n')
+                        help='Logging level', choices=['n', 'i', 'w'],
+                        default='n')
     arguments = parser.parse_args()
 
     target_folder_path = arguments.folder
