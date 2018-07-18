@@ -23,7 +23,7 @@ def set_logging():
 
 def pick_arguments():
 
-    parser = argparse.ArgumentParser(description='Searching for matching regex')
+    parser = argparse.ArgumentParser(description='Searching for regex')
     parser.add_argument('-f', '--folder', action="store", type=str)
     parser.add_argument('-r', '--regex', action="store", type=str)
     parser.add_argument('-v', '--verbose', dest='verbose',
