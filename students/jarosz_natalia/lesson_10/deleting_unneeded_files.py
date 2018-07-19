@@ -1,14 +1,14 @@
 import os
 
-max_size = 100048576
+MAX_SIZE = 100048576
 
 
 def deleting(folder):
-    for foldername, subfolders, filenames in os.walk(folder):
-        for filename in filenames:
-            if (os.path.getsize(os.path.join(foldername, filename)) >
-                    max_size):
-                print(os.path.join(foldername, filename))
+    for folder_name, sub_folders, file_names in os.walk(folder):
+        for file_name in file_names:
+            if (os.path.getsize(os.path.join(folder_name, file_name)) >
+                    MAX_SIZE):
+                print(os.path.join(folder_name, file_name))
 
 
 def main():
