@@ -6,15 +6,6 @@ import os
 import csv
 import shutil
 
-"""Validated user base - write script that takes email, password, phone number
-and postal code, validates these fields and if validation passes, saves it to a
-file as CSV with email considered as unique field. If a record with the same
-email is already in the file, the old record should be altered by new one.
-Use validators implemented in lesson 8, exercises 2, 3, 4 and 5. 
-As part of this exercise write combined_validator function that takes email,
-password, phone number and postal code and throws exceptions if any of
-arguments doesn't pass validation. Add 'verbose output'."""
-
 
 def parse_args(args=None):
     parser = argparse.ArgumentParser(description='Parse user base parameters')
