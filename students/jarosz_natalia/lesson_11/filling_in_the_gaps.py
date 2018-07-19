@@ -47,8 +47,8 @@ def main():
             if os.path.isfile(later_file):
                 break
             else:
-                next_file = results.path + results.pattern + next_number + \
-                            '.txt'
+                next_file = results.path + results.pattern + \
+                            next_number + '.txt'
         later_file = results.path + results.pattern + later_number + '.txt'
         if not os.path.isfile(next_number):
             shutil.move(later_file, next_file)
