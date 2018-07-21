@@ -38,7 +38,8 @@ def search_regex(regex_search):
         content = current.readlines()
         for line in content:
             if regex_search.match(line):
-                logging.debug("Correct line is:\n" + line + "from file: " + file)
+                logging.debug("Correct line is:\n" +
+                              line + "from file: " + file)
 
         current.close()
 

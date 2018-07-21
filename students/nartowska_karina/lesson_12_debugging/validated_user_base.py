@@ -30,10 +30,10 @@ logging.basicConfig(level=LOGGER_LEVELS[verbose],
 
 
 def combined_validator(email, password, phone_number, postal_code):
-    if not (email_validator(email)
-            and strong_password_detection(password)
-            and phone_number_validator(phone_number)
-            and postal_code_validator(postal_code)):
+    if not (email_validator(email) and
+            strong_password_detection(password) and
+            phone_number_validator(phone_number) and
+            postal_code_validator(postal_code)):
         raise Exception("Incorrect data")
 
 
