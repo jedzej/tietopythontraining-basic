@@ -9,7 +9,7 @@ def access_required(func):
             return func(name)
         else:
             return None
-    return wrapp_func
+    return wrap_func
 
 
 @access_required
