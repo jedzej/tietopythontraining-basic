@@ -13,7 +13,7 @@ def fill_the_gaps(folder):
         for filename in filenames:
             if pattern.match(filename):
                 if index == 1:
-                    new_filename = re.sub(r'\d{3}','001',filename)
+                    new_filename = re.sub(r'\d{3}', '001', filename)
                 print(filename, new_filename, index)
                 if filename != new_filename:
                     print(
