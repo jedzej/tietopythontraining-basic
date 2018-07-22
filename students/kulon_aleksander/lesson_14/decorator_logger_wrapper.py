@@ -3,7 +3,7 @@ from lesson_06.args_inspector import args_inspect
 
 def wrap_logs(foo, *args, **kwargs):
     args_inspect(*args, **kwargs)
-    return foo(*args, *kwargs)
+    return foo(*args, **kwargs)
 
 
 def logged(func):
