@@ -39,8 +39,7 @@ def function_5(a, b):
 
 
 function_1("raz", "dwa", "trzy")
-function_2("a", "b", "c", [1, 2, 3], { "name": "John", "age": 30})
+function_2("a", "b", "c", [1, 2, 3], {"name": "John", "age": 30})
 function_3(2, 3)
 function_4(1, 2, 3, 4)
 function_5(10, 11)
-

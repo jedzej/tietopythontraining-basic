@@ -1,4 +1,5 @@
-from students.jemielity_kamil.lesson_14_advanced_oop_and_decorators.authorization import has_access
+from students.jemielity_kamil.\
+    lesson_14_advanced_oop_and_decorators.authorization import has_access
 
 
 def access_required(func):
