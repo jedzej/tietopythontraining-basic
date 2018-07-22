@@ -18,22 +18,15 @@ def main():
 
     sorted_numbers = sorted(sorted_numbers)
 
-    for i in range(int(sorted_numbers[0]), int(sorted_numbers[-1]) - 1):
-        if i == len(sorted_numbers):
-            break
+    for i, value in enumerate(sorted_numbers):
+        if str(i + 1).zfill(3) == value:
+            continue
 
-        next_number = str(i + 1).zfill(3)
-
-        for j in range(i, int(sorted_numbers[-1])):
-            later_number = str(j + 1).zfill(3)
-            later_file = PATH + PATTERN + later_number + '.txt'
-            if os.path.isfile(later_file):
-                break
-            else:
-                next_file = PATH + PATTERN + next_number + '.txt'
-        later_file = PATH + PATTERN + later_number + '.txt'
-        if not os.path.isfile(next_number):
-            shutil.move(later_file, next_file)
+        next_one = str(i + 1).zfill(3)
+        current = PATH + PATTERN + next_one + '.txt'
+        nex_one = PATH + PATTERN + value + '.txt'
+        if not os.path.isfile(current):
+            shutil.move(nex_one, current)
 
 
 if __name__ == "__main__":
