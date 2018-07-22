@@ -5,10 +5,6 @@ class Books:
         self.year = year
 
 
-#    def __dir__(self):
-#       return [self.author, self.title, self.year]
-
-
 def object_inspector1(some_object):
     attributes = dir(some_object)
     return dict((key, getattr(some_object, key)) for key in attributes)

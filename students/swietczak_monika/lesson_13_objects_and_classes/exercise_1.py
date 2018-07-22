@@ -21,7 +21,8 @@ class Rectangle:
 
 
 def point_in_circle(point, circle):
-    if (point.x - circle.center.x) * (point.x - circle.center.x) + (point.y - circle.center.y) * (
+    if (point.x - circle.center.x) * (point.x - circle.center.x) + (
+            point.y - circle.center.y) * (
             point.y - circle.center.y) <= circle.radius * circle.radius:
         return True
     else:
@@ -61,8 +62,10 @@ def main():
     rectangle = Rectangle(20, 10, Point(120, 100))
     print("Point:" + str(point))
     print("Is point inside the circle? " + str(point_in_circle(point, circle)))
-    print("Is rectangle inside the circle? " + str(rect_in_circle(rectangle, circle)))
-    print("Is rectangle overlapping the circle? " + str(rect_circle_overlap(rectangle, circle)))
+    print("Is rectangle inside the circle? " + str(
+        rect_in_circle(rectangle, circle)))
+    print("Is rectangle overlapping the circle? " + str(
+        rect_circle_overlap(rectangle, circle)))
 
 
 if __name__ == '__main__':
