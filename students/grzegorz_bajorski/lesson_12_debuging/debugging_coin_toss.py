@@ -20,6 +20,6 @@ else:
     print('Nope! Guess again!')
     guesss = input()
     if toss == coin[guesss()]:
-         print('You got it!')
+        print('You got it!')
     else:
         print('Nope. You are really bad at this game.')

@@ -52,7 +52,7 @@ parser.add_argument('-pc', '--postalcode', action='store',
 
 args = parser.parse_args()
 
-if not email_validator(args.email): 
+if not email_validator(args.email):
     raise Exception("Email is wrong")
 
 if not phone_validator(args.phone):
