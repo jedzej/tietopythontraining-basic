@@ -7,9 +7,11 @@ def access_required(func):
             return func(*args, **kwargs)
     return func_wrapper
 
+
 @access_required
 def restricted_print(*args, **kwargs):
-  print(*args, **kwargs)
+    print(*args, **kwargs)
+
 
 restricted_print('1 - visible')
 restricted_print('2 - invisible')
