@@ -6,6 +6,7 @@ import logging
 
 logging.getLogger().setLevel(logging.INFO)
 
+
 def email_validator(email):
     match = re.match('^[_a-z0-9-]+(\.[_a-z0-9-]+)''*@[a-z0-9-]+'
                      '(\.[a-z0-9-]+)*(\.[a-z]{2,4})$', email)
@@ -25,6 +26,7 @@ def phone_validator(phone_number):
     else:
         return False
 
+
 def post_code_validator(post_code):
     code = re.compile(r'^\d{2}-\d{3}$')
     if code.match(post_code) is not None:
@@ -37,16 +39,16 @@ def post_code_validator(post_code):
 parser = argparse.ArgumentParser(description='data')
 
 parser.add_argument('-e', '--email', action='store',
-                dest="email", required=True,
-                help='Address email')
+                    dest="email", required=True,
+                    help='Address email')
 
 parser.add_argument('-pn', '--phone', action='store',
-                dest="phone", required=True,
-                help='Phone number')
+                    dest="phone", required=True,
+                    help='Phone number')
 
 parser.add_argument('-pc', '--postalcode', action='store',
-                dest="code", required=True,
-                help='Postal code')
+                    dest="code", required=True,
+                    help='Postal code')
 
 args = parser.parse_args()
 

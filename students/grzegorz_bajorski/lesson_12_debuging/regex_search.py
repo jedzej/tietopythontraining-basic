@@ -6,14 +6,14 @@ import argparse
 parser = argparse.ArgumentParser(description='Fillings the gaps program')
 
 parser.add_argument('-d',
-                help="regex expression",
-                regex='regex',
-                required=True)
+                    help="regex expression",
+                    regex='regex',
+                    required=True)
 
 parser.add_argument('-v', '--verbose',
-                help='log level',
-                choices=['disabled', 'warning', 'info'],
-                default='info')
+                    help='log level',
+                    choices=['disabled', 'warning', 'info'],
+                    default='info')
 
 args = parser.parse_args()
 
