@@ -17,17 +17,20 @@ def distance_between_points(p1, p2):
     dist = math.sqrt(dx**2 + dy**2)
     return dist
 
+
 class Point:
     """Represents a point in 2-D space.
 
     attributes: x, y
     """
 
+
 class Rectangle:
     """Represents a rectangle. 
 
     attributes: width, height, corner.
     """
+
 
 def print_point(p):
     """Print a Point object in human-readable format."""
@@ -138,5 +141,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-
