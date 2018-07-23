@@ -8,6 +8,8 @@ from validators import postal_code_validator
 from validators import phone_number_validator
 from validators import strong_password_detection
 
+CSV_FILE = 'data.csv'
+
 LOGGER_LEVELS = {"debug": logging.DEBUG,
                  "info": logging.INFO,
                  "warning": logging.WARNING,
@@ -37,14 +39,33 @@ def combined_validator(email, password, phone_number, postal_code):
         raise Exception("Incorrect data")
 
 
-def write_to_csv(input):
-    with open('data.csv', 'a+') as csv_file:
+def prepare_data_to_write(input_data):
+    output_data = []
+    altered = False
+
+    if not os.path.exists(CSV_FILE):
+        open(CSV_FILE, 'a').close()
+
+    with open(CSV_FILE, 'r') as input_file:
+        file_data = csv.DictReader(input_file)
+        for row in file_data:
+            if row["email"] == input_data["email"]:
+                row = input_data
+                logging.debug("Email exists - altering data.")
+                altered = True
+            output_data.append(row)
+    if not altered:
+        output_data.append(input_data)
+    return output_data
+
+
+def write_to_csv(data):
+    with open(CSV_FILE, 'w') as csv_file:
         fieldnames = ['email', 'password', 'phone_number', 'postal_code']
         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
 
-        if not os.stat(csv_file.name).st_size:
-            writer.writeheader()
-        writer.writerow(input)
+        writer.writeheader()
+        writer.writerows(data)
     logging.debug("Writing complete")
 
 
@@ -59,7 +80,7 @@ def main():
                        input_data["phone_number"],
                        input_data["postal_code"])
 
-    write_to_csv(input_data)
+    write_to_csv(prepare_data_to_write(input_data))
 
 
 if __name__ == '__main__':

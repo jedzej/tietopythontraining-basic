@@ -26,11 +26,6 @@ def check_arg(args=None):
             results.verbose)
 
 
-regex, verbose = check_arg(sys.argv)
-logging.basicConfig(level=LOGGER_LEVELS[verbose],
-                    format='%(asctime)s - %(levelname)s - %(message)s')
-
-
 def search_regex(regex_search):
     for file in glob.glob("*.txt"):
         current = open(file)
@@ -45,9 +40,12 @@ def search_regex(regex_search):
 
 
 def main():
-    reg = check_arg(sys.argv[1:])
-    logging.debug("Searching regex in .txt files: " + reg)
-    regex_search = re.compile(reg)
+    regex, verbose = check_arg(sys.argv[1:])
+    logging.basicConfig(level=LOGGER_LEVELS[verbose],
+                        format='%(asctime)s - %(levelname)s - %(message)s')
+
+    logging.debug("Searching regex in .txt files: " + regex)
+    regex_search = re.compile(regex)
     search_regex(regex_search)
 
 
