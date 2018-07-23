@@ -1,6 +1,6 @@
 class Animal:
-    def __init__(self, type, name, age):
-        self.type = type
+    def __init__(self, kind, name, age):
+        self.kind = kind
         self.name = name
         self.age = age
 
@@ -8,11 +8,7 @@ class Animal:
 def dictionary(obj):
     new_dict = obj.__dict__
     for j in new_dict.keys():
-        if isinstance(new_dict[j], str):
-            print("key=", j, "value=", new_dict[j])
-        elif isinstance(new_dict[j], int):
-            print("key=", j, "value=", new_dict[j])
-        elif isinstance(new_dict[j], float):
+        if isinstance(new_dict[j], (str, int, float)):
             print("key=", j, "value=", new_dict[j])
 
 

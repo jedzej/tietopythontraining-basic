@@ -1,6 +1,6 @@
 class Animal:
-    def __init__(self, type, name, age):
-        self.type = type
+    def __init__(self, kind, name, age):
+        self.kind = kind
         self.name = name
         self.age = age
 

@@ -1,6 +1,6 @@
 class Animal:
-    def __init__(self, type, name, age):
-        self.type = type
+    def __init__(self, kind, name, age):
+        self.kind = kind
         self.name = name
         self.age = age
 
@@ -20,7 +20,7 @@ def compare_objects(obj_1, obj_2, atr_names):
 def main():
     animal_1 = Animal("shark", "Edward", 5)
     animal_2 = Animal("turtle", "Franklin", 100)
-    compare_objects(animal_1, animal_2, ["type", "name", "age"])
+    compare_objects(animal_1, animal_2, ["kind", "name", "age"])
 
 
 if __name__ == '__main__':
