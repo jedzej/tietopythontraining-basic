@@ -20,14 +20,12 @@ def distance_between_points(p1, p2):
 
 class Point:
     """Represents a point in 2-D space.
-
     attributes: x, y
     """
 
 
 class Rectangle:
     """Represents a rectangle. 
-
     attributes: width, height, corner.
     """
 
