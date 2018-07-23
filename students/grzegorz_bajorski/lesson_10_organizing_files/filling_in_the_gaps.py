@@ -3,7 +3,7 @@ import fnmatch
 import shutil
 
 
-prefix="spam*.txt"
+prefix = "spam*.txt"
 files_list = []
 
 for filename in os.listdir():
