@@ -12,6 +12,7 @@ def access_required(func):
 def restricted_print(*args, **kwargs):
     print(*args, **kwargs)
 
+
 restricted_print('1 - visible')
 restricted_print('2 - invisible')
 restricted_print('3 - invisible')
