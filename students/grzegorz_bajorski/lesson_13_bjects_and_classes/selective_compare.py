@@ -21,5 +21,5 @@ attributes = ['age', 'name', 'salary']
 
 if compare_attributes(person, person2, attributes):
     print("Compared objects are equal")
-else :
+else:
     print("Compared objects are not equal")
