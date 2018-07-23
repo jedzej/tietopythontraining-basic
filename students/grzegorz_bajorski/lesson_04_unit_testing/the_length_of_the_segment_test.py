@@ -6,7 +6,7 @@ class MyTest(pytest):
 
     def test_1(self):
         with pytest.raises(TypeError):
-            distance(None, 1,  2, 3)
+            distance(None, 1, 2, 3)
 
     def test_2(self):
         with pytest.raises(ValueError):
