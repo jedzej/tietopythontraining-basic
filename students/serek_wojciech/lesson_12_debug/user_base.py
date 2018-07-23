@@ -32,24 +32,26 @@ def save_data(email, password, phone, postal):
     add_entry = True
     csv_data = []
 
-    if os.path.exists(data_file):
-        with open(data_file, mode='a') as _:    #create file
-            pass
-
-    with open(data_file, newline='') as csv_file:
-        reader = csv.reader(csv_file)
-        for row in reader:
-            if row and row[0] == email:
-                logging.warning('Email already exist! Overriding data.')
-                add_entry = False
-                row = email, password, phone, postal
-            csv_data.append(row)
-        if add_entry:
+    if not os.path.exists(data_file):
+        with open(data_file, mode='w', newline='') as csv_file:
+            writer = csv.writer(csv_file)
             csv_data.append([email, password, phone, postal])
+            writer.writerows(csv_data)
+    else:
+        with open(data_file, newline='') as csv_file:
+            reader = csv.reader(csv_file)
+            for row in reader:
+                if row and row[0] == email:
+                    logging.warning('Email already exist! Overriding data.')
+                    add_entry = False
+                    row = email, password, phone, postal
+                csv_data.append(row)
+            if add_entry:
+                csv_data.append([email, password, phone, postal])
 
-    with open(data_file, mode='w', newline='') as csv_file:
-        writer = csv.writer(csv_file)
-        writer.writerows(csv_data)
+        with open(data_file, mode='w', newline='') as csv_file:
+            writer = csv.writer(csv_file)
+            writer.writerows(csv_data)
 
 
 def main():
