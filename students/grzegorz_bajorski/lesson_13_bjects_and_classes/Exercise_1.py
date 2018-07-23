@@ -25,7 +25,7 @@ class Point:
 
 
 class Rectangle:
-    """Represents a rectangle. 
+    """Represents a rectangle.
     attributes: width, height, corner.
     """
 
