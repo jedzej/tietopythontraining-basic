@@ -11,14 +11,14 @@ parser = argparse.ArgumentParser(description='Manual')
 
 parser.add_argument('--file-prefix',
                     required=True,
-                     help='File name prefix.')
+                    help='File name prefix.')
 
 args = parser.parse_args()
 
 prefix = args.file_prefix
 
 for filename in os.listdir():
-    if fnmatch.fnmatch(filename, prefix): 
+    if fnmatch.fnmatch(filename, prefix):
         files_list.append(filename)
 
 files_list.sort()
