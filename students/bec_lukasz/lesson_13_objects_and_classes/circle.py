@@ -18,7 +18,7 @@ class Circle:
 
     Attributes: center, radius
     """
-    
+
 
 def print_point(p):
     print('(%g, %g)' % (p.x, p.y))
@@ -26,8 +26,8 @@ def print_point(p):
 
 def find_center(rect):
     p = Point()
-    p.x = rect.corner.x + rect.width/2
-    p.y = rect.corner.y + rect.height/2
+    p.x = rect.corner.x + rect.width / 2
+    p.y = rect.corner.y + rect.height / 2
     return p
 
 
