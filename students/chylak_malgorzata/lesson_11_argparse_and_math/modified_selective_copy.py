@@ -18,10 +18,10 @@ def check_arg(args=None):
     parser = argparse.ArgumentParser(description='input directory parsing')
     parser.add_argument('-s', '--source',
                         help='Source directory for selective copy',
-                        default='./')
+                        default= './')
     parser.add_argument('-t', '--target',
                         help='Target directory for selective copy',
-                        required= 'True')
+                        required= True)
 
     results = parser.parse_args(args)
     return [results.source,

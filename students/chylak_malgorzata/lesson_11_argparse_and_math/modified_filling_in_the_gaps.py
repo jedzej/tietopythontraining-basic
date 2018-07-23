@@ -38,10 +38,10 @@ def check_arg(args=None):
                         default=sys.path[0])
     parser.add_argument('-p', '--prefix',
                         help='File prefix',
-                        required='True')
+                        required=True)
     parser.add_argument('-f', '--suffix',
                         help='File suffix',
-                        required='True')
+                        required=True)
 
     results = parser.parse_args(args)
     return [results.source,
