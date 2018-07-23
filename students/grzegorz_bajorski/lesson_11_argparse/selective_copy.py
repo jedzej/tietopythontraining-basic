@@ -1,4 +1,4 @@
-import shutil 
+import shutil
 import os
 import argparse
 
@@ -9,9 +9,9 @@ os.mkdir(dest_dir)
 parser = argparse.ArgumentParser(description='Selective Copy program')
 
 parser.add_argument('-d',
-		help="Destination directory.",
-		dest='dest_dir',
-		required=True)
+                    help="Destination directory.",
+                    dest='dest_dir',
+                    required=True)
 
 args = parser.parse_args()
 

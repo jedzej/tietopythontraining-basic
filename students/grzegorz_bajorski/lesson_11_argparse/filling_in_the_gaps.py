@@ -4,23 +4,23 @@ import shutil
 import argparse
 
 
-prefix="spam*.txt"
+prefix = "spam*.txt"
 files_list = []
 
 parser = argparse.ArgumentParser(description='Manual')
 
 parser.add_argument('--file-prefix',
-                        required=True,
-                        help='File name prefix.')
+                    required=True,
+                     help='File name prefix.')
 
 args = parser.parse_args()
 
-prefix=args.file_prefix
+prefix = args.file_prefix
 
 for filename in os.listdir():
     if fnmatch.fnmatch(filename, prefix): 
         files_list.append(filename)
-        
+
 files_list.sort()
 
 

@@ -5,9 +5,9 @@ import argparse
 parser = argparse.ArgumentParser(description='Fillings the gaps program')
 
 parser.add_argument('-d',
-                help="regex expression",
-                regex='regex',
-                required=True)
+                    help="regex expression",
+                    regex='regex',
+                    required=True)
 
 args = parser.parse_args()
 
