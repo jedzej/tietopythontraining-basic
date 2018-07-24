@@ -34,5 +34,6 @@ def main():
     print(is_equal(2, 5))
     print(is_equal(1, 1))
 
+
 if __name__ == '__main__':
     main()
