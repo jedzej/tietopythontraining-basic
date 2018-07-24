@@ -22,5 +22,5 @@ def main():
             print('Nope. You are really bad at this game.')
 
 
-if __name__ == "__main":
+if __name__ == "__main__":
     main()
