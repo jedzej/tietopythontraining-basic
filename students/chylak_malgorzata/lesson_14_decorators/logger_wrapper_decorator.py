@@ -1,5 +1,5 @@
 def main():
-    example_one('bim', 'bam', status='bom')
+    example_one('bim', 'bam','bom')
     example_two('Bob')
 
 
@@ -21,7 +21,7 @@ def example_two(name):
 
 def wrap_logs(foo, *args, **kwargs):
     args_inspector(*args, **kwargs)
-    return foo(*args, *kwargs)
+    return foo(*args, **kwargs)
 
 
 def args_inspector(*args, **kwargs):
