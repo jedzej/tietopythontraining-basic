@@ -1,32 +1,50 @@
-import re
 import os
-import sys
+import re
 import argparse
+import logging
 
 
-def regex_search(sprytna_nazwa):
-    regex = re.compile(r'{}'.format(sprytna_nazwa))
-    for filename in os.listdir('.'):
-        if filename.endswith(".txt"):
-            with open(filename) as file:
-                for line in file.readlines():
-                    found = regex.findall(line)
-                    if found:
-                        print(found)
-                    if regex.match(line):
-                        print(regex.findall(line))
-                        print(line)
+parser = argparse.ArgumentParser(description='Regex search')
+
+parser.add_argument('-v', action='store',
+                    dest='verbose', help='Verbose level - '
+                                         'disabled, warning, info',
+                    choices=['disabled', 'warning', 'info'])
+
+parser.add_argument('-r', action='store',
+                    dest="regex", required=True,
+                    help='regex')
+
+args = parser.parse_args()
+
+logging.basicConfig(format='%(asctime)s - %(levelname)s - %(message)s')
+
+if args.verbose == 'disabled':
+    logging.disable(logging.CRITICAL)
+elif args.verbose == 'warning':
+    logging.getLogger().setLevel(logging.WARNING)
+else:
+    logging.getLogger().setLevel(logging.INFO)
+
+text_files = []
+logging.info('Searching for files with .txt extension')
+for file in os.listdir('.'):
+    if file.endswith(".txt"):
+        logging.info('File: ' + file + ' found')
+        text_files.append(file)
 
 
-def check_arg(args=None):
-    parser = argparse.ArgumentParser(description='input a search parameter')
-    parser.add_argument('-s', '--SEARCH',
-                        help='Regular Expression',
-                        required=True)
+regex = re.compile(args.regex)
 
-    results = parser.parse_args(args)
-    return results.search
+logging.info('Searching for a line matching regex')
+for file in text_files:
+    current_file = open(file)
+    file_content = current_file.readlines()
+    for line in file_content:
+        mo = regex.search(line)
+        if mo is not None:
+            logging.info('Line found')
+            print(line.strip())
 
-
-if __name__ == '__main__':
-    regex_search(check_arg(sys.argv[1:]))
+    current_file.close()
+logging.info('End')
