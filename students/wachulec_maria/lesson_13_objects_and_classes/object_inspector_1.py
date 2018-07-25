@@ -1,5 +1,8 @@
 class Something:
-    pass
+    def __init__(self, dot, point, comma):
+        self.dot = dot
+        self.point = point
+        self.comma = comma
 
 
 def give_names_and_values_of_object(obj, attributes):
@@ -9,8 +12,5 @@ def give_names_and_values_of_object(obj, attributes):
     return result
 
 
-st = Something()
-st.dot = 1
-st.point = 3
-st.comma = 5
+st = Something(1, 3, 5)
 print(give_names_and_values_of_object(st, ['dot', 'comma']))

@@ -1,9 +1,15 @@
 class Something:
-    pass
+    def __init__(self, dot, point, comma):
+        self.dot = dot
+        self.point = point
+        self.comma = comma
 
 
 class Somebody:
-    pass
+    def __init__(self, dot, point, comma):
+        self.dot = dot
+        self.point = point
+        self.comma = comma
 
 
 def check_if_objects_attribute_equal(obj1, obj2, attributes):
@@ -16,13 +22,7 @@ def check_if_objects_attribute_equal(obj1, obj2, attributes):
     return result
 
 
-st = Something()
-st.dot = 1
-st.point = 3
-st.comma = 5.4
-sb = Somebody()
-sb.dot = 'cos'
-sb.point = 3
-sb.comma = 5
+st = Something(1, 3, 5.4)
+sb = Somebody('cos', 3, 5)
 
 print(check_if_objects_attribute_equal(st, sb, ['dot', 'point', 'comma']))
