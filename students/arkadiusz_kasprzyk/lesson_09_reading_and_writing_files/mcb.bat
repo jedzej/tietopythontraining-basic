@@ -1,0 +1,1 @@
+@python.exe D:\ROBOCZY\Python\tieto2\lesson_09_reading_and_writing_files\mcb.pyw %*
