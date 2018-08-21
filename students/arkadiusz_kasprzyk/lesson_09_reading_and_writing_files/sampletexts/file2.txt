@@ -1,0 +1,30 @@
+#! python3
+"""
+Usage
+-----
+$ py research.pyw <reg_exp>
+$ py research.pyw <reg_exp> <path>
+"""
+
+import sys, os
+import re
+
+reg = re.compile(sys.argv[1])
+
+if len(sys.argv) > 2:
+    path = sys.argv[2]
+else:
+    path = os.getcwd()
+
+files = os.listdir(path)
+files = [f for f in files if re.search(r'\.txt$',f)]
+
+for f in files:
+    #print("\n\t" + f)
+    f = open(f, 'r')
+    for line in f:
+        print(line)
+        if reg.search(line):
+            print(line, end="")
+        #else:
+        #    print('0')
